@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Background tints for each list item of province. -->
+    <color name="punjab_province">#FF3C3C</color>
+    <color name="sindh_province">#FF7E26</color>
+    <color name="balochistan_province">#42C2FF</color>
+    <color name="kpk_province">#5A864E</color>
+
+    <!-- Background colors for each province data circles. -->
+    <color name="punjab_province_data_color">#FF862121</color>
+    <color name="sindh_province_data_color">#903C05</color>
+    <color name="balochistan_province_data_color">#1C5A8B</color>
+    <color name="kpk_province_data_color">#1F501E</color>
+</resources>

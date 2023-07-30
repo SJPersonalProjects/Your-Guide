@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Your Guide</string>
+
+    <string name="todo">todo</string>
+
+    <!-- Province CardView information. -->
+    <string name="province_name">Punjab</string>
+    <string name="province_details">Punjab is one of the largest provinces in Pakistan. It is more populated than all the other ones. This is one of the main provinces of Pakistan where people </string>
+
+    <!-- Provinces Descriptions. -->
+    <string name="punjab_province_description">Punjab, Pakistan: Rich in culture and history, this populous province features fertile plains and plays a crucial role in agriculture and industry.</string>
+    <string name="sindh_province_description">Sindh, Pakistan: A province steeped in history and diverse culture. Home to the bustling city of Karachi, with an economy driven by trade and industry.</string>
+    <string name="balochistan_province_description">Balochistan, Pakistan: Vast and rugged, this province boasts breathtaking landscapes and a distinct Balochi culture. Abundant in natural resources like gas and minerals.</string>
+    <string name="kpk_province_description">KPK, Pakistan: Nestled in the northwestern region, Khyber Pakhtunkhwa is known for its stunning mountainous terrain, rich Pashtun heritage, and historical significance.</string>
+
+    <!-- Cities at the left bottom of card view. -->
+    <string name="number_of_cities">0</string>
+    <string name="cities">Cities</string>
+
+    <!-- Popular sights at the right bottom, top of card view. -->
+    <string name="number_of_popular_sights">0</string>
+    <string name="popular_sights">Popular Sights</string>
+
+    <!-- Historical Sights at the right bottom, bottom of card view. -->
+    <string name="number_of_historical_sights">0</string>
+    <string name="historical_sights">Historical Sights</string>
+
+</resources>
