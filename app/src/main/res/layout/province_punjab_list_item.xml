@@ -71,7 +71,7 @@
                     android:layout_marginBottom="4dp"
                     android:contentDescription="@string/todo"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/baseline_rating_star" />
+                    android:src="@drawable/baseline_star_24" />
 
                 <!-- Star-rating numbers. -->
                 <TextView
