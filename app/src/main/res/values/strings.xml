@@ -25,4 +25,9 @@
     <string name="number_of_historical_sights">0</string>
     <string name="historical_sights">Historical Sights</string>
 
+    <!-- Province list item title. -->
+    <string name="province_list_item_title">Title of the province list</string>
+    <string name="province_list_item_description">This is the description of the province list item and we are including the 3 lines with ellipsis at the very end of the description</string>
+    <string name="province_rating_numbers">4.2 (56)</string>
+
 </resources>
