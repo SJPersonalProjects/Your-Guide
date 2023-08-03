@@ -4,7 +4,7 @@ public class PunjabProvinceCard {
     private final int mCardImage;
     private final String mCardTitle;
     private final String mCardDescription;
-    private final int mCardRating;
+    private final String mCardRating;
 
     /**
      * Constructor a new {@link PunjabProvinceCard} object.
@@ -14,7 +14,7 @@ public class PunjabProvinceCard {
      * @param mCardRating is the rating of the card of punjab province.
      */
     public PunjabProvinceCard(int mCardImage, String mCardTitle, String mCardDescription,
-                              int mCardRating) {
+                              String mCardRating) {
         this.mCardImage = mCardImage;
         this.mCardTitle = mCardTitle;
         this.mCardDescription = mCardDescription;
@@ -49,7 +49,7 @@ public class PunjabProvinceCard {
      * Get the rating of the card.
      * @return rating of card.
      */
-    public int mCardRating() {
+    public String mCardRating() {
         return mCardRating;
     }
 }
