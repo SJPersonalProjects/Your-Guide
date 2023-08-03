@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- card for the list items in the layout file. -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="188dp"
+        android:layout_height="216dp"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <!-- RelativeLayout to align child views relative to their parents. -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Preview image for place display in the province list items. -->
+            <ImageView
+                android:id="@+id/province_list_preview_image"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <!-- Title for any place, or restaurant etc in the province list item. -->
+            <TextView
+                android:id="@+id/province_list_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/province_list_preview_image"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/province_list_item_title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Description for any place, or restaurant etc in the province list item. -->
+            <TextView
+                android:id="@+id/province_list_item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/province_list_item_title"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="@string/province_list_item_description"
+                android:textSize="12sp" />
+
+            <!-- Bottom container where rating and favourite heart is placed. -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <!-- Star-rating image for better layout looks. -->
+                <ImageView
+                    android:id="@+id/star_rating_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_rating_star" />
+
+                <!-- Star-rating numbers. -->
+                <TextView
+                    android:id="@+id/province_rating_numbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/star_rating_image"
+                    android:text="@string/province_rating_numbers"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <!-- Heart (favorite) image for better layout looks. -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_favorite_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
