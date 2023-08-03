@@ -2,9 +2,9 @@ package com.example.yourguide.punjab_province;
 
 public class PunjabProvinceCard {
     private final int mCardImage;
-    private final String mCardTitle;
-    private final String mCardDescription;
-    private final String mCardRating;
+    private final int mCardTitle;
+    private final int mCardDescription;
+    private final int mCardRating;
 
     /**
      * Constructor a new {@link PunjabProvinceCard} object.
@@ -13,8 +13,8 @@ public class PunjabProvinceCard {
      * @param mCardDescription is the description of the card of punjab province.
      * @param mCardRating is the rating of the card of punjab province.
      */
-    public PunjabProvinceCard(int mCardImage, String mCardTitle, String mCardDescription,
-                              String mCardRating) {
+    public PunjabProvinceCard(int mCardImage, int mCardTitle, int mCardDescription,
+                              int mCardRating) {
         this.mCardImage = mCardImage;
         this.mCardTitle = mCardTitle;
         this.mCardDescription = mCardDescription;
@@ -33,7 +33,7 @@ public class PunjabProvinceCard {
      * Get the Title of card
      * @return title
      */
-    public String getCardTitle() {
+    public int getCardTitle() {
         return mCardTitle;
     }
 
@@ -41,7 +41,7 @@ public class PunjabProvinceCard {
      * Get the description of card.
      * @return description.
      */
-    public String getCardDescription() {
+    public int getCardDescription() {
         return mCardDescription;
     }
 
@@ -49,7 +49,7 @@ public class PunjabProvinceCard {
      * Get the rating of the card.
      * @return rating of card.
      */
-    public String mCardRating() {
+    public int getCardRating() {
         return mCardRating;
     }
 }

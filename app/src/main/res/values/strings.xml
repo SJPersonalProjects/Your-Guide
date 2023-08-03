@@ -29,5 +29,28 @@
     <string name="province_list_item_title">Title of the province list</string>
     <string name="province_list_item_description">This is the description of the province list item and we are including the 3 lines with ellipsis at the very end of the description</string>
     <string name="province_rating_numbers">4.2 (56)</string>
+    
+
+    <!-- Punjab Province top 5 cities -->
+    <!-- City 1. Lahore -->
+    <string name="lahore_city_title">Lahore City</string>
+    <string name="lahore_city_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
+    <string name="lahore_city_rating">4.8 (92)</string>
+    <!-- City 2. Faisalabad -->
+    <string name="faisalabad_city_title">Faisalabad City</string>
+    <string name="faisalabad_city_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
+    <string name="faisalabad_city_rating">4.2 (62)</string>
+    <!-- City 3. Rawalpindi -->
+    <string name="rawalpindi_city_title">Rawalpindi City</string>
+    <string name="rawalpindi_city_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
+    <string name="rawalpindi_city_rating">4.5 (99)</string>
+    <!-- City 4. Multan -->
+    <string name="multan_city_title">Multan City</string>
+    <string name="multan_city_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
+    <string name="multan_city_rating">3.9 (59)</string>
+    <!-- City 5. Gujranwala -->
+    <string name="gujranwala_city_title">Gujranwala City</string>
+    <string name="gujranwala_city_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
+    <string name="gujranwala_city_rating">3.9 (42)</string>
 
 </resources>
