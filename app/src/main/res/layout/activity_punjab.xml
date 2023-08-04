@@ -92,5 +92,38 @@
             android:layout_height="wrap_content"
             android:scrollbars="none" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <!-- Historical Places heading. -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historical Places"
+                android:textColor="#472033"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <!-- Historical places See All heading. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|bottom"
+                android:text="@string/province_see_all"
+                android:textSize="14sp"
+                android:textColor="#5D5D5D"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- RecyclerView for historical places list of cards. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/province_historical_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </ScrollView>

@@ -78,5 +78,35 @@ public class PunjabActivity extends AppCompatActivity {
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
 
+        //ArrayList to hold the historical places in Punjab province.
+        ArrayList<PunjabProvinceCard> historicalPlacesList = new ArrayList<>();
+        historicalPlacesList.add(new PunjabProvinceCard(R.drawable.badshahi_mosque,
+                R.string.badshahi_mosque_historical_place_title, R.string.badshahi_mosque_historical_place_description,
+                R.string.badshahi_mosque_historical_place_rating, R.string.badshahi_mosque_historical_place_review));
+        historicalPlacesList.add(new PunjabProvinceCard(R.drawable.wagah_border, R.string.wagah_border_historical_place_title,
+                R.string.wagah_border_historical_place_description, R.string.wagah_border_historical_place_rating,
+                R.string.wagah_border_historical_place_review));
+        historicalPlacesList.add(new PunjabProvinceCard(R.drawable.lahore_fort, R.string.lahore_fort_historical_place_title,
+                R.string.lahore_fort_historical_place_description, R.string.lahore_fort_historical_place_rating,
+                R.string.lahore_fort_historical_place_review));
+        historicalPlacesList.add(new PunjabProvinceCard(R.drawable.masjid_wazir_khan, R.string.wazir_mosque_historical_place_title,
+                R.string.wazir_mosque_historical_place_description, R.string.wazir_mosque_historical_place_rating,
+                R.string.wazir_mosque_historical_place_review));
+        historicalPlacesList.add(new PunjabProvinceCard(R.drawable.walled_city, R.string.walled_city_historical_place_title,
+                R.string.walled_city_historical_place_description, R.string.walled_city_historical_place_rating,
+                R.string.walled_city_historical_place_review));
+
+        RecyclerView historicalPlacesRecyclerView = (RecyclerView) findViewById(R.id.province_historical_places);
+        historicalPlacesRecyclerView.setVerticalScrollBarEnabled(false);
+        historicalPlacesRecyclerView.setHorizontalScrollBarEnabled(false);
+        historicalPlacesRecyclerView.setHasFixedSize(true);
+
+        RecyclerView.LayoutManager historicalPlacesLayoutManager = new LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL, false);
+
+        PunjabProvinceCardAdapter historicalPlacesAdapter = new PunjabProvinceCardAdapter(historicalPlacesList);
+
+        historicalPlacesRecyclerView.setLayoutManager(historicalPlacesLayoutManager);
+        historicalPlacesRecyclerView.setAdapter(historicalPlacesAdapter);
     }
 }
