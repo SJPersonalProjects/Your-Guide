@@ -63,4 +63,37 @@
     <string name="province_popular_city">Popular City</string>
     <string name="province_see_all">See All</string>
 
+    <!-- Province "Top Restaurant" heading and "See All" is taken from above. -->
+    <string name="province_top_restaurant">Top Restaurant</string>
+    
+    <!-- Punjab province top 5 restaurants. -->
+    <!-- 1. Monal Restaurant -->
+    <string name="monal_restaurant_title">Monal Restaurant</string>
+    <string name="monal_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="monal_restaurant_rating">4.5</string>
+    <string name="monal_restaurant_review">588</string>
+
+    <!-- 2. Haveli Restaurant -->
+    <string name="haveli_restaurant_title">Haveli Restaurant</string>
+    <string name="haveli_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="haveli_restaurant_rating">4.0</string>
+    <string name="haveli_restaurant_review">223</string>
+
+    <!-- 3. Andaaz Restaurant -->
+    <string name="andaaz_restaurant_title">Andaaz Restaurant</string>
+    <string name="andaaz_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="andaaz_restaurant_rating">4.5</string>
+    <string name="andaaz_restaurant_review">393</string>
+    
+    <!-- 4. Spice Bazar -->
+    <string name="spice_bazar_title">Spice Bazar</string>
+    <string name="spice_bazar_description">Vegetarian Friendly, Vegan Options, Halal</string>
+    <string name="spice_bazar_rating">4.0</string>
+    <string name="spice_bazar_review">189</string>
+
+    <!-- 5. Dera Restaurant -->
+    <string name="dera_restaurant_title">Dera Restaurant</string>
+    <string name="dera_restaurant_description">Halal Dinner, Lunch, Late Night</string>
+    <string name="dera_restaurant_rating">4.0</string>
+    <string name="dera_restaurant_review">72</string>
 </resources>
