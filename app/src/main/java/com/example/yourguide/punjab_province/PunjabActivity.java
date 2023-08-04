@@ -23,15 +23,15 @@ public class PunjabActivity extends AppCompatActivity {
 
         ArrayList<PunjabProvinceCard> punjabProvinceCardsList = new ArrayList<>();
         punjabProvinceCardsList.add(new PunjabProvinceCard(R.drawable.lahore_city, R.string.lahore_city_title,
-                R.string.lahore_city_description, R.string.lahore_city_rating));
+                R.string.lahore_city_description, R.string.lahore_city_rating, R.string.lahore_city_review));
         punjabProvinceCardsList.add(new PunjabProvinceCard(R.drawable.faisalabad_city, R.string.faisalabad_city_title,
-                R.string.faisalabad_city_description, R.string.faisalabad_city_rating));
+                R.string.faisalabad_city_description, R.string.faisalabad_city_rating, R.string.faisalabad_city_review));
         punjabProvinceCardsList.add(new PunjabProvinceCard(R.drawable.rawalpindi_city, R.string.rawalpindi_city_title,
-                R.string.rawalpindi_city_description, R.string.rawalpindi_city_rating));
+                R.string.rawalpindi_city_description, R.string.rawalpindi_city_rating, R.string.rawalpindi_city_review));
         punjabProvinceCardsList.add(new PunjabProvinceCard(R.drawable.multan_city, R.string.multan_city_title,
-                R.string.multan_city_description, R.string.multan_city_rating));
+                R.string.multan_city_description, R.string.multan_city_rating, R.string.multan_city_review));
         punjabProvinceCardsList.add(new PunjabProvinceCard(R.drawable.gujranwala_city, R.string.gujranwala_city_title,
-                R.string.gujranwala_city_description, R.string.gujranwala_city_rating));
+                R.string.gujranwala_city_description, R.string.gujranwala_city_rating, R.string.gujranwala_city_review));
 
         RecyclerView punjabProvinceRecyclerView = (RecyclerView) findViewById(R.id.punjab_province_recycler_view);
         punjabProvinceRecyclerView.setVerticalScrollBarEnabled(false);

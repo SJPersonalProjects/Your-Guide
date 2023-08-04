@@ -5,6 +5,7 @@ public class PunjabProvinceCard {
     private final int mCardTitle;
     private final int mCardDescription;
     private final int mCardRating;
+    private final int mCardReview;
 
     /**
      * Constructor a new {@link PunjabProvinceCard} object.
@@ -12,13 +13,15 @@ public class PunjabProvinceCard {
      * @param mCardTitle is the title of the card of punjab province.
      * @param mCardDescription is the description of the card of punjab province.
      * @param mCardRating is the rating of the card of punjab province.
+     * @param mCardReview is the review of the card beside rating of the punjab province.
      */
     public PunjabProvinceCard(int mCardImage, int mCardTitle, int mCardDescription,
-                              int mCardRating) {
+                              int mCardRating, int mCardReview) {
         this.mCardImage = mCardImage;
         this.mCardTitle = mCardTitle;
         this.mCardDescription = mCardDescription;
         this.mCardRating = mCardRating;
+        this.mCardReview = mCardReview;
     }
 
     /**
@@ -51,5 +54,13 @@ public class PunjabProvinceCard {
      */
     public int getCardRating() {
         return mCardRating;
+    }
+
+    /**
+     * Get the review of the card
+     * @return reviews of people
+     */
+    public int getCardReview() {
+        return mCardReview;
     }
 }

@@ -7,8 +7,8 @@
 
     <!-- card for the list items in the layout file. -->
     <androidx.cardview.widget.CardView
-        android:layout_width="188dp"
-        android:layout_height="216dp"
+        android:layout_width="168dp"
+        android:layout_height="224dp"
         android:layout_margin="8dp"
         android:elevation="8dp"
         app:cardCornerRadius="8dp">
@@ -34,9 +34,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/province_list_preview_image"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="4dp"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:text="@string/province_list_item_title"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -47,8 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/province_list_item_title"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="4dp"
                 android:ellipsize="end"
                 android:maxLines="3"
@@ -59,42 +61,51 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true">
 
                 <!-- Star-rating image for better layout looks. -->
                 <ImageView
                     android:id="@+id/star_rating_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:layout_marginEnd="4dp"
-                    android:layout_marginBottom="4dp"
                     android:contentDescription="@string/todo"
                     android:layout_centerVertical="true"
                     android:src="@drawable/baseline_star_24" />
 
                 <!-- Star-rating numbers. -->
                 <TextView
-                    android:id="@+id/province_rating_numbers"
+                    android:id="@+id/rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
-                    android:layout_marginBottom="4dp"
                     android:layout_centerVertical="true"
                     android:layout_toEndOf="@id/star_rating_image"
-                    android:text="@string/province_rating_numbers"
-                    android:textSize="14sp"
+                    android:text="@string/rating"
+                    android:textSize="12sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/rating"
+                    android:layout_centerVertical="true"
+                    android:text="@string/review"
+                    android:textSize="12sp"
                     tools:ignore="RelativeOverlap" />
 
                 <!-- Heart (favorite) image for better layout looks. -->
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="4dp"
-                    android:layout_marginBottom="4dp"
                     android:contentDescription="@string/todo"
                     android:src="@drawable/baseline_favorite_24" />
             </RelativeLayout>

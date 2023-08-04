@@ -36,6 +36,7 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
         holder.mTitle.setText(currentPunjabProvinceCard.getCardTitle());
         holder.mDescription.setText(currentPunjabProvinceCard.getCardDescription());
         holder.mRating.setText(currentPunjabProvinceCard.getCardRating());
+        holder.mReview.setText(currentPunjabProvinceCard.getCardReview());
     }
 
     @Override
@@ -57,7 +58,7 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
     public static class ViewHolder extends RecyclerView.ViewHolder {
         //Instance fields.
         public ImageView mImageView;
-        public TextView mTitle, mDescription, mRating;
+        public TextView mTitle, mDescription, mRating, mReview;
 
 
         public ViewHolder(@NonNull View itemView, OnItemClickListener mOnItemClickListener) {
@@ -65,7 +66,9 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
             mImageView = itemView.findViewById(R.id.province_list_preview_image);
             mTitle = itemView.findViewById(R.id.province_list_item_title);
             mDescription = itemView.findViewById(R.id.province_list_item_description);
-            mRating = itemView.findViewById(R.id.province_rating_numbers);
+            mRating = itemView.findViewById(R.id.rating);
+            mReview = itemView.findViewById(R.id.review);
+
 
             //Listener to click the items in the recycler view.
             itemView.setOnClickListener(new View.OnClickListener() {
