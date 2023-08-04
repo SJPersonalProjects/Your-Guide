@@ -1,10 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.recyclerview.widget.RecyclerView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/punjab_province_recycler_view"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:scrollbars="horizontal"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".punjab_province.PunjabActivity">
-</androidx.recyclerview.widget.RecyclerView>
+
+    <!-- ImageView to display the province image at the top of activity. -->
+    <ImageView
+        android:id="@+id/province_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/province_punjab"
+        android:contentDescription="@string/todo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp">
+
+        <!-- Heading for recycler view list item. -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/province_popular_city"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#472033"/>
+
+        <!-- See all button to see all the cards in a separate activity at once. -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:text="@string/province_see_all"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#5D5D5D"/>
+    </LinearLayout>
+
+    <!-- Cities recycler view. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/punjab_province_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"/>
+</LinearLayout>

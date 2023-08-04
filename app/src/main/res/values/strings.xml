@@ -59,4 +59,8 @@
     <string name="gujranwala_city_rating">3.9</string>
     <string name="gujranwala_city_review">(42)</string>
 
+    <!-- Province "Popular City" heading and "See All" heading. -->
+    <string name="province_popular_city">Popular City</string>
+    <string name="province_see_all">See All</string>
+
 </resources>
