@@ -14,4 +14,7 @@
     <color name="sindh_province_data_color">#903C05</color>
     <color name="balochistan_province_data_color">#1C5A8B</color>
     <color name="kpk_province_data_color">#1F501E</color>
+
+    <color name="punjab_province_list_heading_color">#472033</color>
+    <color name="province_heading_see_all">#5D5D5D</color>
 </resources>

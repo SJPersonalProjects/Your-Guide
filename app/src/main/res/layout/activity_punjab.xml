@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".punjab_province.PunjabActivity">
 
     <LinearLayout
@@ -12,118 +13,70 @@
 
         <!-- ImageView to display the province image at the top of activity. -->
         <ImageView
-            android:id="@+id/province_preview_image"
-            android:layout_width="match_parent"
-            android:layout_height="128dp"
-            android:layout_margin="4dp"
+            style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
-            android:scaleType="centerCrop"
             android:src="@drawable/province_punjab" />
 
         <!-- Horizontal LinearLayout for popular city and see all headings. -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="8dp"
-            android:orientation="horizontal">
+            style="@style/ListCategoryRootView">
 
             <!-- Heading for recycler view list item. -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/province_popular_city"
-                android:textColor="#472033"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_popular_city" />
 
             <!-- See all button to see all the cards in a separate activity at once. -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="end|bottom"
-                android:text="@string/province_see_all"
-                android:textColor="#5D5D5D"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all" />
         </LinearLayout>
 
         <!-- Cities recycler view. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/punjab_province_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal" />
+            android:layout_height="wrap_content"/>
 
         <!-- Horizontal LinearLayout for top restaurant heading and see all heading. -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="8dp"
-            android:orientation="horizontal">
+            style="@style/ListCategoryRootView">
 
             <!-- Top Restaurant heading. -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/province_top_restaurant"
-                android:textColor="#472033"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_top_restaurant" />
 
             <!-- Top Restaurant's see all heading. -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="end|bottom"
-                android:text="@string/province_see_all"
-                android:textColor="#5D5D5D"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all"/>
         </LinearLayout>
 
         <!-- RecyclerView for top restaurants list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/top_restaurant_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none" />
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="32dp"
-            android:orientation="horizontal">
+            style="@style/ListCategoryRootView">
 
             <!-- Historical Places heading. -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Historical Places"
-                android:textColor="#472033"
-                android:textSize="22sp"
-                android:textStyle="bold"/>
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_historical_place"/>
 
             <!-- Historical places See All heading. -->
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end|bottom"
-                android:text="@string/province_see_all"
-                android:textSize="14sp"
-                android:textColor="#5D5D5D"
-                android:textStyle="bold"/>
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all"/>
         </LinearLayout>
 
         <!-- RecyclerView for historical places list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/province_historical_places"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </ScrollView>

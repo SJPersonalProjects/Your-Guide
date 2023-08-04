@@ -24,4 +24,41 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <!-- Header image style for each province activity. -->
+    <style name="ProvinceHeaderImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/province_header_image_height</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="ProvinceListCategoryHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/punjab_province_list_heading_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProvinceListSeeAllHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">end|bottom</item>
+        <item name="android:textColor">@color/province_heading_see_all</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListCategoryRootView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>
