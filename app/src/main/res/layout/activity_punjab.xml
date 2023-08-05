@@ -17,9 +17,9 @@
             android:contentDescription="@string/todo"
             android:src="@drawable/province_punjab" />
 
-        <!-- Horizontal LinearLayout for popular city and see all headings. -->
+        <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
         <LinearLayout
-            style="@style/ListCategoryRootView">
+            style="@style/ListCategoryHeaderRootView">
 
             <!-- Heading for recycler view list item. -->
             <TextView
@@ -40,7 +40,7 @@
 
         <!-- Horizontal LinearLayout for top restaurant heading and see all heading. -->
         <LinearLayout
-            style="@style/ListCategoryRootView">
+            style="@style/ListCategoryHeaderRootView">
 
             <!-- Top Restaurant heading. -->
             <TextView
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"/>
 
         <LinearLayout
-            style="@style/ListCategoryRootView">
+            style="@style/ListCategoryHeaderRootView">
 
             <!-- Historical Places heading. -->
             <TextView
