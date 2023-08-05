@@ -30,8 +30,18 @@
     <string name="province_list_item_description">This is the description of the province list item and we are including the 3 lines with ellipsis at the very end of the description</string>
     <string name="rating">4.2</string>
     <string name="review">(56)</string>
+
+
+    <!-- Province "Popular City" heading and "See All" heading. -->
+    <string name="province_popular_city">Popular City</string>
+    <string name="province_see_all">See All</string>
+    <!-- Province "Top Restaurant" heading. -->
+    <string name="province_top_restaurant">Top Restaurant</string>
+    <!-- Province "Historical Place" heading. -->
+    <string name="province_historical_place">Historical Place</string>
     
 
+    <!-- Punjab province strings. -->
     <!-- Punjab Province top 5 cities -->
     <!-- City 1. Lahore -->
     <string name="lahore_city_title">Lahore City</string>
@@ -59,46 +69,34 @@
     <string name="gujranwala_city_rating">3.9</string>
     <string name="gujranwala_city_review">(42)</string>
 
-    <!-- Province "Popular City" heading and "See All" heading. -->
-    <string name="province_popular_city">Popular City</string>
-    <string name="province_see_all">See All</string>
 
-    <!-- Province "Top Restaurant" heading and "See All" is taken from above. -->
-    <string name="province_top_restaurant">Top Restaurant</string>
-    
     <!-- Punjab province top 5 restaurants. -->
     <!-- 1. Monal Restaurant -->
     <string name="monal_restaurant_title">Monal Restaurant</string>
     <string name="monal_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="monal_restaurant_rating">4.5</string>
     <string name="monal_restaurant_review">588</string>
-
     <!-- 2. Haveli Restaurant -->
     <string name="haveli_restaurant_title">Haveli Restaurant</string>
     <string name="haveli_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="haveli_restaurant_rating">4.0</string>
     <string name="haveli_restaurant_review">223</string>
-
     <!-- 3. Andaaz Restaurant -->
     <string name="andaaz_restaurant_title">Andaaz Restaurant</string>
     <string name="andaaz_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="andaaz_restaurant_rating">4.5</string>
     <string name="andaaz_restaurant_review">393</string>
-    
     <!-- 4. Spice Bazar -->
     <string name="spice_bazar_title">Spice Bazar</string>
     <string name="spice_bazar_description">Vegetarian Friendly, Vegan Options, Halal</string>
     <string name="spice_bazar_rating">4.0</string>
     <string name="spice_bazar_review">189</string>
-
     <!-- 5. Dera Restaurant -->
     <string name="dera_restaurant_title">Dera Restaurant</string>
     <string name="dera_restaurant_description">Halal Dinner, Lunch, Late Night</string>
     <string name="dera_restaurant_rating">4.0</string>
     <string name="dera_restaurant_review">72</string>
 
-    <!-- Province "Historical Place" heading and "See All" heading is taken from above. -->
-    <string name="province_historical_place">Historical Place</string>
 
     <!-- Punjab Province Top 5 Historical Places. -->
     <!-- 1. Badshahi Mosque -->
@@ -106,25 +104,21 @@
     <string name="badshahi_mosque_historical_place_description">Beautiful Badshahi Mosque: Historic gem in Lahore, Pakistan, known for its stunning architecture.</string>
     <string name="badshahi_mosque_historical_place_rating">4.5</string>
     <string name="badshahi_mosque_historical_place_review">828</string>
-
     <!-- 2. Wagah Border -->
     <string name="wagah_border_historical_place_title">Wagah Border</string>
     <string name="wagah_border_historical_place_description">Wagah Border: Colorful Pakistan-India ceremony showcasing national pride.</string>
     <string name="wagah_border_historical_place_rating">4.5</string>
     <string name="wagah_border_historical_place_review">616</string>
-
     <!-- 3. Lahore Fort -->
     <string name="lahore_fort_historical_place_title">Lahore Fort</string>
     <string name="lahore_fort_historical_place_description">Lahore Fort: Ancient Mughal wonder, full of history and beauty.</string>
     <string name="lahore_fort_historical_place_rating">4.5</string>
     <string name="lahore_fort_historical_place_review">503</string>
-
     <!-- 4. Wazir Khan Mosque -->
     <string name="wazir_mosque_historical_place_title">Wazir Khan Mosque</string>
     <string name="wazir_mosque_historical_place_description">Wazir Khan Mosque: Architectural gem in Pakistan, stunning Mughal design.</string>
     <string name="wazir_mosque_historical_place_rating">4.5</string>
     <string name="wazir_mosque_historical_place_review">215</string>
-
     <!-- 5. Walled City of Lahore -->
     <string name="walled_city_historical_place_title">Walled City of Lahore</string>
     <string name="walled_city_historical_place_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>

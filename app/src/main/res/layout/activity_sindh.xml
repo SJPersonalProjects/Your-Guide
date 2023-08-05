@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".sindh_province.SindhActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- LinearLayout to hold all the children views. -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sindh Province"
-        android:layout_centerInParent="true"/>
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <!-- Activity header image of province at the top. -->
+        <ImageView
+            style="@style/ProvinceHeaderImage"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/todo"/>
+
+        <!-- Horizontal LinearLayout for "Popular City" and "See All" heading. -->
+        <LinearLayout
+            style="@style/ListCategoryHeaderRootView">
+
+            <!-- Heading for popular city cards. -->
+            <TextView
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_popular_city"/>
+            <!-- See All button to see all the cards separately in other activity. -->
+            <TextView
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all"/>
+
+        </LinearLayout>
+
+        <!-- Sindh province cities RecyclerView. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sindh_province_popular_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"/>
+
+        <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" headings. -->
+        <LinearLayout
+            style="@style/ListCategoryHeaderRootView">
+
+            <!-- Heading for top restaurant cards. -->
+            <TextView
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_top_restaurant"/>
+            <!-- See All button to see all the cards separately in other activity. -->
+            <TextView
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all"/>
+        </LinearLayout>
+
+        <!-- Sindh province top restaurants RecyclerView. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sindh_province_top_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Horizontal LinearLayout for "Historical Place" and "See All" headings. -->
+        <LinearLayout
+            style="@style/ListCategoryHeaderRootView">
+
+            <!-- Heading for historical place cards. -->
+            <TextView
+                style="@style/ProvinceListCategoryHeading"
+                android:text="@string/province_historical_place"/>
+            <!-- See All button to see all the cards separately in other activity. -->
+            <TextView
+                style="@style/ProvinceListSeeAllHeading"
+                android:text="@string/province_see_all"/>
+        </LinearLayout>
+
+        <!-- Sindh province historical place RecyclerView. -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sindh_province_historical_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
