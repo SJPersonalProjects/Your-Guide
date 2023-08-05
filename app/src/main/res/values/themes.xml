@@ -29,10 +29,7 @@
     <style name="ProvinceHeaderImage">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/province_header_image_height</item>
-        <item name="android:layout_marginStart">4dp</item>
-        <item name="android:layout_marginEnd">4dp</item>
-        <item name="android:layout_marginTop">4dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_margin">4dp</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
