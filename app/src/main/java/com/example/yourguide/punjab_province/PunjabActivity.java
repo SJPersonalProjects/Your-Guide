@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.yourguide.Province;
-import com.example.yourguide.PunjabProvinceCardAdapter;
+import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
 
 import java.util.ArrayList;
@@ -38,12 +38,12 @@ public class PunjabActivity extends AppCompatActivity {
         punjabProvinceRecyclerView.setHorizontalScrollBarEnabled(false);
         punjabProvinceRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager citiesLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        PunjabProvinceCardAdapter adapter = new PunjabProvinceCardAdapter(popularCitiesList);
+        ProvinceAdapter adapter = new ProvinceAdapter(popularCitiesList);
 
         punjabProvinceRecyclerView.setLayoutManager(citiesLayoutManager);
         punjabProvinceRecyclerView.setAdapter(adapter);
 
-        adapter.setOnItemClickListener(new PunjabProvinceCardAdapter.OnItemClickListener() {
+        adapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
                 //Toast to show the click event message of cards in Punjab Activity.
@@ -72,7 +72,7 @@ public class PunjabActivity extends AppCompatActivity {
         RecyclerView.LayoutManager restaurantsLayoutManager = new LinearLayoutManager(this,
                 LinearLayoutManager.HORIZONTAL, false);
 
-        PunjabProvinceCardAdapter restaurantsAdapter = new PunjabProvinceCardAdapter(topRestaurantList);
+        ProvinceAdapter restaurantsAdapter = new ProvinceAdapter(topRestaurantList);
 
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
@@ -103,7 +103,7 @@ public class PunjabActivity extends AppCompatActivity {
         RecyclerView.LayoutManager historicalPlacesLayoutManager = new LinearLayoutManager(this,
                 LinearLayoutManager.HORIZONTAL, false);
 
-        PunjabProvinceCardAdapter historicalPlacesAdapter = new PunjabProvinceCardAdapter(historicalPlacesList);
+        ProvinceAdapter historicalPlacesAdapter = new ProvinceAdapter(historicalPlacesList);
 
         historicalPlacesRecyclerView.setLayoutManager(historicalPlacesLayoutManager);
         historicalPlacesRecyclerView.setAdapter(historicalPlacesAdapter);

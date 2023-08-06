@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvinceCardAdapter.ViewHolder>{
+public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.ViewHolder>{
     //Instance field.
     private final ArrayList<Province> punjabProvinceCardList;
 
@@ -83,7 +83,7 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
         }
     }
 
-    public PunjabProvinceCardAdapter(ArrayList<Province> punjabProvinceCardList) {
+    public ProvinceAdapter(ArrayList<Province> punjabProvinceCardList) {
         this.punjabProvinceCardList = punjabProvinceCardList;
     }
 }

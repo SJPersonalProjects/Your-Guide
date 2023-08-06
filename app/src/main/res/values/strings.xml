@@ -207,4 +207,87 @@
     <string name="tooba_mosque_historical_place_description">Tooba Mosque: Graceful tranquility, Tooba\'s dome rises as an emblem of spirituality in Sindh.</string>
     <string name="tooba_mosque_historical_place_rating">4.2</string>
     <string name="tooba_mosque_historical_place_review">102</string>
+
+    <!-- Balochistan province strings. -->
+    <!-- Balochistan province top 5 cities. -->
+    <!-- 1. Quetta. -->
+    <string name="quetta_city_title">Quetta</string>
+    <string name="quetta_city_description">Quetta is the tenth most populous city in Pakistan with a population of over 1.1 million.</string>
+    <string name="quetta_city_rating">4.2</string>
+    <string name="quetta_city_review">602</string>
+    <!-- 2. Gawadar. -->
+    <string name="gawadar_city_title">Gawadar</string>
+    <string name="gawadar_city_description">Gwadar is a port city with located on the southwestern coast of Balochistan, Pakistan.</string>
+    <string name="gawadar_city_rating">5.0</string>
+    <string name="gawadar_city_review">902</string>
+    <!-- 3. Chaman. -->
+    <string name="chaman_city_title">Chaman</string>
+    <string name="chaman_city_description">Chaman is a city and the headquarters of the Chaman District in Balochistan, Pakistan.</string>
+    <string name="chaman_city_rating">4.1</string>
+    <string name="chaman_city_review">102</string>
+    <!-- 4. Sibi. -->
+    <string name="sibi_city_title">Sibi</string>
+    <string name="sibi_city_description">Sibi is a city situated in the Balochistan province of Pakistan</string>
+    <string name="sibi_city_rating">3.2</string>
+    <string name="sibi_city_review">29</string>
+    <!-- 5. Hub. -->
+    <string name="hub_city_title">Hub</string>
+    <string name="hub_city_description">Hub is a city and capital of the Hub District in Balochistan, Pakistan.</string>
+    <string name="hub_city_rating">4.1</string>
+    <string name="hub_city_review">95</string>
+
+
+    <!-- Balochistan province top restaurants. -->
+    <!-- 1. Lehri Sajji House. -->
+    <string name="lehri_sajji_house_restaurant_title">Lehri Sajji House</string>
+    <string name="lehri_sajji_house_restaurant_description">Discover Middle Eastern flavors at our cozy dinner restaurant, a taste adventure awaits</string>
+    <string name="lehri_sajji_house_restaurant_rating">4.5</string>
+    <string name="lehri_sajji_house_restaurant_review">92</string>
+    <!-- Usmania Tandoori Restaurant. -->
+    <string name="usmania_tandoori_restaurant_title">Usmania Tandoori Restaurant</string>
+    <string name="usmania_tandoori_restaurant_description">Enjoy Middle Eastern, Pakistani &amp; Indian dishes for lunch &amp; dinner in our welcoming restaurant.</string>
+    <string name="usmania_tandoori_restaurant_rating">4.3</string>
+    <string name="usmania_tandoori_restaurant_review">102</string>
+    <!-- Saigon. -->
+    <string name="saigon_restaurant_title">Saigon</string>
+    <string name="saigon_restaurant_description">Savor Italian &amp; continental dinner delights at our cozy restaurant, a taste of Europe awaits!</string>
+    <string name="saigon_restaurant_rating">4.4</string>
+    <string name="saigon_restaurant_review">92</string>
+    <!-- Gulshan Karahi. -->
+    <string name="gulshan_karahi_restaurant_title">Gulshan Karahi</string>
+    <string name="gulshan_karahi_restaurant_description">Indulge in Middle Eastern dinner flavors at our cozy restaurant, a taste adventure awaits!</string>
+    <string name="gulshan_karahi_restaurant_rating">4.2</string>
+    <string name="gulshan_karahi_restaurant_review">98</string>
+    <!-- Mehfil Restaurant. -->
+    <string name="mehfil_restaurant_title">Mehfil Restaurant</string>
+    <string name="mehfil_restaurant_description">Delight in traditional Pakistani BBQ for dinner at our cozy restaurant, a flavorful experience awaits!</string>
+    <string name="mehfil_restaurant_rating">4.2</string>
+    <string name="mehfil_restaurant_review">102</string>
+
+    <!-- Balochistan province top historical place. -->
+    <!-- 1. Quaid-e-Azam Residency. -->
+    <string name="quaid_e_azam_residency_historical_place_title">Quaid-e-Azam Residency</string>
+    <string name="quaid_e_azam_residency_historical_place_description">Quaid-e-Azam Residency also known as Ziarat Residency, is located in Ziarat, Balochistan, Pakistan.</string>
+    <string name="quaid_e_azam_residency_historical_place_rating">5.0</string>
+    <string name="quaid_e_azam_residency_historical_place_review">402</string>
+    <!-- 2. Princes of Hope. -->
+    <string name="princes_of_hope_historical_place_title">Princes of Hope</string>
+    <string name="princes_of_hope_historical_place_description">The curiously shaped rock pinnacle is located in the Hingol National Park in the Lasbela District of the province of Balochistan.</string>
+    <string name="princes_of_hope_historical_place_rating">3.9</string>
+    <string name="princes_of_hope_historical_place_review">14</string>
+    <!-- 3. Kalat. -->
+    <string name="kalat_historical_place_title">Kalat</string>
+    <string name="kalat_historical_place_description">Kalat is a district in the Balochistan province of Pakistan, known for its rich culture and historical significance.</string>
+    <string name="kalat_historical_place_rating">4.2</string>
+    <string name="kalat_historical_place_review">92</string>
+    <!-- 4. Gadani Beach-->
+    <string name="gadani_beach_historical_place_title">Gadani Beach</string>
+    <string name="gadani_beach_historical_place_description">Gadani Beach is a beach on the Arabian Sea located near the Hub River and Cape Monze in Gadani, Hub District, Balochistan, Pakistan.</string>
+    <string name="gadani_beach_historical_place_rating">4.5</string>
+    <string name="gadani_beach_historical_place_review">102</string>
+    <!-- 5. Moola Chotok-->
+    <string name="moola_chotok_historical_place_title">Moola Chotok</string>
+    <string name="moola_chotok_historical_place_description">Moola Chotok is a hidden ravine located in the middle of the Khuzdar District in the southern province of Balochistan, Pakistan.</string>
+    <string name="moola_chotok_historical_place_rating">4.1</string>
+    <string name="moola_chotok_historical_place_review">118</string>
 </resources>

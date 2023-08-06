@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                  R.color.kpk_province));
 
         //Custom adapter for provincial data.
-        ProvinceDataAdapter adapter = new ProvinceDataAdapter(this, provinceDataList);
+        ProvinceCategoryAdapter adapter = new ProvinceCategoryAdapter(this, provinceDataList);
 
         //Find the ListView to display the data.
         ListView listView = findViewById(R.id.list_view);

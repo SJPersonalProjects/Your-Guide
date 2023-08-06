@@ -15,9 +15,9 @@ import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 
-public class ProvinceDataAdapter extends ArrayAdapter<ProvinceCategory> {
+public class ProvinceCategoryAdapter extends ArrayAdapter<ProvinceCategory> {
 
-    public ProvinceDataAdapter(@NonNull Context context, @NonNull ArrayList<ProvinceCategory> provinceDataList) {
+    public ProvinceCategoryAdapter(@NonNull Context context, @NonNull ArrayList<ProvinceCategory> provinceDataList) {
         super(context, 0, provinceDataList);
     }
 
