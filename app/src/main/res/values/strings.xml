@@ -44,250 +44,332 @@
     <!-- Punjab province strings. -->
     <!-- Punjab Province top 5 cities -->
     <!-- City 1. Lahore -->
-    <string name="lahore_city_title">Lahore City</string>
-    <string name="lahore_city_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
-    <string name="lahore_city_rating">4.8</string>
-    <string name="lahore_city_review">(92)</string>
+    <string name="punjab_city_one_title">Lahore City</string>
+    <string name="punjab_city_one_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
+    <string name="punjab_city_one_rating">4.8</string>
+    <string name="punjab_city_one_review">(92)</string>
     <!-- City 2. Faisalabad -->
-    <string name="faisalabad_city_title">Faisalabad City</string>
-    <string name="faisalabad_city_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
-    <string name="faisalabad_city_rating">4.2</string>
-    <string name="faisalabad_city_review">(62)</string>
+    <string name="punjab_city_two_title">Faisalabad City</string>
+    <string name="punjab_city_two_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
+    <string name="punjab_city_two_rating">4.2</string>
+    <string name="punjab_city_two_review">(62)</string>
     <!-- City 3. Rawalpindi -->
-    <string name="rawalpindi_city_title">Rawalpindi City</string>
-    <string name="rawalpindi_city_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
-    <string name="rawalpindi_city_rating">4.5</string>
-    <string name="rawalpindi_city_review">(99)</string>
+    <string name="punjab_city_three_title">Rawalpindi City</string>
+    <string name="punjab_city_three_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
+    <string name="punjab_city_three_rating">4.5</string>
+    <string name="punjab_city_three_review">(99)</string>
     <!-- City 4. Multan -->
-    <string name="multan_city_title">Multan City</string>
-    <string name="multan_city_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
-    <string name="multan_city_rating">3.9</string>
-    <string name="multan_city_review">(59)</string>
+    <string name="punjab_city_four_title">Multan City</string>
+    <string name="punjab_city_four_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
+    <string name="punjab_city_four_rating">3.9</string>
+    <string name="punjab_city_four_review">(59)</string>
     <!-- City 5. Gujranwala -->
-    <string name="gujranwala_city_title">Gujranwala City</string>
-    <string name="gujranwala_city_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
-    <string name="gujranwala_city_rating">3.9</string>
-    <string name="gujranwala_city_review">(42)</string>
+    <string name="punjab_city_five_title">Gujranwala City</string>
+    <string name="punjab_city_five_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
+    <string name="punjab_city_five_rating">3.9</string>
+    <string name="punjab_city_five_review">(42)</string>
 
 
     <!-- Punjab province top 5 restaurants. -->
     <!-- 1. Monal Restaurant -->
-    <string name="monal_restaurant_title">Monal Restaurant</string>
-    <string name="monal_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
-    <string name="monal_restaurant_rating">4.5</string>
-    <string name="monal_restaurant_review">588</string>
+    <string name="punjab_restaurant_one_title">Monal Restaurant</string>
+    <string name="punjab_restaurant_one_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_one_rating">4.5</string>
+    <string name="punjab_restaurant_one_review">588</string>
     <!-- 2. Haveli Restaurant -->
-    <string name="haveli_restaurant_title">Haveli Restaurant</string>
-    <string name="haveli_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
-    <string name="haveli_restaurant_rating">4.0</string>
-    <string name="haveli_restaurant_review">223</string>
+    <string name="punjab_restaurant_two_title">Haveli Restaurant</string>
+    <string name="punjab_restaurant_two_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_two_rating">4.0</string>
+    <string name="punjab_restaurant_two_review">223</string>
     <!-- 3. Andaaz Restaurant -->
-    <string name="andaaz_restaurant_title">Andaaz Restaurant</string>
-    <string name="andaaz_restaurant_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
-    <string name="andaaz_restaurant_rating">4.5</string>
-    <string name="andaaz_restaurant_review">393</string>
+    <string name="punjab_restaurant_three_title">Andaaz Restaurant</string>
+    <string name="punjab_restaurant_three_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_three_rating">4.5</string>
+    <string name="punjab_restaurant_three_review">393</string>
     <!-- 4. Spice Bazar -->
-    <string name="spice_bazar_title">Spice Bazar</string>
-    <string name="spice_bazar_description">Vegetarian Friendly, Vegan Options, Halal</string>
-    <string name="spice_bazar_rating">4.0</string>
-    <string name="spice_bazar_review">189</string>
+    <string name="punjab_restaurant_four_title">Spice Bazar</string>
+    <string name="punjab_restaurant_four_description">Vegetarian Friendly, Vegan Options, Halal</string>
+    <string name="punjab_restaurant_four_rating">4.0</string>
+    <string name="punjab_restaurant_four_review">189</string>
     <!-- 5. Dera Restaurant -->
-    <string name="dera_restaurant_title">Dera Restaurant</string>
-    <string name="dera_restaurant_description">Halal Dinner, Lunch, Late Night</string>
-    <string name="dera_restaurant_rating">4.0</string>
-    <string name="dera_restaurant_review">72</string>
+    <string name="punjab_restaurant_five_title">Dera Restaurant</string>
+    <string name="punjab_restaurant_five_description">Halal Dinner, Lunch, Late Night</string>
+    <string name="punjab_restaurant_five_rating">4.0</string>
+    <string name="punjab_restaurant_five_review">72</string>
 
 
     <!-- Punjab Province Top 5 Historical Places. -->
     <!-- 1. Badshahi Mosque -->
-    <string name="badshahi_mosque_historical_place_title">Badshahi Mosque</string>
-    <string name="badshahi_mosque_historical_place_description">Beautiful Badshahi Mosque: Historic gem in Lahore, Pakistan, known for its stunning architecture.</string>
-    <string name="badshahi_mosque_historical_place_rating">4.5</string>
-    <string name="badshahi_mosque_historical_place_review">828</string>
+    <string name="punjab_historical_place_one_title">Badshahi Mosque</string>
+    <string name="punjab_historical_place_one_description">Beautiful Badshahi Mosque: Historic gem in Lahore, Pakistan, known for its stunning architecture.</string>
+    <string name="punjab_historical_place_one_rating">4.5</string>
+    <string name="punjab_historical_place_one_review">828</string>
     <!-- 2. Wagah Border -->
-    <string name="wagah_border_historical_place_title">Wagah Border</string>
-    <string name="wagah_border_historical_place_description">Wagah Border: Colorful Pakistan-India ceremony showcasing national pride.</string>
-    <string name="wagah_border_historical_place_rating">4.5</string>
-    <string name="wagah_border_historical_place_review">616</string>
+    <string name="punjab_historical_place_two_title">Wagah Border</string>
+    <string name="punjab_historical_place_two_description">Wagah Border: Colorful Pakistan-India ceremony showcasing national pride.</string>
+    <string name="punjab_historical_place_two_rating">4.5</string>
+    <string name="punjab_historical_place_two_review">616</string>
     <!-- 3. Lahore Fort -->
-    <string name="lahore_fort_historical_place_title">Lahore Fort</string>
-    <string name="lahore_fort_historical_place_description">Lahore Fort: Ancient Mughal wonder, full of history and beauty.</string>
-    <string name="lahore_fort_historical_place_rating">4.5</string>
-    <string name="lahore_fort_historical_place_review">503</string>
+    <string name="punjab_historical_place_three_title">Lahore Fort</string>
+    <string name="punjab_historical_place_three_description">Lahore Fort: Ancient Mughal wonder, full of history and beauty.</string>
+    <string name="punjab_historical_place_three_rating">4.5</string>
+    <string name="punjab_historical_place_three_review">503</string>
     <!-- 4. Wazir Khan Mosque -->
-    <string name="wazir_mosque_historical_place_title">Wazir Khan Mosque</string>
-    <string name="wazir_mosque_historical_place_description">Wazir Khan Mosque: Architectural gem in Pakistan, stunning Mughal design.</string>
-    <string name="wazir_mosque_historical_place_rating">4.5</string>
-    <string name="wazir_mosque_historical_place_review">215</string>
+    <string name="punjab_historical_place_four_title">Wazir Khan Mosque</string>
+    <string name="punjab_historical_place_four_description">Wazir Khan Mosque: Architectural gem in Pakistan, stunning Mughal design.</string>
+    <string name="punjab_historical_place_four_rating">4.5</string>
+    <string name="punjab_historical_place_four_review">215</string>
     <!-- 5. Walled City of Lahore -->
-    <string name="walled_city_historical_place_title">Walled City of Lahore</string>
-    <string name="walled_city_historical_place_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>
-    <string name="walled_city_historical_place_rating">4.5</string>
-    <string name="walled_city_historical_place_review">66</string>
+    <string name="punjab_historical_place_five_title">Walled City of Lahore</string>
+    <string name="punjab_historical_place_five_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>
+    <string name="punjab_historical_place_five_rating">4.5</string>
+    <string name="punjab_historical_place_five_review">66</string>
     
     <!-- Sindh province strings. -->
     <!-- Sindh province top 5 cities. -->
     <!-- City 1. Karachi -->
-    <string name="karachi_city_title">Karachi</string>
-    <string name="karachi_city_description">Karachi is the largest city in Pakistan, with a population of over 20 million.</string>
-    <string name="karachi_city_rating">4.5</string>
-    <string name="karachi_city_review">502</string>
+    <string name="sindh_city_one_title">Karachi</string>
+    <string name="sindh_city_one_description">Karachi is the largest city in Pakistan, with a population of over 20 million.</string>
+    <string name="sindh_city_one_rating">4.5</string>
+    <string name="sindh_city_one_review">502</string>
     <!-- City 2. Hyderabad -->
-    <string name="hyderabad_city_title">Hyderabad</string>
-    <string name="hyderabad_city_description">Hyderabad is a city and the capital of Hyderabad Division in the Sindh province of Pakistan.</string>
-    <string name="hyderabad_city_rating">4.5</string>
-    <string name="hyderabad_city_review">204</string>
+    <string name="sindh_city_two_title">Hyderabad</string>
+    <string name="sindh_city_two_description">Hyderabad is a city and the capital of Hyderabad Division in the Sindh province of Pakistan.</string>
+    <string name="sindh_city_two_rating">4.5</string>
+    <string name="sindh_city_two_review">204</string>
     <!-- City 3. Dadu -->
-    <string name="dadu_city_title">Sukkur</string>
-    <string name="dadu_city_description">Sukkur is the third largest city in Sindh, and 14th largest populated city in Pakistan.</string>
-    <string name="dadu_city_rating">4.3</string>
-    <string name="dadu_city_review">265</string>
+    <string name="sindh_city_three_title">Sukkur</string>
+    <string name="sindh_city_three_description">Sukkur is the third largest city in Sindh, and 14th largest populated city in Pakistan.</string>
+    <string name="sindh_city_three_rating">4.3</string>
+    <string name="sindh_city_three_review">265</string>
     <!-- City 4. Thatta -->
-    <string name="thatta_city_title">Thatta</string>
-    <string name="thatta_city_description">Thatta District is located in the southern area, of the province of Sindh, Pakistan.</string>
-    <string name="thatta_city_rating">3.9</string>
-    <string name="thatta_city_review">92</string>
+    <string name="sindh_city_four_title">Thatta</string>
+    <string name="sindh_city_four_description">Thatta District is located in the southern area, of the province of Sindh, Pakistan.</string>
+    <string name="sindh_city_four_rating">3.9</string>
+    <string name="sindh_city_four_review">92</string>
     <!-- City 5. Shikarpur -->
-    <string name="shikarpur_city_title">Shikarpur</string>
-    <string name="shikarpur_city_description">Shikarpur is small city and the capital of Shikarpur District in Sindh province of Pakistan.</string>
-    <string name="shikarpur_city_rating">4.2</string>
-    <string name="shikarpur_city_review">106</string>
+    <string name="sindh_city_five_title">Shikarpur</string>
+    <string name="sindh_city_five_description">Shikarpur is small city and the capital of Shikarpur District in Sindh province of Pakistan.</string>
+    <string name="sindh_city_five_rating">4.2</string>
+    <string name="sindh_city_five_review">106</string>
 
 
     <!-- Sindh province top 5 restaurants. -->
     <!-- 1. Royal Taj restaurant. -->
-    <string name="royal_taj_restaurant_title">Royal Taj Restaurant</string>
-    <string name="royal_taj_restaurant_description">Exquisite flavors and regal ambiance at Royal Taj, a culinary gem in Pakistan.</string>
-    <string name="royal_taj_restaurant_rating">4.5</string>
-    <string name="royal_taj_restaurant_review">102</string>
+    <string name="sindh_restaurant_one_title">Royal Taj Restaurant</string>
+    <string name="sindh_restaurant_one_description">Exquisite flavors and regal ambiance at Royal Taj, a culinary gem in Pakistan.</string>
+    <string name="sindh_restaurant_one_rating">4.5</string>
+    <string name="sindh_restaurant_one_review">102</string>
     <!-- 2. Ridan House of Mandi restaurant. -->
-    <string name="ridan_house_of_mandi_restaurant_title">Ridan House of Mandi</string>
-    <string name="ridan_house_of_mandi_restaurant_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
-    <string name="ridan_house_of_mandi_restaurant_rating">4.2</string>
-    <string name="ridan_house_of_mandi_restaurant_review">105</string>
+    <string name="sindh_restaurant_two_title">Ridan House of Mandi</string>
+    <string name="sindh_restaurant_two_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
+    <string name="sindh_restaurant_two_rating">4.2</string>
+    <string name="sindh_restaurant_two_review">105</string>
     <!-- 3. LalQila Restaurant. -->
-    <string name="lalqila_restaurant_title">LalQila</string>
-    <string name="lalqila_restaurant_description">Step into history with delectable flavors at LalQila, an iconic dining experience in Pakistan.</string>
-    <string name="lalqila_restaurant_rating">4.4</string>
-    <string name="lalqila_restaurant_review">201</string>
+    <string name="sindh_restaurant_three_title">LalQila</string>
+    <string name="sindh_restaurant_three_description">Step into history with delectable flavors at LalQila, an iconic dining experience in Pakistan.</string>
+    <string name="sindh_restaurant_three_rating">4.4</string>
+    <string name="sindh_restaurant_three_review">201</string>
     <!-- 4. Chef's Table restaurant. -->
-    <string name="chefs_table_restaurant_title">Chef\'s Table</string>
-    <string name="chefs_table_restaurant_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan's dining scene.</string>
-    <string name="chefs_table_restaurant_rating">195</string>
-    <string name="chefs_table_restaurant_review">4.2</string>
+    <string name="sindh_restaurant_four_title">Chef\'s Table</string>
+    <string name="sindh_restaurant_four_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan's dining scene.</string>
+    <string name="sindh_restaurant_four_rating">195</string>
+    <string name="sindh_restaurant_four_review">4.2</string>
     <!-- 5. Kababjees restaurant. -->
-    <string name="kababjees_restaurant_title">Kababjees</string>
-    <string name="kababjees_restaurant_description">Savor kabab perfection at Kababjees, a culinary delight renowned across Pakistan\'s food landscape</string>
-    <string name="kababjees_restaurant_rating">205</string>
-    <string name="kababjees_restaurant_review">4.3</string>
+    <string name="sindh_restaurant_five_title">Kababjees</string>
+    <string name="sindh_restaurant_five_description">Savor kabab perfection at Kababjees, a culinary delight renowned across Pakistan\'s food landscape</string>
+    <string name="sindh_restaurant_five_rating">205</string>
+    <string name="sindh_restaurant_five_review">4.3</string>
 
     <!-- Sindh province top historical place. -->
     <!-- 1. Mohenjo-daro. -->
-    <string name="mohenjo_daro_historical_place_title">Mohenjo-daro</string>
-    <string name="mohenjo_daro_historical_place_description">Explore ancient mysteries at Mohenjo Daro, a UNESCO World Heritage site in Sindh, Pakistan.</string>
-    <string name="mohenjo_daro_historical_place_rating">4.5</string>
-    <string name="mohenjo_daro_historical_place_review">204</string>
+    <string name="sindh_historical_place_one_title">Mohenjo-daro</string>
+    <string name="sindh_historical_place_one_description">Explore ancient mysteries at Mohenjo Daro, a UNESCO World Heritage site in Sindh, Pakistan.</string>
+    <string name="sindh_historical_place_one_rating">4.5</string>
+    <string name="sindh_historical_place_one_review">204</string>
     <!-- 2. Makli Hill. -->
-    <string name="makli_hill_historical_place_title">Makli Hill</string>
-    <string name="makli_hill_historical_place_description">Journey through history at Makli Hill, Sindh\'s necropolis adorned with magnificent tombs.</string>
-    <string name="makli_hill_historical_place_rating">4.5</string>
-    <string name="makli_hill_historical_place_review">102</string>
+    <string name="sindh_historical_place_two_title">Makli Hill</string>
+    <string name="sindh_historical_place_two_description">Journey through history at Makli Hill, Sindh\'s necropolis adorned with magnificent tombs.</string>
+    <string name="sindh_historical_place_two_rating">4.5</string>
+    <string name="sindh_historical_place_two_review">102</string>
     <!-- 3. Shah Jahan Mosque. -->
-    <string name="shah_jahan_mosque_historical_place_title">Shah Jahan Mosque</string>
-    <string name="shah_jahan_mosque_historical_place_description">Architectural marvel: Shah Jahan Mosque, a timeless treasure gracing Sindh\'s cultural heritage.</string>
-    <string name="shah_jahan_mosque_historical_place_rating">4.6</string>
-    <string name="shah_jahan_mosque_historical_place_review">300</string>
+    <string name="sindh_historical_place_three_title">Shah Jahan Mosque</string>
+    <string name="sindh_historical_place_three_description">Architectural marvel: Shah Jahan Mosque, a timeless treasure gracing Sindh\'s cultural heritage.</string>
+    <string name="sindh_historical_place_three_rating">4.6</string>
+    <string name="sindh_historical_place_three_review">300</string>
     <!-- 4. Rani Kot Fort. -->
-    <string name="rani_kot_fort_historical_place_title">Rani Kot Fort</string>
-    <string name="rani_kot_fort_historical_place_description">Rani Kot Fort: Sindh\'s colossal testament to history, guarding tales of grandeur and valor.</string>
-    <string name="rani_kot_fort_historical_place_rating">4.8</string>
-    <string name="rani_kot_fort_historical_place_review">302</string>
+    <string name="sindh_historical_place_four_title">Rani Kot Fort</string>
+    <string name="sindh_historical_place_four_description">Rani Kot Fort: Sindh\'s colossal testament to history, guarding tales of grandeur and valor.</string>
+    <string name="sindh_historical_place_four_rating">4.8</string>
+    <string name="sindh_historical_place_four_review">302</string>
     <!-- 5. Tooba Mosque. -->
-    <string name="tooba_mosque_historical_place_title">Tooba Mosque</string>
-    <string name="tooba_mosque_historical_place_description">Tooba Mosque: Graceful tranquility, Tooba\'s dome rises as an emblem of spirituality in Sindh.</string>
-    <string name="tooba_mosque_historical_place_rating">4.2</string>
-    <string name="tooba_mosque_historical_place_review">102</string>
+    <string name="sindh_historical_place_five_title">Tooba Mosque</string>
+    <string name="sindh_historical_place_five_description">Tooba Mosque: Graceful tranquility, Tooba\'s dome rises as an emblem of spirituality in Sindh.</string>
+    <string name="sindh_historical_place_five_rating">4.2</string>
+    <string name="sindh_historical_place_five_review">102</string>
 
     <!-- Balochistan province strings. -->
     <!-- Balochistan province top 5 cities. -->
     <!-- 1. Quetta. -->
-    <string name="quetta_city_title">Quetta</string>
-    <string name="quetta_city_description">Quetta is the tenth most populous city in Pakistan with a population of over 1.1 million.</string>
-    <string name="quetta_city_rating">4.2</string>
-    <string name="quetta_city_review">602</string>
+    <string name="balochistan_city_one_title">Quetta</string>
+    <string name="balochistan_city_one_description">Quetta is the tenth most populous city in Pakistan with a population of over 1.1 million.</string>
+    <string name="balochistan_city_one_rating">4.2</string>
+    <string name="balochistan_city_one_review">602</string>
     <!-- 2. Gawadar. -->
-    <string name="gawadar_city_title">Gawadar</string>
-    <string name="gawadar_city_description">Gwadar is a port city with located on the southwestern coast of Balochistan, Pakistan.</string>
-    <string name="gawadar_city_rating">5.0</string>
-    <string name="gawadar_city_review">902</string>
+    <string name="balochistan_city_two_title">Gawadar</string>
+    <string name="balochistan_city_two_description">Gwadar is a port city with located on the southwestern coast of Balochistan, Pakistan.</string>
+    <string name="balochistan_city_two_rating">5.0</string>
+    <string name="balochistan_city_two_review">902</string>
     <!-- 3. Chaman. -->
-    <string name="chaman_city_title">Chaman</string>
-    <string name="chaman_city_description">Chaman is a city and the headquarters of the Chaman District in Balochistan, Pakistan.</string>
-    <string name="chaman_city_rating">4.1</string>
-    <string name="chaman_city_review">102</string>
+    <string name="balochistan_city_three_title">Chaman</string>
+    <string name="balochistan_city_three_description">Chaman is a city and the headquarters of the Chaman District in Balochistan, Pakistan.</string>
+    <string name="balochistan_city_three_rating">4.1</string>
+    <string name="balochistan_city_three_review">102</string>
     <!-- 4. Sibi. -->
-    <string name="sibi_city_title">Sibi</string>
-    <string name="sibi_city_description">Sibi is a city situated in the Balochistan province of Pakistan</string>
-    <string name="sibi_city_rating">3.2</string>
-    <string name="sibi_city_review">29</string>
+    <string name="balochistan_city_four_title">Sibi</string>
+    <string name="balochistan_city_four_description">Sibi is a city situated in the Balochistan province of Pakistan</string>
+    <string name="balochistan_city_four_rating">3.2</string>
+    <string name="balochistan_city_four_review">29</string>
     <!-- 5. Hub. -->
-    <string name="hub_city_title">Hub</string>
-    <string name="hub_city_description">Hub is a city and capital of the Hub District in Balochistan, Pakistan.</string>
-    <string name="hub_city_rating">4.1</string>
-    <string name="hub_city_review">95</string>
+    <string name="balochistan_city_five_title">Hub</string>
+    <string name="balochistan_city_five_description">Hub is a city and capital of the Hub District in Balochistan, Pakistan.</string>
+    <string name="balochistan_city_five_rating">4.1</string>
+    <string name="balochistan_city_five_review">95</string>
 
 
     <!-- Balochistan province top restaurants. -->
     <!-- 1. Lehri Sajji House. -->
-    <string name="lehri_sajji_house_restaurant_title">Lehri Sajji House</string>
-    <string name="lehri_sajji_house_restaurant_description">Discover Middle Eastern flavors at our cozy dinner restaurant, a taste adventure awaits</string>
-    <string name="lehri_sajji_house_restaurant_rating">4.5</string>
-    <string name="lehri_sajji_house_restaurant_review">92</string>
+    <string name="balochistan_restaurant_one_title">Lehri Sajji House</string>
+    <string name="balochistan_restaurant_one_description">Discover Middle Eastern flavors at our cozy dinner restaurant, a taste adventure awaits</string>
+    <string name="balochistan_restaurant_one_rating">4.5</string>
+    <string name="balochistan_restaurant_one_review">92</string>
     <!-- Usmania Tandoori Restaurant. -->
-    <string name="usmania_tandoori_restaurant_title">Usmania Tandoori Restaurant</string>
-    <string name="usmania_tandoori_restaurant_description">Enjoy Middle Eastern, Pakistani &amp; Indian dishes for lunch &amp; dinner in our welcoming restaurant.</string>
-    <string name="usmania_tandoori_restaurant_rating">4.3</string>
-    <string name="usmania_tandoori_restaurant_review">102</string>
+    <string name="balochistan_restaurant_two_title">Usmania Tandoori Restaurant</string>
+    <string name="balochistan_restaurant_two_description">Enjoy Middle Eastern, Pakistani &amp; Indian dishes for lunch &amp; dinner in our welcoming restaurant.</string>
+    <string name="balochistan_restaurant_two_rating">4.3</string>
+    <string name="balochistan_restaurant_two_review">102</string>
     <!-- Saigon. -->
-    <string name="saigon_restaurant_title">Saigon</string>
-    <string name="saigon_restaurant_description">Savor Italian &amp; continental dinner delights at our cozy restaurant, a taste of Europe awaits!</string>
-    <string name="saigon_restaurant_rating">4.4</string>
-    <string name="saigon_restaurant_review">92</string>
+    <string name="balochistan_restaurant_three_title">Saigon</string>
+    <string name="balochistan_restaurant_three_description">Savor Italian &amp; continental dinner delights at our cozy restaurant, a taste of Europe awaits!</string>
+    <string name="balochistan_restaurant_three_rating">4.4</string>
+    <string name="balochistan_restaurant_three_review">92</string>
     <!-- Gulshan Karahi. -->
-    <string name="gulshan_karahi_restaurant_title">Gulshan Karahi</string>
-    <string name="gulshan_karahi_restaurant_description">Indulge in Middle Eastern dinner flavors at our cozy restaurant, a taste adventure awaits!</string>
-    <string name="gulshan_karahi_restaurant_rating">4.2</string>
-    <string name="gulshan_karahi_restaurant_review">98</string>
+    <string name="balochistan_restaurant_four_title">Gulshan Karahi</string>
+    <string name="balochistan_restaurant_four_description">Indulge in Middle Eastern dinner flavors at our cozy restaurant, a taste adventure awaits!</string>
+    <string name="balochistan_restaurant_four_rating">4.2</string>
+    <string name="balochistan_restaurant_four_review">98</string>
     <!-- Mehfil Restaurant. -->
-    <string name="mehfil_restaurant_title">Mehfil Restaurant</string>
-    <string name="mehfil_restaurant_description">Delight in traditional Pakistani BBQ for dinner at our cozy restaurant, a flavorful experience awaits!</string>
-    <string name="mehfil_restaurant_rating">4.2</string>
-    <string name="mehfil_restaurant_review">102</string>
+    <string name="balochistan_restaurant_five_title">Mehfil Restaurant</string>
+    <string name="balochistan_restaurant_five_description">Delight in traditional Pakistani BBQ for dinner at our cozy restaurant, a flavorful experience awaits!</string>
+    <string name="balochistan_restaurant_five_rating">4.2</string>
+    <string name="balochistan_restaurant_five_review">102</string>
 
     <!-- Balochistan province top historical place. -->
     <!-- 1. Quaid-e-Azam Residency. -->
-    <string name="quaid_e_azam_residency_historical_place_title">Quaid-e-Azam Residency</string>
-    <string name="quaid_e_azam_residency_historical_place_description">Quaid-e-Azam Residency also known as Ziarat Residency, is located in Ziarat, Balochistan, Pakistan.</string>
-    <string name="quaid_e_azam_residency_historical_place_rating">5.0</string>
-    <string name="quaid_e_azam_residency_historical_place_review">402</string>
+    <string name="balochistan_historical_place_one_title">Quaid-e-Azam Residency</string>
+    <string name="balochistan_historical_place_one_description">Quaid-e-Azam Residency also known as Ziarat Residency, is located in Ziarat, Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_one_rating">5.0</string>
+    <string name="balochistan_historical_place_one_review">402</string>
     <!-- 2. Princes of Hope. -->
-    <string name="princes_of_hope_historical_place_title">Princes of Hope</string>
-    <string name="princes_of_hope_historical_place_description">The curiously shaped rock pinnacle is located in the Hingol National Park in the Lasbela District of the province of Balochistan.</string>
-    <string name="princes_of_hope_historical_place_rating">3.9</string>
-    <string name="princes_of_hope_historical_place_review">14</string>
+    <string name="balochistan_historical_place_two_title">Princes of Hope</string>
+    <string name="balochistan_historical_place_two_description">The curiously shaped rock pinnacle is located in the Hingol National Park in the Lasbela District of the province of Balochistan.</string>
+    <string name="balochistan_historical_place_two_rating">3.9</string>
+    <string name="balochistan_historical_place_two_review">14</string>
     <!-- 3. Kalat. -->
-    <string name="kalat_historical_place_title">Kalat</string>
-    <string name="kalat_historical_place_description">Kalat is a district in the Balochistan province of Pakistan, known for its rich culture and historical significance.</string>
-    <string name="kalat_historical_place_rating">4.2</string>
-    <string name="kalat_historical_place_review">92</string>
+    <string name="balochistan_historical_place_three_title">Kalat</string>
+    <string name="balochistan_historical_place_three_description">Kalat is a district in the Balochistan province of Pakistan, known for its rich culture and historical significance.</string>
+    <string name="balochistan_historical_place_three_rating">4.2</string>
+    <string name="balochistan_historical_place_three_review">92</string>
     <!-- 4. Gadani Beach-->
-    <string name="gadani_beach_historical_place_title">Gadani Beach</string>
-    <string name="gadani_beach_historical_place_description">Gadani Beach is a beach on the Arabian Sea located near the Hub River and Cape Monze in Gadani, Hub District, Balochistan, Pakistan.</string>
-    <string name="gadani_beach_historical_place_rating">4.5</string>
-    <string name="gadani_beach_historical_place_review">102</string>
+    <string name="balochistan_historical_place_four_title">Gadani Beach</string>
+    <string name="balochistan_historical_place_four_description">Gadani Beach is a beach on the Arabian Sea located near the Hub River and Cape Monze in Gadani, Hub District, Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_four_rating">4.5</string>
+    <string name="balochistan_historical_place_four_review">102</string>
     <!-- 5. Moola Chotok-->
-    <string name="moola_chotok_historical_place_title">Moola Chotok</string>
-    <string name="moola_chotok_historical_place_description">Moola Chotok is a hidden ravine located in the middle of the Khuzdar District in the southern province of Balochistan, Pakistan.</string>
-    <string name="moola_chotok_historical_place_rating">4.1</string>
-    <string name="moola_chotok_historical_place_review">118</string>
+    <string name="balochistan_historical_place_five_title">Moola Chotok</string>
+    <string name="balochistan_historical_place_five_description">Moola Chotok is a hidden ravine located in the middle of the Khuzdar District in the southern province of Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_five_rating">4.1</string>
+    <string name="balochistan_historical_place_five_review">118</string>
+
+    <!-- Khyber Pakhtunkhwa province strings. -->
+    <!-- Khyber Pakhtunkhwa province top 5 cities. -->
+    <!-- 1. Peshawar. -->
+    <string name="kpk_city_one_title">Peshawar</string>
+    <string name="kpk_city_one_description">Peshawar lies in Pakistan\'s northwest, near the border with Afghanistan.</string>
+    <string name="kpk_city_one_rating">4.2</string>
+    <string name="kpk_city_one_review">401</string>
+    <!-- 2. Mardan. -->
+    <string name="kpk_city_two_title">Mardan</string>
+    <string name="kpk_city_two_description">Mardan, Pakistan: A blend of tradition and growth in Khyber Pakhtunkhwa.</string>
+    <string name="kpk_city_two_rating">4.3</string>
+    <string name="kpk_city_two_review">196</string>
+    <!-- 3. Mingaora. -->
+    <string name="kpk_city_three_title">Mingaora</string>
+    <string name="kpk_city_three_description">Mingaora, Pakistan: Scenic town nestled in Swat Valley\'s beauty.</string>
+    <string name="kpk_city_three_rating">4.9</string>
+    <string name="kpk_city_three_review">496</string>
+    <!-- 4. Kohat. -->
+    <string name="kpk_city_four_title">Kohat</string>
+    <string name="kpk_city_four_description">Kohat, Pakistan: City with historical charm in Khyber Pakhtunkhwa.</string>
+    <string name="kpk_city_four_rating">4.3</string>
+    <string name="kpk_city_four_review">93</string>
+    <!-- 5. Abbottabad. -->
+    <string name="kpk_city_five_title">Abbottabad</string>
+    <string name="kpk_city_five_description">Abbottabad, Pakistan: Picturesque city in Khyber Pakhtunkhwa with captivating landscapes.</string>
+    <string name="kpk_city_five_rating">4.2</string>
+    <string name="kpk_city_five_review">906</string>
+
+    <!-- Khyber Pakhtunkhwa top restaurants. -->
+    <!-- 1. Chief Burger Peshawar. -->
+    <string name="kpk_restaurant_one_title">Chief Burger Peshawar</string>
+    <string name="kpk_restaurant_one_description">Delicious pizzas &amp; quick bites for lunch and dinner at our lively fast food haven.</string>
+    <string name="kpk_restaurant_one_rating">4.0</string>
+    <string name="kpk_restaurant_one_review">122</string>
+    <!-- 2. Cafe Crunch. -->
+    <string name="kpk_restaurant_two_title">Cafe Crunch</string>
+    <string name="kpk_restaurant_two_description">Savor café, Indian &amp; international flavors at our vibrant fast food spot.</string>
+    <string name="kpk_restaurant_two_rating">4.0</string>
+    <string name="kpk_restaurant_two_review">41</string>
+    <!-- 3. Pinetree Restaurant. -->
+    <string name="kpk_restaurant_three_title">Pinetree Restaurant</string>
+    <string name="kpk_restaurant_three_description">Global tastes unite: International, BBQ, Asian, Middle Eastern, Pakistani delights.</string>
+    <string name="kpk_restaurant_three_rating">3.5</string>
+    <string name="kpk_restaurant_three_review">40</string>
+    <!-- 4. Bukhara (Roof Top Barbecue). -->
+    <string name="kpk_restaurant_four_title">Bukhara (Roof Top Barbecue)</string>
+    <string name="kpk_restaurant_four_description">Sizzle under the stars: Rooftop BBQ delights await at our restaurant.</string>
+    <string name="kpk_restaurant_four_rating">4.0</string>
+    <string name="kpk_restaurant_four_review">27</string>
+    <!-- 5. Swat Marina Restaurant. -->
+    <string name="kpk_restaurant_five_title">Swat Marina Restaurant</string>
+    <string name="kpk_restaurant_five_description">Journey through flavors: Middle Eastern &amp; Afghan dishes at our restaurant.</string>
+    <string name="kpk_restaurant_five_rating">5.0</string>
+    <string name="kpk_restaurant_five_review">5</string>
+
+    <!-- Khyber Pakhtunkhwa historical place. -->
+    <!-- 1. Chitral Fort. -->
+    <string name="kpk_historical_place_one_title">Chitral Fort</string>
+    <string name="kpk_historical_place_one_description">Chitral Fort: Historic gem in Pakistan\'s scenic north, tales etched in stone.</string>
+    <string name="kpk_historical_place_one_rating">4.0</string>
+    <string name="kpk_historical_place_one_review">26</string>
+    <!-- 2. Takht-i-Bahi. -->
+    <string name="kpk_historical_place_two_title">Takht-i-Bahi</string>
+    <string name="kpk_historical_place_two_description">Takht-i-Bahi: Ancient Buddhist ruins, a heritage marvel in Pakistan.</string>
+    <string name="kpk_historical_place_two_rating">5.0</string>
+    <string name="kpk_historical_place_two_review">30</string>
+    <!-- 3. Mahabat Khan Mosque. -->
+    <string name="kpk_historical_place_three_title">Mahabat Khan Mosque</string>
+    <string name="kpk_historical_place_three_description">Mahabat Khan Mosque: Architectural elegance in Pakistan\'s cultural tapestry.</string>
+    <string name="kpk_historical_place_three_rating">4.5</string>
+    <string name="kpk_historical_place_three_review">37</string>
+    <!-- 4. Jamrud Fort. -->
+    <string name="kpk_historical_place_four_title">Jamrud Fort</string>
+    <string name="kpk_historical_place_four_description">Jamrud Fort: Historical sentinel, guarding the gateway to Pakistan\'s past.</string>
+    <string name="kpk_historical_place_four_rating">3.5</string>
+    <string name="kpk_historical_place_four_review">12</string>
+    <!-- 5. St John's Church. -->
+    <string name="kpk_historical_place_five_title">St John\'s Church</string>
+    <string name="kpk_historical_place_five_description">St. John\'s Church: Graceful landmark, echoes of history in Pakistan.</string>
+    <string name="kpk_historical_place_five_rating">4.0</string>
+    <string name="kpk_historical_place_five_review">3</string>
 </resources>
