@@ -1,9 +1,7 @@
 package com.example.yourguide;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,17 +24,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Current list of provinces in Pakistan.
-        ArrayList<ProvinceData> provinceDataList = new ArrayList<>();
-        provinceDataList.add(new ProvinceData("Punjab", R.string.punjab_province_description,
+        ArrayList<ProvinceCategory> provinceDataList = new ArrayList<>();
+        provinceDataList.add(new ProvinceCategory("Punjab", R.string.punjab_province_description,
                 "13", "27", "48", R.drawable.province_punjab,
                 R.color.punjab_province));
-        provinceDataList.add(new ProvinceData("Sindh", R.string.sindh_province_description,
+        provinceDataList.add(new ProvinceCategory("Sindh", R.string.sindh_province_description,
                 "21", "58", "96", R.drawable.province_sindh,
                 R.color.sindh_province));
-        provinceDataList.add(new ProvinceData("Balochistan", R.string.balochistan_province_description,
+        provinceDataList.add(new ProvinceCategory("Balochistan", R.string.balochistan_province_description,
                 "14", "12", "19", R.drawable.province_balochistan,
                 R.color.balochistan_province));
-        provinceDataList.add(new ProvinceData("KPK", R.string.kpk_province_description,
+        provinceDataList.add(new ProvinceCategory("KPK", R.string.kpk_province_description,
                 "8", "19", "27", R.drawable.province_kpk,
                  R.color.kpk_province));
 

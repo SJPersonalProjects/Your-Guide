@@ -124,4 +124,87 @@
     <string name="walled_city_historical_place_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>
     <string name="walled_city_historical_place_rating">4.5</string>
     <string name="walled_city_historical_place_review">66</string>
+    
+    <!-- Sindh province strings. -->
+    <!-- Sindh province top 5 cities. -->
+    <!-- City 1. Karachi -->
+    <string name="karachi_city_title">Karachi</string>
+    <string name="karachi_city_description">Karachi is the largest city in Pakistan, with a population of over 20 million.</string>
+    <string name="karachi_city_rating">4.5</string>
+    <string name="karachi_city_review">502</string>
+    <!-- City 2. Hyderabad -->
+    <string name="hyderabad_city_title">Hyderabad</string>
+    <string name="hyderabad_city_description">Hyderabad is a city and the capital of Hyderabad Division in the Sindh province of Pakistan.</string>
+    <string name="hyderabad_city_rating">4.5</string>
+    <string name="hyderabad_city_review">204</string>
+    <!-- City 3. Dadu -->
+    <string name="dadu_city_title">Sukkur</string>
+    <string name="dadu_city_description">Sukkur is the third largest city in Sindh, and 14th largest populated city in Pakistan.</string>
+    <string name="dadu_city_rating">4.3</string>
+    <string name="dadu_city_review">265</string>
+    <!-- City 4. Thatta -->
+    <string name="thatta_city_title">Thatta</string>
+    <string name="thatta_city_description">Thatta District is located in the southern area, of the province of Sindh, Pakistan.</string>
+    <string name="thatta_city_rating">3.9</string>
+    <string name="thatta_city_review">92</string>
+    <!-- City 5. Shikarpur -->
+    <string name="shikarpur_city_title">Shikarpur</string>
+    <string name="shikarpur_city_description">Shikarpur is small city and the capital of Shikarpur District in Sindh province of Pakistan.</string>
+    <string name="shikarpur_city_rating">4.2</string>
+    <string name="shikarpur_city_review">106</string>
+
+
+    <!-- Sindh province top 5 restaurants. -->
+    <!-- 1. Royal Taj restaurant. -->
+    <string name="royal_taj_restaurant_title">Royal Taj Restaurant</string>
+    <string name="royal_taj_restaurant_description">Exquisite flavors and regal ambiance at Royal Taj, a culinary gem in Pakistan.</string>
+    <string name="royal_taj_restaurant_rating">4.5</string>
+    <string name="royal_taj_restaurant_review">102</string>
+    <!-- 2. Ridan House of Mandi restaurant. -->
+    <string name="ridan_house_of_mandi_restaurant_title">Ridan House of Mandi</string>
+    <string name="ridan_house_of_mandi_restaurant_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
+    <string name="ridan_house_of_mandi_restaurant_rating">4.2</string>
+    <string name="ridan_house_of_mandi_restaurant_review">105</string>
+    <!-- 3. LalQila Restaurant. -->
+    <string name="lalqila_restaurant_title">LalQila</string>
+    <string name="lalqila_restaurant_description">Step into history with delectable flavors at LalQila, an iconic dining experience in Pakistan.</string>
+    <string name="lalqila_restaurant_rating">4.4</string>
+    <string name="lalqila_restaurant_review">201</string>
+    <!-- 4. Chef's Table restaurant. -->
+    <string name="chefs_table_restaurant_title">Chef\'s Table</string>
+    <string name="chefs_table_restaurant_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan's dining scene.</string>
+    <string name="chefs_table_restaurant_rating">195</string>
+    <string name="chefs_table_restaurant_review">4.2</string>
+    <!-- 5. Kababjees restaurant. -->
+    <string name="kababjees_restaurant_title">Kababjees</string>
+    <string name="kababjees_restaurant_description">Savor kabab perfection at Kababjees, a culinary delight renowned across Pakistan\'s food landscape</string>
+    <string name="kababjees_restaurant_rating">205</string>
+    <string name="kababjees_restaurant_review">4.3</string>
+
+    <!-- Sindh province top historical place. -->
+    <!-- 1. Mohenjo-daro. -->
+    <string name="mohenjo_daro_historical_place_title">Mohenjo-daro</string>
+    <string name="mohenjo_daro_historical_place_description">Explore ancient mysteries at Mohenjo Daro, a UNESCO World Heritage site in Sindh, Pakistan.</string>
+    <string name="mohenjo_daro_historical_place_rating">4.5</string>
+    <string name="mohenjo_daro_historical_place_review">204</string>
+    <!-- 2. Makli Hill. -->
+    <string name="makli_hill_historical_place_title">Makli Hill</string>
+    <string name="makli_hill_historical_place_description">Journey through history at Makli Hill, Sindh\'s necropolis adorned with magnificent tombs.</string>
+    <string name="makli_hill_historical_place_rating">4.5</string>
+    <string name="makli_hill_historical_place_review">102</string>
+    <!-- 3. Shah Jahan Mosque. -->
+    <string name="shah_jahan_mosque_historical_place_title">Shah Jahan Mosque</string>
+    <string name="shah_jahan_mosque_historical_place_description">Architectural marvel: Shah Jahan Mosque, a timeless treasure gracing Sindh\'s cultural heritage.</string>
+    <string name="shah_jahan_mosque_historical_place_rating">4.6</string>
+    <string name="shah_jahan_mosque_historical_place_review">300</string>
+    <!-- 4. Rani Kot Fort. -->
+    <string name="rani_kot_fort_historical_place_title">Rani Kot Fort</string>
+    <string name="rani_kot_fort_historical_place_description">Rani Kot Fort: Sindh\'s colossal testament to history, guarding tales of grandeur and valor.</string>
+    <string name="rani_kot_fort_historical_place_rating">4.8</string>
+    <string name="rani_kot_fort_historical_place_review">302</string>
+    <!-- 5. Tooba Mosque. -->
+    <string name="tooba_mosque_historical_place_title">Tooba Mosque</string>
+    <string name="tooba_mosque_historical_place_description">Tooba Mosque: Graceful tranquility, Tooba\'s dome rises as an emblem of spirituality in Sindh.</string>
+    <string name="tooba_mosque_historical_place_rating">4.2</string>
+    <string name="tooba_mosque_historical_place_review">102</string>
 </resources>

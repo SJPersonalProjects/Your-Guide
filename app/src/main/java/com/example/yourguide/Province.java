@@ -1,6 +1,6 @@
-package com.example.yourguide.punjab_province;
+package com.example.yourguide;
 
-public class PunjabProvinceCard {
+public class Province {
     private final int mCardImage;
     private final int mCardTitle;
     private final int mCardDescription;
@@ -8,15 +8,15 @@ public class PunjabProvinceCard {
     private final int mCardReview;
 
     /**
-     * Constructor a new {@link PunjabProvinceCard} object.
+     * Constructor a new {@link Province} object.
      * @param mCardImage is the image of the card of punjab province.
      * @param mCardTitle is the title of the card of punjab province.
      * @param mCardDescription is the description of the card of punjab province.
      * @param mCardRating is the rating of the card of punjab province.
      * @param mCardReview is the review of the card beside rating of the punjab province.
      */
-    public PunjabProvinceCard(int mCardImage, int mCardTitle, int mCardDescription,
-                              int mCardRating, int mCardReview) {
+    public Province(int mCardImage, int mCardTitle, int mCardDescription,
+                    int mCardRating, int mCardReview) {
         this.mCardImage = mCardImage;
         this.mCardTitle = mCardTitle;
         this.mCardDescription = mCardDescription;

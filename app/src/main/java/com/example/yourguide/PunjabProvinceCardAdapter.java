@@ -1,4 +1,4 @@
-package com.example.yourguide.punjab_province;
+package com.example.yourguide;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,13 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yourguide.R;
-
 import java.util.ArrayList;
 
 public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvinceCardAdapter.ViewHolder>{
     //Instance field.
-    private final ArrayList<PunjabProvinceCard> punjabProvinceCardList;
+    private final ArrayList<Province> punjabProvinceCardList;
 
     //interface variable.
     public OnItemClickListener mListener;
@@ -30,7 +28,7 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        PunjabProvinceCard currentPunjabProvinceCard = punjabProvinceCardList.get(position);
+        Province currentPunjabProvinceCard = punjabProvinceCardList.get(position);
 
         holder.mImageView.setImageResource(currentPunjabProvinceCard.getCardImage());
         holder.mTitle.setText(currentPunjabProvinceCard.getCardTitle());
@@ -85,7 +83,7 @@ public class PunjabProvinceCardAdapter extends RecyclerView.Adapter<PunjabProvin
         }
     }
 
-    public PunjabProvinceCardAdapter(ArrayList<PunjabProvinceCard> punjabProvinceCardList) {
+    public PunjabProvinceCardAdapter(ArrayList<Province> punjabProvinceCardList) {
         this.punjabProvinceCardList = punjabProvinceCardList;
     }
 }

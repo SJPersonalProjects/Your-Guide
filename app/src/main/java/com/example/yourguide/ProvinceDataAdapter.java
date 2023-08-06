@@ -11,14 +11,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import java.util.ArrayList;
 
-public class ProvinceDataAdapter extends ArrayAdapter<ProvinceData> {
+public class ProvinceDataAdapter extends ArrayAdapter<ProvinceCategory> {
 
-    public ProvinceDataAdapter(@NonNull Context context, @NonNull ArrayList<ProvinceData> provinceDataList) {
+    public ProvinceDataAdapter(@NonNull Context context, @NonNull ArrayList<ProvinceCategory> provinceDataList) {
         super(context, 0, provinceDataList);
     }
 
@@ -35,7 +34,7 @@ public class ProvinceDataAdapter extends ArrayAdapter<ProvinceData> {
         /*
          * Get {@link ProvinceData} object located at this position in the list.
          **/
-        ProvinceData currentProvincePosition = getItem(position);
+        ProvinceCategory currentProvincePosition = getItem(position);
 
         //Find the TextView in the province_list.xml layout with the id province_name.
         TextView provinceName = currentProvinceItem.findViewById(R.id.province_name);

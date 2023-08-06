@@ -1,6 +1,6 @@
 package com.example.yourguide;
 
-public class ProvinceData {
+public class ProvinceCategory {
     //Instance fields.
     private String mProvinceName;
     private int mProvinceDescription;
@@ -20,9 +20,9 @@ public class ProvinceData {
      * @param mImageOfProvince is the specific background image for each province list item
      * @param mProvinceBackgroundTint is the specific background tint for each province list item
      */
-    public ProvinceData(String mProvinceName, int mProvinceDescription,
-                        String mNumberOfHistoricalPlaces, String mNumberOfPopularPlaces,
-                        String mNumberOfCities, int mImageOfProvince, int mProvinceBackgroundTint) {
+    public ProvinceCategory(String mProvinceName, int mProvinceDescription,
+                            String mNumberOfHistoricalPlaces, String mNumberOfPopularPlaces,
+                            String mNumberOfCities, int mImageOfProvince, int mProvinceBackgroundTint) {
         this.mProvinceName = mProvinceName;
         this.mProvinceDescription = mProvinceDescription;
         this.mNumberOfHistoricalPlaces = mNumberOfHistoricalPlaces;
