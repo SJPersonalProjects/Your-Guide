@@ -124,7 +124,8 @@
     <string name="punjab_historical_place_five_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>
     <string name="punjab_historical_place_five_rating">4.5</string>
     <string name="punjab_historical_place_five_review">66</string>
-    
+
+
     <!-- Sindh province strings. -->
     <!-- Sindh province top 5 cities. -->
     <!-- City 1. Karachi -->
@@ -172,7 +173,7 @@
     <string name="sindh_restaurant_three_review">201</string>
     <!-- 4. Chef's Table restaurant. -->
     <string name="sindh_restaurant_four_title">Chef\'s Table</string>
-    <string name="sindh_restaurant_four_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan's dining scene.</string>
+    <string name="sindh_restaurant_four_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan\'s dining scene.</string>
     <string name="sindh_restaurant_four_rating">195</string>
     <string name="sindh_restaurant_four_review">4.2</string>
     <!-- 5. Kababjees restaurant. -->

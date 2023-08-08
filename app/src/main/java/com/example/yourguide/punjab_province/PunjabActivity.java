@@ -33,11 +33,13 @@ public class PunjabActivity extends AppCompatActivity {
         popularCitiesList.add(new Province(R.drawable.gujranwala_city, R.string.punjab_city_five_title,
                 R.string.punjab_city_five_description, R.string.punjab_city_five_rating, R.string.punjab_city_five_review));
 
-        RecyclerView punjabProvinceRecyclerView = (RecyclerView) findViewById(R.id.punjab_province_recycler_view);
+        RecyclerView punjabProvinceRecyclerView = findViewById(R.id.punjab_province_recycler_view);
         punjabProvinceRecyclerView.setVerticalScrollBarEnabled(false);
         punjabProvinceRecyclerView.setHorizontalScrollBarEnabled(false);
         punjabProvinceRecyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager citiesLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+        RecyclerView.LayoutManager citiesLayoutManager = new LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL, false);
         ProvinceAdapter adapter = new ProvinceAdapter(popularCitiesList);
 
         punjabProvinceRecyclerView.setLayoutManager(citiesLayoutManager);
