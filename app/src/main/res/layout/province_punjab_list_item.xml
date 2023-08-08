@@ -107,7 +107,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_favorite_24" />
+                    android:src="@drawable/baseline_fav_icon" />
             </RelativeLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

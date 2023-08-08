@@ -16,7 +16,7 @@
         <ImageView
             style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/balochistan_province_header" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">

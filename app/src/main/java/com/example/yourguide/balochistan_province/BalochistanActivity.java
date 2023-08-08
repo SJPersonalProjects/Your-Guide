@@ -21,19 +21,19 @@ public class BalochistanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_balochistan);
 
         ArrayList<Province> popularCitiesList = new ArrayList<>();
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_city_one_title,
+        popularCitiesList.add(new Province(R.drawable.quetta_city, R.string.balochistan_city_one_title,
                 R.string.balochistan_city_one_description, R.string.balochistan_city_one_rating,
                 R.string.balochistan_city_one_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_city_two_title,
+        popularCitiesList.add(new Province(R.drawable.gwadar_city, R.string.balochistan_city_two_title,
                 R.string.balochistan_city_two_description, R.string.balochistan_city_two_rating,
                 R.string.balochistan_city_two_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_city_three_title,
+        popularCitiesList.add(new Province(R.drawable.chaman_city, R.string.balochistan_city_three_title,
                 R.string.balochistan_city_three_description, R.string.balochistan_city_three_rating,
                 R.string.balochistan_city_three_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_city_four_title,
+        popularCitiesList.add(new Province(R.drawable.sibi_city, R.string.balochistan_city_four_title,
                 R.string.balochistan_city_four_description, R.string.balochistan_city_four_rating,
                 R.string.balochistan_city_four_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_city_five_title,
+        popularCitiesList.add(new Province(R.drawable.hub_city, R.string.balochistan_city_five_title,
                 R.string.balochistan_city_five_description, R.string.balochistan_city_five_rating,
                 R.string.balochistan_city_five_review));
 
@@ -52,19 +52,19 @@ public class BalochistanActivity extends AppCompatActivity {
 
 
         ArrayList<Province> topRestaurantsList = new ArrayList<>();
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_restaurant_one_title,
+        topRestaurantsList.add(new Province(R.drawable.lehri_sajji_house_restaurant, R.string.balochistan_restaurant_one_title,
                 R.string.balochistan_restaurant_one_description, R.string.balochistan_restaurant_one_rating,
                 R.string.balochistan_restaurant_one_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_restaurant_two_title,
+        topRestaurantsList.add(new Province(R.drawable.usmania_tandoori_restaurant, R.string.balochistan_restaurant_two_title,
                 R.string.balochistan_restaurant_two_description, R.string.balochistan_restaurant_two_rating,
                 R.string.balochistan_restaurant_two_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_restaurant_three_title,
+        topRestaurantsList.add(new Province(R.drawable.saigon_restaurant, R.string.balochistan_restaurant_three_title,
                 R.string.balochistan_restaurant_three_description, R.string.balochistan_restaurant_three_rating,
                 R.string.balochistan_restaurant_three_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_restaurant_four_title,
+        topRestaurantsList.add(new Province(R.drawable.gulshan_karahi_restaurant, R.string.balochistan_restaurant_four_title,
                 R.string.balochistan_restaurant_four_description, R.string.balochistan_restaurant_four_rating,
                 R.string.balochistan_restaurant_four_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_restaurant_five_title,
+        topRestaurantsList.add(new Province(R.drawable.mehfil_restaurant, R.string.balochistan_restaurant_five_title,
                 R.string.balochistan_restaurant_five_description, R.string.balochistan_restaurant_five_rating,
                 R.string.balochistan_restaurant_five_review));
 
@@ -83,19 +83,19 @@ public class BalochistanActivity extends AppCompatActivity {
 
 
         ArrayList<Province> historicalPlaceList = new ArrayList<>();
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_historical_place_one_title,
+        historicalPlaceList.add(new Province(R.drawable.quaide_azam_residency, R.string.balochistan_historical_place_one_title,
                 R.string.balochistan_historical_place_one_description, R.string.balochistan_historical_place_one_rating,
                 R.string.balochistan_historical_place_one_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_historical_place_two_title,
+        historicalPlaceList.add(new Province(R.drawable.princes_of_hope, R.string.balochistan_historical_place_two_title,
                 R.string.balochistan_historical_place_two_description, R.string.balochistan_historical_place_two_rating,
                 R.string.balochistan_historical_place_two_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_historical_place_three_title,
+        historicalPlaceList.add(new Province(R.drawable.kalat, R.string.balochistan_historical_place_three_title,
                 R.string.balochistan_historical_place_three_description, R.string.balochistan_historical_place_three_rating,
                 R.string.balochistan_historical_place_three_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_historical_place_four_title,
+        historicalPlaceList.add(new Province(R.drawable.gadani_beach, R.string.balochistan_historical_place_four_title,
                 R.string.balochistan_historical_place_four_description, R.string.balochistan_historical_place_four_rating,
                 R.string.balochistan_historical_place_four_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.balochistan_historical_place_five_title,
+        historicalPlaceList.add(new Province(R.drawable.moola_chotok, R.string.balochistan_historical_place_five_title,
                 R.string.balochistan_historical_place_five_description, R.string.balochistan_historical_place_five_rating,
                 R.string.balochistan_historical_place_five_review));
 

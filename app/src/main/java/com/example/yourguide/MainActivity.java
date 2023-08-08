@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
         //Current list of provinces in Pakistan.
         ArrayList<ProvinceCategory> provinceDataList = new ArrayList<>();
         provinceDataList.add(new ProvinceCategory("Punjab", R.string.punjab_province_description,
-                "13", "27", "48", R.drawable.province_punjab,
+                "13", "27", "48", R.drawable.punjab_province_header,
                 R.color.punjab_province));
         provinceDataList.add(new ProvinceCategory("Sindh", R.string.sindh_province_description,
-                "21", "58", "96", R.drawable.province_sindh,
+                "21", "58", "96", R.drawable.sindh_province_header,
                 R.color.sindh_province));
         provinceDataList.add(new ProvinceCategory("Balochistan", R.string.balochistan_province_description,
-                "14", "12", "19", R.drawable.province_balochistan,
+                "14", "12", "19", R.drawable.balochistan_province_header,
                 R.color.balochistan_province));
         provinceDataList.add(new ProvinceCategory("KPK", R.string.kpk_province_description,
-                "8", "19", "27", R.drawable.province_kpk,
+                "8", "19", "27", R.drawable.kpk_province_header,
                  R.color.kpk_province));
 
         //Custom adapter for provincial data.

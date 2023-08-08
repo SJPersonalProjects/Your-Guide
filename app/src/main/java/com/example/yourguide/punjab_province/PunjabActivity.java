@@ -61,7 +61,7 @@ public class PunjabActivity extends AppCompatActivity {
                 R.string.punjab_restaurant_two_description, R.string.punjab_restaurant_two_rating, R.string.punjab_restaurant_two_review));
         topRestaurantList.add(new Province(R.drawable.andaaz_restaurant, R.string.punjab_restaurant_three_title,
                 R.string.punjab_restaurant_three_description, R.string.punjab_restaurant_three_rating, R.string.punjab_restaurant_three_review));
-        topRestaurantList.add(new Province(R.drawable.spice_bazaar, R.string.punjab_restaurant_four_title, R.string.punjab_restaurant_four_description,
+        topRestaurantList.add(new Province(R.drawable.spice_bazaar_restaurant, R.string.punjab_restaurant_four_title, R.string.punjab_restaurant_four_description,
                 R.string.punjab_restaurant_four_rating, R.string.punjab_restaurant_four_review));
         topRestaurantList.add(new Province(R.drawable.dera_restaurant, R.string.punjab_restaurant_five_title,
                 R.string.punjab_restaurant_five_description, R.string.punjab_restaurant_five_rating, R.string.punjab_restaurant_five_review));
@@ -90,7 +90,7 @@ public class PunjabActivity extends AppCompatActivity {
         historicalPlacesList.add(new Province(R.drawable.lahore_fort, R.string.punjab_historical_place_three_title,
                 R.string.punjab_historical_place_three_description, R.string.punjab_historical_place_three_rating,
                 R.string.punjab_historical_place_three_review));
-        historicalPlacesList.add(new Province(R.drawable.masjid_wazir_khan, R.string.punjab_historical_place_four_title,
+        historicalPlacesList.add(new Province(R.drawable.wazir_khan_mosque, R.string.punjab_historical_place_four_title,
                 R.string.punjab_historical_place_four_description, R.string.punjab_historical_place_four_rating,
                 R.string.punjab_historical_place_four_review));
         historicalPlacesList.add(new Province(R.drawable.walled_city, R.string.punjab_historical_place_five_title,

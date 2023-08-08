@@ -29,7 +29,7 @@
                 android:alpha="0.3"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
-                android:src="@drawable/province_punjab" />
+                android:src="@drawable/punjab_province_header" />
 
             <!-- Province and province details LinearLayout. -->
             <LinearLayout

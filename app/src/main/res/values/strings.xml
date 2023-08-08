@@ -47,27 +47,27 @@
     <string name="punjab_city_one_title">Lahore City</string>
     <string name="punjab_city_one_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
     <string name="punjab_city_one_rating">4.8</string>
-    <string name="punjab_city_one_review">(92)</string>
+    <string name="punjab_city_one_review">92</string>
     <!-- City 2. Faisalabad -->
     <string name="punjab_city_two_title">Faisalabad City</string>
     <string name="punjab_city_two_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
     <string name="punjab_city_two_rating">4.2</string>
-    <string name="punjab_city_two_review">(62)</string>
+    <string name="punjab_city_two_review">62</string>
     <!-- City 3. Rawalpindi -->
     <string name="punjab_city_three_title">Rawalpindi City</string>
     <string name="punjab_city_three_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
     <string name="punjab_city_three_rating">4.5</string>
-    <string name="punjab_city_three_review">(99)</string>
+    <string name="punjab_city_three_review">99</string>
     <!-- City 4. Multan -->
     <string name="punjab_city_four_title">Multan City</string>
     <string name="punjab_city_four_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
     <string name="punjab_city_four_rating">3.9</string>
-    <string name="punjab_city_four_review">(59)</string>
+    <string name="punjab_city_four_review">59</string>
     <!-- City 5. Gujranwala -->
     <string name="punjab_city_five_title">Gujranwala City</string>
     <string name="punjab_city_five_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
     <string name="punjab_city_five_rating">3.9</string>
-    <string name="punjab_city_five_review">(42)</string>
+    <string name="punjab_city_five_review">42</string>
 
 
     <!-- Punjab province top 5 restaurants. -->
@@ -162,7 +162,7 @@
     <string name="sindh_restaurant_one_rating">4.5</string>
     <string name="sindh_restaurant_one_review">102</string>
     <!-- 2. Ridan House of Mandi restaurant. -->
-    <string name="sindh_restaurant_two_title">Ridan House of Mandi</string>
+    <string name="sindh_restaurant_two_title">Ridan Restaurant</string>
     <string name="sindh_restaurant_two_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
     <string name="sindh_restaurant_two_rating">4.2</string>
     <string name="sindh_restaurant_two_review">105</string>
@@ -174,13 +174,13 @@
     <!-- 4. Chef's Table restaurant. -->
     <string name="sindh_restaurant_four_title">Chef\'s Table</string>
     <string name="sindh_restaurant_four_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan\'s dining scene.</string>
-    <string name="sindh_restaurant_four_rating">195</string>
-    <string name="sindh_restaurant_four_review">4.2</string>
+    <string name="sindh_restaurant_four_rating">4.2</string>
+    <string name="sindh_restaurant_four_review">195</string>
     <!-- 5. Kababjees restaurant. -->
     <string name="sindh_restaurant_five_title">Kababjees</string>
     <string name="sindh_restaurant_five_description">Savor kabab perfection at Kababjees, a culinary delight renowned across Pakistan\'s food landscape</string>
-    <string name="sindh_restaurant_five_rating">205</string>
-    <string name="sindh_restaurant_five_review">4.3</string>
+    <string name="sindh_restaurant_five_rating">4.3</string>
+    <string name="sindh_restaurant_five_review">205</string>
 
     <!-- Sindh province top historical place. -->
     <!-- 1. Mohenjo-daro. -->
@@ -217,7 +217,7 @@
     <string name="balochistan_city_one_rating">4.2</string>
     <string name="balochistan_city_one_review">602</string>
     <!-- 2. Gawadar. -->
-    <string name="balochistan_city_two_title">Gawadar</string>
+    <string name="balochistan_city_two_title">Gwadar</string>
     <string name="balochistan_city_two_description">Gwadar is a port city with located on the southwestern coast of Balochistan, Pakistan.</string>
     <string name="balochistan_city_two_rating">5.0</string>
     <string name="balochistan_city_two_review">902</string>
@@ -245,7 +245,7 @@
     <string name="balochistan_restaurant_one_rating">4.5</string>
     <string name="balochistan_restaurant_one_review">92</string>
     <!-- Usmania Tandoori Restaurant. -->
-    <string name="balochistan_restaurant_two_title">Usmania Tandoori Restaurant</string>
+    <string name="balochistan_restaurant_two_title">Usmania Tandoori</string>
     <string name="balochistan_restaurant_two_description">Enjoy Middle Eastern, Pakistani &amp; Indian dishes for lunch &amp; dinner in our welcoming restaurant.</string>
     <string name="balochistan_restaurant_two_rating">4.3</string>
     <string name="balochistan_restaurant_two_review">102</string>
@@ -305,7 +305,7 @@
     <string name="kpk_city_two_rating">4.3</string>
     <string name="kpk_city_two_review">196</string>
     <!-- 3. Mingaora. -->
-    <string name="kpk_city_three_title">Mingaora</string>
+    <string name="kpk_city_three_title">Mingora</string>
     <string name="kpk_city_three_description">Mingaora, Pakistan: Scenic town nestled in Swat Valley\'s beauty.</string>
     <string name="kpk_city_three_rating">4.9</string>
     <string name="kpk_city_three_review">496</string>

@@ -20,15 +20,15 @@ public class SindhActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sindh);
 
         ArrayList<Province> popularCitiesList = new ArrayList<>();
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_city_one_title,
+        popularCitiesList.add(new Province(R.drawable.karachi_city, R.string.sindh_city_one_title,
                 R.string.sindh_city_one_description, R.string.sindh_city_one_rating, R.string.sindh_city_one_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_city_two_title,
+        popularCitiesList.add(new Province(R.drawable.hyderabad_city, R.string.sindh_city_two_title,
                 R.string.sindh_city_two_description, R.string.sindh_city_two_rating, R.string.sindh_city_two_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_city_three_title,
+        popularCitiesList.add(new Province(R.drawable.sukkur_city, R.string.sindh_city_three_title,
                 R.string.sindh_city_three_description, R.string.sindh_city_three_rating, R.string.sindh_city_three_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_city_four_title,
+        popularCitiesList.add(new Province(R.drawable.thatta_city, R.string.sindh_city_four_title,
                 R.string.sindh_city_four_description, R.string.sindh_city_four_rating, R.string.sindh_city_four_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_city_five_title,
+        popularCitiesList.add(new Province(R.drawable.shikarpur_city, R.string.sindh_city_five_title,
                 R.string.sindh_city_five_description, R.string.sindh_city_five_rating, R.string.sindh_city_five_review));
 
         RecyclerView citiesRecyclerView = findViewById(R.id.sindh_province_popular_city);
@@ -46,15 +46,15 @@ public class SindhActivity extends AppCompatActivity {
 
 
         ArrayList<Province> topRestaurantsList = new ArrayList<>();
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_restaurant_one_title,
+        topRestaurantsList.add(new Province(R.drawable.royal_taj_restaurant, R.string.sindh_restaurant_one_title,
                 R.string.sindh_restaurant_one_description, R.string.sindh_restaurant_one_rating, R.string.sindh_restaurant_one_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_restaurant_two_title,
+        topRestaurantsList.add(new Province(R.drawable.ridan_restaurant, R.string.sindh_restaurant_two_title,
                 R.string.sindh_restaurant_two_description, R.string.sindh_restaurant_two_rating, R.string.sindh_restaurant_two_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_restaurant_three_title,
+        topRestaurantsList.add(new Province(R.drawable.lalqila_restaurant, R.string.sindh_restaurant_three_title,
                 R.string.sindh_restaurant_three_description, R.string.sindh_restaurant_three_rating, R.string.sindh_restaurant_three_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_restaurant_four_title,
+        topRestaurantsList.add(new Province(R.drawable.chefs_table_restaurant, R.string.sindh_restaurant_four_title,
                 R.string.sindh_restaurant_four_description, R.string.sindh_restaurant_four_rating, R.string.sindh_restaurant_four_review));
-        topRestaurantsList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_restaurant_five_title,
+        topRestaurantsList.add(new Province(R.drawable.kababjees_restaurant, R.string.sindh_restaurant_five_title,
                 R.string.sindh_restaurant_five_description, R.string.sindh_restaurant_five_rating, R.string.sindh_restaurant_five_review));
 
         RecyclerView restaurantsRecyclerView = findViewById(R.id.sindh_province_top_restaurant);
@@ -72,19 +72,19 @@ public class SindhActivity extends AppCompatActivity {
 
 
         ArrayList<Province> historicalPlaceList = new ArrayList<>();
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_historical_place_one_title,
+        historicalPlaceList.add(new Province(R.drawable.mohenjo_daro, R.string.sindh_historical_place_one_title,
                 R.string.sindh_historical_place_one_description, R.string.sindh_historical_place_one_rating,
                 R.string.sindh_historical_place_one_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_historical_place_two_title,
+        historicalPlaceList.add(new Province(R.drawable.makli_hill, R.string.sindh_historical_place_two_title,
                 R.string.sindh_historical_place_two_description, R.string.sindh_historical_place_two_rating,
                 R.string.sindh_historical_place_two_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_historical_place_three_title,
+        historicalPlaceList.add(new Province(R.drawable.shahjahan_mosque, R.string.sindh_historical_place_three_title,
                 R.string.sindh_historical_place_three_description, R.string.sindh_historical_place_three_rating,
                 R.string.sindh_historical_place_three_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_historical_place_four_title,
+        historicalPlaceList.add(new Province(R.drawable.ranikot_fort, R.string.sindh_historical_place_four_title,
                 R.string.sindh_historical_place_four_description, R.string.sindh_historical_place_four_rating,
                 R.string.sindh_historical_place_four_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.sindh_historical_place_five_title,
+        historicalPlaceList.add(new Province(R.drawable.tooba_mosque, R.string.sindh_historical_place_five_title,
                 R.string.sindh_historical_place_five_description, R.string.sindh_historical_place_five_rating,
                 R.string.sindh_historical_place_five_review));
 

@@ -19,16 +19,17 @@ public class KPKActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kpkactivity);
 
+        //ArrayList that holds the data for "Popular City" in the Khyber Pakhtunkhwa Province.
         ArrayList<Province> popularCitiesList = new ArrayList<>();
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_city_one_title,
+        popularCitiesList.add(new Province(R.drawable.peshawar_city, R.string.kpk_city_one_title,
                 R.string.kpk_city_one_description, R.string.kpk_city_one_rating, R.string.kpk_city_one_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_city_two_title,
+        popularCitiesList.add(new Province(R.drawable.mardan_city, R.string.kpk_city_two_title,
                 R.string.kpk_city_two_description, R.string.kpk_city_two_rating, R.string.kpk_city_two_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_city_three_title,
+        popularCitiesList.add(new Province(R.drawable.mingora_city, R.string.kpk_city_three_title,
                 R.string.kpk_city_three_description, R.string.kpk_city_three_rating, R.string.kpk_city_three_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_city_four_title,
+        popularCitiesList.add(new Province(R.drawable.kohat_city, R.string.kpk_city_four_title,
                 R.string.kpk_city_four_description, R.string.kpk_city_four_rating, R.string.kpk_city_four_review));
-        popularCitiesList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_city_five_title,
+        popularCitiesList.add(new Province(R.drawable.abbottabad_city, R.string.kpk_city_five_title,
                 R.string.kpk_city_five_description, R.string.kpk_city_five_rating, R.string.kpk_city_five_review));
 
         RecyclerView popularCitiesRecyclerView = findViewById(R.id.kpk_province_popular_city);
@@ -44,21 +45,21 @@ public class KPKActivity extends AppCompatActivity {
         popularCitiesRecyclerView.setLayoutManager(citiesLayoutManager);
         popularCitiesRecyclerView.setAdapter(citiesAdapter);
 
-
+        //ArrayList that holds the data for "Top Restaurant" in the Khyber Pakhtunkhwa Province.
         ArrayList<Province> topRestaurants = new ArrayList<>();
-        topRestaurants.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_restaurant_one_title,
+        topRestaurants.add(new Province(R.drawable.chief_burger_restaurant, R.string.kpk_restaurant_one_title,
                 R.string.kpk_restaurant_one_description, R.string.kpk_restaurant_one_rating,
                 R.string.kpk_restaurant_one_review));
-        topRestaurants.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_restaurant_two_title,
+        topRestaurants.add(new Province(R.drawable.cafe_crunch_restaurant, R.string.kpk_restaurant_two_title,
                 R.string.kpk_restaurant_two_description, R.string.kpk_restaurant_two_rating,
                 R.string.kpk_restaurant_two_review));
-        topRestaurants.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_restaurant_three_title,
+        topRestaurants.add(new Province(R.drawable.pinetree_restaurant, R.string.kpk_restaurant_three_title,
                 R.string.kpk_restaurant_three_description, R.string.kpk_restaurant_three_rating,
                 R.string.kpk_restaurant_three_review));
-        topRestaurants.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_restaurant_four_title,
+        topRestaurants.add(new Province(R.drawable.bukhara_rooftop_restaurant, R.string.kpk_restaurant_four_title,
                 R.string.kpk_restaurant_four_description, R.string.kpk_restaurant_four_rating,
                 R.string.kpk_restaurant_four_review));
-        topRestaurants.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_restaurant_five_title,
+        topRestaurants.add(new Province(R.drawable.swat_marina_restaurant, R.string.kpk_restaurant_five_title,
                 R.string.kpk_restaurant_five_description, R.string.kpk_restaurant_five_rating,
                 R.string.kpk_restaurant_five_review));
 
@@ -75,21 +76,21 @@ public class KPKActivity extends AppCompatActivity {
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
 
-
+        //ArrayList that holds the data for "Historical Place" in the Khyber Pakhtunkhwa Province.
         ArrayList<Province> historicalPlaceList = new ArrayList<>();
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_historical_place_one_title,
+        historicalPlaceList.add(new Province(R.drawable.chitral_fort, R.string.kpk_historical_place_one_title,
                 R.string.kpk_historical_place_one_description, R.string.kpk_historical_place_one_rating,
                 R.string.kpk_historical_place_one_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_historical_place_two_title,
+        historicalPlaceList.add(new Province(R.drawable.takhti_bahi, R.string.kpk_historical_place_two_title,
                 R.string.kpk_historical_place_two_description, R.string.kpk_historical_place_two_rating,
                 R.string.kpk_historical_place_two_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_historical_place_three_title,
+        historicalPlaceList.add(new Province(R.drawable.mahabat_khan_mosque, R.string.kpk_historical_place_three_title,
                 R.string.kpk_historical_place_three_description, R.string.kpk_historical_place_three_rating,
                 R.string.kpk_historical_place_three_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_historical_place_four_title,
+        historicalPlaceList.add(new Province(R.drawable.jamrud_fort, R.string.kpk_historical_place_four_title,
                 R.string.kpk_historical_place_four_description, R.string.kpk_historical_place_four_rating,
                 R.string.kpk_historical_place_four_review));
-        historicalPlaceList.add(new Province(R.drawable.ic_launcher_background, R.string.kpk_historical_place_five_title,
+        historicalPlaceList.add(new Province(R.drawable.st_johns_church, R.string.kpk_historical_place_five_title,
                 R.string.kpk_historical_place_five_description, R.string.kpk_historical_place_five_rating,
                 R.string.kpk_historical_place_five_review));
 
