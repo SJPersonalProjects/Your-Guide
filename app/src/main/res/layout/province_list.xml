@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/province_list_height">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:backgroundTint="#FF433C"
-        android:elevation="16dp"
-        android:id="@+id/card_view"
-        app:cardCornerRadius="32dp">
+        android:layout_margin="8dp"
+        android:elevation="32dp"
+        app:cardCornerRadius="16dp">
 
-        <!-- Relative Layout to basically to put the image below everything. -->
-        <RelativeLayout
-            android:id="@+id/tint_container"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
 
-            <!-- CardView background image. -->
+            <!-- Image (thumbnail) container. -->
             <ImageView
-                android:id="@+id/province_background_image"
+                android:id="@+id/province_category_thumbnail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.3"
+                android:layout_height="0dp"
+                android:layout_weight="55"
                 android:contentDescription="@string/todo"
                 android:scaleType="centerCrop"
                 android:src="@drawable/punjab_province_header" />
 
-            <!-- Province and province details LinearLayout. -->
+            <!-- Card details container. -->
             <LinearLayout
-                android:id="@+id/province_linear_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="vertical">
 
                 <!-- Province name. -->
@@ -43,12 +43,10 @@
                     android:id="@+id/province_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="46dp"
-                    android:layout_marginEnd="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:text="@string/province_name"
-                    android:textColor="@color/white"
-                    android:textSize="28sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
 
                 <!-- Province details. -->
@@ -56,32 +54,33 @@
                     android:id="@+id/province_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
                     android:ellipsize="end"
                     android:maxLines="3"
                     android:text="@string/province_details"
-                    android:textColor="@color/white"
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- LinearLayout for historical and popular places and cities. -->
+            <!-- Card bottom numbers container. -->
             <LinearLayout
-                android:id="@+id/sights_linear_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_below="@id/province_linear_layout"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <!-- Historical Sights LinearLinear. -->
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
                     android:gravity="bottom"
-                    android:paddingBottom="4dp"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    tools:ignore="NestedWeights">
 
                     <TextView
                         android:id="@+id/province_historical_sights_number"
@@ -93,17 +92,39 @@
                     <TextView
                         style="@style/PlacesTextStyle"
                         android:text="@string/historical_sights" />
-
                 </LinearLayout>
+
+                <!-- Cities LinearLayout. -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:id="@+id/province_cities_number"
+                        style="@style/NumberOfPlaces"
+                        android:background="@drawable/data_circle"
+                        android:gravity="center"
+                        android:text="@string/number_of_cities" />
+
+                    <TextView
+                        style="@style/PlacesTextStyle"
+                        android:text="@string/cities" />
+                </LinearLayout>
+
 
                 <!-- Popular Sights LinearLayout. -->
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="top"
-                    android:paddingTop="4dp"
-                    android:orientation="horizontal">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="bottom|end"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
 
                     <TextView
                         android:id="@+id/province_popular_sights_number"
@@ -115,33 +136,9 @@
                     <TextView
                         style="@style/PlacesTextStyle"
                         android:text="@string/popular_sights" />
-
                 </LinearLayout>
+
             </LinearLayout>
-
-            <!-- Cities RelativeLayout. -->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/province_linear_layout"
-                android:layout_alignParentEnd="true"
-                android:layout_toEndOf="@id/sights_linear_layout"
-                android:gravity="center">
-
-                <TextView
-                    android:id="@+id/province_cities_number"
-                    style="@style/NumberOfPlaces"
-                    android:background="@drawable/data_circle"
-                    android:gravity="center"
-                    android:layout_centerVertical="true"
-                    android:text="@string/number_of_cities" />
-
-                <TextView
-                    style="@style/PlacesTextStyle"
-                    android:layout_toEndOf="@id/province_cities_number"
-                    android:layout_centerVertical="true"
-                    android:text="@string/cities" />
-            </RelativeLayout>
-        </RelativeLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>

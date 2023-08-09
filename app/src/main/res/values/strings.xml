@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Your Guide</string>
 
+    <string name="app_heading">Discover The Province</string>
+    <string name="app_sub_heading">Visit the unseen beauty of Pakistan</string>
+
     <string name="todo">todo</string>
 
     <!-- Province CardView information. -->

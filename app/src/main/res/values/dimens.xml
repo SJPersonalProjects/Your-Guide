@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="province_list_height">288dp</dimen>
+    <dimen name="province_list_height">388dp</dimen>
     <dimen name="province_header_image_height">148dp</dimen>
 </resources>

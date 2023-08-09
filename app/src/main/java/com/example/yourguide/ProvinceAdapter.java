@@ -86,4 +86,13 @@ public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.ViewHo
     public ProvinceAdapter(ArrayList<Province> punjabProvinceCardList) {
         this.punjabProvinceCardList = punjabProvinceCardList;
     }
+
+    /**
+     * Adds two parentheses around the reviews.
+     * @param reviews are the amount of comments on a single card.
+     * @return the formatted reviews.
+     */
+    private String reviewsFormatter(int reviews) {
+        return "(" + reviews + ")";
+    }
 }

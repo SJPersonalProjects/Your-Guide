@@ -110,4 +110,8 @@ public class PunjabActivity extends AppCompatActivity {
         historicalPlacesRecyclerView.setLayoutManager(historicalPlacesLayoutManager);
         historicalPlacesRecyclerView.setAdapter(historicalPlacesAdapter);
     }
+
+    private String reviewsFormatter(String reviews) {
+        return "(" + reviews + ")";
+    }
 }

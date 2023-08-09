@@ -94,17 +94,17 @@ public class ProvinceCategoryAdapter extends ArrayAdapter<ProvinceCategory> {
         citiesDataCircle.setColor(citiesDataColor);
 
         //Find the ImageView in the province_list.xml layout with the id province_background_image
-        ImageView provinceBackgroundImage = currentProvinceItem.findViewById(R.id.province_background_image);
+        ImageView provinceBackgroundImage = currentProvinceItem.findViewById(R.id.province_category_thumbnail);
         //Get the province background image from the currentProvincePosition object and set
         //the text on the provinceBackgroundImage ImageView.
         provinceBackgroundImage.setImageResource(currentProvincePosition.getProvinceImageID());
 
-        //Set the theme color for the list item.
-        View tintContainer = currentProvinceItem.findViewById(R.id.tint_container);
-        //Find the color that the resource maps to.
-        int color = ContextCompat.getColor(getContext(), currentProvincePosition.getProvinceBackgroundTint());
-        //set the background color to the tint container view.
-        tintContainer.setBackgroundColor(color);
+//        //Set the theme color for the list item.
+//        View tintContainer = currentProvinceItem.findViewById(R.id.tint_container);
+//        //Find the color that the resource maps to.
+//        int color = ContextCompat.getColor(getContext(), currentProvincePosition.getProvinceBackgroundTint());
+//        //set the background color to the tint container view.
+//        tintContainer.setBackgroundColor(color);
 
         //Return the whole list item layout (containing 5 TextView)
         //so that it can be shown in the listview.
