@@ -23,15 +23,15 @@ public class PunjabActivity extends AppCompatActivity {
         //ArrayList to hold the top popular cities in Punjab Province...
         ArrayList<Province> popularCitiesList = new ArrayList<>();
         popularCitiesList.add(new Province(R.drawable.lahore_city, R.string.punjab_city_one_title,
-                R.string.punjab_city_one_description, R.string.punjab_city_one_rating, R.string.punjab_city_one_review));
+                R.string.punjab_city_one_description, R.string.punjab_city_one_rating, getResources().getString(R.string.punjab_city_one_review)));
         popularCitiesList.add(new Province(R.drawable.faisalabad_city, R.string.punjab_city_two_title,
-                R.string.punjab_city_two_description, R.string.punjab_city_two_rating, R.string.punjab_city_two_review));
+                R.string.punjab_city_two_description, R.string.punjab_city_two_rating, getResources().getString(R.string.punjab_city_two_review)));
         popularCitiesList.add(new Province(R.drawable.rawalpindi_city, R.string.punjab_city_three_title,
-                R.string.punjab_city_three_description, R.string.punjab_city_three_rating, R.string.punjab_city_three_review));
+                R.string.punjab_city_three_description, R.string.punjab_city_three_rating, getResources().getString(R.string.punjab_city_three_review)));
         popularCitiesList.add(new Province(R.drawable.multan_city, R.string.punjab_city_four_title,
-                R.string.punjab_city_four_description, R.string.punjab_city_four_rating, R.string.punjab_city_four_review));
+                R.string.punjab_city_four_description, R.string.punjab_city_four_rating, getResources().getString(R.string.punjab_city_four_review)));
         popularCitiesList.add(new Province(R.drawable.gujranwala_city, R.string.punjab_city_five_title,
-                R.string.punjab_city_five_description, R.string.punjab_city_five_rating, R.string.punjab_city_five_review));
+                R.string.punjab_city_five_description, R.string.punjab_city_five_rating, getResources().getString(R.string.punjab_city_five_review)));
 
         RecyclerView punjabProvinceRecyclerView = findViewById(R.id.punjab_province_recycler_view);
         punjabProvinceRecyclerView.setVerticalScrollBarEnabled(false);
@@ -56,15 +56,15 @@ public class PunjabActivity extends AppCompatActivity {
         //ArrayList to hold the top restaurants in Punjab Province.
         ArrayList<Province> topRestaurantList = new ArrayList<>();
         topRestaurantList.add(new Province(R.drawable.monal_restaurant, R.string.punjab_restaurant_one_title,
-                R.string.punjab_restaurant_one_description, R.string.punjab_restaurant_one_rating, R.string.punjab_restaurant_one_review));
+                R.string.punjab_restaurant_one_description, R.string.punjab_restaurant_one_rating, getResources().getString(R.string.punjab_restaurant_one_review)));
         topRestaurantList.add(new Province(R.drawable.haveli_restaurant, R.string.punjab_restaurant_two_title,
-                R.string.punjab_restaurant_two_description, R.string.punjab_restaurant_two_rating, R.string.punjab_restaurant_two_review));
+                R.string.punjab_restaurant_two_description, R.string.punjab_restaurant_two_rating, getResources().getString(R.string.punjab_restaurant_two_review)));
         topRestaurantList.add(new Province(R.drawable.andaaz_restaurant, R.string.punjab_restaurant_three_title,
-                R.string.punjab_restaurant_three_description, R.string.punjab_restaurant_three_rating, R.string.punjab_restaurant_three_review));
+                R.string.punjab_restaurant_three_description, R.string.punjab_restaurant_three_rating, getResources().getString(R.string.punjab_restaurant_three_review)));
         topRestaurantList.add(new Province(R.drawable.spice_bazaar_restaurant, R.string.punjab_restaurant_four_title, R.string.punjab_restaurant_four_description,
-                R.string.punjab_restaurant_four_rating, R.string.punjab_restaurant_four_review));
+                R.string.punjab_restaurant_four_rating, getResources().getString(R.string.punjab_restaurant_four_review)));
         topRestaurantList.add(new Province(R.drawable.dera_restaurant, R.string.punjab_restaurant_five_title,
-                R.string.punjab_restaurant_five_description, R.string.punjab_restaurant_five_rating, R.string.punjab_restaurant_five_review));
+                R.string.punjab_restaurant_five_description, R.string.punjab_restaurant_five_rating, getResources().getString(R.string.punjab_restaurant_five_review)));
 
         RecyclerView restaurantsRecyclerView = (RecyclerView) findViewById(R.id.top_restaurant_recycler_view);
         restaurantsRecyclerView.setVerticalScrollBarEnabled(false);
@@ -83,19 +83,19 @@ public class PunjabActivity extends AppCompatActivity {
         ArrayList<Province> historicalPlacesList = new ArrayList<>();
         historicalPlacesList.add(new Province(R.drawable.badshahi_mosque,
                 R.string.punjab_historical_place_one_title, R.string.punjab_historical_place_one_description,
-                R.string.punjab_historical_place_one_rating, R.string.punjab_historical_place_one_review));
+                R.string.punjab_historical_place_one_rating, getResources().getString(R.string.punjab_historical_place_one_review)));
         historicalPlacesList.add(new Province(R.drawable.wagah_border, R.string.punjab_historical_place_two_title,
                 R.string.punjab_historical_place_two_description, R.string.punjab_historical_place_two_rating,
-                R.string.punjab_historical_place_two_review));
+                getResources().getString(R.string.punjab_historical_place_two_review)));
         historicalPlacesList.add(new Province(R.drawable.lahore_fort, R.string.punjab_historical_place_three_title,
                 R.string.punjab_historical_place_three_description, R.string.punjab_historical_place_three_rating,
-                R.string.punjab_historical_place_three_review));
+                getResources().getString(R.string.punjab_historical_place_three_review)));
         historicalPlacesList.add(new Province(R.drawable.wazir_khan_mosque, R.string.punjab_historical_place_four_title,
                 R.string.punjab_historical_place_four_description, R.string.punjab_historical_place_four_rating,
-                R.string.punjab_historical_place_four_review));
+                getResources().getString(R.string.punjab_historical_place_four_review)));
         historicalPlacesList.add(new Province(R.drawable.walled_city, R.string.punjab_historical_place_five_title,
                 R.string.punjab_historical_place_five_description, R.string.punjab_historical_place_five_rating,
-                R.string.punjab_historical_place_five_review));
+                getResources().getString(R.string.punjab_historical_place_five_review)));
 
         RecyclerView historicalPlacesRecyclerView = (RecyclerView) findViewById(R.id.province_historical_places);
         historicalPlacesRecyclerView.setVerticalScrollBarEnabled(false);
@@ -109,9 +109,5 @@ public class PunjabActivity extends AppCompatActivity {
 
         historicalPlacesRecyclerView.setLayoutManager(historicalPlacesLayoutManager);
         historicalPlacesRecyclerView.setAdapter(historicalPlacesAdapter);
-    }
-
-    private String reviewsFormatter(String reviews) {
-        return "(" + reviews + ")";
     }
 }

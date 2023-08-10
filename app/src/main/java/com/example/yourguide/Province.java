@@ -5,7 +5,7 @@ public class Province {
     private final int mCardTitle;
     private final int mCardDescription;
     private final int mCardRating;
-    private final int mCardReview;
+    private final String mCardReview;
 
     /**
      * Constructor a new {@link Province} object.
@@ -16,7 +16,7 @@ public class Province {
      * @param mCardReview is the review of the card beside rating of the punjab province.
      */
     public Province(int mCardImage, int mCardTitle, int mCardDescription,
-                    int mCardRating, int mCardReview) {
+                    int mCardRating, String mCardReview) {
         this.mCardImage = mCardImage;
         this.mCardTitle = mCardTitle;
         this.mCardDescription = mCardDescription;
@@ -60,7 +60,7 @@ public class Province {
      * Get the review of the card
      * @return reviews of people
      */
-    public int getCardReview() {
+    public String getCardReview() {
         return mCardReview;
     }
 }

@@ -34,7 +34,7 @@ public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.ViewHo
         holder.mTitle.setText(currentPunjabProvinceCard.getCardTitle());
         holder.mDescription.setText(currentPunjabProvinceCard.getCardDescription());
         holder.mRating.setText(currentPunjabProvinceCard.getCardRating());
-        holder.mReview.setText(currentPunjabProvinceCard.getCardReview());
+        holder.mReview.setText(reviewsFormatter(currentPunjabProvinceCard.getCardReview()));
     }
 
     @Override
@@ -92,7 +92,7 @@ public class ProvinceAdapter extends RecyclerView.Adapter<ProvinceAdapter.ViewHo
      * @param reviews are the amount of comments on a single card.
      * @return the formatted reviews.
      */
-    private String reviewsFormatter(int reviews) {
+    public String reviewsFormatter(String reviews) {
         return "(" + reviews + ")";
     }
 }
