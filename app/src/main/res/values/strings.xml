@@ -42,32 +42,32 @@
     <string name="province_top_restaurant">Top Restaurant</string>
     <!-- Province "Historical Place" heading. -->
     <string name="province_historical_place">Historical Place</string>
-    
+
 
     <!-- Punjab province strings. -->
     <!-- Punjab Province top 5 cities -->
     <!-- City 1. Lahore -->
-    <string name="punjab_city_one_title">Lahore City</string>
+    <string name="punjab_city_one_title">Lahore</string>
     <string name="punjab_city_one_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
     <string name="punjab_city_one_rating">4.8</string>
     <string name="punjab_city_one_review">92</string>
     <!-- City 2. Faisalabad -->
-    <string name="punjab_city_two_title">Faisalabad City</string>
+    <string name="punjab_city_two_title">Faisalabad</string>
     <string name="punjab_city_two_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
     <string name="punjab_city_two_rating">4.2</string>
     <string name="punjab_city_two_review">62</string>
     <!-- City 3. Rawalpindi -->
-    <string name="punjab_city_three_title">Rawalpindi City</string>
+    <string name="punjab_city_three_title">Rawalpindi</string>
     <string name="punjab_city_three_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
     <string name="punjab_city_three_rating">4.5</string>
     <string name="punjab_city_three_review">99</string>
     <!-- City 4. Multan -->
-    <string name="punjab_city_four_title">Multan City</string>
+    <string name="punjab_city_four_title">Multan</string>
     <string name="punjab_city_four_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
     <string name="punjab_city_four_rating">3.9</string>
     <string name="punjab_city_four_review">59</string>
     <!-- City 5. Gujranwala -->
-    <string name="punjab_city_five_title">Gujranwala City</string>
+    <string name="punjab_city_five_title">Gujranwala</string>
     <string name="punjab_city_five_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
     <string name="punjab_city_five_rating">3.9</string>
     <string name="punjab_city_five_review">42</string>
@@ -75,17 +75,17 @@
 
     <!-- Punjab province top 5 restaurants. -->
     <!-- 1. Monal Restaurant -->
-    <string name="punjab_restaurant_one_title">Monal Restaurant</string>
+    <string name="punjab_restaurant_one_title">Monal</string>
     <string name="punjab_restaurant_one_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="punjab_restaurant_one_rating">4.5</string>
     <string name="punjab_restaurant_one_review">588</string>
     <!-- 2. Haveli Restaurant -->
-    <string name="punjab_restaurant_two_title">Haveli Restaurant</string>
+    <string name="punjab_restaurant_two_title">Haveli</string>
     <string name="punjab_restaurant_two_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="punjab_restaurant_two_rating">4.0</string>
     <string name="punjab_restaurant_two_review">223</string>
     <!-- 3. Andaaz Restaurant -->
-    <string name="punjab_restaurant_three_title">Andaaz Restaurant</string>
+    <string name="punjab_restaurant_three_title">Andaaz</string>
     <string name="punjab_restaurant_three_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
     <string name="punjab_restaurant_three_rating">4.5</string>
     <string name="punjab_restaurant_three_review">393</string>
@@ -95,7 +95,7 @@
     <string name="punjab_restaurant_four_rating">4.0</string>
     <string name="punjab_restaurant_four_review">189</string>
     <!-- 5. Dera Restaurant -->
-    <string name="punjab_restaurant_five_title">Dera Restaurant</string>
+    <string name="punjab_restaurant_five_title">Dera</string>
     <string name="punjab_restaurant_five_description">Halal Dinner, Lunch, Late Night</string>
     <string name="punjab_restaurant_five_rating">4.0</string>
     <string name="punjab_restaurant_five_review">72</string>
@@ -160,12 +160,12 @@
 
     <!-- Sindh province top 5 restaurants. -->
     <!-- 1. Royal Taj restaurant. -->
-    <string name="sindh_restaurant_one_title">Royal Taj Restaurant</string>
+    <string name="sindh_restaurant_one_title">Royal Taj</string>
     <string name="sindh_restaurant_one_description">Exquisite flavors and regal ambiance at Royal Taj, a culinary gem in Pakistan.</string>
     <string name="sindh_restaurant_one_rating">4.5</string>
     <string name="sindh_restaurant_one_review">102</string>
     <!-- 2. Ridan House of Mandi restaurant. -->
-    <string name="sindh_restaurant_two_title">Ridan Restaurant</string>
+    <string name="sindh_restaurant_two_title">Ridan Mandi House</string>
     <string name="sindh_restaurant_two_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
     <string name="sindh_restaurant_two_rating">4.2</string>
     <string name="sindh_restaurant_two_review">105</string>
@@ -263,7 +263,7 @@
     <string name="balochistan_restaurant_four_rating">4.2</string>
     <string name="balochistan_restaurant_four_review">98</string>
     <!-- Mehfil Restaurant. -->
-    <string name="balochistan_restaurant_five_title">Mehfil Restaurant</string>
+    <string name="balochistan_restaurant_five_title">Mehfil</string>
     <string name="balochistan_restaurant_five_description">Delight in traditional Pakistani BBQ for dinner at our cozy restaurant, a flavorful experience awaits!</string>
     <string name="balochistan_restaurant_five_rating">4.2</string>
     <string name="balochistan_restaurant_five_review">102</string>
@@ -335,17 +335,17 @@
     <string name="kpk_restaurant_two_rating">4.0</string>
     <string name="kpk_restaurant_two_review">41</string>
     <!-- 3. Pinetree Restaurant. -->
-    <string name="kpk_restaurant_three_title">Pinetree Restaurant</string>
+    <string name="kpk_restaurant_three_title">Pinetree</string>
     <string name="kpk_restaurant_three_description">Global tastes unite: International, BBQ, Asian, Middle Eastern, Pakistani delights.</string>
     <string name="kpk_restaurant_three_rating">3.5</string>
     <string name="kpk_restaurant_three_review">40</string>
     <!-- 4. Bukhara (Roof Top Barbecue). -->
-    <string name="kpk_restaurant_four_title">Bukhara (Roof Top Barbecue)</string>
+    <string name="kpk_restaurant_four_title">Bukhara Rooftop BBQ</string>
     <string name="kpk_restaurant_four_description">Sizzle under the stars: Rooftop BBQ delights await at our restaurant.</string>
     <string name="kpk_restaurant_four_rating">4.0</string>
     <string name="kpk_restaurant_four_review">27</string>
     <!-- 5. Swat Marina Restaurant. -->
-    <string name="kpk_restaurant_five_title">Swat Marina Restaurant</string>
+    <string name="kpk_restaurant_five_title">Swat Marina</string>
     <string name="kpk_restaurant_five_description">Journey through flavors: Middle Eastern &amp; Afghan dishes at our restaurant.</string>
     <string name="kpk_restaurant_five_rating">5.0</string>
     <string name="kpk_restaurant_five_review">5</string>
@@ -376,4 +376,12 @@
     <string name="kpk_historical_place_five_description">St. John\'s Church: Graceful landmark, echoes of history in Pakistan.</string>
     <string name="kpk_historical_place_five_rating">4.0</string>
     <string name="kpk_historical_place_five_review">3</string>
+
+
+    <!-- City Layout Texts. -->
+    <string name="travel">Travel</string>
+    <string name="experience">Experience</string>
+    <string name="what_would_you_like_to_do">What would you like to do?</string>
+    <string name="description">Description</string>
+    <string name="see_the_location">See the Location</string>
 </resources>

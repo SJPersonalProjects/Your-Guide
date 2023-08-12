@@ -56,4 +56,42 @@
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:orientation">horizontal</item>
     </style>
+    
+    <!-- City Activity Themes. -->
+    <style name="CityHeadingTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CityIconQuestionTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Icon in the city layouts. -->
+    <style name="CityIconTheme">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/data_circle</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Text below the icons in the city layouts. -->
+    <style name="CityIconTextTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

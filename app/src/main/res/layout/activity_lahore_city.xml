@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".punjab_province.LahoreCityActivity">
+
+    <ImageView
+        android:id="@+id/city_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lahore_city" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_from_top"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/city_name"
+            style="@style/CityHeadingTheme"
+            android:layout_marginTop="28dp"
+            android:gravity="top"
+            android:text="@string/punjab_city_one_title" />
+
+        <TextView
+            android:id="@+id/city_sub_name"
+            style="@style/CityHeadingTheme"
+            android:layout_below="@id/city_name"
+            android:text="@string/experience" />
+
+        <TextView
+            android:id="@+id/city_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:text="@string/punjab_city_one_review"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/city_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp"
+            android:layout_toStartOf="@id/city_review"
+            android:text="@string/punjab_city_one_rating"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/rating_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_toStartOf="@id/city_rating"
+            android:src="@drawable/baseline_star_24"
+            android:contentDescription="@string/todo"/>
+
+        <TextView
+            android:id="@+id/what_would_you_like_to_do"
+            style="@style/CityIconQuestionTheme"
+            android:layout_below="@id/city_sub_name"
+            android:layout_marginTop="28dp"
+            android:text="@string/what_would_you_like_to_do" />
+
+        <LinearLayout
+            android:id="@+id/icons_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/what_would_you_like_to_do"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/icon_one"
+                    style="@style/CityIconTheme"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_airplanemode_active_24" />
+
+                <TextView
+                    android:id="@+id/icon_one_title"
+                    style="@style/CityIconTextTheme"
+                    android:text="@string/travel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/icon_two"
+                    style="@style/CityIconTheme"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_airplanemode_active_24" />
+
+                <TextView
+                    android:id="@+id/icon_tww_title"
+                    style="@style/CityIconTextTheme"
+                    android:text="@string/travel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/icon_three"
+                    style="@style/CityIconTheme"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_airplanemode_active_24" />
+
+                <TextView
+                    android:id="@+id/icon_three_title"
+                    style="@style/CityIconTextTheme"
+                    android:text="@string/travel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/icon_four"
+                    style="@style/CityIconTheme"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/baseline_airplanemode_active_24" />
+
+                <TextView
+                    android:id="@+id/icon_four_title"
+                    style="@style/CityIconTextTheme"
+                    android:text="@string/travel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/city_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icons_linear_layout"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:text="@string/description"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_description_title"
+            android:layout_above="@id/location_button"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:text="@string/punjab_city_one_description"
+            android:textColor="#A4A4A4"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="#0098FB"
+            android:text="@string/see_the_location" />
+
+    </RelativeLayout>
+</RelativeLayout>

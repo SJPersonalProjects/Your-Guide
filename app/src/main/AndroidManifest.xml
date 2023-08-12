@@ -13,6 +13,9 @@
         android:theme="@style/Theme.YourGuide"
         tools:targetApi="31">
         <activity
+            android:name=".punjab_province.LahoreCityActivity"
+            android:exported="false" />
+        <activity
             android:name=".kpk_province.KPKActivity"
             android:exported="false" />
         <activity

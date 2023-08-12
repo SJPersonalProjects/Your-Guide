@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -45,11 +46,14 @@ public class PunjabActivity extends AppCompatActivity {
         punjabProvinceRecyclerView.setLayoutManager(citiesLayoutManager);
         punjabProvinceRecyclerView.setAdapter(adapter);
 
+        //This interface is triggered when any of the cities is clicked by the user.
         adapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
                 //Toast to show the click event message of cards in Punjab Activity.
                 Toast.makeText(PunjabActivity.this, popularCitiesList.get(position).getCardTitle(), Toast.LENGTH_SHORT).show();
+                Intent lahoreCityIntent = new Intent(PunjabActivity.this, LahoreCityActivity.class);
+                startActivity(lahoreCityIntent); //Start LahoreCityActivity.
             }
         });
 
