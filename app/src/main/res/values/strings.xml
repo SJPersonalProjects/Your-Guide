@@ -48,7 +48,7 @@
     <!-- Punjab Province top 5 cities -->
     <!-- City 1. Lahore -->
     <string name="punjab_city_one_title">Lahore</string>
-    <string name="punjab_city_one_description">A captivating blend of Pakistan\'s history, culture, and modern vibrancy, creating a unique and dynamic cityscape.</string>
+    <string name="punjab_city_one_description">Nestled in Pakistan, Lahore beckons with its rich history, vibrant culture, and stunning architecture. Majestic mosques, bustling bazaars, and ancient forts weave a tale of its storied past. Indulge in mouthwatering street food and find solace in serene gardens. Lahore\'s hospitality and rich heritage create an immersive experience that lingers in your heart – a destination that seamlessly blends tradition with modernity, inviting all to explore its timeless allure.</string>
     <string name="punjab_city_one_rating">4.8</string>
     <string name="punjab_city_one_review">92</string>
     <!-- City 2. Faisalabad -->
@@ -71,7 +71,6 @@
     <string name="punjab_city_five_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
     <string name="punjab_city_five_rating">3.9</string>
     <string name="punjab_city_five_review">42</string>
-
 
     <!-- Punjab province top 5 restaurants. -->
     <!-- 1. Monal Restaurant -->
@@ -384,4 +383,27 @@
     <string name="what_would_you_like_to_do">What would you like to do?</string>
     <string name="description">Description</string>
     <string name="see_the_location">See the Location</string>
+
+    <!-- Four different icon's texts for cities. -->
+    <string name="popular_city_icon_text_one">Car</string>
+    <string name="popular_city_icon_text_two">Travel</string>
+    <string name="popular_city_icon_text_three">Food</string>
+    <string name="popular_city_icon_text_four">Hotel</string>
+    <!-- Descriptive locations in the PopularCityActivity of the punjab province. -->
+    <!-- Long description for each city in the PopularCityActivity of the punjab province. -->
+    <!-- 1. Lahore -->
+    <string name="lahore_city_address">Lahore is located in the Punjab province of Pakistan, at approximately 31.5497° N latitude and 74.3436° E longitude.</string>
+    <string name="lahore_city_long_description">Lahore, a wonderful city in Pakistan, is like a colorful picture full of culture, delicious food, and amazing beauty. It has old forts and mosques that tell stories of the past, and the busy streets offer tasty treats like kebabs and special stews. The Shalimar Gardens are a peaceful place that show how beautiful art can be. Lahore is a mix of old traditions, yummy food, and timeless beauty that you can enjoy with your senses. Exploring Lahore is like stepping into a rich tapestry where history, flavors, and art come together in a delightful way.</string>
+    <!-- 2. Faisalabad -->
+    <string name="faisalabad_city_address">Faisalabad is situated in the Punjab province of Pakistan, positioned at approximately 31.4167° N latitude and 73.0833° E longitude.</string>
+    <string name="faisalabad_city_long_description">Faisalabad, a city in Pakistan, is like a colorful blend of pretty sights, interesting culture, and tasty food. The streets are lively and the people are friendly, showing how nice the city is. They make beautiful crafts and have a special festival called "Rangila Faisalabad" to celebrate their culture. The food is yummy too, with dishes like sizzling tikkas and tasty biryanis. There\'s a peaceful place called Jinnah Garden with lots of green and flowers. The Clock Tower is famous and surrounded by busy markets. People in Faisalabad are warm and welcoming, making you feel like part of their community.</string>
+    <!-- 3. Rawalpindi -->
+    <string name="rawalpindi_city_address">Rawalpindi is situated in the northern part of Pakistan, within the Punjab province, at approximately 33.6844° N latitude and 73.0479° E longitude.</string>
+    <string name="rawalpindi_city_long_description">Rawalpindi, a city in Pakistan, mixes culture, pretty sights, and yummy food. Festivals and parks show people coming together happily. They cook tasty dishes like biryanis and kebabs that make your mouth water. People in Rawalpindi are friendly, and they show their talents at art places. Busy markets like Raja Bazaar and Ayub National Park, a quiet park, are also here. Rawalpindi is a nice place where you can enjoy the culture, eat good food, and have fun exploring.</string>
+    <!-- 4. Multan -->
+    <string name="multan_city_address">Multan is located in the southern region of Punjab, Pakistan, at approximately 30.1575° N latitude and 71.5249° E longitude.</string>
+    <string name="multan_city_long_description">Multan, a city in Pakistan, is a blend of culture, natural beauty, and delicious food. Festivals and local crafts show their special traditions. The city has tasty dishes like biryanis and kebabs that make your taste buds happy. People in Multan are friendly, and they share their skills at art places. Busy markets like Hussain Agahi Bazaar and peaceful parks like Bagh-e-Jinnah add to the charm. Multan is a special place where you can experience their culture, enjoy yummy food, and have a great time exploring.</string>
+    <!-- 5. Gujranwala -->
+    <string name="gujranwala_city_address">Gujranwala is positioned in the northeastern region of Punjab, Pakistan, at approximately at 32.1617° N latitude and 74.1883° E longitude.</string>
+    <string name="gujranwala_city_long_description">Gujranwala, a city in Pakistan, is a mix of culture, pleasant surroundings, and tasty cuisine. Festivals and local crafts highlight their traditions. The city offers delicious dishes like kebabs and biryanis to satisfy your taste buds. Gujranwala\'s people are welcoming, and their artistic talents shine. Bustling markets and parks like Jinnah Park add to the city\'s appeal. Gujranwala invites you to explore its culture, savor its flavors, and enjoy its vibrant atmosphere.</string>
 </resources>

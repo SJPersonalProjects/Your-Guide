@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
+import com.example.yourguide.province_cards_categories.PopularCityActivity;
 
 import java.util.ArrayList;
 
@@ -50,9 +50,16 @@ public class PunjabActivity extends AppCompatActivity {
         adapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                //Toast to show the click event message of cards in Punjab Activity.
-                Toast.makeText(PunjabActivity.this, popularCitiesList.get(position).getCardTitle(), Toast.LENGTH_SHORT).show();
-                Intent lahoreCityIntent = new Intent(PunjabActivity.this, LahoreCityActivity.class);
+                //Intent to start another activity and passing data to display more information about cities.
+                Intent lahoreCityIntent = new Intent(PunjabActivity.this, PopularCityActivity.class);
+                lahoreCityIntent.putExtra("city_thumbnail", popularCitiesList
+                        .get(position).getCardImage()); //passing city image
+                lahoreCityIntent.putExtra("city_name", getResources()
+                        .getString(popularCitiesList.get(position).getCardTitle())); //passing city name
+                lahoreCityIntent.putExtra("city_rating", getResources()
+                        .getString(popularCitiesList.get(position).getCardRating())); //passing city rating
+                lahoreCityIntent.putExtra("city_review", popularCitiesList //passing city review
+                        .get(position).getCardReview());
                 startActivity(lahoreCityIntent); //Start LahoreCityActivity.
             }
         });

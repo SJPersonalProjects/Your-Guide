@@ -1,0 +1,37 @@
+package com.example.yourguide;
+
+public interface Formatter {
+
+    /**
+     * Formats the string by covering the given string with parentheses.
+     * @param reviews is the reviews of the users on place, hotel, or any other experience.
+     * @return a formatted string.
+     */
+    default String reviewFormatter(String reviews) {
+        return "(" + reviews + ")";
+    }
+
+
+    /**
+     * Default implementation of a method.
+     * @return a random string from the list.
+     */
+    default String subHeadingFormatter() {
+        String[] subHeadingsList = {
+                "Gateway to...",
+                "Heart of...",
+                "Exploring...",
+                "Discovering...",
+                "Experiencing...",
+                "Unveiling...",
+                "Cultural hub of...",
+                "A journey through...",
+                "Adventures in...",
+                "Hidden treasure of..."
+        };
+
+        double randomChoice = Math.random() * subHeadingsList.length;
+        int randomHeading = (int) randomChoice;
+        return subHeadingsList[randomHeading];
+    }
+}
