@@ -1,73 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".province_cards_categories.PopularCityActivity">
+    tools:context=".province_cards_categories.TopRestaurantActivity">
 
     <!-- Thumbnail image at the top. -->
     <ImageView
-        android:id="@+id/city_preview_image"
+        android:id="@+id/restaurant_preview_image"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
-        android:src="@drawable/lahore_city" />
+        android:src="@drawable/spice_bazaar_restaurant" />
 
     <!-- Parent Bottom RelativeLayout with top sides rounded. -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_from_top"
-        tools:ignore="UselessParent">
+        android:background="@drawable/rounded_from_top">
 
-        <!-- City name heading. -->
+        <!-- Name of the restaurant heading. -->
         <TextView
-            android:id="@+id/city_name"
+            android:id="@+id/restaurant_name"
             style="@style/CategoryHeadingTheme"
-            android:layout_marginTop="28dp"
-            android:text="@string/punjab_city_one_title" />
+            android:layout_marginTop="20dp"
+            android:text="@string/punjab_restaurant_one_title" />
 
-        <!-- Advertising words below the city name. -->
+        <!-- Advertising words below the restaurant name to attract more. -->
         <TextView
-            android:id="@+id/city_sub_heading"
+            android:id="@+id/restaurant_sub_heading"
             style="@style/CategorySubHeadingTheme"
-            android:layout_below="@id/city_name"
+            android:layout_below="@id/restaurant_name"
             android:text="@string/experience" />
 
-        <!-- Address of the city in Pakistan. -->
+        <!-- Reviews to the restaurant. -->
         <TextView
-            android:id="@+id/city_address"
-            style="@style/CategoryAddressTheme"
-            android:layout_below="@id/city_sub_heading"
-            android:text="@string/lahore_city_address" />
-
-        <!-- Review of the city. -->
-        <TextView
-            android:id="@+id/city_review"
+            android:id="@+id/restaurant_review"
             style="@style/CategoryReviewTheme"
-            android:text="@string/punjab_city_one_review" />
+            android:text="@string/review" />
 
-        <!-- Rating of the city. -->
+        <!-- Rating to the restaurant by the customers. -->
         <TextView
-            android:id="@+id/city_rating"
+            android:id="@+id/restaurant_rating"
             style="@style/CategoryRatingTheme"
-            android:layout_toStartOf="@id/city_review"
-            android:text="@string/punjab_city_one_rating" />
+            android:layout_toStartOf="@id/restaurant_review"
+            android:text="@string/rating" />
 
-        <!-- Rating star image of the city. -->
+        <!-- Star image to enhance the rating TextView. -->
         <ImageView
-            android:id="@+id/rating_star"
             style="@style/CategoryRatingImageTheme"
-            android:layout_toStartOf="@id/city_rating"
+            android:layout_toStartOf="@id/restaurant_rating"
             android:contentDescription="@string/todo" />
 
-        <!-- Question above the horizontal icons LinearLayout. -->
+        <!-- Address of the restaurant. -->
         <TextView
-            android:id="@+id/city_icons_question"
+            android:id="@+id/restaurant_address"
+            style="@style/CategoryAddressTheme"
+            android:layout_below="@id/restaurant_sub_heading"
+            android:text="@string/lahore_city_address" />
+
+        <!-- Restaurant timing and book a table button for reservation LinearLayout. -->
+        <LinearLayout
+            android:id="@+id/table_booking_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurant_address"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:orientation="horizontal">
+
+            <!-- Sub LinearLayout for timing and timing heading.-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CategoryOpenInHeadingTheme"
+                    android:text="Open In"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    style="@style/CategoryRestaurantTimingTheme"
+                    android:text="06:00 - 23:00" />
+
+            </LinearLayout>
+
+            <!-- Button for a table booking.-->
+            <Button
+                android:id="@+id/book_a_table_button"
+                style="@style/CategoryBookATableButtonTheme"
+                android:text="Book A Table" />
+        </LinearLayout>
+
+        <!-- Question above the horizontal list of icons LinearLayout. -->
+        <TextView
+            android:id="@+id/restaurant_icons_question"
             style="@style/CategoryIconQuestionTheme"
-            android:layout_below="@id/city_address"
+            android:layout_below="@id/table_booking_linear_layout"
             android:layout_marginTop="28dp"
             android:text="@string/what_would_you_like_to_do" />
 
@@ -75,12 +110,11 @@
         <LinearLayout
             android:id="@+id/icons_linear_layout"
             style="@style/CategoryIconsLinearLayout"
-            android:layout_below="@id/city_icons_question"
-            tools:ignore="DisableBaselineAlignment">
+            android:layout_below="@id/restaurant_icons_question">
 
-            <!-- Icon and text for car LinearLayout. -->
+            <!-- Icon one LinearLayout. -->
             <LinearLayout
-                android:id="@+id/car_linear_layout"
+                android:id="@+id/icon_one_linear_layout"
                 style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
@@ -91,18 +125,14 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
-                    android:id="@+id/icon_one_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
-            <!-- Icon and text for travel LinearLayout. -->
+            <!-- Icon two LinearLayout. -->
             <LinearLayout
-                android:id="@+id/travel_linear_layout"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:id="@+id/icon_two_linear_layout"
+                style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -112,18 +142,14 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
-                    android:id="@+id/icon_two_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
-            <!-- Icon and text for food LinearLayout. -->
+            <!-- Icon three LinearLayout. -->
             <LinearLayout
-                android:id="@+id/food_linear_layout"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:id="@+id/icon_three_linear_layout"
+                style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -133,18 +159,14 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
-                    android:id="@+id/icon_three_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
-            <!-- Icon and text for hotel LinearLayout. -->
+            <!-- Icon four LinearLayout. -->
             <LinearLayout
-                android:id="@+id/hotel_linear_layout"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
+                android:id="@+id/icon_four_linear_layout"
+                style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -154,7 +176,6 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
-                    android:id="@+id/icon_four_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
@@ -162,28 +183,29 @@
 
         <!-- Description heading for long description. -->
         <TextView
-            android:id="@+id/city_description_heading"
+            android:id="@+id/restaurant_description_heading"
             style="@style/CategoryDescriptionHeadingTheme"
             android:layout_below="@id/icons_linear_layout"
             android:text="@string/description" />
 
+
+        <!-- ScrollView containing TextView -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="144dp"
-            android:layout_below="@id/city_description_heading"
+            android:layout_below="@id/restaurant_description_heading"
+            android:orientation="vertical"
             android:scrollbars="none">
 
-            <!-- Long description for the city. -->
             <TextView
-                android:id="@+id/city_description"
                 style="@style/CategoryDescriptionTheme"
-                android:text="@string/punjab_city_one_description" />
+                android:text="@string/lahore_city_long_description" />
         </ScrollView>
 
 
         <!-- Button to see the location. -->
         <Button
-            android:id="@+id/city_see_the_location_button"
+            android:id="@+id/restaurant_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
             android:text="@string/see_the_location" />
 

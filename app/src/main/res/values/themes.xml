@@ -58,7 +58,7 @@
     </style>
     
     <!-- City Activity Themes. -->
-    <style name="CityHeadingTheme">
+    <style name="CategoryHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
@@ -67,7 +67,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="CitySubHeadingTheme">
+    <style name="CategorySubHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
@@ -76,7 +76,46 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="CityIconQuestionTheme">
+    <style name="CategoryAddressTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A4A4A4</item>
+    </style>
+
+    <style name="CategoryReviewTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CategoryRatingTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CategoryRatingImageTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:src">@drawable/baseline_star_24</item>
+    </style>
+
+
+    <style name="CategoryIconQuestionTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
@@ -85,8 +124,26 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!-- LinearLayout theme for all the horizontal icons in the layout. -->
+    <style name="CategoryIconsLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- LinearLayout theme for single icon in the parent LinearLayout. -->
+    <style name="CategorySingleIconLinearLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
     <!-- Icon in the city layouts. -->
-    <style name="CityIconTheme">
+    <style name="CategoryIconTheme">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_gravity">center</item>
@@ -96,7 +153,7 @@
     </style>
 
     <!-- Text below the icons in the city layouts. -->
-    <style name="CityIconTextTheme">
+    <style name="CategoryIconTextTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
@@ -104,4 +161,67 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <!-- Description heading below icons horizontal list of LinearLayout. -->
+    <style name="CategoryDescriptionHeadingTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Long description theme used to explain city, restaurants, historical place. -->
+    <style name="CategoryDescriptionTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- See the Location button theme to see the actual location of any place. -->
+    <style name="CategorySeeLocationButtonTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:backgroundTint">#0098FB</item>
+    </style>
+
+
+
+
+    <!-- Specifically restaurant layout styles. -->
+    <!-- Open In heading for the timing of the restaurant. -->
+    <style name="CategoryOpenInHeadingTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Timing of the restaurant opening and closing TextView. -->
+    <style name="CategoryRestaurantTimingTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Button for booking a table in restaurant. -->
+    <style name="CategoryBookATableButtonTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:backgroundTint">#0098FB</item>
+    </style>
+
+
 </resources>
