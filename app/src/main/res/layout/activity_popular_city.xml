@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/city_preview_image"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="288dp"
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
         android:src="@drawable/lahore_city" />
@@ -167,18 +167,12 @@
             android:layout_below="@id/icons_linear_layout"
             android:text="@string/description" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="144dp"
+        <!-- Long description for the city. -->
+        <TextView
+            android:id="@+id/city_description"
+            style="@style/CategoryDescriptionTheme"
             android:layout_below="@id/city_description_heading"
-            android:scrollbars="none">
-
-            <!-- Long description for the city. -->
-            <TextView
-                android:id="@+id/city_description"
-                style="@style/CategoryDescriptionTheme"
-                android:text="@string/punjab_city_one_description" />
-        </ScrollView>
+            android:text="@string/punjab_city_one_description" />
 
 
         <!-- Button to see the location. -->

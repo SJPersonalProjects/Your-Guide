@@ -66,8 +66,8 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
 
             cityNameTextView.setText(cityName);
             //city description is set using the name of the city.
-            cityDescriptionTextView.setText(descriptionChanger(cityName));
-            cityAddressTextView.setText(locationChanger(cityName));
+            cityDescriptionTextView.setText(getDescription(cityName));
+            cityAddressTextView.setText(getLocation(cityName));
             cityRatingTextView.setText(cityRating);
             cityReviewTextView.setText(reviewFormatter(cityReview)); //Here's the default method implementation.
             cityPreviewImage.setImageResource(cityImage);
@@ -130,7 +130,7 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
      * @param cityName is the name of the city clicked by the user available in the list.
      * @return a string of city address on the globe.
      */
-    private String locationChanger(String cityName) {
+    private String getLocation(String cityName) {
         switch(cityName) {
             case "Lahore" :
                 return getResources().getString(R.string.lahore_city_address);
@@ -151,7 +151,7 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
      * @param cityName is the name of the city clicked by the user available in the list.
      * @return a string of long city description.
      */
-    private String descriptionChanger(String cityName) {
+    private String getDescription(String cityName) {
         switch (cityName) {
             case "Lahore" :
                 return getResources().getString(R.string.lahore_city_long_description);
@@ -164,7 +164,6 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
             case "Gujranwala" :
                 return getResources().getString(R.string.gujranwala_city_long_description);
         }
-
         return null;
     }
 }

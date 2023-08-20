@@ -384,7 +384,7 @@
     <string name="description">Description</string>
     <string name="see_the_location">See the Location</string>
 
-    <!-- Four different icon's texts for cities. -->
+    <!-- Four different icon's texts for cities for Punjab province. -->
     <string name="popular_city_icon_text_one">Car</string>
     <string name="popular_city_icon_text_two">Travel</string>
     <string name="popular_city_icon_text_three">Food</string>
@@ -392,18 +392,46 @@
     <!-- Descriptive locations in the PopularCityActivity of the punjab province. -->
     <!-- Long description for each city in the PopularCityActivity of the punjab province. -->
     <!-- 1. Lahore -->
-    <string name="lahore_city_address">Lahore is located in the Punjab province of Pakistan, at approximately 31.5497° N latitude and 74.3436° E longitude.</string>
-    <string name="lahore_city_long_description">Lahore, a wonderful city in Pakistan, is like a colorful picture full of culture, delicious food, and amazing beauty. It has old forts and mosques that tell stories of the past, and the busy streets offer tasty treats like kebabs and special stews. The Shalimar Gardens are a peaceful place that show how beautiful art can be. Lahore is a mix of old traditions, yummy food, and timeless beauty that you can enjoy with your senses. Exploring Lahore is like stepping into a rich tapestry where history, flavors, and art come together in a delightful way.</string>
+    <string name="lahore_city_address">Lahore, Punjab, Pakistan located (31.5497° N latitude and 74.3436° E longitude)</string>
+    <string name="lahore_city_long_description">Lahore, Pakistan, a vibrant city, is a tapestry of culture, culinary delights, and captivating beauty. Ancient forts and mosques narrate history, while bustling streets serve flavorful kebabs and stews. Tranquil Shalimar Gardens exemplify exquisite art. Lahore harmonizes tradition, delectable cuisine, and timeless charm, creating an immersive blend of history, flavors, and artistry.</string>
     <!-- 2. Faisalabad -->
-    <string name="faisalabad_city_address">Faisalabad is situated in the Punjab province of Pakistan, positioned at approximately 31.4167° N latitude and 73.0833° E longitude.</string>
-    <string name="faisalabad_city_long_description">Faisalabad, a city in Pakistan, is like a colorful blend of pretty sights, interesting culture, and tasty food. The streets are lively and the people are friendly, showing how nice the city is. They make beautiful crafts and have a special festival called "Rangila Faisalabad" to celebrate their culture. The food is yummy too, with dishes like sizzling tikkas and tasty biryanis. There\'s a peaceful place called Jinnah Garden with lots of green and flowers. The Clock Tower is famous and surrounded by busy markets. People in Faisalabad are warm and welcoming, making you feel like part of their community.</string>
+    <string name="faisalabad_city_address">Faisalabad, Punjab, Pakistan located (31.4504° N latitude and 73.1350° E longitude)</string>
+    <string name="faisalabad_city_long_description">Faisalabad, Pakistan, a harmonious blend of vibrant sights, culture, and flavors, welcomes you with lively streets and warm-hearted locals. The "Rangila Faisalabad" festival and intricate crafts celebrate its rich heritage, while sizzling tikkas and the tranquility of Jinnah Garden tantalize the senses. Amidst the bustling markets, the iconic Clock Tower stands as a testament to its history, making Faisalabad a captivating tapestry of experiences.</string>
     <!-- 3. Rawalpindi -->
-    <string name="rawalpindi_city_address">Rawalpindi is situated in the northern part of Pakistan, within the Punjab province, at approximately 33.6844° N latitude and 73.0479° E longitude.</string>
-    <string name="rawalpindi_city_long_description">Rawalpindi, a city in Pakistan, mixes culture, pretty sights, and yummy food. Festivals and parks show people coming together happily. They cook tasty dishes like biryanis and kebabs that make your mouth water. People in Rawalpindi are friendly, and they show their talents at art places. Busy markets like Raja Bazaar and Ayub National Park, a quiet park, are also here. Rawalpindi is a nice place where you can enjoy the culture, eat good food, and have fun exploring.</string>
+    <string name="rawalpindi_city_address">Rawalpindi, Punjab, Pakistan located (33.6844° N latitude and 73.0479° E longitude)</string>
+    <string name="rawalpindi_city_long_description">Rawalpindi, Pakistan, harmoniously blends culture, scenic beauty, and delectable cuisine. Festivals and parks foster communal joy. Mouthwatering biryanis and kebabs tantalize taste buds. Friendly locals showcase their artistic talents while bustling Raja Bazaar and serene Ayub National Park offer diverse experiences. Rawalpindi is a delightful destination to immerse in culture, savor cuisine, and enjoy exploration.</string>
     <!-- 4. Multan -->
-    <string name="multan_city_address">Multan is located in the southern region of Punjab, Pakistan, at approximately 30.1575° N latitude and 71.5249° E longitude.</string>
-    <string name="multan_city_long_description">Multan, a city in Pakistan, is a blend of culture, natural beauty, and delicious food. Festivals and local crafts show their special traditions. The city has tasty dishes like biryanis and kebabs that make your taste buds happy. People in Multan are friendly, and they share their skills at art places. Busy markets like Hussain Agahi Bazaar and peaceful parks like Bagh-e-Jinnah add to the charm. Multan is a special place where you can experience their culture, enjoy yummy food, and have a great time exploring.</string>
+    <string name="multan_city_address">Multan, Punjab, Pakistan located (30.1575° N latitude and 71.5249° E longitude)</string>
+    <string name="multan_city_long_description">Multan, Pakistan, blends culture, natural beauty, and delicious cuisine. Festivals and local crafts showcase traditions. Tasty biryanis and kebabs delight taste buds. Friendly locals share skills at art venues. Vibrant markets like Hussain Agahi Bazaar and serene parks add charm. Experience culture, relish food, and explore in Multan.</string>
     <!-- 5. Gujranwala -->
-    <string name="gujranwala_city_address">Gujranwala is positioned in the northeastern region of Punjab, Pakistan, at approximately at 32.1617° N latitude and 74.1883° E longitude.</string>
-    <string name="gujranwala_city_long_description">Gujranwala, a city in Pakistan, is a mix of culture, pleasant surroundings, and tasty cuisine. Festivals and local crafts highlight their traditions. The city offers delicious dishes like kebabs and biryanis to satisfy your taste buds. Gujranwala\'s people are welcoming, and their artistic talents shine. Bustling markets and parks like Jinnah Park add to the city\'s appeal. Gujranwala invites you to explore its culture, savor its flavors, and enjoy its vibrant atmosphere.</string>
+    <string name="gujranwala_city_address">Gujranwala, Punjab, Pakistan located ()32.1617° N latitude and 74.1883° E longitude)</string>
+    <string name="gujranwala_city_long_description">Gujranwala, Pakistan, combines culture, scenic beauty, and flavorful cuisine. Festivals and local crafts embody tradition. Delight in kebabs and biryanis that tantalize. Friendly locals showcase artistic talents. Bustling markets and Jinnah Park enhance appeal. Explore culture, savor flavors, and embrace Gujranwala\'s vibrant charm.</string>
+
+    <!-- Four different icon's texts for top restaurants for Punjab province. -->
+    <string name="top_restaurant_icon_text_one">Delivery</string>
+    <string name="top_restaurant_icon_text_two">Pick Up</string>
+    <string name="top_restaurant_icon_text_three">Dine In</string>
+    <string name="top_restaurant_icon_text_four">Dine Out</string>
+    
+    <string name="book_a_table">Book a Table</string>
+    <string name="open_in_heading">Open In</string>
+    <string name="restaurant_timings">06:00 – 23:00</string>
+    
+    <!-- Descriptive locations in the TopRestaurantActivity of the Punjab province. -->
+    <!-- Long description for each restaurant in the TopRestaurantActivity of the Punjab province. -->
+    <!-- 1. Monal-->
+    <string name="punjab_restaurant_one_address">Plaza Liberty Park and Ride Plaza, Liberty Chowk, Round About, Gulberg III, Lahore</string>
+    <string name="punjab_restaurant_one_long_description">Monal Lahore stands tall on Park and Ride Plaza Liberty, featuring indoor and outdoor dining spaces along with a kid\'s play area. The fusion of rustic charm and modern design is showcased through its live kitchen. Daily live music enhances the enchanting experience at Monal Lahore.</string>
+    <!-- 2. Haveli -->
+    <string name="punjab_restaurant_two_address">2170-A Food St Fort Rd, opposite Badshahi Mosque, Shahi Mohallah Walled City, Lahore</string>
+    <string name="punjab_restaurant_two_long_description">Experience BBQ-Pakistani fusion at its finest. Indulge in smoky barbecue delights and savor authentic flavors that blend tradition with innovation. From succulent kebabs to aromatic biryanis, our restaurant offers a tantalizing journey where every bite tells a delicious tale.</string>
+    <!-- 3. Andaaz -->
+    <string name="punjab_restaurant_three_address">2189 A Fort Rd, Shahi Mohallah Walled City of Lahore, Lahore, Punjab</string>
+    <string name="punjab_restaurant_three_long_description">Embark on a journey from dinner to late-night revelry at our chic venue. Savor exquisite dinner choices and expertly mixed drinks, weaving a delightful tapestry of taste and atmosphere that endures into the night. Join us for an unforgettable dusk-to-late hours experience of flavor and delight.</string>
+    <!-- 4. Spice Bazar -->
+    <string name="punjab_restaurant_four_address">T-01, Tipu Rd, off MM Alam Road, Lahore, 54660</string>
+    <string name="punjab_restaurant_four_long_description">Experience a gastronomic odyssey from sunrise to sunset in our exceptional eatery. Explore a spectrum of flavors, from inviting brunches to hearty lunches and refined dinners, each a delightful chapter in shared culinary joy. Join us to relish the artistry of taste, one meal at a time.</string>
+    <!-- 5. Dera -->
+    <string name="punjab_restaurant_five_address">Hafeez Kardar Rd، near Gaddafi Stadium, Block E 2 Gulberg III, Lahore</string>
+    <string name="punjab_restaurant_five_long_description">Welcome to Dera, where culinary excellence knows no bounds. Whether it\'s the sophistication of dinner, the heartiness of lunch, or late-night delights, savor every moment of our extraordinary dining experience. Join us for a gastronomic journey that transcends time, celebrating taste in every meal.</string>
 </resources>

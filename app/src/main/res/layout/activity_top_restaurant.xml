@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,7 @@
     <ImageView
         android:id="@+id/restaurant_preview_image"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="288dp"
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
         android:src="@drawable/spice_bazaar_restaurant" />
@@ -31,7 +30,7 @@
 
         <!-- Advertising words below the restaurant name to attract more. -->
         <TextView
-            android:id="@+id/restaurant_sub_heading"
+            android:id="@+id/restaurant_advertising_phrase"
             style="@style/CategorySubHeadingTheme"
             android:layout_below="@id/restaurant_name"
             android:text="@string/experience" />
@@ -59,7 +58,7 @@
         <TextView
             android:id="@+id/restaurant_address"
             style="@style/CategoryAddressTheme"
-            android:layout_below="@id/restaurant_sub_heading"
+            android:layout_below="@id/restaurant_advertising_phrase"
             android:text="@string/lahore_city_address" />
 
         <!-- Restaurant timing and book a table button for reservation LinearLayout. -->
@@ -82,12 +81,13 @@
 
                 <TextView
                     style="@style/CategoryOpenInHeadingTheme"
-                    android:text="Open In"
+                    android:text="@string/open_in_heading"
                     tools:ignore="NestedWeights" />
 
                 <TextView
+                    android:id="@+id/restaurant_timings"
                     style="@style/CategoryRestaurantTimingTheme"
-                    android:text="06:00 - 23:00" />
+                    android:text="@string/restaurant_timings" />
 
             </LinearLayout>
 
@@ -95,7 +95,7 @@
             <Button
                 android:id="@+id/book_a_table_button"
                 style="@style/CategoryBookATableButtonTheme"
-                android:text="Book A Table" />
+                android:text="@string/book_a_table" />
         </LinearLayout>
 
         <!-- Question above the horizontal list of icons LinearLayout. -->
@@ -114,7 +114,7 @@
 
             <!-- Icon one LinearLayout. -->
             <LinearLayout
-                android:id="@+id/icon_one_linear_layout"
+                android:id="@+id/deliver_linear_layout"
                 style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
@@ -125,13 +125,14 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
+                    android:id="@+id/icon_one_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
             <!-- Icon two LinearLayout. -->
             <LinearLayout
-                android:id="@+id/icon_two_linear_layout"
+                android:id="@+id/pickup_linear_layout"
                 style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
@@ -139,16 +140,18 @@
                     android:id="@+id/icon_two"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24" />
+                    android:src="@drawable/baseline_airplanemode_active_24"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
+                    android:id="@+id/icon_two_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
             <!-- Icon three LinearLayout. -->
             <LinearLayout
-                android:id="@+id/icon_three_linear_layout"
+                android:id="@+id/dinein_linear_layout"
                 style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
@@ -159,13 +162,14 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
+                    android:id="@+id/icon_three_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
 
             <!-- Icon four LinearLayout. -->
             <LinearLayout
-                android:id="@+id/icon_four_linear_layout"
+                android:id="@+id/dineout_linear_layout"
                 style="@style/CategorySingleIconLinearLayout"
                 tools:ignore="UseCompoundDrawables">
 
@@ -176,6 +180,7 @@
                     android:src="@drawable/baseline_airplanemode_active_24" />
 
                 <TextView
+                    android:id="@+id/icon_four_title"
                     style="@style/CategoryIconTextTheme"
                     android:text="@string/travel" />
             </LinearLayout>
@@ -188,19 +193,11 @@
             android:layout_below="@id/icons_linear_layout"
             android:text="@string/description" />
 
-
-        <!-- ScrollView containing TextView -->
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="144dp"
+        <TextView
+            android:id="@+id/restaurant_long_description"
+            style="@style/CategoryDescriptionTheme"
             android:layout_below="@id/restaurant_description_heading"
-            android:orientation="vertical"
-            android:scrollbars="none">
-
-            <TextView
-                style="@style/CategoryDescriptionTheme"
-                android:text="@string/lahore_city_long_description" />
-        </ScrollView>
+            android:text="@string/punjab_restaurant_one_long_description" />
 
 
         <!-- Button to see the location. -->

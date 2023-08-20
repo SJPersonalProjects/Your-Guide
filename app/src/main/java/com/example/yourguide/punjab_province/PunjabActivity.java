@@ -6,11 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
 import com.example.yourguide.province_cards_categories.PopularCityActivity;
+import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
 
@@ -87,8 +89,32 @@ public class PunjabActivity extends AppCompatActivity {
 
         ProvinceAdapter restaurantsAdapter = new ProvinceAdapter(topRestaurantList);
 
+
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
+
+        //This listener gets triggered when the restaurants cards is clicked in PunjabActivity.
+        restaurantsAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                //Intent to start another activity and passing some data along with intent to display it as details.
+                Intent restaurantsIntent = new Intent(PunjabActivity.this, TopRestaurantActivity.class);
+                restaurantsIntent.putExtra("restaurant_thumbnail_image",
+                        topRestaurantList.get(position).getCardImage()); //Passing image for preview.
+                restaurantsIntent.putExtra("restaurant_name",
+                        topRestaurantList.get(position).getCardTitle()); //Passing restaurant name.
+                restaurantsIntent.putExtra("restaurant_rating",
+                        topRestaurantList.get(position).getCardRating()); //Passing restaurant rating.
+                restaurantsIntent.putExtra("restaurant_review",
+                        topRestaurantList.get(position).getCardReview()); //Passing restaurant review.
+                startActivity(restaurantsIntent); //start TopRestaurantActivity.
+
+                Toast.makeText(PunjabActivity.this,
+                        getResources().getString(topRestaurantList.get(position).getCardTitle()) +
+                                " is clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         //ArrayList to hold the historical places in Punjab province.
         ArrayList<Province> historicalPlacesList = new ArrayList<>();
@@ -120,5 +146,14 @@ public class PunjabActivity extends AppCompatActivity {
 
         historicalPlacesRecyclerView.setLayoutManager(historicalPlacesLayoutManager);
         historicalPlacesRecyclerView.setAdapter(historicalPlacesAdapter);
+
+        //This listener gets triggered when the historical places card is clicked in PunjabActivity.
+        historicalPlacesAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Toast.makeText(PunjabActivity.this,
+                        getResources().getString(historicalPlacesList.get(position).getCardTitle()) + " is clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
