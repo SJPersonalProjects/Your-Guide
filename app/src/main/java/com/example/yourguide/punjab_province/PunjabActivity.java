@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
+import com.example.yourguide.province_cards_categories.HistoricalPlaceActivity;
 import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
@@ -153,6 +154,8 @@ public class PunjabActivity extends AppCompatActivity {
             public void onItemClick(int position) {
                 Toast.makeText(PunjabActivity.this,
                         getResources().getString(historicalPlacesList.get(position).getCardTitle()) + " is clicked", Toast.LENGTH_SHORT).show();
+                Intent historicalPlace = new Intent(PunjabActivity.this, HistoricalPlaceActivity.class);
+                startActivity(historicalPlace); //Start the activity by displaying data on device.
             }
         });
     }

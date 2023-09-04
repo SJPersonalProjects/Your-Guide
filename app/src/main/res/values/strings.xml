@@ -412,11 +412,11 @@
     <string name="top_restaurant_icon_text_two">Pick Up</string>
     <string name="top_restaurant_icon_text_three">Dine In</string>
     <string name="top_restaurant_icon_text_four">Dine Out</string>
-    
+
     <string name="book_a_table">Book a Table</string>
     <string name="open_in_heading">Open In</string>
     <string name="restaurant_timings">06:00 – 23:00</string>
-    
+
     <!-- Descriptive locations in the TopRestaurantActivity of the Punjab province. -->
     <!-- Long description for each restaurant in the TopRestaurantActivity of the Punjab province. -->
     <!-- 1. Monal-->
