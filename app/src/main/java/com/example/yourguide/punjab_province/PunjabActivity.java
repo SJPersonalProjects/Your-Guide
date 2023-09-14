@@ -155,6 +155,14 @@ public class PunjabActivity extends AppCompatActivity {
                 Toast.makeText(PunjabActivity.this,
                         getResources().getString(historicalPlacesList.get(position).getCardTitle()) + " is clicked", Toast.LENGTH_SHORT).show();
                 Intent historicalPlace = new Intent(PunjabActivity.this, HistoricalPlaceActivity.class);
+                historicalPlace.putExtra("historical_place_thumbnail_image",
+                        historicalPlacesList.get(position).getCardImage());
+                historicalPlace.putExtra("historical_place_title",
+                        getResources().getString(historicalPlacesList.get(position).getCardTitle()));
+                historicalPlace.putExtra("historical_place_rating",
+                        getResources().getString(historicalPlacesList.get(position).getCardRating()));
+                historicalPlace.putExtra("historical_place_review",
+                        historicalPlacesList.get(position).getCardReview());
                 startActivity(historicalPlace); //Start the activity by displaying data on device.
             }
         });

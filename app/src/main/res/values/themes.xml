@@ -57,13 +57,27 @@
         <item name="android:orientation">horizontal</item>
     </style>
     
-    <!-- City Activity Themes. -->
+    <!-- Category card Themes. -->
+    <style name="CategoryPreviewImageImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">288dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CategoryParentBottomRelativeLayoutTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">588dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/rounded_from_top</item>
+    </style>
+
+    <!-- Title of the category theme. -->
     <style name="CategoryHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
         <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -72,7 +86,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
         <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -81,6 +95,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">28dp</item>
         <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:layout_marginTop">8dp</item>
         <item name="android:maxLines">2</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textSize">14sp</item>

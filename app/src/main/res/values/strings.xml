@@ -35,6 +35,34 @@
     <string name="review">(56)</string>
 
 
+    <!-- Place holder data for all the category activities. -->
+    <!-- Title of the activity. -->
+    <string name="activity_title">Lorem</string>
+    <!-- Advertising phrases for the activity of city, restaurant, historical place. -->
+    <string name="activity_advertising_phrases">Lorem ipsum dolor</string>
+    <!-- Address of the activity like city, restaurant, historical place. -->
+    <string name="activity_address">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus odio</string>
+    <!-- Question for icons. -->
+    <string name="activity_question">What would you like to do?</string>
+    <!-- Rating of the activity. -->
+    <string name="activity_rating">0.0</string>
+    <!-- Reviews of the activity. -->
+    <string name="activity_review">0</string>
+    <!-- Icons texts. -->
+    <string name="activity_icon_text">Lorem</string>
+    <!-- Description heading. -->
+    <string name="activity_description_heading">Description</string>
+    <!-- Place holder description. -->
+    <string name="activity_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum, eros nec facilisis suscipit, justo urna iaculis nunc, nec varius justo risus quis felis. Vivamus euismod bibendum nulla, eu bibendum odio tempor a. Integer auctor quam id eros placerat, eu fringilla neque dictum.</string>
+    <!-- See the location button. -->
+    <string name="activity_see_the_location_button_text">See the Location</string>
+    <!-- Book a table button in activity_top_restaurant. -->
+    <string name="activity_book_a_table_button_text">Book a Table</string>
+    <string name="activity_open_in_heading">Open In</string>
+    <!-- Top restaurant timings text in activity_top_restaurant. -->
+    <string name="activity_restaurant_timings_text">06:00 – 23:00</string>
+
+
     <!-- Province "Popular City" heading and "See All" heading. -->
     <string name="province_popular_city">Popular City</string>
     <string name="province_see_all">See All</string>
@@ -43,89 +71,133 @@
     <!-- Province "Historical Place" heading. -->
     <string name="province_historical_place">Historical Place</string>
 
-
     <!-- Punjab province strings. -->
     <!-- Punjab Province top 5 cities -->
+    <!-- Descriptive locations in the PopularCityActivity of the punjab province. -->
+    <!-- Long description for each city in the PopularCityActivity of the punjab province. -->
     <!-- City 1. Lahore -->
     <string name="punjab_city_one_title">Lahore</string>
-    <string name="punjab_city_one_description">Nestled in Pakistan, Lahore beckons with its rich history, vibrant culture, and stunning architecture. Majestic mosques, bustling bazaars, and ancient forts weave a tale of its storied past. Indulge in mouthwatering street food and find solace in serene gardens. Lahore\'s hospitality and rich heritage create an immersive experience that lingers in your heart – a destination that seamlessly blends tradition with modernity, inviting all to explore its timeless allure.</string>
+    <string name="punjab_city_one_address">Lahore, Punjab, Pakistan located (31.5497° N latitude and 74.3436° E longitude)</string>
+    <string name="punjab_city_one_description">Lahore, Pakistan, a vibrant city, is a tapestry of culture, culinary delights, and captivating beauty. Ancient forts and mosques narrate history, while bustling streets serve flavorful kebabs and stews. Tranquil Shalimar Gardens exemplify exquisite art. Lahore harmonizes tradition, delectable cuisine, and timeless charm, creating an immersive blend of history, flavors, and artistry.</string>
     <string name="punjab_city_one_rating">4.8</string>
     <string name="punjab_city_one_review">92</string>
     <!-- City 2. Faisalabad -->
     <string name="punjab_city_two_title">Faisalabad</string>
-    <string name="punjab_city_two_description">An industrious Pakistani city, renowned for textiles and commerce, contributing significantly to the nation\'s economy.</string>
+    <string name="punjab_city_two_address">Faisalabad, Punjab, Pakistan located (31.4504° N latitude and 73.1350° E longitude)</string>
+    <string name="punjab_city_two_description">Faisalabad, Pakistan, a harmonious blend of vibrant sights, culture, and flavors, welcomes you with lively streets and warm-hearted locals. The "Rangila Faisalabad" festival and intricate crafts celebrate its rich heritage, while sizzling tikkas and the tranquility of Jinnah Garden tantalize the senses. Amidst the bustling markets, the iconic Clock Tower stands as a testament to its history, making Faisalabad a captivating tapestry of experiences.</string>
     <string name="punjab_city_two_rating">4.2</string>
     <string name="punjab_city_two_review">62</string>
     <!-- City 3. Rawalpindi -->
     <string name="punjab_city_three_title">Rawalpindi</string>
-    <string name="punjab_city_three_description">A historic city adjacent to Islamabad, Pakistan\'s capital, with a rich blend of tradition, military significance, and urban life.</string>
+    <string name="punjab_city_three_address">Rawalpindi, Punjab, Pakistan located (33.6844° N latitude and 73.0479° E longitude)</string>
+    <string name="punjab_city_three_description">Rawalpindi, Pakistan, harmoniously blends culture, scenic beauty, and delectable cuisine. Festivals and parks foster communal joy. Mouthwatering biryanis and kebabs tantalize taste buds. Friendly locals showcase their artistic talents while bustling Raja Bazaar and serene Ayub National Park offer diverse experiences. Rawalpindi is a delightful destination to immerse in culture, savor cuisine, and enjoy exploration.</string>
     <string name="punjab_city_three_rating">4.5</string>
     <string name="punjab_city_three_review">99</string>
     <!-- City 4. Multan -->
     <string name="punjab_city_four_title">Multan</string>
-    <string name="punjab_city_four_description">Pakistan\'s \'City of Saints\', steeped in history, known for its shrines, bazaars, and vibrant cultural heritage.</string>
+    <string name="punjab_city_four_address">Multan, Punjab, Pakistan located (30.1575° N latitude and 71.5249° E longitude)</string>
+    <string name="punjab_city_four_description">Multan, Pakistan, blends culture, natural beauty, and delicious cuisine. Festivals and local crafts showcase traditions. Tasty biryanis and kebabs delight taste buds. Friendly locals share skills at art venues. Vibrant markets like Hussain Agahi Bazaar and serene parks add charm. Experience culture, relish food, and explore in Multan.</string>
     <string name="punjab_city_four_rating">3.9</string>
     <string name="punjab_city_four_review">59</string>
     <!-- City 5. Gujranwala -->
     <string name="punjab_city_five_title">Gujranwala</string>
-    <string name="punjab_city_five_description">A bustling industrial city in Pakistan, famed for its manufacturing prowess and vibrant commercial activity.</string>
+    <string name="punjab_city_five_address">Gujranwala, Punjab, Pakistan located (32.1617° N latitude and 74.1883° E longitude)</string>
+    <string name="punjab_city_five_description">Gujranwala, Pakistan, combines culture, scenic beauty, and flavorful cuisine. Festivals and local crafts embody tradition. Delight in kebabs and biryanis that tantalize. Friendly locals showcase artistic talents. Bustling markets and Jinnah Park enhance appeal. Explore culture, savor flavors, and embrace Gujranwala\'s vibrant charm.</string>
     <string name="punjab_city_five_rating">3.9</string>
     <string name="punjab_city_five_review">42</string>
 
+    <!-- Four different icon's texts for cities for Punjab province. -->
+    <string name="popular_city_icon_text_one">Car</string>
+    <string name="popular_city_icon_text_two">Travel</string>
+    <string name="popular_city_icon_text_three">Food</string>
+    <string name="popular_city_icon_text_four">Hotel</string>
+
+
     <!-- Punjab province top 5 restaurants. -->
+    <!-- Descriptive locations in the TopRestaurantActivity of the Punjab province. -->
+    <!-- Long description for each restaurant in the TopRestaurantActivity of the Punjab province. -->
     <!-- 1. Monal Restaurant -->
     <string name="punjab_restaurant_one_title">Monal</string>
-    <string name="punjab_restaurant_one_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_one_address">Plaza Liberty Park and Ride Plaza, Liberty Chowk, Round About, Gulberg III, Lahore</string>
+    <string name="punjab_restaurant_one_description">Monal Lahore stands tall on Park and Ride Plaza Liberty, featuring indoor and outdoor dining spaces along with a kid\'s play area. The fusion of rustic charm and modern design is showcased through its live kitchen. Daily live music enhances the enchanting experience at Monal Lahore.</string>
     <string name="punjab_restaurant_one_rating">4.5</string>
     <string name="punjab_restaurant_one_review">588</string>
     <!-- 2. Haveli Restaurant -->
     <string name="punjab_restaurant_two_title">Haveli</string>
-    <string name="punjab_restaurant_two_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_two_address">2170-A Food St Fort Rd, opposite Badshahi Mosque, Shahi Mohallah Walled City, Lahore</string>
+    <string name="punjab_restaurant_two_description">Experience BBQ-Pakistani fusion at its finest. Indulge in smoky barbecue delights and savor authentic flavors that blend tradition with innovation. From succulent kebabs to aromatic biryanis, our restaurant offers a tantalizing journey where every bite tells a delicious tale.</string>
     <string name="punjab_restaurant_two_rating">4.0</string>
     <string name="punjab_restaurant_two_review">223</string>
     <!-- 3. Andaaz Restaurant -->
     <string name="punjab_restaurant_three_title">Andaaz</string>
-    <string name="punjab_restaurant_three_description">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</string>
+    <string name="punjab_restaurant_three_address">2189 A Fort Rd, Shahi Mohallah Walled City of Lahore, Lahore, Punjab</string>
+    <string name="punjab_restaurant_three_description">Embark on a journey from dinner to late-night revelry at our chic venue. Savor exquisite dinner choices and expertly mixed drinks, weaving a delightful tapestry of taste and atmosphere that endures into the night. Join us for an unforgettable dusk-to-late hours experience of flavor and delight.</string>
     <string name="punjab_restaurant_three_rating">4.5</string>
     <string name="punjab_restaurant_three_review">393</string>
     <!-- 4. Spice Bazar -->
     <string name="punjab_restaurant_four_title">Spice Bazar</string>
-    <string name="punjab_restaurant_four_description">Vegetarian Friendly, Vegan Options, Halal</string>
+    <string name="punjab_restaurant_four_address">T-01, Tipu Rd, off MM Alam Road, Lahore, 54660</string>
+    <string name="punjab_restaurant_four_description">Experience a gastronomic odyssey from sunrise to sunset in our exceptional eatery. Explore a spectrum of flavors, from inviting brunches to hearty lunches and refined dinners, each a delightful chapter in shared culinary joy. Join us to relish the artistry of taste, one meal at a time.</string>
     <string name="punjab_restaurant_four_rating">4.0</string>
     <string name="punjab_restaurant_four_review">189</string>
     <!-- 5. Dera Restaurant -->
     <string name="punjab_restaurant_five_title">Dera</string>
-    <string name="punjab_restaurant_five_description">Halal Dinner, Lunch, Late Night</string>
+    <string name="punjab_restaurant_five_address">Hafeez Kardar Rd، near Gaddafi Stadium, Block E 2 Gulberg III, Lahore</string>
+    <string name="punjab_restaurant_five_description">Welcome to Dera, where culinary excellence knows no bounds. Whether it\'s the sophistication of dinner, the heartiness of lunch, or late-night delights, savor every moment of our extraordinary dining experience. Join us for a gastronomic journey that transcends time, celebrating taste in every meal.</string>
     <string name="punjab_restaurant_five_rating">4.0</string>
     <string name="punjab_restaurant_five_review">72</string>
 
+    <!-- Four different icon's texts for top restaurants for Punjab province. -->
+    <string name="top_restaurant_icon_text_one">Delivery</string>
+    <string name="top_restaurant_icon_text_two">Pick Up</string>
+    <string name="top_restaurant_icon_text_three">Dine In</string>
+    <string name="top_restaurant_icon_text_four">Dine Out</string>
+
 
     <!-- Punjab Province Top 5 Historical Places. -->
+    <!-- Descriptive locations in the HistoricalPlaceActivity of the Punjab province. -->
+    <!-- Long description for each restaurant in the HistoricalPlaceActivity of the Punjab province. -->
     <!-- 1. Badshahi Mosque -->
     <string name="punjab_historical_place_one_title">Badshahi Mosque</string>
-    <string name="punjab_historical_place_one_description">Beautiful Badshahi Mosque: Historic gem in Lahore, Pakistan, known for its stunning architecture.</string>
+    <string name="punjab_historical_place_one_address">Walled City of Lahore, Lahore. (31.5839° N latitude and 74.4057° E longitude)</string>
+    <string name="punjab_historical_place_one_description">The Badshahi Mosque in Lahore, Pakistan, is an architectural masterpiece and a symbol of Mughal grandeur. Built in the 17th century, it boasts stunning red sandstone and marble, massive domes, and intricate calligraphy, making it a revered cultural and historical treasure.</string>
     <string name="punjab_historical_place_one_rating">4.5</string>
     <string name="punjab_historical_place_one_review">828</string>
     <!-- 2. Wagah Border -->
     <string name="punjab_historical_place_two_title">Wagah Border</string>
-    <string name="punjab_historical_place_two_description">Wagah Border: Colorful Pakistan-India ceremony showcasing national pride.</string>
+    <string name="punjab_historical_place_two_address">Village Wagah, Tehsil Wagah, Lahore. (31.5839° N latitude and 74.4057° E longitude)</string>
+    <string name="punjab_historical_place_two_description">Wagah Border in Pakistan is a vibrant and patriotic border crossing near Lahore. Known for its daily flag-lowering ceremony, it symbolizes the longstanding rivalry and unity between India and Pakistan, drawing crowds for its spirited displays of national pride.</string>
     <string name="punjab_historical_place_two_rating">4.5</string>
     <string name="punjab_historical_place_two_review">616</string>
     <!-- 3. Lahore Fort -->
     <string name="punjab_historical_place_three_title">Lahore Fort</string>
-    <string name="punjab_historical_place_three_description">Lahore Fort: Ancient Mughal wonder, full of history and beauty.</string>
+    <string name="punjab_historical_place_three_address">Walled City of Lahore, Lahore. (31.5839° N latitude and 74.4057° E longitude)</string>
+    <string name="punjab_historical_place_three_description">The Lahore Fort, a UNESCO World Heritage Site, is a historical gem in Lahore, Pakistan. Dating back to the Mughal era, it showcases stunning architecture, intricate motifs, and lush gardens, offering a glimpse into the rich heritage of the region.</string>
     <string name="punjab_historical_place_three_rating">4.5</string>
     <string name="punjab_historical_place_three_review">503</string>
     <!-- 4. Wazir Khan Mosque -->
-    <string name="punjab_historical_place_four_title">Wazir Khan Mosque</string>
-    <string name="punjab_historical_place_four_description">Wazir Khan Mosque: Architectural gem in Pakistan, stunning Mughal design.</string>
+    <string name="punjab_historical_place_four_title">Wazir.K Mosque</string>
+    <string name="punjab_historical_place_four_address">Walled City of Lahore, Lahore. (31.5839° N latitude and 74.4057° E longitude)</string>
+    <string name="punjab_historical_place_four_description">The Wazir Khan Mosque, nestled in the heart of Lahore\'s Walled City, is a masterpiece of Mughal architecture. Built in the 17th century, it boasts intricate tile work, colorful frescoes, and a serene courtyard, offering a splendid glimpse into the artistic and cultural legacy of the Mughal Empire.</string>
     <string name="punjab_historical_place_four_rating">4.5</string>
     <string name="punjab_historical_place_four_review">215</string>
     <!-- 5. Walled City of Lahore -->
-    <string name="punjab_historical_place_five_title">Walled City of Lahore</string>
-    <string name="punjab_historical_place_five_description">Walled City of Lahore: Historic charm, bustling markets, cultural heart.</string>
+    <string name="punjab_historical_place_five_title">Walled City</string>
+    <string name="punjab_historical_place_five_address">Walled City of Lahore, Lahore. (31.5839° N latitude and 74.4057° E longitude)</string>
+    <string name="punjab_historical_place_five_description">The Walled City of Lahore, a historical treasure in Lahore, Pakistan, is a testament to centuries of cultural and architectural evolution. Its narrow streets, majestic gates, and stunning landmarks offer a living history lesson in a vibrant urban setting.</string>
     <string name="punjab_historical_place_five_rating">4.5</string>
     <string name="punjab_historical_place_five_review">66</string>
+
+    <!-- Four different icon's text for historical places across the country. -->
+    <string name="historical_place_icon_text_one">Museum</string>
+    <string name="historical_place_icon_text_two">Guide</string>
+    <string name="historical_place_icon_text_three">Photography</string>
+    <string name="historical_place_icon_text_four">Event</string>
+
+
+
+
+
 
 
     <!-- Sindh province strings. -->
@@ -377,61 +449,11 @@
     <string name="kpk_historical_place_five_review">3</string>
 
 
-    <!-- City Layout Texts. -->
-    <string name="travel">Travel</string>
-    <string name="experience">Experience</string>
-    <string name="what_would_you_like_to_do">What would you like to do?</string>
-    <string name="description">Description</string>
-    <string name="see_the_location">See the Location</string>
 
-    <!-- Four different icon's texts for cities for Punjab province. -->
-    <string name="popular_city_icon_text_one">Car</string>
-    <string name="popular_city_icon_text_two">Travel</string>
-    <string name="popular_city_icon_text_three">Food</string>
-    <string name="popular_city_icon_text_four">Hotel</string>
-    <!-- Descriptive locations in the PopularCityActivity of the punjab province. -->
-    <!-- Long description for each city in the PopularCityActivity of the punjab province. -->
-    <!-- 1. Lahore -->
-    <string name="lahore_city_address">Lahore, Punjab, Pakistan located (31.5497° N latitude and 74.3436° E longitude)</string>
-    <string name="lahore_city_long_description">Lahore, Pakistan, a vibrant city, is a tapestry of culture, culinary delights, and captivating beauty. Ancient forts and mosques narrate history, while bustling streets serve flavorful kebabs and stews. Tranquil Shalimar Gardens exemplify exquisite art. Lahore harmonizes tradition, delectable cuisine, and timeless charm, creating an immersive blend of history, flavors, and artistry.</string>
-    <!-- 2. Faisalabad -->
-    <string name="faisalabad_city_address">Faisalabad, Punjab, Pakistan located (31.4504° N latitude and 73.1350° E longitude)</string>
-    <string name="faisalabad_city_long_description">Faisalabad, Pakistan, a harmonious blend of vibrant sights, culture, and flavors, welcomes you with lively streets and warm-hearted locals. The "Rangila Faisalabad" festival and intricate crafts celebrate its rich heritage, while sizzling tikkas and the tranquility of Jinnah Garden tantalize the senses. Amidst the bustling markets, the iconic Clock Tower stands as a testament to its history, making Faisalabad a captivating tapestry of experiences.</string>
-    <!-- 3. Rawalpindi -->
-    <string name="rawalpindi_city_address">Rawalpindi, Punjab, Pakistan located (33.6844° N latitude and 73.0479° E longitude)</string>
-    <string name="rawalpindi_city_long_description">Rawalpindi, Pakistan, harmoniously blends culture, scenic beauty, and delectable cuisine. Festivals and parks foster communal joy. Mouthwatering biryanis and kebabs tantalize taste buds. Friendly locals showcase their artistic talents while bustling Raja Bazaar and serene Ayub National Park offer diverse experiences. Rawalpindi is a delightful destination to immerse in culture, savor cuisine, and enjoy exploration.</string>
-    <!-- 4. Multan -->
-    <string name="multan_city_address">Multan, Punjab, Pakistan located (30.1575° N latitude and 71.5249° E longitude)</string>
-    <string name="multan_city_long_description">Multan, Pakistan, blends culture, natural beauty, and delicious cuisine. Festivals and local crafts showcase traditions. Tasty biryanis and kebabs delight taste buds. Friendly locals share skills at art venues. Vibrant markets like Hussain Agahi Bazaar and serene parks add charm. Experience culture, relish food, and explore in Multan.</string>
-    <!-- 5. Gujranwala -->
-    <string name="gujranwala_city_address">Gujranwala, Punjab, Pakistan located ()32.1617° N latitude and 74.1883° E longitude)</string>
-    <string name="gujranwala_city_long_description">Gujranwala, Pakistan, combines culture, scenic beauty, and flavorful cuisine. Festivals and local crafts embody tradition. Delight in kebabs and biryanis that tantalize. Friendly locals showcase artistic talents. Bustling markets and Jinnah Park enhance appeal. Explore culture, savor flavors, and embrace Gujranwala\'s vibrant charm.</string>
 
-    <!-- Four different icon's texts for top restaurants for Punjab province. -->
-    <string name="top_restaurant_icon_text_one">Delivery</string>
-    <string name="top_restaurant_icon_text_two">Pick Up</string>
-    <string name="top_restaurant_icon_text_three">Dine In</string>
-    <string name="top_restaurant_icon_text_four">Dine Out</string>
 
-    <string name="book_a_table">Book a Table</string>
-    <string name="open_in_heading">Open In</string>
-    <string name="restaurant_timings">06:00 – 23:00</string>
 
-    <!-- Descriptive locations in the TopRestaurantActivity of the Punjab province. -->
-    <!-- Long description for each restaurant in the TopRestaurantActivity of the Punjab province. -->
-    <!-- 1. Monal-->
-    <string name="punjab_restaurant_one_address">Plaza Liberty Park and Ride Plaza, Liberty Chowk, Round About, Gulberg III, Lahore</string>
-    <string name="punjab_restaurant_one_long_description">Monal Lahore stands tall on Park and Ride Plaza Liberty, featuring indoor and outdoor dining spaces along with a kid\'s play area. The fusion of rustic charm and modern design is showcased through its live kitchen. Daily live music enhances the enchanting experience at Monal Lahore.</string>
-    <!-- 2. Haveli -->
-    <string name="punjab_restaurant_two_address">2170-A Food St Fort Rd, opposite Badshahi Mosque, Shahi Mohallah Walled City, Lahore</string>
-    <string name="punjab_restaurant_two_long_description">Experience BBQ-Pakistani fusion at its finest. Indulge in smoky barbecue delights and savor authentic flavors that blend tradition with innovation. From succulent kebabs to aromatic biryanis, our restaurant offers a tantalizing journey where every bite tells a delicious tale.</string>
-    <!-- 3. Andaaz -->
-    <string name="punjab_restaurant_three_address">2189 A Fort Rd, Shahi Mohallah Walled City of Lahore, Lahore, Punjab</string>
-    <string name="punjab_restaurant_three_long_description">Embark on a journey from dinner to late-night revelry at our chic venue. Savor exquisite dinner choices and expertly mixed drinks, weaving a delightful tapestry of taste and atmosphere that endures into the night. Join us for an unforgettable dusk-to-late hours experience of flavor and delight.</string>
-    <!-- 4. Spice Bazar -->
-    <string name="punjab_restaurant_four_address">T-01, Tipu Rd, off MM Alam Road, Lahore, 54660</string>
-    <string name="punjab_restaurant_four_long_description">Experience a gastronomic odyssey from sunrise to sunset in our exceptional eatery. Explore a spectrum of flavors, from inviting brunches to hearty lunches and refined dinners, each a delightful chapter in shared culinary joy. Join us to relish the artistry of taste, one meal at a time.</string>
-    <!-- 5. Dera -->
-    <string name="punjab_restaurant_five_address">Hafeez Kardar Rd، near Gaddafi Stadium, Block E 2 Gulberg III, Lahore</string>
-    <string name="punjab_restaurant_five_long_description">Welcome to Dera, where culinary excellence knows no bounds. Whether it\'s the sophistication of dinner, the heartiness of lunch, or late-night delights, savor every moment of our extraordinary dining experience. Join us for a gastronomic journey that transcends time, celebrating taste in every meal.</string>
+
+
+
 </resources>

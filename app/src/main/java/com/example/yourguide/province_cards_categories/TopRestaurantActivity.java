@@ -42,9 +42,6 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
         //Restaurant address.
         TextView restaurantAddress = findViewById(R.id.restaurant_address);
 
-        //Restaurant timings.
-        TextView restaurantTimings = findViewById(R.id.restaurant_timings);
-
         //Restaurant icons and their titles.
         ImageView restaurantIconOne = findViewById(R.id.icon_one); //Icon one.
         restaurantIconOne.setImageResource(R.drawable.delivery);
@@ -169,20 +166,16 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
      * @param restaurantName is the name of the restaurant.
      * @return the location of the restaurant.
      */
-    private String getLocation(String restaurantName) {
-        switch(restaurantName) {
-            case "Monal":
-                return getResources().getString(R.string.punjab_restaurant_one_address);
-            case "Haveli":
-                return getResources().getString(R.string.punjab_restaurant_two_address);
-            case "Andaaz":
-                return getResources().getString(R.string.punjab_restaurant_three_address);
-            case "Spice Bazar":
-                return getResources().getString(R.string.punjab_restaurant_four_address);
-            case "Dera":
-                return getResources().getString(R.string.punjab_restaurant_five_address);
-        }
-        return null;
+    @Override
+    public String getLocation(String restaurantName) {
+        return switch (restaurantName) {
+            case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_address);
+            case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_address);
+            case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_address);
+            case "Spice Bazar" -> getResources().getString(R.string.punjab_restaurant_four_address);
+            case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_address);
+            default -> null;
+        };
     }
 
     /**
@@ -190,19 +183,16 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
      * @param restaurantName is the name of the restaurant.
      * @return the complete long description for a restaurant.
      */
-    private String getDescription(String restaurantName) {
-        switch(restaurantName) {
-            case "Monal" :
-                return getResources().getString(R.string.punjab_restaurant_one_long_description);
-            case "Haveli" :
-                return getResources().getString(R.string.punjab_restaurant_two_long_description);
-            case "Andaaz" :
-                return getResources().getString(R.string.punjab_restaurant_three_long_description);
-            case "Spice Bazar" :
-                return getResources().getString(R.string.punjab_restaurant_four_long_description);
-            case "Dera" :
-                return getResources().getString(R.string.punjab_restaurant_five_long_description);
-        }
-        return null;
+    @Override
+    public String getDescription(String restaurantName) {
+        return switch (restaurantName) {
+            case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_description);
+            case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_description);
+            case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_description);
+            case "Spice Bazar" ->
+                    getResources().getString(R.string.punjab_restaurant_four_description);
+            case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_description);
+            default -> null;
+        };
     }
 }

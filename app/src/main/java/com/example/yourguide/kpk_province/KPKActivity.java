@@ -17,7 +17,7 @@ public class KPKActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kpkactivity);
+        setContentView(R.layout.activity_kpk);
 
         //ArrayList that holds the data for "Popular City" in the Khyber Pakhtunkhwa Province.
         ArrayList<Province> popularCitiesList = new ArrayList<>();

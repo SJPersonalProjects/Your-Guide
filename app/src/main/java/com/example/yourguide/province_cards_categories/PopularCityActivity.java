@@ -127,43 +127,35 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
 
     /**
      * Gets location based on the city name clicked by the user.
-     * @param cityName is the name of the city clicked by the user available in the list.
-     * @return a string of city address on the globe.
+     * @param name is the name of the city clicked by the user available in the list.
+     * @return address
      */
-    private String getLocation(String cityName) {
-        switch(cityName) {
-            case "Lahore" :
-                return getResources().getString(R.string.lahore_city_address);
-            case "Faisalabad" :
-                return getResources().getString(R.string.faisalabad_city_address);
-            case "Rawalpindi" :
-                return getResources().getString(R.string.rawalpindi_city_address);
-            case "Multan" :
-                return getResources().getString(R.string.multan_city_address);
-            case "Gujranwala" :
-                return getResources().getString(R.string.gujranwala_city_address);
-        }
-        return "";
+    @Override
+    public String getLocation(String name) {
+        return switch (name) {
+            case "Lahore" -> getResources().getString(R.string.punjab_city_one_address);
+            case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_address);
+            case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_address);
+            case "Multan" -> getResources().getString(R.string.punjab_city_four_address);
+            case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_address);
+            default -> "Problem fetching address";
+        };
     }
 
     /**
      * Gets the long description based on the city name clicked by the user.
-     * @param cityName is the name of the city clicked by the user available in the list.
+     * @param name is the name of the city clicked by the user available in the list.
      * @return a string of long city description.
      */
-    private String getDescription(String cityName) {
-        switch (cityName) {
-            case "Lahore" :
-                return getResources().getString(R.string.lahore_city_long_description);
-            case "Faisalabad" :
-                return getResources().getString(R.string.faisalabad_city_long_description);
-            case "Rawalpindi" :
-                return getResources().getString(R.string.rawalpindi_city_long_description);
-            case "Multan" :
-                return getResources().getString(R.string.multan_city_long_description);
-            case "Gujranwala" :
-                return getResources().getString(R.string.gujranwala_city_long_description);
-        }
-        return null;
+    @Override
+    public String getDescription(String name) {
+        return switch (name) {
+            case "Lahore" -> getResources().getString(R.string.punjab_city_one_description);
+            case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_description);
+            case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_description);
+            case "Multan" -> getResources().getString(R.string.punjab_city_four_description);
+            case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_description);
+            default -> "Problem fetching description";
+        };
     }
 }

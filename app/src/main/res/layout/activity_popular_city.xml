@@ -8,18 +8,13 @@
     <!-- Thumbnail image at the top. -->
     <ImageView
         android:id="@+id/city_preview_image"
-        android:layout_width="match_parent"
-        android:layout_height="288dp"
+        style="@style/CategoryPreviewImageImage"
         android:contentDescription="@string/todo"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lahore_city" />
+        android:src="@drawable/ic_launcher_background" />
 
     <!-- Parent Bottom RelativeLayout with top sides rounded. -->
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_from_top"
+        style="@style/CategoryParentBottomRelativeLayoutTheme"
         tools:ignore="UselessParent">
 
         <!-- City name heading. -->
@@ -27,34 +22,34 @@
             android:id="@+id/city_name"
             style="@style/CategoryHeadingTheme"
             android:layout_marginTop="28dp"
-            android:text="@string/punjab_city_one_title" />
+            android:text="@string/activity_title" />
 
         <!-- Advertising words below the city name. -->
         <TextView
             android:id="@+id/city_sub_heading"
             style="@style/CategorySubHeadingTheme"
             android:layout_below="@id/city_name"
-            android:text="@string/experience" />
+            android:text="@string/activity_advertising_phrases" />
 
         <!-- Address of the city in Pakistan. -->
         <TextView
             android:id="@+id/city_address"
             style="@style/CategoryAddressTheme"
             android:layout_below="@id/city_sub_heading"
-            android:text="@string/lahore_city_address" />
+            android:text="@string/activity_address" />
 
         <!-- Review of the city. -->
         <TextView
             android:id="@+id/city_review"
             style="@style/CategoryReviewTheme"
-            android:text="@string/punjab_city_one_review" />
+            android:text="@string/activity_review" />
 
         <!-- Rating of the city. -->
         <TextView
             android:id="@+id/city_rating"
             style="@style/CategoryRatingTheme"
             android:layout_toStartOf="@id/city_review"
-            android:text="@string/punjab_city_one_rating" />
+            android:text="@string/activity_rating" />
 
         <!-- Rating star image of the city. -->
         <ImageView
@@ -69,7 +64,7 @@
             style="@style/CategoryIconQuestionTheme"
             android:layout_below="@id/city_address"
             android:layout_marginTop="28dp"
-            android:text="@string/what_would_you_like_to_do" />
+            android:text="@string/activity_question" />
 
         <!-- Horizontal LinearLayout for icons. -->
         <LinearLayout
@@ -88,12 +83,12 @@
                     android:id="@+id/icon_one"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24" />
+                    android:src="@drawable/baseline_android_24" />
 
                 <TextView
                     android:id="@+id/icon_one_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel" />
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Icon and text for travel LinearLayout. -->
@@ -109,12 +104,12 @@
                     android:id="@+id/icon_two"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24" />
+                    android:src="@drawable/baseline_android_24" />
 
                 <TextView
                     android:id="@+id/icon_two_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel" />
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Icon and text for food LinearLayout. -->
@@ -130,12 +125,12 @@
                     android:id="@+id/icon_three"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24" />
+                    android:src="@drawable/baseline_android_24" />
 
                 <TextView
                     android:id="@+id/icon_three_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel" />
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Icon and text for hotel LinearLayout. -->
@@ -151,12 +146,12 @@
                     android:id="@+id/icon_four"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24" />
+                    android:src="@drawable/baseline_android_24" />
 
                 <TextView
                     android:id="@+id/icon_four_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel" />
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
         </LinearLayout>
 
@@ -165,21 +160,21 @@
             android:id="@+id/city_description_heading"
             style="@style/CategoryDescriptionHeadingTheme"
             android:layout_below="@id/icons_linear_layout"
-            android:text="@string/description" />
+            android:text="@string/activity_description_heading" />
 
         <!-- Long description for the city. -->
         <TextView
             android:id="@+id/city_description"
             style="@style/CategoryDescriptionTheme"
             android:layout_below="@id/city_description_heading"
-            android:text="@string/punjab_city_one_description" />
+            android:text="@string/activity_description" />
 
 
         <!-- Button to see the location. -->
         <Button
             android:id="@+id/city_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
-            android:text="@string/see_the_location" />
+            android:text="@string/activity_see_the_location_button_text" />
 
     </RelativeLayout>
 </RelativeLayout>

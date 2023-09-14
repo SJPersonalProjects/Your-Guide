@@ -34,4 +34,20 @@ public interface Formatter {
         int randomHeading = (int) randomChoice;
         return subHeadingsList[randomHeading];
     }
+
+    /**
+     * Gets the name of the city, historical place, or restaurant
+     * clicked by the user and returns the location accordingly.
+     * @param name is the name of the place or restaurant
+     * @return the location.
+     */
+    String getLocation(String name);
+
+    /**
+     * Gets the name of the city, historical place, or restaurant
+     * clicked by the user and returns the description accordingly.
+     * @param name is the name of hte place or restaurant.
+     * @return the description
+     */
+    String getDescription(String name);
 }

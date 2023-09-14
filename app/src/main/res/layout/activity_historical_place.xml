@@ -7,52 +7,27 @@
 
     <!-- Top preview image. -->
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="288dp"
+        android:id="@+id/historical_place_preview_image"
+        style="@style/CategoryPreviewImageImage"
         android:contentDescription="@string/todo"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lahore_fort"/>
+        android:src="@drawable/ic_launcher_background"/>
 
     <!-- Parent bottom RelativeLayout with top sides rounded. -->
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_from_top">
-
-        <!-- Historical Place name heading. -->
-        <TextView
-            android:id="@+id/historical_place_name"
-            style="@style/CategoryHeadingTheme"
-            android:text="@string/punjab_historical_place_one_title"
-            android:layout_marginTop="28dp"/>
-
-        <!-- Attractive words below the historical place name heading. -->
-        <TextView
-            android:id="@+id/historical_place_sub_heading"
-            style="@style/CategorySubHeadingTheme"
-            android:layout_below="@id/historical_place_name"
-            android:text="@string/experience"/>
-
-        <!-- Address of the historical place in Pakistan. -->
-        <TextView
-            android:id="@+id/historical_place_address"
-            style="@style/CategoryAddressTheme"
-            android:layout_below="@id/historical_place_sub_heading"
-            android:text="@string/lahore_city_address"/>
+        style="@style/CategoryParentBottomRelativeLayoutTheme">
 
         <!-- Review of the historical place. -->
         <TextView
             android:id="@+id/historical_place_review"
             style="@style/CategoryReviewTheme"
-            android:text="@string/punjab_city_one_review"/>
+            android:text="@string/activity_review"/>
 
         <!-- Rating of the historical place. -->
         <TextView
             android:id="@+id/historical_place_rating"
             style="@style/CategoryRatingTheme"
             android:layout_toStartOf="@id/historical_place_review"
-            android:text="@string/punjab_city_one_rating"/>
+            android:text="@string/activity_rating"/>
 
         <!-- Rating star image of the historical place. -->
         <ImageView
@@ -61,13 +36,34 @@
             android:layout_toStartOf="@id/historical_place_rating"
             android:contentDescription="@string/todo"/>
 
+        <!-- Historical Place name heading. -->
+        <TextView
+            android:id="@+id/historical_place_name"
+            style="@style/CategoryHeadingTheme"
+            android:text="@string/activity_title"
+            android:layout_marginTop="28dp"/>
+
+        <!-- Attractive words below the historical place name heading. -->
+        <TextView
+            android:id="@+id/historical_place_sub_heading"
+            style="@style/CategorySubHeadingTheme"
+            android:layout_below="@id/historical_place_name"
+            android:text="@string/activity_advertising_phrases"/>
+
+        <!-- Address of the historical place in Pakistan. -->
+        <TextView
+            android:id="@+id/historical_place_address"
+            style="@style/CategoryAddressTheme"
+            android:layout_below="@id/historical_place_sub_heading"
+            android:text="@string/activity_address"/>
+
         <!-- Question above the horizontal icons LinearLayout. -->
         <TextView
             android:id="@+id/historical_place_icon_question"
             style="@style/CategoryIconQuestionTheme"
             android:layout_below="@id/historical_place_address"
             android:layout_marginTop="28dp"
-            android:text="@string/what_would_you_like_to_do"/>
+            android:text="@string/activity_question"/>
 
         <!-- Horizontal LinearLayout for icons. -->
         <LinearLayout
@@ -86,13 +82,13 @@
                     android:id="@+id/icon_one_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24"/>
+                    android:src="@drawable/baseline_android_24"/>
 
                 <!-- Title for icon one. -->
                 <TextView
                     android:id="@+id/icon_one_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel"/>
+                    android:text="@string/activity_icon_text"/>
             </LinearLayout>
 
             <!-- Image and title for icon two LinearLayout. -->
@@ -106,13 +102,13 @@
                     android:id="@+id/icon_two_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24"/>
+                    android:src="@drawable/baseline_android_24"/>
 
                 <!-- Title for icon two. -->
                 <TextView
                     android:id="@+id/icon_two_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel"/>
+                    android:text="@string/activity_icon_text"/>
             </LinearLayout>
 
             <!-- Image and title for icon three LinearLayout. -->
@@ -126,13 +122,13 @@
                     android:id="@+id/icon_three_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24"/>
+                    android:src="@drawable/baseline_android_24"/>
 
                 <!-- Title for icon three. -->
                 <TextView
                     android:id="@+id/icon_three_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel"/>
+                    android:text="@string/activity_icon_text"/>
             </LinearLayout>
 
             <!-- Image and title for icon four LinearLayout. -->
@@ -146,13 +142,13 @@
                     android:id="@+id/icon_four_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_airplanemode_active_24"/>
+                    android:src="@drawable/baseline_android_24"/>
 
                 <!-- Title for icon four. -->
                 <TextView
                     android:id="@+id/icon_four_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/travel"/>
+                    android:text="@string/activity_icon_text"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -161,19 +157,19 @@
             android:id="@+id/historical_place_description_heading"
             style="@style/CategoryDescriptionHeadingTheme"
             android:layout_below="@id/icons_linear_layout"
-            android:text="@string/description"/>
+            android:text="@string/activity_description_heading"/>
 
         <!-- Long description for the historical place. -->
         <TextView
             android:id="@+id/historical_place_description"
             style="@style/CategoryDescriptionTheme"
             android:layout_below="@id/historical_place_description_heading"
-            android:text="@string/punjab_city_one_description"/>
+            android:text="@string/activity_description"/>
 
         <!-- Button to see the location. -->
         <Button
             android:id="@+id/historical_place_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
-            android:text="@string/see_the_location"/>
+            android:text="@string/activity_see_the_location_button_text"/>
     </RelativeLayout>
 </RelativeLayout>
