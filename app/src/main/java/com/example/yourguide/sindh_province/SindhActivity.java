@@ -4,12 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
+import com.example.yourguide.province_cards_categories.HistoricalPlaceActivity;
+import com.example.yourguide.province_cards_categories.PopularCityActivity;
+import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
+import java.io.DataOutputStream;
 import java.util.ArrayList;
 
 public class SindhActivity extends AppCompatActivity {
@@ -44,6 +50,26 @@ public class SindhActivity extends AppCompatActivity {
         citiesRecyclerView.setLayoutManager(citiesLayoutManager);
         citiesRecyclerView.setAdapter(citiesAdapter);
 
+        //This listener is triggered when the user clicks any of the popular cities in the Sindh province.
+        citiesAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent popularCityIntent = new Intent(SindhActivity.this, PopularCityActivity.class);
+                popularCityIntent.putExtra("city_thumbnail",
+                        popularCitiesList.get(position).getCardImage()); //Passing city image.
+                popularCityIntent.putExtra("city_name",
+                        getResources().getString(popularCitiesList.get(position).getCardTitle())); //Passing city name.
+                popularCityIntent.putExtra("city_rating",
+                        getResources().getString(popularCitiesList.get(position).getCardRating())); //Passing city rating.
+                popularCityIntent.putExtra("city_review",
+                        popularCitiesList.get(position).getCardReview()); //Passing city review.
+                startActivity(popularCityIntent); //Start the activity.
+
+                Toast.makeText(SindhActivity.this,
+                        getResources().getString(popularCitiesList.get(position).getCardTitle()) + " clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         ArrayList<Province> topRestaurantsList = new ArrayList<>();
         topRestaurantsList.add(new Province(R.drawable.royal_taj_restaurant, R.string.sindh_restaurant_one_title,
@@ -69,6 +95,25 @@ public class SindhActivity extends AppCompatActivity {
 
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
+
+        //This listener is triggered when the user clicks any of the top restaurants in the Sindh province.
+        restaurantsAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent topRestaurantsIntent = new Intent(SindhActivity.this, TopRestaurantActivity.class);
+                topRestaurantsIntent.putExtra("restaurant_thumbnail_image",
+                        topRestaurantsList.get(position).getCardImage()); //Passing in the restaurant thumbnail image.
+                topRestaurantsIntent.putExtra("restaurant_name",
+                        topRestaurantsList.get(position).getCardTitle()); //Passing in the restaurant name.
+                topRestaurantsIntent.putExtra("restaurant_rating",
+                        topRestaurantsList.get(position).getCardRating()); //Passing in the restaurant rating.
+                topRestaurantsIntent.putExtra("restaurant_review",
+                        topRestaurantsList.get(position).getCardReview()); //Passing in the restaurant review.
+                startActivity(topRestaurantsIntent);
+                Toast.makeText(SindhActivity.this,
+                        getResources().getString(topRestaurantsList.get(position).getCardTitle()) + " clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         ArrayList<Province> historicalPlaceList = new ArrayList<>();
@@ -100,5 +145,22 @@ public class SindhActivity extends AppCompatActivity {
 
         historicalPlaceRecyclerView.setLayoutManager(historicalPlaceLayoutManager);
         historicalPlaceRecyclerView.setAdapter(historicalPlaceAdapter);
+
+        //This listener is triggered when the user clicks any of the historical places in the Sindh province.
+        historicalPlaceAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent historicalPlaceIntent = new Intent(SindhActivity.this, HistoricalPlaceActivity.class);
+                historicalPlaceIntent.putExtra("historical_place_thumbnail_image",
+                        historicalPlaceList.get(position).getCardImage()); //Passing historical place image.
+                historicalPlaceIntent.putExtra("historical_place_title",
+                        getResources().getString(historicalPlaceList.get(position).getCardTitle())); //Passing historical place title.
+                historicalPlaceIntent.putExtra("historical_place_rating",
+                        getResources().getString(historicalPlaceList.get(position).getCardRating())); //Passing historical place rating.
+                historicalPlaceIntent.putExtra("historical_place_review",
+                        historicalPlaceList.get(position).getCardReview()); //Passing historical place review.
+                startActivity(historicalPlaceIntent);
+            }
+        });
     }
 }

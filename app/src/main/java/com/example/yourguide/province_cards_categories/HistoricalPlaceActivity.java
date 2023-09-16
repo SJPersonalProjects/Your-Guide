@@ -129,12 +129,21 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
     @Override
     public String getLocation(String historicalPlaceName) {
         return switch(historicalPlaceName) {
+            //Punjab province historical place locations.
             case "Badshahi Mosque" -> getResources().getString(R.string.punjab_historical_place_one_address);
             case "Wagah Border" -> getResources().getString(R.string.punjab_historical_place_two_address);
             case "Lahore Fort" -> getResources().getString(R.string.punjab_historical_place_three_address);
             case "Wazir.K Mosque" -> getResources().getString(R.string.punjab_historical_place_four_address);
             case "Walled City" -> getResources().getString(R.string.punjab_historical_place_five_address);
-            default -> "Location not available";
+
+            //Sindh province historical place locations.
+            case "Mohenjo-daro" -> getResources().getString(R.string.sindh_historical_place_one_address);
+            case "Makli Hill" -> getResources().getString(R.string.sindh_historical_place_two_address);
+            case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_address);
+            case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_address);
+            case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_address);
+
+            default -> "Location not found";
         };
     }
 
@@ -146,12 +155,21 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
     @Override
     public String getDescription(String historicalPlaceName) {
         return switch(historicalPlaceName) {
+            //Punjab province historical place descriptions.
             case "Badshahi Mosque" -> getResources().getString(R.string.punjab_historical_place_one_description);
             case "Wagah Border" -> getResources().getString(R.string.punjab_historical_place_two_description);
             case "Lahore Fort" -> getResources().getString(R.string.punjab_historical_place_three_description);
             case "Wazir.K Mosque" -> getResources().getString(R.string.punjab_historical_place_four_description);
             case "Walled City" -> getResources().getString(R.string.punjab_historical_place_five_description);
-            default -> "Description not available";
+
+            //Sindh province historical place descriptions.
+            case "Mohenjo-daro" -> getResources().getString(R.string.sindh_historical_place_one_description);
+            case "Makli Hill" -> getResources().getString(R.string.sindh_historical_place_two_description);
+            case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_description);
+            case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_description);
+            case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_description);
+
+            default -> "Description not found";
         };
     }
 }

@@ -54,16 +54,16 @@ public class PunjabActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position) {
                 //Intent to start another activity and passing data to display more information about cities.
-                Intent lahoreCityIntent = new Intent(PunjabActivity.this, PopularCityActivity.class);
-                lahoreCityIntent.putExtra("city_thumbnail", popularCitiesList
+                Intent popularCityIntent = new Intent(PunjabActivity.this, PopularCityActivity.class);
+                popularCityIntent.putExtra("city_thumbnail", popularCitiesList
                         .get(position).getCardImage()); //passing city image
-                lahoreCityIntent.putExtra("city_name", getResources()
+                popularCityIntent.putExtra("city_name", getResources()
                         .getString(popularCitiesList.get(position).getCardTitle())); //passing city name
-                lahoreCityIntent.putExtra("city_rating", getResources()
+                popularCityIntent.putExtra("city_rating", getResources()
                         .getString(popularCitiesList.get(position).getCardRating())); //passing city rating
-                lahoreCityIntent.putExtra("city_review", popularCitiesList //passing city review
+                popularCityIntent.putExtra("city_review", popularCitiesList //passing city review
                         .get(position).getCardReview());
-                startActivity(lahoreCityIntent); //Start LahoreCityActivity.
+                startActivity(popularCityIntent); //Start PopularCityActivity.
             }
         });
 
@@ -152,8 +152,6 @@ public class PunjabActivity extends AppCompatActivity {
         historicalPlacesAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                Toast.makeText(PunjabActivity.this,
-                        getResources().getString(historicalPlacesList.get(position).getCardTitle()) + " is clicked", Toast.LENGTH_SHORT).show();
                 Intent historicalPlace = new Intent(PunjabActivity.this, HistoricalPlaceActivity.class);
                 historicalPlace.putExtra("historical_place_thumbnail_image",
                         historicalPlacesList.get(position).getCardImage());

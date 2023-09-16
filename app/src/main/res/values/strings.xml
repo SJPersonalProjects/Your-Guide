@@ -204,27 +204,32 @@
     <!-- Sindh province top 5 cities. -->
     <!-- City 1. Karachi -->
     <string name="sindh_city_one_title">Karachi</string>
-    <string name="sindh_city_one_description">Karachi is the largest city in Pakistan, with a population of over 20 million.</string>
+    <string name="sindh_city_one_address">Karachi, Sindh, Pakistan located (24.8607° N latitude and 67.0011° E longitude)</string>
+    <string name="sindh_city_one_description">Karachi, Pakistan\'s largest city, is a vibrant metropolis located on the Arabian Sea. Known for its diverse culture and bustling streets, it serves as the country\'s economic and commercial hub. With a rich history, modern skyscrapers, and a lively food scene, Karachi offers a unique blend of tradition and progress, making it a dynamic and exciting destination.</string>
     <string name="sindh_city_one_rating">4.5</string>
     <string name="sindh_city_one_review">502</string>
     <!-- City 2. Hyderabad -->
     <string name="sindh_city_two_title">Hyderabad</string>
-    <string name="sindh_city_two_description">Hyderabad is a city and the capital of Hyderabad Division in the Sindh province of Pakistan.</string>
+    <string name="sindh_city_two_address">Hyderabad, Sindh, Pakistan located (25.3792° N latitude and 68.3682° E longitude)</string>
+    <string name="sindh_city_two_description">Hyderabad, located in Pakistan\'s Sindh province, is a city steeped in history and cultural richness. Its iconic landmarks like the Charminar and Rani Bagh reflect its grandeur. Known for its bustling bazaars and delectable cuisine, Hyderabad offers a sensory experience like no other. With a blend of tradition and modernity, it remains a captivating destination for both locals and visitors.</string>
     <string name="sindh_city_two_rating">4.5</string>
     <string name="sindh_city_two_review">204</string>
-    <!-- City 3. Dadu -->
+    <!-- City 3. Sukkur -->
     <string name="sindh_city_three_title">Sukkur</string>
-    <string name="sindh_city_three_description">Sukkur is the third largest city in Sindh, and 14th largest populated city in Pakistan.</string>
+    <string name="sindh_city_three_address">Sukkur, Sindh, Pakistan located (27.7052° N latitude and 68.8574° E longitude)</string>
+    <string name="sindh_city_three_description">Sukkur, nestled along the banks of the Indus River in Pakistan\'s Sindh province, is a city characterized by its picturesque landscapes and historic significance. The Lansdowne Bridge, an engineering marvel, adds to its architectural allure. Sukkur is a bustling economic hub, known for its cotton and rice production, while its vibrant bazaars and cultural heritage make it a unique and intriguing destination in Pakistan.</string>
     <string name="sindh_city_three_rating">4.3</string>
     <string name="sindh_city_three_review">265</string>
     <!-- City 4. Thatta -->
     <string name="sindh_city_four_title">Thatta</string>
-    <string name="sindh_city_four_description">Thatta District is located in the southern area, of the province of Sindh, Pakistan.</string>
+    <string name="sindh_city_four_address">Thatta, Sindh, Pakistan located (24.7475° N latitude and 67.9249° E longitude)</string>
+    <string name="sindh_city_four_description">Thatta, a historic city in Pakistan\'s Sindh province, is a treasure trove of cultural and architectural wonders. Its UNESCO World Heritage Sites, such as the Shah Jahan Mosque and Makli Necropolis, showcase the city\'s rich past. Thatta\'s winding streets and ancient tombs offer a glimpse into its storied history, making it a must-visit destination for history enthusiasts and travelers seeking a journey through time in Pakistan.</string>
     <string name="sindh_city_four_rating">3.9</string>
     <string name="sindh_city_four_review">92</string>
     <!-- City 5. Shikarpur -->
     <string name="sindh_city_five_title">Shikarpur</string>
-    <string name="sindh_city_five_description">Shikarpur is small city and the capital of Shikarpur District in Sindh province of Pakistan.</string>
+    <string name="sindh_city_five_address">Shikarpur, Sindh, Pakistan located (27.9579° N latitude and 68.6422° E longitude)</string>
+    <string name="sindh_city_five_description">Shikarpur, located in Pakistan\'s Sindh province, is a city steeped in tradition and commerce. Known as the \"Paris of Sindh\" for its historical grandeur, it boasts beautiful old havelis and a vibrant bazaar culture. Shikarpur has a rich history of trade and cultural exchange, with its colorful festivals and diverse communities adding to its charm. This city remains a captivating blend of heritage and bustling activity in Pakistan.</string>
     <string name="sindh_city_five_rating">4.2</string>
     <string name="sindh_city_five_review">106</string>
 
@@ -232,54 +237,64 @@
     <!-- Sindh province top 5 restaurants. -->
     <!-- 1. Royal Taj restaurant. -->
     <string name="sindh_restaurant_one_title">Royal Taj</string>
-    <string name="sindh_restaurant_one_description">Exquisite flavors and regal ambiance at Royal Taj, a culinary gem in Pakistan.</string>
+    <string name="sindh_restaurant_one_address">Allama Shabbir Ahmed Usmani Rd, Block 7 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh</string>
+    <string name="sindh_restaurant_one_description">The Royal Taj Restaurant in Pakistan is renowned for its exquisite Mughlai and Pakistani cuisine served in an opulent setting. It offers a regal dining experience with exceptional service, making it a top choice for those seeking culinary luxury.</string>
     <string name="sindh_restaurant_one_rating">4.5</string>
     <string name="sindh_restaurant_one_review">102</string>
     <!-- 2. Ridan House of Mandi restaurant. -->
     <string name="sindh_restaurant_two_title">Ridan Mandi House</string>
-    <string name="sindh_restaurant_two_description">Savor authentic Mandi delights at Ridan House of Mandi, a taste of tradition in Pakistan.</string>
+    <string name="sindh_restaurant_two_address">Khalid Bin Walid Rd, Block 3 PECHS, Karachi, Karachi City, Sindh</string>
+    <string name="sindh_restaurant_two_description">Ridan Mandi House restaurant in Pakistan is a haven for food enthusiasts seeking authentic Pakistani flavors. Known for its delectable traditional dishes and inviting ambiance, it provides a delightful dining experience. It\'s a must-visit destination for local cuisine enthusiasts.</string>
     <string name="sindh_restaurant_two_rating">4.2</string>
     <string name="sindh_restaurant_two_review">105</string>
     <!-- 3. LalQila Restaurant. -->
     <string name="sindh_restaurant_three_title">LalQila</string>
-    <string name="sindh_restaurant_three_description">Step into history with delectable flavors at LalQila, an iconic dining experience in Pakistan.</string>
+    <string name="sindh_restaurant_three_address">Plot #B-1، 98FW+XXW، 10/64 Auto Bahn Rd, Latifabad Unit 7 Latifabad, Hyderabad, Sindh</string>
+    <string name="sindh_restaurant_three_description">LalQila in Pakistan is a renowned restaurant that transports diners to the Mughal era with its grand architectural design and royal Mughlai cuisine. Nestled in opulent surroundings, it\'s a must-visit for those seeking a regal dining experience in Pakistan.</string>
     <string name="sindh_restaurant_three_rating">4.4</string>
     <string name="sindh_restaurant_three_review">201</string>
     <!-- 4. Chef's Table restaurant. -->
     <string name="sindh_restaurant_four_title">Chef\'s Table</string>
-    <string name="sindh_restaurant_four_description">Indulge in culinary artistry at Chef\'s Table, a gastronomic haven in Pakistan\'s dining scene.</string>
+    <string name="sindh_restaurant_four_address">6 Khayaban-e-Nishat, Phase Ittehad Commercial Area Phase 6 Defence Housing Authority, Karachi, Karachi City, Sindh</string>
+    <string name="sindh_restaurant_four_description">Chef\'s Table in Karachi, Pakistan, is a culinary masterpiece, renowned for its innovative and meticulously crafted dishes. With a sophisticated ambiance and a menu curated by top chefs, it\'s a must-visit for food enthusiasts seeking an exceptional dining experience in the heart of Karachi.</string>
     <string name="sindh_restaurant_four_rating">4.2</string>
     <string name="sindh_restaurant_four_review">195</string>
     <!-- 5. Kababjees restaurant. -->
     <string name="sindh_restaurant_five_title">Kababjees</string>
-    <string name="sindh_restaurant_five_description">Savor kabab perfection at Kababjees, a culinary delight renowned across Pakistan\'s food landscape</string>
+    <string name="sindh_restaurant_five_address">C9P5+J7, Hyderabad, Sindh</string>
+    <string name="sindh_restaurant_five_description">Kababjees restaurant in Hyderabad, Pakistan, is a culinary delight known for its mouthwatering kebabs and diverse menu. With a welcoming ambiance and top-notch service, it offers a memorable dining experience in the heart of Hyderabad. A favorite among locals and visitors alike, Kababjees is synonymous with delicious Pakistani cuisine.</string>
     <string name="sindh_restaurant_five_rating">4.3</string>
     <string name="sindh_restaurant_five_review">205</string>
 
     <!-- Sindh province top historical place. -->
     <!-- 1. Mohenjo-daro. -->
     <string name="sindh_historical_place_one_title">Mohenjo-daro</string>
-    <string name="sindh_historical_place_one_description">Explore ancient mysteries at Mohenjo Daro, a UNESCO World Heritage site in Sindh, Pakistan.</string>
+    <string name="sindh_historical_place_one_address">Mohenjo-daro, Sindh, Pakistan (27.3352° N latitude and 68.1336° E longitude)</string>
+    <string name="sindh_historical_place_one_description">Mohenjo-daro, a UNESCO World Heritage Site in Sindh, Pakistan, is an ancient archaeological wonder that dates back over 4,000 years. This once-flourishing Indus Valley Civilization city showcases advanced urban planning, with well-structured streets and impressive drainage systems. Visitors can explore its ruins and gain insight into one of the world\'s earliest known urban centers.</string>
     <string name="sindh_historical_place_one_rating">4.5</string>
     <string name="sindh_historical_place_one_review">204</string>
     <!-- 2. Makli Hill. -->
     <string name="sindh_historical_place_two_title">Makli Hill</string>
-    <string name="sindh_historical_place_two_description">Journey through history at Makli Hill, Sindh\'s necropolis adorned with magnificent tombs.</string>
+    <string name="sindh_historical_place_two_address">Makli Hill, Sindh, Pakistan (24.7705° N latitude and 67.9239° E longitude)</string>
+    <string name="sindh_historical_place_two_description">Makli Hill, located in Sindh, Pakistan, is an ancient cemetery that boasts one of the largest necropolises in the world. With tombs and mausoleums spanning several centuries, it offers a mesmerizing display of diverse architectural styles and intricate craftsmanship. Makli Hill is a testament to the rich historical and cultural heritage of the region.</string>
     <string name="sindh_historical_place_two_rating">4.5</string>
     <string name="sindh_historical_place_two_review">102</string>
     <!-- 3. Shah Jahan Mosque. -->
     <string name="sindh_historical_place_three_title">Shah Jahan Mosque</string>
-    <string name="sindh_historical_place_three_description">Architectural marvel: Shah Jahan Mosque, a timeless treasure gracing Sindh\'s cultural heritage.</string>
+    <string name="sindh_historical_place_three_address">Shah Jahan Mosque, Thatta, Sindh, Pakistan (24.7477° N latitude and 67.9192° E longitude)</string>
+    <string name="sindh_historical_place_three_description">The Shah Jahan Mosque in Thatta, Sindh, Pakistan, is a stunning Mughal-era architectural masterpiece, known for its intricate design and dazzling blue tiles. Built during the reign of Shah Jahan, it stands as a testament to the artistic and cultural richness of its era.</string>
     <string name="sindh_historical_place_three_rating">4.6</string>
     <string name="sindh_historical_place_three_review">300</string>
     <!-- 4. Rani Kot Fort. -->
     <string name="sindh_historical_place_four_title">Rani Kot Fort</string>
-    <string name="sindh_historical_place_four_description">Rani Kot Fort: Sindh\'s colossal testament to history, guarding tales of grandeur and valor.</string>
+    <string name="sindh_historical_place_four_address">Rani Kot Fort, Sann, Sindh, Pakistan (27.1974° N latitude and 67.9069° E longitude)</string>
+    <string name="sindh_historical_place_four_description">Rani Kot Fort, located in the Sann region of Sindh, Pakistan, is the world\'s largest fort, spanning over 20 miles of impressive stone walls. This ancient fortification, often called the \"Great Wall of Sindh,\" dates back centuries and offers a remarkable glimpse into the region\'s history and military architecture. It stands as a testament to the grandeur of its time.</string>
     <string name="sindh_historical_place_four_rating">4.8</string>
     <string name="sindh_historical_place_four_review">302</string>
     <!-- 5. Tooba Mosque. -->
     <string name="sindh_historical_place_five_title">Tooba Mosque</string>
-    <string name="sindh_historical_place_five_description">Tooba Mosque: Graceful tranquility, Tooba\'s dome rises as an emblem of spirituality in Sindh.</string>
+    <string name="sindh_historical_place_five_address">Tooba Mosque, Karachi, Sindh, Pakistan (24.8697° N latitude and 67.0284° E longitude)</string>
+    <string name="sindh_historical_place_five_description">Tooba Mosque, situated in Karachi, Sindh, Pakistan, is a stunning architectural marvel known for its pure white dome, which is one of the largest in the world. The mosque\'s serene ambiance and elegant design make it a peaceful retreat for worshippers and visitors alike. Tooba Mosque is a symbol of tranquility and architectural grace in the heart of Karachi.</string>
     <string name="sindh_historical_place_five_rating">4.2</string>
     <string name="sindh_historical_place_five_review">102</string>
 

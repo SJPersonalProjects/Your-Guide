@@ -133,11 +133,20 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
     @Override
     public String getLocation(String name) {
         return switch (name) {
+            //Punjab province addresses.
             case "Lahore" -> getResources().getString(R.string.punjab_city_one_address);
             case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_address);
             case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_address);
             case "Multan" -> getResources().getString(R.string.punjab_city_four_address);
             case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_address);
+
+            //Sindh province addresses.
+            case "Karachi" -> getResources().getString(R.string.sindh_city_one_address);
+            case "Hyderabad" -> getResources().getString(R.string.sindh_city_two_address);
+            case "Sukkur" -> getResources().getString(R.string.sindh_city_three_address);
+            case "Thatta" -> getResources().getString(R.string.sindh_city_four_address);
+            case "Shikarpur" -> getResources().getString(R.string.sindh_city_five_address);
+
             default -> "Problem fetching address";
         };
     }
@@ -150,11 +159,20 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
     @Override
     public String getDescription(String name) {
         return switch (name) {
+            //Punjab province descriptions.
             case "Lahore" -> getResources().getString(R.string.punjab_city_one_description);
             case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_description);
             case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_description);
             case "Multan" -> getResources().getString(R.string.punjab_city_four_description);
             case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_description);
+
+            //Sindh province descriptions.
+            case "Karachi" -> getResources().getString(R.string.sindh_city_one_description);
+            case "Hyderabad" -> getResources().getString(R.string.sindh_city_two_description);
+            case "Sukkur" -> getResources().getString(R.string.sindh_city_three_description);
+            case "Thatta" -> getResources().getString(R.string.sindh_city_four_description);
+            case "Shikarpur" -> getResources().getString(R.string.sindh_city_five_description);
+
             default -> "Problem fetching description";
         };
     }

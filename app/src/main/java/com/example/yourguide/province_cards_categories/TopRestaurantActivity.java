@@ -169,12 +169,21 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
     @Override
     public String getLocation(String restaurantName) {
         return switch (restaurantName) {
+            //Punjab province restaurant locations.
             case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_address);
             case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_address);
             case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_address);
             case "Spice Bazar" -> getResources().getString(R.string.punjab_restaurant_four_address);
             case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_address);
-            default -> null;
+
+            //Sindh province restaurant locations.
+            case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_address);
+            case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_address);
+            case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_address);
+            case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_address);
+            case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_address);
+
+            default -> "Address not found";
         };
     }
 
@@ -186,13 +195,22 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
     @Override
     public String getDescription(String restaurantName) {
         return switch (restaurantName) {
+            //Punjab province restaurant descriptions.
             case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_description);
             case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_description);
             case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_description);
             case "Spice Bazar" ->
                     getResources().getString(R.string.punjab_restaurant_four_description);
             case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_description);
-            default -> null;
+
+            //Sindh province restaurant descriptions.
+            case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_description);
+            case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_description);
+            case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_description);
+            case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_description);
+            case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_description);
+
+            default -> "Description not found";
         };
     }
 }
