@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
+import com.example.yourguide.province_cards_categories.HistoricalPlaceActivity;
+import com.example.yourguide.province_cards_categories.PopularCityActivity;
+import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
 
@@ -50,6 +54,23 @@ public class BalochistanActivity extends AppCompatActivity {
         citiesRecyclerView.setLayoutManager(citiesLayoutManager);
         citiesRecyclerView.setAdapter(citiesAdapter);
 
+        //This listener gets triggered when the user clicks any of the popular cities in the balochistan province.
+        citiesAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent popularCitiesIntent = new Intent(BalochistanActivity.this, PopularCityActivity.class);
+                popularCitiesIntent.putExtra("city_thumbnail",
+                        popularCitiesList.get(position).getCardImage()); //Passing in the popular city thumbnail image.
+                popularCitiesIntent.putExtra("city_name",
+                        getResources().getString(popularCitiesList.get(position).getCardTitle())); //Passing in the city name.
+                popularCitiesIntent.putExtra("city_rating",
+                        getResources().getString(popularCitiesList.get(position).getCardRating())); //Passing in the city rating.
+                popularCitiesIntent.putExtra("city_review",
+                        popularCitiesList.get(position).getCardReview()); //Passing in the city review.
+                startActivity(popularCitiesIntent); //Launch the PopularCityActivity containing desired data.
+            }
+        });
+
 
         ArrayList<Province> topRestaurantsList = new ArrayList<>();
         topRestaurantsList.add(new Province(R.drawable.lehri_sajji_house_restaurant, R.string.balochistan_restaurant_one_title,
@@ -81,6 +102,23 @@ public class BalochistanActivity extends AppCompatActivity {
         restaurantsRecyclerView.setLayoutManager(restaurantsLayoutManager);
         restaurantsRecyclerView.setAdapter(restaurantsAdapter);
 
+        //This listener gets triggered when the user clicks any of the top restaurants in the balochistan province.
+        restaurantsAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent topRestaurantIntent = new Intent(BalochistanActivity.this, TopRestaurantActivity.class);
+                topRestaurantIntent.putExtra("restaurant_thumbnail_image",
+                        topRestaurantsList.get(position).getCardImage()); //Passing in the restaurant thumbnail image.
+                topRestaurantIntent.putExtra("restaurant_name",
+                        topRestaurantsList.get(position).getCardTitle()); //Passing in the restaurant title.
+                topRestaurantIntent.putExtra("restaurant_rating",
+                        topRestaurantsList.get(position).getCardRating()); //Passing in the restaurant ratings.
+                topRestaurantIntent.putExtra("restaurant_review",
+                        topRestaurantsList.get(position).getCardReview()); //Passing in the restaurant reviews.
+                startActivity(topRestaurantIntent); //Launch the restaurants activity containing the desired data.
+            }
+        });
+
 
         ArrayList<Province> historicalPlaceList = new ArrayList<>();
         historicalPlaceList.add(new Province(R.drawable.quaide_azam_residency, R.string.balochistan_historical_place_one_title,
@@ -111,5 +149,22 @@ public class BalochistanActivity extends AppCompatActivity {
 
         historicalPlaceRecyclerView.setLayoutManager(historicalPlaceLayoutManager);
         historicalPlaceRecyclerView.setAdapter(historicalPlaceAdapter);
+
+        //This listener gets triggered when the user clicks any of the historical places in Balochistan province.
+        historicalPlaceAdapter.setOnItemClickListener(new ProvinceAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Intent historicalPlaceIntent = new Intent(BalochistanActivity.this, HistoricalPlaceActivity.class);
+                historicalPlaceIntent.putExtra("historical_place_thumbnail_image",
+                        historicalPlaceList.get(position).getCardImage()); //Passing in the historical place image.
+                historicalPlaceIntent.putExtra("historical_place_title",
+                        getResources().getString(historicalPlaceList.get(position).getCardTitle())); //Passing in the historical place title.
+                historicalPlaceIntent.putExtra("historical_place_rating",
+                        getResources().getString(historicalPlaceList.get(position).getCardRating())); //Passing in the historical place ratings.
+                historicalPlaceIntent.putExtra("historical_place_review",
+                        historicalPlaceList.get(position).getCardReview()); //Passing in the historical places reviews.
+                startActivity(historicalPlaceIntent); //Launch the historical place activity containing desired data.
+            }
+        });
     }
 }

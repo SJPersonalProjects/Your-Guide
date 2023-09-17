@@ -302,27 +302,32 @@
     <!-- Balochistan province top 5 cities. -->
     <!-- 1. Quetta. -->
     <string name="balochistan_city_one_title">Quetta</string>
-    <string name="balochistan_city_one_description">Quetta is the tenth most populous city in Pakistan with a population of over 1.1 million.</string>
+    <string name="balochistan_city_one_address">Quetta, Balochistan, Pakistan located (30.1798° N latitude and 66.9750° E longitude)</string>
+    <string name="balochistan_city_one_description">Quetta, the provincial capital of Balochistan, Pakistan, is nestled amidst rugged mountains and offers a unique blend of natural beauty and historical significance. Known for its diverse culture and bazaars filled with traditional crafts, it serves as a gateway to numerous scenic destinations in the region. Quetta is a city of resilience and breathtaking landscapes.</string>
     <string name="balochistan_city_one_rating">4.2</string>
     <string name="balochistan_city_one_review">602</string>
     <!-- 2. Gawadar. -->
     <string name="balochistan_city_two_title">Gwadar</string>
-    <string name="balochistan_city_two_description">Gwadar is a port city with located on the southwestern coast of Balochistan, Pakistan.</string>
+    <string name="balochistan_city_two_address">Gwadar, Balochistan, Pakistan located (25.1216° N latitude and 62.3254° E longitude)</string>
+    <string name="balochistan_city_two_description">Gwadar, Pakistan, a coastal city along the Arabian Sea, is an emerging economic hub, anchored by the Gwadar Port, strategically positioned for regional trade. Its scenic beaches and rapid development make it a key player in Pakistan\'s future growth.</string>
     <string name="balochistan_city_two_rating">5.0</string>
     <string name="balochistan_city_two_review">902</string>
     <!-- 3. Chaman. -->
     <string name="balochistan_city_three_title">Chaman</string>
-    <string name="balochistan_city_three_description">Chaman is a city and the headquarters of the Chaman District in Balochistan, Pakistan.</string>
+    <string name="balochistan_city_three_address">Chaman, Balochistan, Pakistan located (30.9241° N latitude and 66.4501° E longitude)</string>
+    <string name="balochistan_city_three_description">Chaman, a pivotal border town in Balochistan, Pakistan, thrives as a vital trade and transportation center, facilitating commerce with neighboring Afghanistan. Its lively bazaars and cross-border interactions underscore its historical and strategic significance in the region.</string>
     <string name="balochistan_city_three_rating">4.1</string>
     <string name="balochistan_city_three_review">102</string>
     <!-- 4. Sibi. -->
     <string name="balochistan_city_four_title">Sibi</string>
-    <string name="balochistan_city_four_description">Sibi is a city situated in the Balochistan province of Pakistan</string>
+    <string name="balochistan_city_four_address">Sibi, Balochistan, Pakistan located (29.5448° N latitude and 67.8783° E longitude)</string>
+    <string name="balochistan_city_four_description">Sibi, a city in Balochistan, Pakistan, is renowned for its annual Sibi Mela, one of the country\'s largest cultural festivals. Nestled amidst scenic landscapes, it has historical importance as a former capital of Balochistan during British rule. Sibi offers a glimpse into the region\'s heritage and hosts vibrant events that attract visitors from far and wide.</string>
     <string name="balochistan_city_four_rating">3.2</string>
     <string name="balochistan_city_four_review">29</string>
     <!-- 5. Hub. -->
     <string name="balochistan_city_five_title">Hub</string>
-    <string name="balochistan_city_five_description">Hub is a city and capital of the Hub District in Balochistan, Pakistan.</string>
+    <string name="balochistan_city_five_address">Hub, Balochistan, Pakistan located (25.0326° N latitude and 66.7534° E longitude)</string>
+    <string name="balochistan_city_five_description">Hub, situated in Balochistan, Pakistan, is a vital industrial and logistics hub that plays a pivotal role in connecting Karachi with the broader region. Known for its strategic importance, it serves as a key contributor to Pakistan\'s economic growth and development.</string>
     <string name="balochistan_city_five_rating">4.1</string>
     <string name="balochistan_city_five_review">95</string>
 
@@ -330,54 +335,64 @@
     <!-- Balochistan province top restaurants. -->
     <!-- 1. Lehri Sajji House. -->
     <string name="balochistan_restaurant_one_title">Lehri Sajji House</string>
-    <string name="balochistan_restaurant_one_description">Discover Middle Eastern flavors at our cozy dinner restaurant, a taste adventure awaits</string>
+    <string name="balochistan_restaurant_one_address">Prince Rd, Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_one_description">Lehri Sajji House in Pakistan is a renowned eatery celebrated for its authentic Sajji, a flavorful Balochi dish featuring marinated skewered lamb or chicken. With its rustic ambiance and a focus on traditional flavors, it\'s a must-visit for those craving a taste of Balochistan\'s rich culinary heritage. This restaurant is a beloved destination for Sajji enthusiasts.</string>
     <string name="balochistan_restaurant_one_rating">4.5</string>
     <string name="balochistan_restaurant_one_review">92</string>
     <!-- Usmania Tandoori Restaurant. -->
     <string name="balochistan_restaurant_two_title">Usmania Tandoori</string>
-    <string name="balochistan_restaurant_two_description">Enjoy Middle Eastern, Pakistani &amp; Indian dishes for lunch &amp; dinner in our welcoming restaurant.</string>
+    <string name="balochistan_restaurant_two_address">6227+8C3, Circular Rd، near Regal chowk, Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_two_description">Usmania Tandoori restaurant in Pakistan is a culinary gem celebrated for its aromatic and flavorful tandoori dishes in a cozy ambiance. It\'s a favored destination for those craving the authentic taste of Pakistani cuisine with a focus on tandoori specialties.</string>
     <string name="balochistan_restaurant_two_rating">4.3</string>
     <string name="balochistan_restaurant_two_review">102</string>
     <!-- Saigon. -->
     <string name="balochistan_restaurant_three_title">Saigon</string>
-    <string name="balochistan_restaurant_three_description">Savor Italian &amp; continental dinner delights at our cozy restaurant, a taste of Europe awaits!</string>
+    <string name="balochistan_restaurant_three_address">Eid Gah Gali, Shehbaz Town Shahbaz Town, Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_three_description">Saigon in Pakistan is a cafe and restaurant offering a delightful Vietnamese-inspired menu and a tranquil dining atmosphere. With its fusion of Asian flavors, it\'s a top choice for those seeking a unique culinary experience in Pakistan. Saigon is where food and ambiance unite for a memorable meal.</string>
     <string name="balochistan_restaurant_three_rating">4.4</string>
     <string name="balochistan_restaurant_three_review">92</string>
     <!-- Gulshan Karahi. -->
     <string name="balochistan_restaurant_four_title">Gulshan Karahi</string>
-    <string name="balochistan_restaurant_four_description">Indulge in Middle Eastern dinner flavors at our cozy restaurant, a taste adventure awaits!</string>
+    <string name="balochistan_restaurant_four_address">11, 6–9/11 Toghi Rd, Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_four_description">Gulshan Karahi Dhaba in Pakistan is renowned for its flavorful karahi dishes, prepared with fresh ingredients. Its traditional dhaba ambiance adds to the authentic experience, making it a top choice for those seeking the rich flavors of Pakistani cuisine in a casual setting.</string>
     <string name="balochistan_restaurant_four_rating">4.2</string>
     <string name="balochistan_restaurant_four_review">98</string>
     <!-- Mehfil Restaurant. -->
     <string name="balochistan_restaurant_five_title">Mehfil</string>
-    <string name="balochistan_restaurant_five_description">Delight in traditional Pakistani BBQ for dinner at our cozy restaurant, a flavorful experience awaits!</string>
+    <string name="balochistan_restaurant_five_address">7X2F+VVH, Airport Rd, near Chiltan Housing Scheme, Chiltan Housing Society Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_five_description">Mehfil restaurant in Pakistan is a culinary destination known for its diverse menu and delightful ambiance. With a wide range of dishes from various cuisines, it caters to diverse palates. Mehfil offers a welcoming setting for patrons to enjoy a memorable dining experience in Pakistan.</string>
     <string name="balochistan_restaurant_five_rating">4.2</string>
     <string name="balochistan_restaurant_five_review">102</string>
 
     <!-- Balochistan province top historical place. -->
     <!-- 1. Quaid-e-Azam Residency. -->
     <string name="balochistan_historical_place_one_title">Quaid-e-Azam Residency</string>
-    <string name="balochistan_historical_place_one_description">Quaid-e-Azam Residency also known as Ziarat Residency, is located in Ziarat, Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_one_address">Quaid-e-Azam Residency, Ziarat, Balochistan, Pakistan located (30.3828° N latitude and 66.5851° E longitude)</string>
+    <string name="balochistan_historical_place_one_description">Quaid-e-Azam Residency in Ziarat, Balochistan, Pakistan, is a historic site where Pakistan\'s founding father, Muhammad Ali Jinnah, spent his last days. It\'s a symbol of national importance and a serene retreat amidst scenic landscapes.</string>
     <string name="balochistan_historical_place_one_rating">5.0</string>
     <string name="balochistan_historical_place_one_review">402</string>
     <!-- 2. Princes of Hope. -->
     <string name="balochistan_historical_place_two_title">Princes of Hope</string>
-    <string name="balochistan_historical_place_two_description">The curiously shaped rock pinnacle is located in the Hingol National Park in the Lasbela District of the province of Balochistan.</string>
+    <string name="balochistan_historical_place_two_address">Princes of Hope, Hingol National Park, Balochistan, Pakistan located (25.1994° N latitude and 65.3309° E longitude)</string>
+    <string name="balochistan_historical_place_two_description">The Princes of Hope, located within Hingol National Park, Balochistan, Pakistan, features stunning natural rock formations that resemble human figures. This geological wonder is a testament to the region\'s unique natural beauty.</string>
     <string name="balochistan_historical_place_two_rating">3.9</string>
     <string name="balochistan_historical_place_two_review">14</string>
     <!-- 3. Kalat. -->
     <string name="balochistan_historical_place_three_title">Kalat</string>
-    <string name="balochistan_historical_place_three_description">Kalat is a district in the Balochistan province of Pakistan, known for its rich culture and historical significance.</string>
+    <string name="balochistan_historical_place_three_address">Kalat, Balochistan, Pakistan located (29.0344° N latitude and 66.5868° E longitude)</string>
+    <string name="balochistan_historical_place_three_description">Kalat, Balochistan, Pakistan, is steeped in history, boasting a wealth of forts and palaces that stand as living monuments to its rich cultural heritage. This city provides an immersive experience into the region\'s history, inviting visitors to explore its architectural marvels and learn about its vibrant past.</string>
     <string name="balochistan_historical_place_three_rating">4.2</string>
     <string name="balochistan_historical_place_three_review">92</string>
     <!-- 4. Gadani Beach-->
     <string name="balochistan_historical_place_four_title">Gadani Beach</string>
-    <string name="balochistan_historical_place_four_description">Gadani Beach is a beach on the Arabian Sea located near the Hub River and Cape Monze in Gadani, Hub District, Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_four_address">Gadani Beach, Gadani, Balochistan, Pakistan located (25.1235° N latitude and 66.6221° E longitude)</string>
+    <string name="balochistan_historical_place_four_description">Gadani Beach, in Gadani, Balochistan, Pakistan, is a scenic coastal retreat known for its sandy shores. It also features a thriving shipbreaking industry, making it an intriguing destination that combines natural beauty with industrial activity. Visitors can enjoy the picturesque coastline while witnessing the unique maritime operations along the shore.</string>
     <string name="balochistan_historical_place_four_rating">4.5</string>
     <string name="balochistan_historical_place_four_review">102</string>
     <!-- 5. Moola Chotok-->
     <string name="balochistan_historical_place_five_title">Moola Chotok</string>
-    <string name="balochistan_historical_place_five_description">Moola Chotok is a hidden ravine located in the middle of the Khuzdar District in the southern province of Balochistan, Pakistan.</string>
+    <string name="balochistan_historical_place_five_address">Moola Chotok, Khuzdar, Balochistan, Pakistan located (27.7185° N latitude and 66.7481° E longitude)</string>
+    <string name="balochistan_historical_place_five_description">Moola Chotok, located in Khuzdar, Balochistan, Pakistan, is a hidden gem surrounded by rugged terrain. Its emerald green pools and tranquil ambiance make it a sought-after destination for both trekkers and picnickers, offering a refreshing retreat into nature\'s beauty.</string>
     <string name="balochistan_historical_place_five_rating">4.1</string>
     <string name="balochistan_historical_place_five_review">118</string>
 

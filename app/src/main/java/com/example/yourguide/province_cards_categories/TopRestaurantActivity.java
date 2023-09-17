@@ -169,19 +169,26 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
     @Override
     public String getLocation(String restaurantName) {
         return switch (restaurantName) {
-            //Punjab province restaurant locations.
+            //Punjab province top restaurants cards addresses.
             case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_address);
             case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_address);
             case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_address);
             case "Spice Bazar" -> getResources().getString(R.string.punjab_restaurant_four_address);
             case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_address);
 
-            //Sindh province restaurant locations.
+            //Sindh province top restaurant cards addresses..
             case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_address);
             case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_address);
             case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_address);
             case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_address);
             case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_address);
+
+            //Balochistan province top restaurant cards addresses.
+            case "Lehri Sajji House" -> getResources().getString(R.string.balochistan_restaurant_one_address);
+            case "Usmania Tandoori" -> getResources().getString(R.string.balochistan_restaurant_two_address);
+            case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_address);
+            case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_address);
+            case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_address);
 
             default -> "Address not found";
         };
@@ -195,7 +202,7 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
     @Override
     public String getDescription(String restaurantName) {
         return switch (restaurantName) {
-            //Punjab province restaurant descriptions.
+            //Punjab province top restaurants descriptions.
             case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_description);
             case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_description);
             case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_description);
@@ -203,12 +210,19 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
                     getResources().getString(R.string.punjab_restaurant_four_description);
             case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_description);
 
-            //Sindh province restaurant descriptions.
+            //Sindh province top restaurants descriptions.
             case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_description);
             case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_description);
             case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_description);
             case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_description);
             case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_description);
+
+            //Balochistan province top restaurants descriptions.
+            case "Lehri Sajji House" -> getResources().getString(R.string.balochistan_restaurant_one_description);
+            case "Usmania Tandoori" -> getResources().getString(R.string.balochistan_restaurant_two_description);
+            case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_description);
+            case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_description);
+            case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_description);
 
             default -> "Description not found";
         };

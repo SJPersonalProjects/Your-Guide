@@ -133,19 +133,26 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
     @Override
     public String getLocation(String name) {
         return switch (name) {
-            //Punjab province addresses.
+            //Punjab province popular city cards addresses.
             case "Lahore" -> getResources().getString(R.string.punjab_city_one_address);
             case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_address);
             case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_address);
             case "Multan" -> getResources().getString(R.string.punjab_city_four_address);
             case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_address);
 
-            //Sindh province addresses.
+            //Sindh province popular city cards addresses.
             case "Karachi" -> getResources().getString(R.string.sindh_city_one_address);
             case "Hyderabad" -> getResources().getString(R.string.sindh_city_two_address);
             case "Sukkur" -> getResources().getString(R.string.sindh_city_three_address);
             case "Thatta" -> getResources().getString(R.string.sindh_city_four_address);
             case "Shikarpur" -> getResources().getString(R.string.sindh_city_five_address);
+
+            //Balochistan province popular city cards address.
+            case "Quetta" -> getResources().getString(R.string.balochistan_city_one_address);
+            case "Gwadar" -> getResources().getString(R.string.balochistan_city_two_address);
+            case "Chaman" -> getResources().getString(R.string.balochistan_city_three_address);
+            case "Sibi" -> getResources().getString(R.string.balochistan_city_four_address);
+            case "Hub" -> getResources().getString(R.string.balochistan_city_five_address);
 
             default -> "Problem fetching address";
         };
@@ -159,19 +166,26 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
     @Override
     public String getDescription(String name) {
         return switch (name) {
-            //Punjab province descriptions.
+            //Punjab province popular city cards descriptions.
             case "Lahore" -> getResources().getString(R.string.punjab_city_one_description);
             case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_description);
             case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_description);
             case "Multan" -> getResources().getString(R.string.punjab_city_four_description);
             case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_description);
 
-            //Sindh province descriptions.
+            //Sindh province popular city cards descriptions.
             case "Karachi" -> getResources().getString(R.string.sindh_city_one_description);
             case "Hyderabad" -> getResources().getString(R.string.sindh_city_two_description);
             case "Sukkur" -> getResources().getString(R.string.sindh_city_three_description);
             case "Thatta" -> getResources().getString(R.string.sindh_city_four_description);
             case "Shikarpur" -> getResources().getString(R.string.sindh_city_five_description);
+
+            //Balochistan province popular city cards descriptions.
+            case "Quetta" -> getResources().getString(R.string.balochistan_city_one_description);
+            case "Gwadar" -> getResources().getString(R.string.balochistan_city_two_description);
+            case "Chaman" -> getResources().getString(R.string.balochistan_city_three_description);
+            case "Sibi" -> getResources().getString(R.string.balochistan_city_four_description);
+            case "Hub" -> getResources().getString(R.string.balochistan_city_five_description);
 
             default -> "Problem fetching description";
         };

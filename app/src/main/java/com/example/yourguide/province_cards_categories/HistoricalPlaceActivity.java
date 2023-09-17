@@ -74,7 +74,7 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             historicalPlacePreviewImage.setImageResource(thumbnailImage);
             historicalPlaceTitle.setText(title);
             historicalPlaceRating.setText(rating);
-            historicalPlaceReview.setText(review);
+            historicalPlaceReview.setText(reviewFormatter(review));
 
             //Setting description and address of the historical place.
             historicalPlaceAddress.setText(getLocation(title));
@@ -129,19 +129,26 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
     @Override
     public String getLocation(String historicalPlaceName) {
         return switch(historicalPlaceName) {
-            //Punjab province historical place locations.
+            //Punjab province historical place addresses.
             case "Badshahi Mosque" -> getResources().getString(R.string.punjab_historical_place_one_address);
             case "Wagah Border" -> getResources().getString(R.string.punjab_historical_place_two_address);
             case "Lahore Fort" -> getResources().getString(R.string.punjab_historical_place_three_address);
             case "Wazir.K Mosque" -> getResources().getString(R.string.punjab_historical_place_four_address);
             case "Walled City" -> getResources().getString(R.string.punjab_historical_place_five_address);
 
-            //Sindh province historical place locations.
+            //Sindh province historical place addresses.
             case "Mohenjo-daro" -> getResources().getString(R.string.sindh_historical_place_one_address);
             case "Makli Hill" -> getResources().getString(R.string.sindh_historical_place_two_address);
             case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_address);
             case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_address);
             case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_address);
+
+            //Balochistan province historical place addresses.
+            case "Quaid-e-Azam Residency" -> getResources().getString(R.string.balochistan_historical_place_one_address);
+            case "Princes of Hope" -> getResources().getString(R.string.balochistan_historical_place_two_address);
+            case "Kalat" -> getResources().getString(R.string.balochistan_historical_place_three_address);
+            case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_address);
+            case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_address);
 
             default -> "Location not found";
         };
@@ -168,6 +175,13 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_description);
             case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_description);
             case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_description);
+
+            //Balochistan province historical place descriptions.
+            case "Quaid-e-Azam Residency" -> getResources().getString(R.string.balochistan_historical_place_one_description);
+            case "Princes of Hope" -> getResources().getString(R.string.balochistan_historical_place_two_description);
+            case "Kalat" -> getResources().getString(R.string.balochistan_historical_place_three_description);
+            case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_description);
+            case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_description);
 
             default -> "Description not found";
         };
