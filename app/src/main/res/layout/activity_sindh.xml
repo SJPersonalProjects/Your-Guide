@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Activity header image of province at the top. -->
+        <!-- Image to display at the top of the sindh activity. -->
         <ImageView
             style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
-            android:src="@drawable/sindh_province_header" />
+            android:src="@drawable/ic_launcher_background" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" heading. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -35,9 +35,7 @@
         <!-- Sindh province cities RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sindh_province_popular_city"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" headings. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -55,8 +53,7 @@
         <!-- Sindh province top restaurants RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sindh_province_top_restaurant"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <!-- Horizontal LinearLayout for "Historical Place" and "See All" headings. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -74,7 +71,6 @@
         <!-- Sindh province historical place RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/sindh_province_historical_place"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
     </LinearLayout>
 </ScrollView>

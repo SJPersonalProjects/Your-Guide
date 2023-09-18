@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Activity header image for province at the top. -->
+        <!-- Image to display at the top of the kpk activity. -->
         <ImageView
             style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
-            android:src="@drawable/kpk_province_header" />
+            android:src="@drawable/ic_launcher_background" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -34,8 +34,7 @@
         <!-- KPK province cities RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_popular_city"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" heading. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -53,8 +52,7 @@
         <!-- KPK province top restaurant RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_top_restaurant"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <!-- Horizontal LinearLayout for "Historical Place" and "See All" heading. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -72,7 +70,6 @@
         <!-- KPK province historical place RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_historical_place"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
     </LinearLayout>
 </ScrollView>

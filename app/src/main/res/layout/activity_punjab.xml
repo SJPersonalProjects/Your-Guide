@@ -6,6 +6,7 @@
     android:scrollbars="none"
     tools:context=".punjab_province.PunjabActivity">
 
+    <!-- LinearLayout to vertically align the things. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
         <ImageView
             style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
-            android:src="@drawable/punjab_province_header" />
+            android:src="@drawable/ic_launcher_background" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -34,8 +35,7 @@
         <!-- Cities recycler view. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/punjab_province_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <!-- Horizontal LinearLayout for top restaurant heading and see all heading. -->
         <LinearLayout style="@style/ListCategoryHeaderRootView">
@@ -54,8 +54,7 @@
         <!-- RecyclerView for top restaurants list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/top_restaurant_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
 
         <LinearLayout style="@style/ListCategoryHeaderRootView">
 
@@ -73,7 +72,6 @@
         <!-- RecyclerView for historical places list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/province_historical_places"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            style="@style/ProvinceCategoryRecyclerView"/>
     </LinearLayout>
 </ScrollView>
