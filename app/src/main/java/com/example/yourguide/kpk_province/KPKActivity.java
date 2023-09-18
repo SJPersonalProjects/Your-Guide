@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
+import com.example.yourguide.ImageGenerator;
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
@@ -15,13 +17,17 @@ import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
+import java.util.Random;
 
-public class KPKActivity extends AppCompatActivity {
+public class KPKActivity extends AppCompatActivity implements ImageGenerator {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kpk);
+
+        ImageView previewImage = findViewById(R.id.kpk_province_preview_image);
+        previewImage.setImageResource(randomImageGenerator()); //previews the random generated images.
 
         //ArrayList that holds the data for "Popular City" in the Khyber Pakhtunkhwa Province.
         ArrayList<Province> popularCitiesList = new ArrayList<>();
@@ -158,5 +164,23 @@ public class KPKActivity extends AppCompatActivity {
                 startActivity(historicalPlaceIntent); //Launch the historical place activity containing desired data.
             }
         });
+    }
+
+    /**
+     * Generates random images and returns their ID.
+     * @return image resource ID.
+     */
+    @Override
+    public int randomImageGenerator() {
+        Random random = new Random();
+
+        return switch(random.nextInt(6)) {
+            case 0 -> R.drawable.peshawar_city;
+            case 1 -> R.drawable.mardan_city;
+            case 2 -> R.drawable.mingora_city;
+            case 3 -> R.drawable.kohat_city;
+            case 4 -> R.drawable.kpk_province_header;
+            default -> R.drawable.abbottabad_city;
+        };
     }
 }

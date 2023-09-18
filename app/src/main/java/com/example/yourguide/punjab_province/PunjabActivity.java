@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.yourguide.ImageGenerator;
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
@@ -16,13 +18,17 @@ import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
+import java.util.Random;
 
-public class PunjabActivity extends AppCompatActivity {
+public class PunjabActivity extends AppCompatActivity implements ImageGenerator {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_punjab);
+
+        ImageView previewImage = findViewById(R.id.punjab_province_preview_image);
+        previewImage.setImageResource(randomImageGenerator());
 
         //ArrayList to hold the top popular cities in Punjab Province...
         ArrayList<Province> popularCitiesList = new ArrayList<>();
@@ -80,7 +86,7 @@ public class PunjabActivity extends AppCompatActivity {
         topRestaurantList.add(new Province(R.drawable.dera_restaurant, R.string.punjab_restaurant_five_title,
                 R.string.punjab_restaurant_five_description, R.string.punjab_restaurant_five_rating, getResources().getString(R.string.punjab_restaurant_five_review)));
 
-        RecyclerView restaurantsRecyclerView = (RecyclerView) findViewById(R.id.top_restaurant_recycler_view);
+        RecyclerView restaurantsRecyclerView = findViewById(R.id.top_restaurant_recycler_view);
         restaurantsRecyclerView.setVerticalScrollBarEnabled(false);
         restaurantsRecyclerView.setHorizontalScrollBarEnabled(false);
         restaurantsRecyclerView.setHasFixedSize(true);
@@ -135,7 +141,7 @@ public class PunjabActivity extends AppCompatActivity {
                 R.string.punjab_historical_place_five_description, R.string.punjab_historical_place_five_rating,
                 getResources().getString(R.string.punjab_historical_place_five_review)));
 
-        RecyclerView historicalPlacesRecyclerView = (RecyclerView) findViewById(R.id.province_historical_places);
+        RecyclerView historicalPlacesRecyclerView = findViewById(R.id.province_historical_places);
         historicalPlacesRecyclerView.setVerticalScrollBarEnabled(false);
         historicalPlacesRecyclerView.setHorizontalScrollBarEnabled(false);
         historicalPlacesRecyclerView.setHasFixedSize(true);
@@ -164,5 +170,23 @@ public class PunjabActivity extends AppCompatActivity {
                 startActivity(historicalPlace); //Start the activity by displaying data on device.
             }
         });
+    }
+
+    /**
+     * Generates random images and return their resource IDs.
+     * @return image resource ID.
+     */
+    @Override
+    public int randomImageGenerator() {
+        Random random = new Random();
+
+        return switch(random.nextInt(6)) {
+            case 0 -> R.drawable.lahore_city;
+            case 1 -> R.drawable.faisalabad_city;
+            case 2 -> R.drawable.rawalpindi_city;
+            case 3 -> R.drawable.multan_city;
+            case 4 -> R.drawable.punjab_province_header;
+            default -> R.drawable.gujranwala_city;
+        };
     }
 }

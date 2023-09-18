@@ -14,6 +14,7 @@
 
         <!-- ImageView to display the province image at the top of activity. -->
         <ImageView
+            android:id="@+id/punjab_province_preview_image"
             style="@style/ProvinceHeaderImage"
             android:contentDescription="@string/todo"
             android:src="@drawable/ic_launcher_background" />

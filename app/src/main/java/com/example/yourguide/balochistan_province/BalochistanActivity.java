@@ -6,8 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 
+import com.example.yourguide.ImageGenerator;
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
@@ -16,13 +17,18 @@ import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
+import java.util.Random;
 
-public class BalochistanActivity extends AppCompatActivity {
+public class BalochistanActivity extends AppCompatActivity implements ImageGenerator {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_balochistan);
+
+        //Image to display at the top of the balochistan activity.
+        ImageView previewImage = findViewById(R.id.balochistan_province_preview_image);
+        previewImage.setImageResource(randomImageGenerator()); //Generates and sets the random image.
 
         ArrayList<Province> popularCitiesList = new ArrayList<>();
         popularCitiesList.add(new Province(R.drawable.quetta_city, R.string.balochistan_city_one_title,
@@ -166,5 +172,23 @@ public class BalochistanActivity extends AppCompatActivity {
                 startActivity(historicalPlaceIntent); //Launch the historical place activity containing desired data.
             }
         });
+    }
+
+    /**
+     * Generates random image and returns their ID.
+     * @return image resource ID.
+     */
+    @Override
+    public int randomImageGenerator() {
+        Random random = new Random();
+
+        return switch(random.nextInt(6)) {
+            case 0 -> R.drawable.quetta_city;
+            case 1 -> R.drawable.gwadar_city;
+            case 2 -> R.drawable.chaman_city;
+            case 3 -> R.drawable.sibi_city;
+            case 4 -> R.drawable.balochistan_province_header;
+            default -> R.drawable.hub_city;
+        };
     }
 }

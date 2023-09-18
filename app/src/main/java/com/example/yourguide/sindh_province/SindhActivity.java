@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.yourguide.ImageGenerator;
 import com.example.yourguide.Province;
 import com.example.yourguide.ProvinceAdapter;
 import com.example.yourguide.R;
@@ -15,15 +17,18 @@ import com.example.yourguide.province_cards_categories.HistoricalPlaceActivity;
 import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
-import java.io.DataOutputStream;
 import java.util.ArrayList;
+import java.util.Random;
 
-public class SindhActivity extends AppCompatActivity {
+public class SindhActivity extends AppCompatActivity implements ImageGenerator {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sindh);
+
+        ImageView previewImage = findViewById(R.id.sindh_province_preview_image);
+        previewImage.setImageResource(randomImageGenerator()); //displays random generated images.
 
         ArrayList<Province> popularCitiesList = new ArrayList<>();
         popularCitiesList.add(new Province(R.drawable.karachi_city, R.string.sindh_city_one_title,
@@ -162,5 +167,23 @@ public class SindhActivity extends AppCompatActivity {
                 startActivity(historicalPlaceIntent);
             }
         });
+    }
+
+    /**
+     * Generates random images and return their IDs.
+     * @return image resource ID.
+     */
+    @Override
+    public int randomImageGenerator() {
+        Random random = new Random();
+
+        return switch(random.nextInt(6)) {
+            case 0 -> R.drawable.karachi_city;
+            case 1 -> R.drawable.hyderabad_city;
+            case 2 -> R.drawable.sukkur_city;
+            case 3 -> R.drawable.thatta_city;
+            case 4 -> R.drawable.sindh_province_header;
+            default -> R.drawable.shikarpur_city;
+        };
     }
 }
