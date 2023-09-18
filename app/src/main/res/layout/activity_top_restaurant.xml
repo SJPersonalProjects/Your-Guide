@@ -16,38 +16,45 @@
     <RelativeLayout
         style="@style/CategoryParentBottomRelativeLayoutTheme">
 
-        <!-- Name of the restaurant heading. -->
-        <TextView
-            android:id="@+id/restaurant_name"
-            style="@style/CategoryHeadingTheme"
-            android:layout_marginTop="20dp"
-            android:text="@string/activity_title" />
+        <LinearLayout
+            android:id="@+id/restaurant_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Name of the restaurant heading. -->
+            <TextView
+                android:id="@+id/restaurant_name"
+                style="@style/CategoryHeadingTheme"
+                android:layout_marginTop="20dp"
+                android:text="@string/activity_title" />
+
+            <!-- Star image to enhance the rating TextView. -->
+            <ImageView
+                style="@style/CategoryRatingImageTheme"
+                android:contentDescription="@string/todo" />
+
+            <!-- Rating to the restaurant by the customers. -->
+            <TextView
+                android:id="@+id/restaurant_rating"
+                style="@style/CategoryRatingTheme"
+                android:text="@string/activity_rating" />
+
+            <!-- Reviews to the restaurant. -->
+            <TextView
+                android:id="@+id/restaurant_review"
+                style="@style/CategoryReviewTheme"
+                android:text="@string/activity_review" />
+        </LinearLayout>
+
 
         <!-- Advertising words below the restaurant name to attract more. -->
         <TextView
             android:id="@+id/restaurant_advertising_phrase"
             style="@style/CategorySubHeadingTheme"
-            android:layout_below="@id/restaurant_name"
+            android:layout_below="@id/restaurant_name_container"
             android:text="@string/activity_advertising_phrases" />
 
-        <!-- Reviews to the restaurant. -->
-        <TextView
-            android:id="@+id/restaurant_review"
-            style="@style/CategoryReviewTheme"
-            android:text="@string/activity_review" />
-
-        <!-- Rating to the restaurant by the customers. -->
-        <TextView
-            android:id="@+id/restaurant_rating"
-            style="@style/CategoryRatingTheme"
-            android:layout_toStartOf="@id/restaurant_review"
-            android:text="@string/activity_rating" />
-
-        <!-- Star image to enhance the rating TextView. -->
-        <ImageView
-            style="@style/CategoryRatingImageTheme"
-            android:layout_toStartOf="@id/restaurant_rating"
-            android:contentDescription="@string/todo" />
 
         <!-- Address of the restaurant. -->
         <TextView

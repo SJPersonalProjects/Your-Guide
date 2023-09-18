@@ -178,7 +178,7 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
 
             //Sindh province top restaurant cards addresses..
             case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_address);
-            case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_address);
+            case "Ridan" -> getResources().getString(R.string.sindh_restaurant_two_address);
             case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_address);
             case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_address);
             case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_address);
@@ -189,6 +189,13 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_address);
             case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_address);
             case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_address);
+
+            //KPK province top restaurant cards addresses.
+            case "Chief Burger" -> getResources().getString(R.string.kpk_restaurant_one_address);
+            case "Cafe Crunch" -> getResources().getString(R.string.kpk_restaurant_two_address);
+            case "Pinetree" -> getResources().getString(R.string.kpk_restaurant_three_address);
+            case "Bukhara Rooftop BBQ" -> getResources().getString(R.string.kpk_restaurant_four_address);
+            case "Swat Marina" -> getResources().getString(R.string.kpk_restaurant_five_address);
 
             default -> "Address not found";
         };
@@ -212,7 +219,7 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
 
             //Sindh province top restaurants descriptions.
             case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_description);
-            case "Ridan Mandi House" -> getResources().getString(R.string.sindh_restaurant_two_description);
+            case "Ridan" -> getResources().getString(R.string.sindh_restaurant_two_description);
             case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_description);
             case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_description);
             case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_description);
@@ -223,6 +230,13 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_description);
             case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_description);
             case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_description);
+
+            //KPK province top restaurant cards descriptions.
+            case "Chief Burger" -> getResources().getString(R.string.kpk_restaurant_one_description);
+            case "Cafe Crunch" -> getResources().getString(R.string.kpk_restaurant_two_description);
+            case "Pinetree" -> getResources().getString(R.string.kpk_restaurant_three_description);
+            case "Bukhara Rooftop BBQ" -> getResources().getString(R.string.kpk_restaurant_four_description);
+            case "Swat Marina" -> getResources().getString(R.string.kpk_restaurant_five_description);
 
             default -> "Description not found";
         };

@@ -242,7 +242,7 @@
     <string name="sindh_restaurant_one_rating">4.5</string>
     <string name="sindh_restaurant_one_review">102</string>
     <!-- 2. Ridan House of Mandi restaurant. -->
-    <string name="sindh_restaurant_two_title">Ridan Mandi House</string>
+    <string name="sindh_restaurant_two_title">Ridan</string>
     <string name="sindh_restaurant_two_address">Khalid Bin Walid Rd, Block 3 PECHS, Karachi, Karachi City, Sindh</string>
     <string name="sindh_restaurant_two_description">Ridan Mandi House restaurant in Pakistan is a haven for food enthusiasts seeking authentic Pakistani flavors. Known for its delectable traditional dishes and inviting ambiance, it provides a delightful dining experience. It\'s a must-visit destination for local cuisine enthusiasts.</string>
     <string name="sindh_restaurant_two_rating">4.2</string>
@@ -255,8 +255,8 @@
     <string name="sindh_restaurant_three_review">201</string>
     <!-- 4. Chef's Table restaurant. -->
     <string name="sindh_restaurant_four_title">Chef\'s Table</string>
-    <string name="sindh_restaurant_four_address">6 Khayaban-e-Nishat, Phase Ittehad Commercial Area Phase 6 Defence Housing Authority, Karachi, Karachi City, Sindh</string>
-    <string name="sindh_restaurant_four_description">Chef\'s Table in Karachi, Pakistan, is a culinary masterpiece, renowned for its innovative and meticulously crafted dishes. With a sophisticated ambiance and a menu curated by top chefs, it\'s a must-visit for food enthusiasts seeking an exceptional dining experience in the heart of Karachi.</string>
+    <string name="sindh_restaurant_four_address">6 Khayaban-e-Nishat, Phase Ittehad Commercial Area Phase 6 DHA, Karachi, Sindh</string>
+    <string name="sindh_restaurant_four_description">Chef\'s Table in Karachi, Pakistan, is a culinary masterpiece, renowned for its innovative and meticulously crafted dishes. With a sophisticated ambiance and a menu curated by top chefs, it\'s a must-visit for food enthusiasts seeking an exceptional dining experience in Karachi.</string>
     <string name="sindh_restaurant_four_rating">4.2</string>
     <string name="sindh_restaurant_four_review">195</string>
     <!-- 5. Kababjees restaurant. -->
@@ -359,7 +359,7 @@
     <string name="balochistan_restaurant_four_review">98</string>
     <!-- Mehfil Restaurant. -->
     <string name="balochistan_restaurant_five_title">Mehfil</string>
-    <string name="balochistan_restaurant_five_address">7X2F+VVH, Airport Rd, near Chiltan Housing Scheme, Chiltan Housing Society Quetta, Balochistan</string>
+    <string name="balochistan_restaurant_five_address">7X2F+VVH, Airport Rd, near Chiltan Housing Scheme, CHS Quetta, Balochistan</string>
     <string name="balochistan_restaurant_five_description">Mehfil restaurant in Pakistan is a culinary destination known for its diverse menu and delightful ambiance. With a wide range of dishes from various cuisines, it caters to diverse palates. Mehfil offers a welcoming setting for patrons to enjoy a memorable dining experience in Pakistan.</string>
     <string name="balochistan_restaurant_five_rating">4.2</string>
     <string name="balochistan_restaurant_five_review">102</string>
@@ -400,81 +400,96 @@
     <!-- Khyber Pakhtunkhwa province top 5 cities. -->
     <!-- 1. Peshawar. -->
     <string name="kpk_city_one_title">Peshawar</string>
-    <string name="kpk_city_one_description">Peshawar lies in Pakistan\'s northwest, near the border with Afghanistan.</string>
+    <string name="kpk_city_one_address">Peshawar, Khyber Pakhtunkhwa, Pakistan located (34.0059° N latitude and 71.5254° E longitude)</string>
+    <string name="kpk_city_one_description">Peshawar, situated in Khyber Pakhtunkhwa, Pakistan, is a city with a storied history and vibrant culture. Known as the "City of Flowers" for its bustling markets and scenic landscapes, it\'s a captivating destination that serves as a window to the past and present of Pakistan\'s northwest region.</string>
     <string name="kpk_city_one_rating">4.2</string>
     <string name="kpk_city_one_review">401</string>
     <!-- 2. Mardan. -->
     <string name="kpk_city_two_title">Mardan</string>
-    <string name="kpk_city_two_description">Mardan, Pakistan: A blend of tradition and growth in Khyber Pakhtunkhwa.</string>
+    <string name="kpk_city_two_address">Mardan, Khyber Pakhtunkhwa, Pakistan located (34.1987° N latitude and 72.0479° E longitude)</string>
+    <string name="kpk_city_two_description">Mardan, in Pakistan\'s Khyber Pakhtunkhwa province, combines history, culture, and natural beauty. Its lively bazaars, ancient ruins, and scenic surroundings make it a captivating destination. This city, nestled amidst green fields and encircled by mountains, invites visitors to experience its warm hospitality and unique blend of tradition and modernity.</string>
     <string name="kpk_city_two_rating">4.3</string>
     <string name="kpk_city_two_review">196</string>
     <!-- 3. Mingaora. -->
     <string name="kpk_city_three_title">Mingora</string>
-    <string name="kpk_city_three_description">Mingaora, Pakistan: Scenic town nestled in Swat Valley\'s beauty.</string>
+    <string name="kpk_city_three_address">Mingora, Swat, Khyber Pakhtunkhwa, Pakistan located (35.3080° N latitude and 72.4662° E longitude)</string>
+    <string name="kpk_city_three_description">Mingora, situated in the picturesque Swat Valley of Pakistan, is a haven of natural beauty with its lush hills and winding rivers. This vibrant town also serves as a cultural center, boasting bustling markets and historic sites, making it a perfect base for exploring Swat\'s rich heritage and breathtaking landscapes.</string>
     <string name="kpk_city_three_rating">4.9</string>
     <string name="kpk_city_three_review">496</string>
     <!-- 4. Kohat. -->
     <string name="kpk_city_four_title">Kohat</string>
-    <string name="kpk_city_four_description">Kohat, Pakistan: City with historical charm in Khyber Pakhtunkhwa.</string>
+    <string name="kpk_city_four_address">Kohat, Khyber Pakhtunkhwa, Pakistan located (33.5833° N latitude and 71.4333° E longitude)</string>
+    <string name="kpk_city_four_description">Kohat, in Pakistan\'s Khyber Pakhtunkhwa province, combines a rich cultural heritage with stunning natural surroundings. Surrounded by rugged hills and lush greenery, it\'s a city of historical significance. With ancient bazaars and warm hospitality, Kohat offers travelers a unique blend of history and charm, waiting to be discovered.</string>
     <string name="kpk_city_four_rating">4.3</string>
     <string name="kpk_city_four_review">93</string>
     <!-- 5. Abbottabad. -->
     <string name="kpk_city_five_title">Abbottabad</string>
-    <string name="kpk_city_five_description">Abbottabad, Pakistan: Picturesque city in Khyber Pakhtunkhwa with captivating landscapes.</string>
+    <string name="kpk_city_five_address">Abbottabad, Khyber Pakhtunkhwa, Pakistan located (35.3191° N latitude and 73.2250° E longitude)</string>
+    <string name="kpk_city_five_description">Abbottabad, in Pakistan\'s Abbottabad District, is a serene city surrounded by the Himalayas. Its cool climate and stunning mountain views make it a perfect retreat for outdoor enthusiasts. Combining modern amenities with a relaxed vibe, Abbottabad is an inviting destination for both relaxation and adventure, offering a unique cultural experience.</string>
     <string name="kpk_city_five_rating">4.2</string>
     <string name="kpk_city_five_review">906</string>
 
     <!-- Khyber Pakhtunkhwa top restaurants. -->
     <!-- 1. Chief Burger Peshawar. -->
-    <string name="kpk_restaurant_one_title">Chief Burger Peshawar</string>
-    <string name="kpk_restaurant_one_description">Delicious pizzas &amp; quick bites for lunch and dinner at our lively fast food haven.</string>
+    <string name="kpk_restaurant_one_title">Chief Burger</string>
+    <string name="kpk_restaurant_one_address">Fawad Plaza،, University Rd, Jahangir Abad Tehkal, Peshawar, Khyber Pakhtunkhwa</string>
+    <string name="kpk_restaurant_one_description">Chief Burger Peshawar is a beloved culinary destination in the heart of Peshawar, Pakistan. Renowned for its delectable burgers and gourmet offerings, this restaurant delivers a memorable dining experience. With a menu curated by expert chefs, it\'s a go-to spot for burger enthusiasts.</string>
     <string name="kpk_restaurant_one_rating">4.0</string>
     <string name="kpk_restaurant_one_review">122</string>
     <!-- 2. Cafe Crunch. -->
     <string name="kpk_restaurant_two_title">Cafe Crunch</string>
-    <string name="kpk_restaurant_two_description">Savor café, Indian &amp; international flavors at our vibrant fast food spot.</string>
+    <string name="kpk_restaurant_two_address">45 Old Jamrud Road, University Town, Peshawar, Khyber Pakhtunkhwa</string>
+    <string name="kpk_restaurant_two_description">Cafe Crunch is a charming urban oasis, known for its exquisite pastries and aromatic coffee blends. This cozy spot provides a perfect setting for a relaxing treat. With its inviting ambiance, Cafe Crunch is the ultimate destination for those craving a delightful culinary escape.</string>
     <string name="kpk_restaurant_two_rating">4.0</string>
     <string name="kpk_restaurant_two_review">41</string>
     <!-- 3. Pinetree Restaurant. -->
     <string name="kpk_restaurant_three_title">Pinetree</string>
-    <string name="kpk_restaurant_three_description">Global tastes unite: International, BBQ, Asian, Middle Eastern, Pakistani delights.</string>
+    <string name="kpk_restaurant_three_address">Pir Sohawa Road Highland Country Club &amp; Resort, Sangra, Near Islamabad, Sangada 22620 Pakistan</string>
+    <string name="kpk_restaurant_three_description">Pinetree Restaurant is a culinary haven, blending BBQ, Asian, Middle Eastern, and Pakistani flavors. Its diverse menu caters to various tastes, making it a delightful dining destination for those seeking an international gastronomic experience. Whether BBQ or exotic dishes, Pinetree has it all.</string>
     <string name="kpk_restaurant_three_rating">3.5</string>
     <string name="kpk_restaurant_three_review">40</string>
     <!-- 4. Bukhara (Roof Top Barbecue). -->
     <string name="kpk_restaurant_four_title">Bukhara Rooftop BBQ</string>
-    <string name="kpk_restaurant_four_description">Sizzle under the stars: Rooftop BBQ delights await at our restaurant.</string>
+    <string name="kpk_restaurant_four_address">Khyber Road Pearl Continental Peshawar, Peshawar Pakistan</string>
+    <string name="kpk_restaurant_four_description">Bukhara Rooftop BBQ offers an elevated dining experience with delectable rooftop BBQ delights. Enjoy the sizzle of savory grills while soaking in breathtaking views. It\'s the perfect spot for a memorable culinary journey under the open sky.</string>
     <string name="kpk_restaurant_four_rating">4.0</string>
     <string name="kpk_restaurant_four_review">27</string>
     <!-- 5. Swat Marina Restaurant. -->
     <string name="kpk_restaurant_five_title">Swat Marina</string>
-    <string name="kpk_restaurant_five_description">Journey through flavors: Middle Eastern &amp; Afghan dishes at our restaurant.</string>
+    <string name="kpk_restaurant_five_address">Mingora Fizagat Bypass, Mingora, Swat, Khyber Pakhtunkhwa</string>
+    <string name="kpk_restaurant_five_description">Swat Marina is a culinary haven where Middle Eastern and Afghan flavors take center stage. Indulge in a gastronomic journey filled with aromatic spices and authentic dishes. Immerse yourself in a taste of the Middle East and Afghanistan at Swat Marina.</string>
     <string name="kpk_restaurant_five_rating">5.0</string>
     <string name="kpk_restaurant_five_review">5</string>
 
     <!-- Khyber Pakhtunkhwa historical place. -->
     <!-- 1. Chitral Fort. -->
     <string name="kpk_historical_place_one_title">Chitral Fort</string>
-    <string name="kpk_historical_place_one_description">Chitral Fort: Historic gem in Pakistan\'s scenic north, tales etched in stone.</string>
+    <string name="kpk_historical_place_one_address">Chitral Fort, Abbottabad, Khyber Pakhtunkhwa, Pakistan located at (35.3191° N latitude and 73.2250° E longitude).</string>
+    <string name="kpk_historical_place_one_description">Chitral Fort, located in Pakistan\'s Chitral region, is a historic masterpiece showcasing rich heritage. This formidable fortress is a window into centuries of culture and architecture, set against a stunning mountain backdrop. With intricate design and captivating vistas, it\'s a must-visit for history enthusiasts and travelers exploring this picturesque corner of Pakistan.</string>
     <string name="kpk_historical_place_one_rating">4.0</string>
     <string name="kpk_historical_place_one_review">26</string>
     <!-- 2. Takht-i-Bahi. -->
     <string name="kpk_historical_place_two_title">Takht-i-Bahi</string>
-    <string name="kpk_historical_place_two_description">Takht-i-Bahi: Ancient Buddhist ruins, a heritage marvel in Pakistan.</string>
+    <string name="kpk_historical_place_two_address">Takht-i-Bahi Pakistan, Abbottabad, Khyber Pakhtunkhwa, Pakistan located at (35.3191° N latitude and 73.2250° E longitude).</string>
+    <string name="kpk_historical_place_two_description">Takht-i-Bahi, a UNESCO-listed site in Khyber Pakhtunkhwa, Pakistan, dates back to the 1st century CE. It features well-preserved stupas, monastic cells, and intricate carvings, offering a glimpse into the region\'s rich Buddhist heritage. Surrounded by natural beauty, Takht-i-Bahi stands as a testament to ancient civilization\'s enduring legacy.</string>
     <string name="kpk_historical_place_two_rating">5.0</string>
     <string name="kpk_historical_place_two_review">30</string>
     <!-- 3. Mahabat Khan Mosque. -->
     <string name="kpk_historical_place_three_title">Mahabat Khan Mosque</string>
-    <string name="kpk_historical_place_three_description">Mahabat Khan Mosque: Architectural elegance in Pakistan\'s cultural tapestry.</string>
+    <string name="kpk_historical_place_three_address">Mahabat Khan Mosque Pakistan, Abbottabad, Khyber Pakhtunkhwa, Pakistan located at (35.3191° N latitude and 73.2250° E longitude).</string>
+    <string name="kpk_historical_place_three_description">Mahabat Khan Mosque in Peshawar, Pakistan, is a 17th-century marvel with intricate Mughal design, featuring domes, minarets, and vibrant tile work. This historical masterpiece blends art and spirituality, drawing history and architecture enthusiasts alike. With a serene ambiance, it offers a tranquil escape within the vibrant heart of the city.</string>
     <string name="kpk_historical_place_three_rating">4.5</string>
     <string name="kpk_historical_place_three_review">37</string>
     <!-- 4. Jamrud Fort. -->
     <string name="kpk_historical_place_four_title">Jamrud Fort</string>
-    <string name="kpk_historical_place_four_description">Jamrud Fort: Historical sentinel, guarding the gateway to Pakistan\'s past.</string>
+    <string name="kpk_historical_place_four_address">Jamrud Fort, Abbottabad, Khyber Pakhtunkhwa, Pakistan located at (35.3191° N latitude and 73.2250° E longitude).</string>
+    <string name="kpk_historical_place_four_description">Jamrud Fort, in Pakistan\'s Khyber Pass, is a historic sentinel guarding a crucial passage. Constructed during the Sikh era, it holds a significant role in the region\'s history. With rugged charm and a rich past, it\'s a captivating destination for history enthusiasts and adventurers seeking a glimpse into the past.</string>
     <string name="kpk_historical_place_four_rating">3.5</string>
     <string name="kpk_historical_place_four_review">12</string>
     <!-- 5. St John's Church. -->
     <string name="kpk_historical_place_five_title">St John\'s Church</string>
-    <string name="kpk_historical_place_five_description">St. John\'s Church: Graceful landmark, echoes of history in Pakistan.</string>
+    <string name="kpk_historical_place_five_address">St. John\'s Church Pakistan, Abbottabad, Khyber Pakhtunkhwa, Pakistan located at (35.3191° N latitude and 73.2250° E longitude).</string>
+    <string name="kpk_historical_place_five_description">St. John\'s Church in Pakistan is a testament to Christian heritage within the nation\'s diverse culture. Its elegant architecture invites exploration and reflection, nestled in a serene setting. A symbol of enduring faith, it stands as a tranquil sanctuary for worshipers and visitors alike.</string>
     <string name="kpk_historical_place_five_rating">4.0</string>
     <string name="kpk_historical_place_five_review">3</string>
 

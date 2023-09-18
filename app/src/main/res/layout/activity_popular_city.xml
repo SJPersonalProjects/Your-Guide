@@ -17,18 +17,44 @@
         style="@style/CategoryParentBottomRelativeLayoutTheme"
         tools:ignore="UselessParent">
 
-        <!-- City name heading. -->
-        <TextView
-            android:id="@+id/city_name"
-            style="@style/CategoryHeadingTheme"
-            android:layout_marginTop="28dp"
-            android:text="@string/activity_title" />
+        <LinearLayout
+            android:id="@+id/city_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- City name heading. -->
+            <TextView
+                android:id="@+id/city_name"
+                style="@style/CategoryHeadingTheme"
+                android:layout_marginTop="28dp"
+                android:text="@string/activity_title" />
+
+            <!-- Rating star image of the city. -->
+            <ImageView
+                android:id="@+id/rating_star"
+                style="@style/CategoryRatingImageTheme"
+                android:contentDescription="@string/todo" />
+
+            <!-- Rating of the city. -->
+            <TextView
+                android:id="@+id/city_rating"
+                style="@style/CategoryRatingTheme"
+                android:text="@string/activity_rating" />
+
+            <!-- Review of the city. -->
+            <TextView
+                android:id="@+id/city_review"
+                style="@style/CategoryReviewTheme"
+                android:text="@string/activity_review" />
+
+        </LinearLayout>
 
         <!-- Advertising words below the city name. -->
         <TextView
             android:id="@+id/city_sub_heading"
             style="@style/CategorySubHeadingTheme"
-            android:layout_below="@id/city_name"
+            android:layout_below="@id/city_name_container"
             android:text="@string/activity_advertising_phrases" />
 
         <!-- Address of the city in Pakistan. -->
@@ -38,25 +64,7 @@
             android:layout_below="@id/city_sub_heading"
             android:text="@string/activity_address" />
 
-        <!-- Review of the city. -->
-        <TextView
-            android:id="@+id/city_review"
-            style="@style/CategoryReviewTheme"
-            android:text="@string/activity_review" />
 
-        <!-- Rating of the city. -->
-        <TextView
-            android:id="@+id/city_rating"
-            style="@style/CategoryRatingTheme"
-            android:layout_toStartOf="@id/city_review"
-            android:text="@string/activity_rating" />
-
-        <!-- Rating star image of the city. -->
-        <ImageView
-            android:id="@+id/rating_star"
-            style="@style/CategoryRatingImageTheme"
-            android:layout_toStartOf="@id/city_rating"
-            android:contentDescription="@string/todo" />
 
         <!-- Question above the horizontal icons LinearLayout. -->
         <TextView

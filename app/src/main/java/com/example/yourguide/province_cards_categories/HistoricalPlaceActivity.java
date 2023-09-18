@@ -150,6 +150,13 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_address);
             case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_address);
 
+            //KPK province historical place addresses.
+            case "Chitral Fort" -> getResources().getString(R.string.kpk_historical_place_one_address);
+            case "Takht-i-Bahi" -> getResources().getString(R.string.kpk_historical_place_two_address);
+            case "Mahabat Khan Mosque" -> getResources().getString(R.string.kpk_historical_place_three_address);
+            case "Jamrud Fort" -> getResources().getString(R.string.kpk_historical_place_four_address);
+            case "St John's Church" -> getResources().getString(R.string.kpk_historical_place_five_address);
+
             default -> "Location not found";
         };
     }
@@ -182,6 +189,13 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             case "Kalat" -> getResources().getString(R.string.balochistan_historical_place_three_description);
             case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_description);
             case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_description);
+
+            //KPK province historical place descriptions.
+            case "Chitral Fort" -> getResources().getString(R.string.kpk_historical_place_one_description);
+            case "Takht-i-Bahi" -> getResources().getString(R.string.kpk_historical_place_two_description);
+            case "Mahabat Khan Mosque" -> getResources().getString(R.string.kpk_historical_place_three_description);
+            case "Jamrud Fort" -> getResources().getString(R.string.kpk_historical_place_four_description);
+            case "St John's Church" -> getResources().getString(R.string.kpk_historical_place_five_description);
 
             default -> "Description not found";
         };

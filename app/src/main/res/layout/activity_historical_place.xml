@@ -10,52 +10,57 @@
         android:id="@+id/historical_place_preview_image"
         style="@style/CategoryPreviewImageImage"
         android:contentDescription="@string/todo"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_launcher_background" />
 
     <!-- Parent bottom RelativeLayout with top sides rounded. -->
-    <RelativeLayout
-        style="@style/CategoryParentBottomRelativeLayoutTheme">
+    <RelativeLayout style="@style/CategoryParentBottomRelativeLayoutTheme">
 
-        <!-- Review of the historical place. -->
-        <TextView
-            android:id="@+id/historical_place_review"
-            style="@style/CategoryReviewTheme"
-            android:text="@string/activity_review"/>
+        <!--LinearLayout containing star, rating, and review. -->
+        <LinearLayout
+            android:id="@+id/historical_place_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <!-- Rating of the historical place. -->
-        <TextView
-            android:id="@+id/historical_place_rating"
-            style="@style/CategoryRatingTheme"
-            android:layout_toStartOf="@id/historical_place_review"
-            android:text="@string/activity_rating"/>
+            <!-- Historical Place name heading. -->
+            <TextView
+                android:id="@+id/historical_place_name"
+                style="@style/CategoryHeadingTheme"
+                android:layout_marginTop="28dp"
+                android:text="@string/activity_title" />
 
-        <!-- Rating star image of the historical place. -->
-        <ImageView
-            android:id="@+id/rating_star"
-            style="@style/CategoryRatingImageTheme"
-            android:layout_toStartOf="@id/historical_place_rating"
-            android:contentDescription="@string/todo"/>
+            <!-- Rating of the historical place. -->
+            <ImageView
+                android:id="@+id/rating_star"
+                style="@style/CategoryRatingImageTheme"
+                android:contentDescription="@string/todo" />
 
-        <!-- Historical Place name heading. -->
-        <TextView
-            android:id="@+id/historical_place_name"
-            style="@style/CategoryHeadingTheme"
-            android:text="@string/activity_title"
-            android:layout_marginTop="28dp"/>
+            <!-- Rating star image of the historical place. -->
+            <TextView
+                android:id="@+id/historical_place_rating"
+                style="@style/CategoryRatingTheme"
+                android:text="@string/activity_rating" />
+
+            <!-- Review of the historical place. -->
+            <TextView
+                android:id="@+id/historical_place_review"
+                style="@style/CategoryReviewTheme"
+                android:text="@string/activity_review" />
+        </LinearLayout>
 
         <!-- Attractive words below the historical place name heading. -->
         <TextView
             android:id="@+id/historical_place_sub_heading"
             style="@style/CategorySubHeadingTheme"
-            android:layout_below="@id/historical_place_name"
-            android:text="@string/activity_advertising_phrases"/>
+            android:layout_below="@id/historical_place_name_container"
+            android:text="@string/activity_advertising_phrases" />
 
         <!-- Address of the historical place in Pakistan. -->
         <TextView
             android:id="@+id/historical_place_address"
             style="@style/CategoryAddressTheme"
             android:layout_below="@id/historical_place_sub_heading"
-            android:text="@string/activity_address"/>
+            android:text="@string/activity_address" />
 
         <!-- Question above the horizontal icons LinearLayout. -->
         <TextView
@@ -63,7 +68,7 @@
             style="@style/CategoryIconQuestionTheme"
             android:layout_below="@id/historical_place_address"
             android:layout_marginTop="28dp"
-            android:text="@string/activity_question"/>
+            android:text="@string/activity_question" />
 
         <!-- Horizontal LinearLayout for icons. -->
         <LinearLayout
@@ -82,13 +87,13 @@
                     android:id="@+id/icon_one_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_android_24"/>
+                    android:src="@drawable/baseline_android_24" />
 
                 <!-- Title for icon one. -->
                 <TextView
                     android:id="@+id/icon_one_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/activity_icon_text"/>
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Image and title for icon two LinearLayout. -->
@@ -102,13 +107,13 @@
                     android:id="@+id/icon_two_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_android_24"/>
+                    android:src="@drawable/baseline_android_24" />
 
                 <!-- Title for icon two. -->
                 <TextView
                     android:id="@+id/icon_two_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/activity_icon_text"/>
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Image and title for icon three LinearLayout. -->
@@ -122,13 +127,13 @@
                     android:id="@+id/icon_three_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_android_24"/>
+                    android:src="@drawable/baseline_android_24" />
 
                 <!-- Title for icon three. -->
                 <TextView
                     android:id="@+id/icon_three_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/activity_icon_text"/>
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
 
             <!-- Image and title for icon four LinearLayout. -->
@@ -142,13 +147,13 @@
                     android:id="@+id/icon_four_image"
                     style="@style/CategoryIconTheme"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/baseline_android_24"/>
+                    android:src="@drawable/baseline_android_24" />
 
                 <!-- Title for icon four. -->
                 <TextView
                     android:id="@+id/icon_four_title"
                     style="@style/CategoryIconTextTheme"
-                    android:text="@string/activity_icon_text"/>
+                    android:text="@string/activity_icon_text" />
             </LinearLayout>
         </LinearLayout>
 
@@ -157,19 +162,19 @@
             android:id="@+id/historical_place_description_heading"
             style="@style/CategoryDescriptionHeadingTheme"
             android:layout_below="@id/icons_linear_layout"
-            android:text="@string/activity_description_heading"/>
+            android:text="@string/activity_description_heading" />
 
         <!-- Long description for the historical place. -->
         <TextView
             android:id="@+id/historical_place_description"
             style="@style/CategoryDescriptionTheme"
             android:layout_below="@id/historical_place_description_heading"
-            android:text="@string/activity_description"/>
+            android:text="@string/activity_description" />
 
         <!-- Button to see the location. -->
         <Button
             android:id="@+id/historical_place_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
-            android:text="@string/activity_see_the_location_button_text"/>
+            android:text="@string/activity_see_the_location_button_text" />
     </RelativeLayout>
 </RelativeLayout>

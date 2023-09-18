@@ -154,7 +154,14 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
             case "Sibi" -> getResources().getString(R.string.balochistan_city_four_address);
             case "Hub" -> getResources().getString(R.string.balochistan_city_five_address);
 
-            default -> "Problem fetching address";
+            //KPK province popular city cards address.
+            case "Peshawar" -> getResources().getString(R.string.kpk_city_one_address);
+            case "Mardan" -> getResources().getString(R.string.kpk_city_two_address);
+            case "Mingora" -> getResources().getString(R.string.kpk_city_three_address);
+            case "Kohat" -> getResources().getString(R.string.kpk_city_four_address);
+            case "Abbottabad" -> getResources().getString(R.string.kpk_city_five_address);
+
+            default -> "Address not found";
         };
     }
 
@@ -187,7 +194,14 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
             case "Sibi" -> getResources().getString(R.string.balochistan_city_four_description);
             case "Hub" -> getResources().getString(R.string.balochistan_city_five_description);
 
-            default -> "Problem fetching description";
+            //KPK province popular city cards descriptions.
+            case "Peshawar" -> getResources().getString(R.string.kpk_city_one_description);
+            case "Mardan" -> getResources().getString(R.string.kpk_city_two_description);
+            case "Mingora" -> getResources().getString(R.string.kpk_city_three_description);
+            case "Kohat" -> getResources().getString(R.string.kpk_city_four_description);
+            case "Abbottabad" -> getResources().getString(R.string.kpk_city_five_description);
+
+            default -> "Description not found";
         };
     }
 }

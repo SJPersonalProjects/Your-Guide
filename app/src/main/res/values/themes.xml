@@ -73,10 +73,13 @@
 
     <!-- Title of the category theme. -->
     <style name="CategoryHeadingTheme">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:maxLines">2</item>
         <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:paddingEnd">8dp</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -96,35 +99,38 @@
         <item name="android:layout_marginStart">28dp</item>
         <item name="android:layout_marginEnd">28dp</item>
         <item name="android:layout_marginTop">8dp</item>
-        <item name="android:maxLines">2</item>
+        <item name="android:maxLines">3</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#A4A4A4</item>
     </style>
 
     <style name="CategoryReviewTheme">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_marginTop">28dp</item>
         <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="CategoryRatingTheme">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">top</item>
         <item name="android:layout_marginTop">28dp</item>
-        <item name="android:paddingStart">4dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="CategoryRatingImageTheme">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:layout_marginTop">28dp</item>
         <item name="android:src">@drawable/baseline_star_24</item>
     </style>
