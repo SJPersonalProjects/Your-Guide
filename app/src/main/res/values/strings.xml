@@ -47,7 +47,9 @@
     <!-- Rating of the activity. -->
     <string name="activity_rating">0.0</string>
     <!-- Reviews of the activity. -->
-    <string name="activity_review">0</string>
+    <string name="activity_review">(0)</string>
+    <!-- Activity default number. -->
+    <string name="activity_default_value">0</string>
     <!-- Icons texts. -->
     <string name="activity_icon_text">Lorem</string>
     <!-- Description heading. -->

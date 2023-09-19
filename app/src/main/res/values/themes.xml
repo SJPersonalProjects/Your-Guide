@@ -7,6 +7,93 @@
 
     <style name="Theme.YourGuide" parent="Base.Theme.YourGuide" />
 
+
+    <!-- activity_main.xml Data.-->
+    <!-- Main heading at the top of the activity. -->
+    <style name="MainActivityHeadingText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Sub-heading at the top of the activity. -->
+    <style name="MainActivitySubHeadingText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Main activity listview to contain the list of provinces. -->
+    <style name="MainActivityListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+
+    
+    <!-- province_list.xml Data. -->
+    <!-- CardView that contains the information about Provinces (Sindh, Balochistan, KPK, Punjab). -->
+    <style name="ProvinceCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">32dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+    <!-- Thumbnail image view for the province list (Sindh, Balochistan, KPK, Punjab). -->
+    <style name="ProvinceCardThumbnailImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">55</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Title for the province list (Sindh, Balochistan, KPK, Punjab). -->
+    <style name="ProvinceCardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Description for the province list (Sindh, Balochistan, KPK, Punjab). -->
+    <style name="ProvinceCardDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- Province bottom data container root view to show the numbers of the following options:
+        1. Historical Sights
+        2. Cities
+        3. Restaurants -->
+    <style name="ProvinceBottomDataContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">10</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Data to show the actual number collected from the province category card items. -->
+    <style name="NumberOfPlaces">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/data_circle</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Text as a right side heading to represent data. -->
     <style name="PlacesTextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -14,14 +101,81 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="NumberOfPlaces">
-        <item name="android:layout_width">wrap_content</item>
+
+
+    <!-- province_category_list_item.xml data. -->
+    <!-- Preview image for the card. -->
+    <style name="ProvinceCategoryListItemImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">108dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!-- Title for the card. -->
+    <style name="ProvinceCategoryListItemTitle">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
         <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <!-- Description for the card. -->
+    <style name="ProvinceCategoryListItemDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- Province list item bottom data container. -->
+    <style name="ProvinceCategoryListItemBottomDataContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- Province list item bottom rating star image. -->
+    <style name="ProvinceCategoryListItemRatingStarImage">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- Province list item bottom rating. -->
+    <style name="ProvinceCategoryListItemRating">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- Province list item bottom review. -->
+    <style name="ProvinceCategoryListItemReview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- Province list item bottom heart image. -->
+    <style name="ProvinceCategoryListItemHeartImage">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
 
     <!-- Header image style for each province activity. -->
     <style name="ProvinceHeaderImage">

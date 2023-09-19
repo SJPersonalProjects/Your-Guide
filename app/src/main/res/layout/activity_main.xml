@@ -6,34 +6,27 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- Heading container. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="148dp"
         android:gravity="center"
         android:orientation="vertical">
 
+        <!-- Heading for the provinces. -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/app_heading"
-            android:textSize="28sp"
-            android:textStyle="bold"/>
+            style="@style/MainActivityHeadingText"
+            android:text="@string/app_heading"/>
 
+        <!-- Advertising phrases for the province list. -->
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/app_sub_heading"
-            android:textSize="14sp"/>
+            style="@style/MainActivitySubHeadingText"
+            android:text="@string/app_sub_heading"/>
     </LinearLayout>
 
+    <!-- ListView to contain the list of provinces (Sindh, Punjab, KPK, Balochistan). -->
     <ListView
         android:id="@+id/list_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:scrollbars="none"/>
+        style="@style/MainActivityListView"
+        android:divider="@null" />
 </LinearLayout>

@@ -7,11 +7,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp"
-        android:elevation="32dp"
-        app:cardCornerRadius="16dp">
+        style="@style/ProvinceCardView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,15 +15,12 @@
             android:orientation="vertical"
             android:weightSum="100">
 
-            <!-- Image (thumbnail) container. -->
+            <!-- Province thumbnail image. -->
             <ImageView
                 android:id="@+id/province_category_thumbnail"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="55"
+                style="@style/ProvinceCardThumbnailImage"
                 android:contentDescription="@string/todo"
-                android:scaleType="centerCrop"
-                android:src="@drawable/punjab_province_header" />
+                android:src="@drawable/ic_launcher_background" />
 
             <!-- Card details container. -->
             <LinearLayout
@@ -38,38 +31,22 @@
                 android:layout_marginEnd="16dp"
                 android:orientation="vertical">
 
-                <!-- Province name. -->
+                <!-- Province name/title. -->
                 <TextView
                     android:id="@+id/province_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/province_name"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/ProvinceCardTitle"
+                    android:text="@string/activity_title"/>
 
-                <!-- Province details. -->
+                <!-- Province description. -->
                 <TextView
                     android:id="@+id/province_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:ellipsize="end"
-                    android:maxLines="3"
-                    android:text="@string/province_details"
-                    android:textSize="14sp" />
+                    style="@style/ProvinceCardDescription"
+                    android:text="@string/activity_description"/>
             </LinearLayout>
 
-            <!-- Card bottom numbers container. -->
+            <!-- Card bottom data container. -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="10"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="bottom"
-                android:orientation="horizontal"
+                style="@style/ProvinceBottomDataContainer"
                 android:baselineAligned="false">
 
                 <!-- Historical Sights LinearLinear. -->
@@ -82,13 +59,13 @@
                     android:orientation="horizontal"
                     tools:ignore="NestedWeights">
 
+                    <!-- TextView to hold the data of number of historical places in the province. -->
                     <TextView
                         android:id="@+id/province_historical_sights_number"
                         style="@style/NumberOfPlaces"
-                        android:background="@drawable/data_circle"
-                        android:gravity="center"
-                        android:text="@string/number_of_historical_sights" />
+                        android:text="@string/activity_default_value" />
 
+                    <!-- Title of Historical Sights in province. -->
                     <TextView
                         style="@style/PlacesTextStyle"
                         android:text="@string/historical_sights" />
@@ -104,13 +81,13 @@
                     android:orientation="horizontal"
                     tools:ignore="RtlSymmetry">
 
+                    <!-- TextView to hold the data of number of cities in the province. -->
                     <TextView
                         android:id="@+id/province_cities_number"
                         style="@style/NumberOfPlaces"
-                        android:background="@drawable/data_circle"
-                        android:gravity="center"
-                        android:text="@string/number_of_cities" />
+                        android:text="@string/activity_default_value" />
 
+                    <!-- Title of Cities in province. -->
                     <TextView
                         style="@style/PlacesTextStyle"
                         android:text="@string/cities" />
@@ -126,18 +103,17 @@
                     android:orientation="horizontal"
                     android:paddingBottom="8dp">
 
+                    <!-- TextView to hold the data of popular sights in the province. -->
                     <TextView
                         android:id="@+id/province_popular_sights_number"
                         style="@style/NumberOfPlaces"
-                        android:background="@drawable/data_circle"
-                        android:gravity="center"
-                        android:text="@string/number_of_popular_sights" />
+                        android:text="@string/activity_default_value" />
 
+                    <!-- Title of Popular Sights in the province. -->
                     <TextView
                         style="@style/PlacesTextStyle"
                         android:text="@string/popular_sights" />
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
