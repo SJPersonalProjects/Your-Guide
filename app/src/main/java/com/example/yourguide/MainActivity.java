@@ -51,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //Toast message on the screen is shown any province list item is clicked.
-                Toast.makeText(MainActivity.this, provinceDataList.get(position).getProvinceName(), Toast.LENGTH_SHORT).show();
+                //Selects the activity based on the position and launches it.
                 activitySelector(position);
             }
         });

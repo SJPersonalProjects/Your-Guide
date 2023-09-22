@@ -182,6 +182,8 @@
         <Button
             android:id="@+id/city_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
             android:text="@string/activity_see_the_location_button_text" />
 
     </RelativeLayout>

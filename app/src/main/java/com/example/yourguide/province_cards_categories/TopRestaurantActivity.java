@@ -2,6 +2,7 @@ package com.example.yourguide.province_cards_categories;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yourguide.Formatter;
+import com.example.yourguide.Map;
 import com.example.yourguide.R;
 
 public class TopRestaurantActivity extends AppCompatActivity implements Formatter {
@@ -64,10 +66,11 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
         restaurantIconFourTitle.setText(R.string.top_restaurant_icon_text_four);
 
         Bundle extras = getIntent().getExtras();
+        int restaurantNameString = 0;
         //Checks if extras is empty.
         if(extras != null) {
             int restaurantImage = extras.getInt("restaurant_thumbnail_image");
-            int restaurantNameString = extras.getInt("restaurant_name");
+            restaurantNameString = extras.getInt("restaurant_name");
             int restaurantRatingString = extras.getInt("restaurant_rating");
             String restaurantReviewString = extras.getString("restaurant_review");
 
@@ -90,15 +93,6 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             }
         });
 
-        //Restaurant location button and a clicked listener to see a toast message when clicked.
-        Button restaurantSeeTheLocationButton = findViewById(R.id.restaurant_see_the_location_button);
-        restaurantSeeTheLocationButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(TopRestaurantActivity.this,
-                        "No location is available right now", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         //Deliver icon and text LinearLayout.
         LinearLayout deliverLinearLayout = findViewById(R.id.deliver_linear_layout);
@@ -157,6 +151,29 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             public void onClick(View view) {
                 Toast.makeText(TopRestaurantActivity.this,
                         "No dine-out is available right now", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Restaurant location button and a clicked listener to see a toast message when clicked.
+        Button restaurantSeeTheLocationButton = findViewById(R.id.restaurant_see_the_location_button);
+        String nameOfRestaurant = getResources().getString(restaurantNameString);
+        restaurantSeeTheLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String coordinates = getLatitudeLongitude(nameOfRestaurant);
+                if(coordinates == null) {
+                    Toast.makeText(TopRestaurantActivity.this, "coordinates not found",
+                            Toast.LENGTH_SHORT).show();
+                }else {
+                    String[] coordinatesArray = coordinates.split(",");
+                    String latitude = coordinatesArray[0].trim();
+                    String longitude = coordinatesArray[1].trim();
+
+                    Intent mapsIntent = new Intent(TopRestaurantActivity.this, Map.class);
+                    mapsIntent.putExtra("latitude", latitude);
+                    mapsIntent.putExtra("longitude", longitude);
+                    startActivity(mapsIntent);
+                }
             }
         });
     }
@@ -239,6 +256,41 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             case "Swat Marina" -> getResources().getString(R.string.kpk_restaurant_five_description);
 
             default -> "Description not found";
+        };
+    }
+
+    @Override
+    public String getLatitudeLongitude(String name) {
+        return switch(name) {
+            //Punjab province city latitude and longitude.
+            case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_latitude_longitude);
+            case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_latitude_longitude);
+            case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_latitude_longitude);
+            case "Spice Bazar" -> getResources().getString(R.string.punjab_restaurant_four_latitude_longitude);
+            case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_latitude_longitude);
+
+            //Sindh province city latitude and longitude.
+            case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_latitude_longitude);
+            case "Ridan" -> getResources().getString(R.string.sindh_restaurant_two_latitude_longitude);
+            case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_latitude_longitude);
+            case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_latitude_longitude);
+            case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_latitude_longitude);
+
+            //Balochistan province city latitude and longitude.
+            case "Lehri Sajji House" -> getResources().getString(R.string.balochistan_restaurant_one_latitude_longitude);
+            case "Usmania Tandoori" -> getResources().getString(R.string.balochistan_restaurant_two_latitude_longitude);
+            case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_latitude_longitude);
+            case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_latitude_longitude);
+            case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_latitude_longitude);
+
+            //KPK province city latitude and longitude.
+            case "Chief Burger" -> getResources().getString(R.string.kpk_restaurant_one_latitude_longitude);
+            case "Cafe Crunch" -> getResources().getString(R.string.kpk_restaurant_two_latitude_longitude);
+            case "Pinetree" -> getResources().getString(R.string.kpk_restaurant_three_latitude_longitude);
+            case "Bukhara Rooftop BBQ" -> getResources().getString(R.string.kpk_restaurant_four_latitude_longitude);
+            case "Swat Marina" -> getResources().getString(R.string.kpk_restaurant_five_latitude_longitude);
+
+            default -> null;
         };
     }
 }

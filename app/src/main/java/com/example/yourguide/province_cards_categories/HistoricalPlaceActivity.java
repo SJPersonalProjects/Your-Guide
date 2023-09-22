@@ -2,14 +2,17 @@ package com.example.yourguide.province_cards_categories;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yourguide.Formatter;
+import com.example.yourguide.Map;
 import com.example.yourguide.R;
 
 public class HistoricalPlaceActivity extends AppCompatActivity implements Formatter {
@@ -62,11 +65,12 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         historicalPlaceIconFourTitle.setText(R.string.historical_place_icon_text_four);
 
         Bundle extras = getIntent().getExtras();
+        String title = "";
         //Checks if extras is empty.
         if(extras != null) {
             //Pull up the extras in their variables.
             int thumbnailImage = extras.getInt("historical_place_thumbnail_image");
-            String title = extras.getString("historical_place_title");
+            title = extras.getString("historical_place_title");
             String rating = extras.getString("historical_place_rating");
             String review = extras.getString("historical_place_review");
 
@@ -86,8 +90,8 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         museumLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HistoricalPlaceActivity.this, "No tickets for museum available right now",
-                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(HistoricalPlaceActivity.this,
+                        "No tickets for museum available right now", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -96,8 +100,8 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         guideLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HistoricalPlaceActivity.this, "No guide is available right now",
-                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(HistoricalPlaceActivity.this,
+                        "No guide is available right now", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -106,7 +110,8 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         photographLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HistoricalPlaceActivity.this, "No photographer is available right now", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HistoricalPlaceActivity.this,
+                        "No photographer is available right now", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -115,7 +120,39 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         eventLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HistoricalPlaceActivity.this, "No event is happening these days", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HistoricalPlaceActivity.this,
+                        "No event is happening these days", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //Finding button with id.
+        Button seeTheLocationButton = (Button)
+                findViewById(R.id.historical_place_see_the_location_button);
+        String historicalPlaceName = title;
+        //This listener is triggered when the user clicks the
+        seeTheLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String coordinates = getLatitudeLongitude(historicalPlaceName);
+                //Checking if coordinates is null.
+                if(coordinates == null) {
+                    //If coordinates isnull display toast of coordinates not found.
+                    Toast.makeText(HistoricalPlaceActivity.this,
+                            "coordinates not found", Toast.LENGTH_SHORT).show();
+                }else {
+                    //Otherwise execute this block.
+                    String[] coordinatesArray = coordinates.split(",");
+                    String latitude = coordinatesArray[0].trim();
+                    String longitude = coordinatesArray[1].trim();
+
+                    //Intent to launch Map activity.
+                    Intent mapsIntent = new Intent(HistoricalPlaceActivity.this,
+                            Map.class);
+                    //Passing in coordinates.
+                    mapsIntent.putExtra("latitude", latitude);
+                    mapsIntent.putExtra("longitude", longitude);
+                    startActivity(mapsIntent);
+                }
             }
         });
 
@@ -198,6 +235,41 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             case "St John's Church" -> getResources().getString(R.string.kpk_historical_place_five_description);
 
             default -> "Description not found";
+        };
+    }
+
+    @Override
+    public String getLatitudeLongitude(String name) {
+        return switch(name) {
+            //Punjab province city latitude and longitude.
+            case "Badshahi Mosque" -> getResources().getString(R.string.punjab_historical_place_one_latitude_longitude);
+            case "Wagah Border" -> getResources().getString(R.string.punjab_historical_place_two_latitude_longitude);
+            case "Lahore Fort" -> getResources().getString(R.string.punjab_historical_place_three_latitude_longitude);
+            case "Wazir.K Mosque" -> getResources().getString(R.string.punjab_historical_place_four_latitude_longitude);
+            case "Walled City" -> getResources().getString(R.string.punjab_historical_place_five_latitude_longitude);
+
+            //Sindh province city latitude and longitude.
+            case "Mohenjo-daro" -> getResources().getString(R.string.sindh_historical_place_one_latitude_longitude);
+            case "Makli Hill" -> getResources().getString(R.string.sindh_historical_place_two_latitude_longitude);
+            case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_latitude_longitude);
+            case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_latitude_longitude);
+            case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_latitude_longitude);
+
+            //Balochistan province city latitude and longitude.
+            case "Quaid-e-Azam Residency" -> getResources().getString(R.string.balochistan_historical_place_one_latitude_longitude);
+            case "Princes of Hope" -> getResources().getString(R.string.balochistan_historical_place_two_latitude_longitude);
+            case "Kalat" -> getResources().getString(R.string.balochistan_historical_place_three_latitude_longitude);
+            case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_latitude_longitude);
+            case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_latitude_longitude);
+
+            //KPK province city latitude and longitude.
+            case "Chitral Fort" -> getResources().getString(R.string.kpk_historical_place_one_latitude_longitude);
+            case "Takht-i-Bahi" -> getResources().getString(R.string.kpk_historical_place_two_latitude_longitude);
+            case "Mahabat Khan Mosque" -> getResources().getString(R.string.kpk_historical_place_three_latitude_longitude);
+            case "Jamrud Fort" -> getResources().getString(R.string.kpk_historical_place_four_latitude_longitude);
+            case "St John's Church" -> getResources().getString(R.string.kpk_historical_place_five_latitude_longitude);
+
+            default -> null;
         };
     }
 }

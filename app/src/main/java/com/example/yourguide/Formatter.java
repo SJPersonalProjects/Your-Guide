@@ -50,4 +50,6 @@ public interface Formatter {
      * @return the description
      */
     String getDescription(String name);
+
+    String getLatitudeLongitude(String name);
 }

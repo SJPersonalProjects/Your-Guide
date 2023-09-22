@@ -2,14 +2,17 @@ package com.example.yourguide.province_cards_categories;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yourguide.Formatter;
+import com.example.yourguide.Map;
 import com.example.yourguide.R;
 
 public class PopularCityActivity extends AppCompatActivity implements Formatter {
@@ -56,11 +59,14 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
         popularCityIconFourTitle.setText(R.string.popular_city_icon_text_four);
 
 
+
+
         Bundle extras = getIntent().getExtras();
+        String cityName = " ";
         //Checks if extras is empty.
         if(extras != null) {
             int cityImage = extras.getInt("city_thumbnail");
-            String cityName = extras.getString("city_name");
+            cityName = extras.getString("city_name");
             String cityRating = extras.getString("city_rating");
             String cityReview = extras.getString("city_review");
 
@@ -123,7 +129,71 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
                         Toast.LENGTH_SHORT).show();
             }
         });
+
+        //Finding the button with its id.
+        Button seeTheLocationButton = (Button) findViewById(R.id.city_see_the_location_button);
+        /*
+            This listener is triggered when "see the location" button is clicked
+            in the popular city activity from any province.
+         */
+        String finalCityName = cityName;
+        seeTheLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String latitudeAndLongitude = getLatitudeLongitude(finalCityName);
+                //Checks if string is null. Make show toast, otherwise run intent.
+                if(latitudeAndLongitude == null) {
+                    Toast.makeText(PopularCityActivity.this, "coordinates not found", Toast.LENGTH_SHORT).show();
+                }else {
+                    String[] coordinatesArray = latitudeAndLongitude.split(",");
+                    String latitude = coordinatesArray[0].trim();
+                    String longitude = coordinatesArray[1].trim();
+
+                    Intent mapsIntent = new Intent(PopularCityActivity.this, Map.class);
+                    mapsIntent.putExtra("latitude", latitude);
+                    mapsIntent.putExtra("longitude", longitude);
+                    startActivity(mapsIntent);
+                }
+            }
+        });
     }
+
+
+    @Override
+    public String getLatitudeLongitude(String name) {
+        return switch(name) {
+            //Punjab province city latitude and longitude.
+            case "Lahore" -> getResources().getString(R.string.punjab_city_one_latitude_longitude);
+            case "Faisalabad" -> getResources().getString(R.string.punjab_city_two_latitude_longitude);
+            case "Rawalpindi" -> getResources().getString(R.string.punjab_city_three_latitude_longitude);
+            case "Multan" -> getResources().getString(R.string.punjab_city_four_latitude_longitude);
+            case "Gujranwala" -> getResources().getString(R.string.punjab_city_five_latitude_longitude);
+
+            //Sindh province city latitude and longitude.
+            case "Karachi" -> getResources().getString(R.string.sindh_city_one_latitude_longitude);
+            case "Hyderabad" -> getResources().getString(R.string.sindh_city_two_latitude_longitude);
+            case "Sukkur" -> getResources().getString(R.string.sindh_city_three_latitude_longitude);
+            case "Thatta" -> getResources().getString(R.string.sindh_city_four_latitude_longitude);
+            case "Shikarpur" -> getResources().getString(R.string.sindh_city_five_latitude_longitude);
+
+            //Balochistan province city latitude and longitude.
+            case "Quetta" -> getResources().getString(R.string.balochistan_city_one_latitude_longitude);
+            case "Gwadar" -> getResources().getString(R.string.balochistan_city_two_latitude_longitude);
+            case "Chaman" -> getResources().getString(R.string.balochistan_city_three_latitude_longitude);
+            case "Sibi" -> getResources().getString(R.string.balochistan_city_four_latitude_longitude);
+            case "Hub" -> getResources().getString(R.string.balochistan_city_five_latitude_longitude);
+
+            //KPK province city latitude and longitude.
+            case "Peshawar" -> getResources().getString(R.string.kpk_city_one_latitude_longitude);
+            case "Mardan" -> getResources().getString(R.string.kpk_city_two_latitude_longitude);
+            case "Mingora" -> getResources().getString(R.string.kpk_city_three_latitude_longitude);
+            case "Kohat" -> getResources().getString(R.string.kpk_city_four_latitude_longitude);
+            case "Abbottabad" -> getResources().getString(R.string.kpk_city_five_latitude_longitude);
+
+            default -> null;
+        };
+    }
+
 
     /**
      * Gets location based on the city name clicked by the user.
@@ -204,4 +274,5 @@ public class PopularCityActivity extends AppCompatActivity implements Formatter 
             default -> "Description not found";
         };
     }
+
 }

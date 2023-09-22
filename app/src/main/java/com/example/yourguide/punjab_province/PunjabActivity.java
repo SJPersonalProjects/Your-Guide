@@ -116,9 +116,6 @@ public class PunjabActivity extends AppCompatActivity implements ImageGenerator 
                         topRestaurantList.get(position).getCardReview()); //Passing restaurant review.
                 startActivity(restaurantsIntent); //start TopRestaurantActivity.
 
-                Toast.makeText(PunjabActivity.this,
-                        getResources().getString(topRestaurantList.get(position).getCardTitle()) +
-                                " is clicked", Toast.LENGTH_SHORT).show();
             }
         });
 

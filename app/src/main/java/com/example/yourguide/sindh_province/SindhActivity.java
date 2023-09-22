@@ -70,8 +70,6 @@ public class SindhActivity extends AppCompatActivity implements ImageGenerator {
                         popularCitiesList.get(position).getCardReview()); //Passing city review.
                 startActivity(popularCityIntent); //Start the activity.
 
-                Toast.makeText(SindhActivity.this,
-                        getResources().getString(popularCitiesList.get(position).getCardTitle()) + " clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -115,8 +113,6 @@ public class SindhActivity extends AppCompatActivity implements ImageGenerator {
                 topRestaurantsIntent.putExtra("restaurant_review",
                         topRestaurantsList.get(position).getCardReview()); //Passing in the restaurant review.
                 startActivity(topRestaurantsIntent);
-                Toast.makeText(SindhActivity.this,
-                        getResources().getString(topRestaurantsList.get(position).getCardTitle()) + " clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
