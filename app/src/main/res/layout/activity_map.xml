@@ -16,4 +16,7 @@
         android:id="@+id/map"
         tools:context=".MapsActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!-- Include the custom toolbar -->
+    <include layout="@layout/custom_toolbar" />
 </RelativeLayout>

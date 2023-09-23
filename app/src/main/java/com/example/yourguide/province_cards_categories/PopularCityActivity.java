@@ -1,6 +1,7 @@
 package com.example.yourguide.province_cards_categories;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +16,27 @@ import com.example.yourguide.Formatter;
 import com.example.yourguide.Map;
 import com.example.yourguide.R;
 
+import java.util.Objects;
+
 public class PopularCityActivity extends AppCompatActivity implements Formatter {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popular_city);
+
+        //Initializing the custom toolbar
+        Toolbar customToolbar = findViewById(R.id.rounded_custom_toolbar);
+        //Set the custom toolbar as the support action bar.
+        setSupportActionBar(customToolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
+
+        // Set a custom click listener for the back button
+        ImageView backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(view -> {
+            // Handle the back button click (e.g., navigate back)
+            onBackPressed();
+        });
 
         //Finding views by their IDs to use their reference and set values.
         ImageView cityPreviewImage = findViewById(R.id.city_preview_image); //Image at the top.

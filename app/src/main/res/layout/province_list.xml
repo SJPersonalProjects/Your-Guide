@@ -94,7 +94,7 @@
                 </LinearLayout>
 
 
-                <!-- Popular Sights LinearLayout. -->
+                <!-- Restaurants LinearLayout. -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -105,14 +105,14 @@
 
                     <!-- TextView to hold the data of popular sights in the province. -->
                     <TextView
-                        android:id="@+id/province_popular_sights_number"
+                        android:id="@+id/province_restaurants_number"
                         style="@style/NumberOfPlaces"
                         android:text="@string/activity_default_value" />
 
-                    <!-- Title of Popular Sights in the province. -->
+                    <!-- Title of Restaurants in the province. -->
                     <TextView
                         style="@style/PlacesTextStyle"
-                        android:text="@string/popular_sights" />
+                        android:text="@string/restaurants" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

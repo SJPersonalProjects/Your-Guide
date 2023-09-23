@@ -12,6 +12,9 @@
         android:contentDescription="@string/todo"
         android:src="@drawable/ic_launcher_background" />
 
+    <!-- Include the custom toolbar -->
+    <include layout="@layout/custom_toolbar" />
+
     <!-- Parent Bottom RelativeLayout with top sides rounded. -->
     <RelativeLayout
         style="@style/CategoryParentBottomRelativeLayoutTheme"

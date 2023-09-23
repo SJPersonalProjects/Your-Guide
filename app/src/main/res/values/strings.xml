@@ -17,6 +17,9 @@
     <string name="sindh_province_description">Sindh, Pakistan: A province steeped in history and diverse culture. Home to the bustling city of Karachi, with an economy driven by trade and industry.</string>
     <string name="balochistan_province_description">Balochistan, Pakistan: Vast and rugged, this province boasts breathtaking landscapes and a distinct Balochi culture. Abundant in natural resources like gas and minerals.</string>
     <string name="kpk_province_description">KPK, Pakistan: Nestled in the northwestern region, Khyber Pakhtunkhwa is known for its stunning mountainous terrain, rich Pashtun heritage, and historical significance.</string>
+    <string name="province_number_of_historical_sights">5</string>
+    <string name="province_number_of_cities">5</string>
+    <string name="province_number_of_restaurants">5</string>
 
     <!-- Cities at the left bottom of card view. -->
     <string name="number_of_cities">0</string>
@@ -24,7 +27,7 @@
 
     <!-- Popular sights at the right bottom, top of card view. -->
     <string name="number_of_popular_sights">0</string>
-    <string name="popular_sights">Popular Sights</string>
+    <string name="restaurants">Restaurants</string>
 
     <!-- Historical Sights at the right bottom, bottom of card view. -->
     <string name="number_of_historical_sights">0</string>

@@ -5,7 +5,7 @@ public class ProvinceCategory {
     private String mProvinceName;
     private int mProvinceDescription;
     private String mNumberOfHistoricalPlaces;
-    private String mNumberOfPopularPlaces;
+    private String mNumberOfRestaurants;
     private String mNumberOfCities;
     private final int mProvinceImageID;
     private int mProvinceBackgroundTint;
@@ -15,18 +15,18 @@ public class ProvinceCategory {
      * @param mProvinceName is the name of the province in the list item
      * @param mProvinceDescription is the description of the province in the list item
      * @param mNumberOfHistoricalPlaces is the number of historical places in the list item
-     * @param mNumberOfPopularPlaces is the number of popular places in the list item
+     * @param mNumberOfRestaurants is the number of popular places in the list item
      * @param mNumberOfCities is the number of cities in the list item
      * @param mImageOfProvince is the specific background image for each province list item
      * @param mProvinceBackgroundTint is the specific background tint for each province list item
      */
     public ProvinceCategory(String mProvinceName, int mProvinceDescription,
-                            String mNumberOfHistoricalPlaces, String mNumberOfPopularPlaces,
+                            String mNumberOfHistoricalPlaces, String mNumberOfRestaurants,
                             String mNumberOfCities, int mImageOfProvince, int mProvinceBackgroundTint) {
         this.mProvinceName = mProvinceName;
         this.mProvinceDescription = mProvinceDescription;
         this.mNumberOfHistoricalPlaces = mNumberOfHistoricalPlaces;
-        this.mNumberOfPopularPlaces = mNumberOfPopularPlaces;
+        this.mNumberOfRestaurants = mNumberOfRestaurants;
         this.mNumberOfCities = mNumberOfCities;
         this.mProvinceImageID = mImageOfProvince;
         this.mProvinceBackgroundTint = mProvinceBackgroundTint;
@@ -83,11 +83,11 @@ public class ProvinceCategory {
     }
 
     /**
-     * Set the number of popular places as some numerical data on the list item
-     * @param mNumberOfPopularPlaces is the actual number that refers to the random popular sights.
+     * Set the number of restaurants as some numerical data on the list item
+     * @param mNumberOfRestaurants is the actual number that refers to the random popular sights.
      */
-    public void setNumberOfPopularPlaces(String mNumberOfPopularPlaces) {
-        this.mNumberOfPopularPlaces = mNumberOfPopularPlaces;
+    public void setNumberOfRestaurants(String mNumberOfRestaurants) {
+        this.mNumberOfRestaurants = mNumberOfRestaurants;
     }
 
     /**
@@ -95,7 +95,7 @@ public class ProvinceCategory {
      * @return number of popular places in the province.
      */
     public String getNumberOfPopularPlaces() {
-        return mNumberOfPopularPlaces;
+        return mNumberOfRestaurants;
     }
 
     /**

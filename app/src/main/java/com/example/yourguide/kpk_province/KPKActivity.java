@@ -1,6 +1,7 @@
 package com.example.yourguide.kpk_province;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -17,6 +18,7 @@ import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 public class KPKActivity extends AppCompatActivity implements ImageGenerator {
@@ -25,6 +27,19 @@ public class KPKActivity extends AppCompatActivity implements ImageGenerator {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kpk);
+
+        //Initializing the custom toolbar
+        Toolbar customToolbar = findViewById(R.id.rounded_custom_toolbar);
+        //Set the custom toolbar as the support action bar.
+        setSupportActionBar(customToolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
+
+        // Set a custom click listener for the back button
+        ImageView backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(view -> {
+            // Handle the back button click (e.g., navigate back)
+            onBackPressed();
+        });
 
         ImageView previewImage = findViewById(R.id.kpk_province_preview_image);
         previewImage.setImageResource(randomImageGenerator()); //previews the random generated images.

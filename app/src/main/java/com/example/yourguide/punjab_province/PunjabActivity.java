@@ -1,13 +1,13 @@
 package com.example.yourguide.punjab_province;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.yourguide.ImageGenerator;
 import com.example.yourguide.Province;
@@ -18,6 +18,7 @@ import com.example.yourguide.province_cards_categories.PopularCityActivity;
 import com.example.yourguide.province_cards_categories.TopRestaurantActivity;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 public class PunjabActivity extends AppCompatActivity implements ImageGenerator {
@@ -26,6 +27,20 @@ public class PunjabActivity extends AppCompatActivity implements ImageGenerator 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_punjab);
+
+        //Initializing the custom toolbar
+        Toolbar customToolbar = findViewById(R.id.rounded_custom_toolbar);
+        //Set the custom toolbar as the support action bar.
+        setSupportActionBar(customToolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
+
+        // Set a custom click listener for the back button
+        ImageView backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(view -> {
+            // Handle the back button click (e.g., navigate back)
+            onBackPressed();
+        });
+
 
         ImageView previewImage = findViewById(R.id.punjab_province_preview_image);
         previewImage.setImageResource(randomImageGenerator());
@@ -42,6 +57,8 @@ public class PunjabActivity extends AppCompatActivity implements ImageGenerator 
                 R.string.punjab_city_four_description, R.string.punjab_city_four_rating, getResources().getString(R.string.punjab_city_four_review)));
         popularCitiesList.add(new Province(R.drawable.gujranwala_city, R.string.punjab_city_five_title,
                 R.string.punjab_city_five_description, R.string.punjab_city_five_rating, getResources().getString(R.string.punjab_city_five_review)));
+
+
 
         RecyclerView punjabProvinceRecyclerView = findViewById(R.id.punjab_province_recycler_view);
         punjabProvinceRecyclerView.setVerticalScrollBarEnabled(false);
@@ -167,6 +184,14 @@ public class PunjabActivity extends AppCompatActivity implements ImageGenerator 
                 startActivity(historicalPlace); //Start the activity by displaying data on device.
             }
         });
+
+        /*
+            Sending the data of popular cities, top restaurants, and historical places
+            to the MainActivity to display the correct information in data circles
+            of PunjabActivity
+         */
+
+
     }
 
     /**

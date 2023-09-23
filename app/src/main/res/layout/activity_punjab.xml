@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
     tools:context=".punjab_province.PunjabActivity">
 
-    <!-- LinearLayout to vertically align the things. -->
-    <LinearLayout
+    <!-- RelativeLayout to vertically align the things. -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -20,7 +21,10 @@
             android:src="@drawable/ic_launcher_background" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/popular_city_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/punjab_province_preview_image">
 
             <!-- Heading for recycler view list item. -->
             <TextView
@@ -36,10 +40,14 @@
         <!-- Cities recycler view. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/punjab_province_recycler_view"
-            style="@style/ProvinceCategoryRecyclerView"/>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/popular_city_heading"/>
 
         <!-- Horizontal LinearLayout for top restaurant heading and see all heading. -->
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/top_restaurant_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/punjab_province_recycler_view">
 
             <!-- Top Restaurant heading. -->
             <TextView
@@ -55,9 +63,13 @@
         <!-- RecyclerView for top restaurants list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/top_restaurant_recycler_view"
-            style="@style/ProvinceCategoryRecyclerView"/>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/top_restaurant_heading"/>
 
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/historical_place_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/top_restaurant_recycler_view">
 
             <!-- Historical Places heading. -->
             <TextView
@@ -73,6 +85,10 @@
         <!-- RecyclerView for historical places list of cards. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/province_historical_places"
-            style="@style/ProvinceCategoryRecyclerView"/>
-    </LinearLayout>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/historical_place_heading"/>
+
+        <!-- Include the custom toolbar -->
+        <include layout="@layout/custom_toolbar" />
+    </RelativeLayout>
 </ScrollView>

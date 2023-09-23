@@ -6,8 +6,8 @@
     android:scrollbars="none"
     tools:context=".kpk_province.KPKActivity">
 
-    <!-- LinearLayout to hold all the children views. -->
-    <LinearLayout
+    <!-- RelativeLayout to hold all the children views. -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -20,7 +20,10 @@
             android:src="@drawable/ic_launcher_background" />
 
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/kpk_province_city_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/kpk_province_preview_image">
 
             <!-- Heading for popular city cards. -->
             <TextView
@@ -35,10 +38,14 @@
         <!-- KPK province cities RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_popular_city"
-            style="@style/ProvinceCategoryRecyclerView"/>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/kpk_province_city_heading"/>
 
         <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" heading. -->
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/kpk_province_restaurant_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/kpk_province_popular_city">
 
             <!-- Heading for top restaurant cards. -->
             <TextView
@@ -53,10 +60,14 @@
         <!-- KPK province top restaurant RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_top_restaurant"
-            style="@style/ProvinceCategoryRecyclerView"/>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/kpk_province_restaurant_heading"/>
 
         <!-- Horizontal LinearLayout for "Historical Place" and "See All" heading. -->
-        <LinearLayout style="@style/ListCategoryHeaderRootView">
+        <LinearLayout
+            android:id="@+id/kpk_province_historical_place_heading"
+            style="@style/ListCategoryHeaderRootView"
+            android:layout_below="@id/kpk_province_top_restaurant">
 
             <!-- Heading for historical place cards. -->
             <TextView
@@ -71,6 +82,10 @@
         <!-- KPK province historical place RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/kpk_province_historical_place"
-            style="@style/ProvinceCategoryRecyclerView"/>
-    </LinearLayout>
+            style="@style/ProvinceCategoryRecyclerView"
+            android:layout_below="@id/kpk_province_historical_place_heading"/>
+
+        <!-- Include the custom toolbar -->
+        <include layout="@layout/custom_toolbar" />
+    </RelativeLayout>
 </ScrollView>

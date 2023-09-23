@@ -64,14 +64,14 @@ public class ProvinceCategoryAdapter extends ArrayAdapter<ProvinceCategory> {
         historicalDataCircle.setColor(historicalDataColor);
 
         //Find the Textview in the province_list.xml layout with the id province_popular_sights_number
-        TextView popularSightsNumber = currentProvinceItem.findViewById(R.id.province_popular_sights_number);
+        TextView restaurantsNumber = currentProvinceItem.findViewById(R.id.province_restaurants_number);
         //Get the popular sights number from the currentProvincePosition object and set
         //the text on the popularSightsNumber TextView.
-        popularSightsNumber.setText(currentProvincePosition.getNumberOfPopularPlaces());
+        restaurantsNumber.setText(currentProvincePosition.getNumberOfPopularPlaces());
 
         //Set the proper background color of the popular places data.
         //Fetch the background from the TextView, which is GradientDrawable.
-        GradientDrawable popularDataCircle = (GradientDrawable) popularSightsNumber.getBackground();
+        GradientDrawable popularDataCircle = (GradientDrawable) restaurantsNumber.getBackground();
 
         //Get the appropriate background color based on the names of the provinces.
         int popularDataColor = getDataColor(currentProvincePosition.getProvinceName());
@@ -99,13 +99,6 @@ public class ProvinceCategoryAdapter extends ArrayAdapter<ProvinceCategory> {
         //the text on the provinceBackgroundImage ImageView.
         provinceBackgroundImage.setImageResource(currentProvincePosition.getProvinceImageID());
 
-//        //Set the theme color for the list item.
-//        View tintContainer = currentProvinceItem.findViewById(R.id.tint_container);
-//        //Find the color that the resource maps to.
-//        int color = ContextCompat.getColor(getContext(), currentProvincePosition.getProvinceBackgroundTint());
-//        //set the background color to the tint container view.
-//        tintContainer.setBackgroundColor(color);
-
         //Return the whole list item layout (containing 5 TextView)
         //so that it can be shown in the listview.
         return currentProvinceItem;
@@ -117,21 +110,13 @@ public class ProvinceCategoryAdapter extends ArrayAdapter<ProvinceCategory> {
      * @return the color resource ID based on the province name.
      */
     private int getDataColor(String mProvinceName) {
-        int mProvinceBackgroundTintID = 0;
-        switch(mProvinceName) {
-            case "Punjab":
-                mProvinceBackgroundTintID = R.color.punjab_province_data_color;
-                break;
-            case "Sindh":
-                mProvinceBackgroundTintID = R.color.sindh_province_data_color;
-                break;
-            case "Balochistan":
-                mProvinceBackgroundTintID = R.color.balochistan_province_data_color;
-                break;
-            case "KPK":
-                mProvinceBackgroundTintID = R.color.kpk_province_data_color;
-                break;
-        }
+        int mProvinceBackgroundTintID = switch (mProvinceName) {
+            case "Punjab" -> R.color.punjab_province_data_color;
+            case "Sindh" -> R.color.sindh_province_data_color;
+            case "Balochistan" -> R.color.balochistan_province_data_color;
+            case "KPK" -> R.color.kpk_province_data_color;
+            default -> 0;
+        };
         return ContextCompat.getColor(getContext(), mProvinceBackgroundTintID);
     }
 }

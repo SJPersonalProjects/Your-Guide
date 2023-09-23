@@ -175,12 +175,20 @@
         <item name="android:layout_centerVertical">true</item>
     </style>
 
-
+    <style name="ProvinceBackButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">18dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
 
     <!-- Header image style for each province activity. -->
     <style name="ProvinceHeaderImage">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/province_header_image_height</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_margin">4dp</item>
         <item name="android:scaleType">centerCrop</item>
     </style>

@@ -2,8 +2,11 @@ package com.example.yourguide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.widget.ImageView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,7 +16,9 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Map extends AppCompatActivity implements OnMapReadyCallback {
+import java.util.Objects;
+
+public class Map extends AppCompatActivity implements OnMapReadyCallback{
 
     private GoogleMap googleMap;
 
@@ -22,13 +27,24 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+        //Initializing the custom toolbar
+        Toolbar customToolbar = findViewById(R.id.rounded_custom_toolbar);
+        //Set the custom toolbar as the support action bar.
+        setSupportActionBar(customToolbar);
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
+
+        // Set a custom click listener for the back button
+        ImageView backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(view -> {
+            // Handle the back button click (e.g., navigate back)
+            onBackPressed();
+        });
+
         //Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment supportMapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         assert supportMapFragment != null;
         supportMapFragment.getMapAsync(this);
-
-
     }
 
     /**
@@ -46,6 +62,7 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
         Bundle extras = getIntent().getExtras();
         //Checks if extras is empty.
         if(extras != null) {
+
             String latitude = extras.getString("latitude");
             String longitude = extras.getString("longitude");
 
@@ -66,9 +83,18 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback {
                     .build();
 
             //Duration in milliseconds for the zoom animation.
-            int animationDuration = 4000; //5000 milliseconds = 5 seconds.
+            int animationDuration = 5000; //5000 milliseconds = 5 seconds.
 
-            googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), animationDuration, null);
+            //Load everything in map.
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+            // Use a Handler to wait for 3 seconds before starting the animation.
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Start animation to the marker after 3 seconds.
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), animationDuration, null);
+                }
+            }, 3000); // Wait for 3000 milliseconds (3 seconds).
         }
     }
 }
