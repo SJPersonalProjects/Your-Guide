@@ -67,8 +67,6 @@
             android:layout_below="@id/city_sub_heading"
             android:text="@string/activity_address" />
 
-
-
         <!-- Question above the horizontal icons LinearLayout. -->
         <TextView
             android:id="@+id/city_icons_question"
@@ -185,8 +183,8 @@
         <Button
             android:id="@+id/city_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:text="@string/activity_see_the_location_button_text" />
 
     </RelativeLayout>

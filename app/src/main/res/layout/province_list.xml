@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/province_list_height">
@@ -26,22 +25,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="35"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:layout_weight="35"
                 android:orientation="vertical">
 
                 <!-- Province name/title. -->
                 <TextView
                     android:id="@+id/province_name"
                     style="@style/ProvinceCardTitle"
-                    android:text="@string/activity_title"/>
+                    android:text="@string/activity_title" />
 
                 <!-- Province description. -->
                 <TextView
                     android:id="@+id/province_description"
                     style="@style/ProvinceCardDescription"
-                    android:text="@string/activity_description"/>
+                    android:text="@string/activity_description" />
             </LinearLayout>
 
             <!-- Card bottom data container. -->
@@ -53,9 +52,9 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
                     android:layout_weight="1.5"
                     android:gravity="bottom"
-                    android:layout_marginBottom="8dp"
                     android:orientation="horizontal"
                     tools:ignore="NestedWeights">
 
@@ -75,8 +74,8 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
                     android:gravity="bottom|center"
                     android:orientation="horizontal"
                     tools:ignore="RtlSymmetry">

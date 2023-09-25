@@ -1,5 +1,7 @@
 package com.example.yourguide;
 
+import java.util.List;
+
 public interface Formatter {
 
     /**
@@ -51,5 +53,5 @@ public interface Formatter {
      */
     String getDescription(String name);
 
-    String getLatitudeLongitude(String name);
+    String getLatitudeLongitude(String name, List<Map> list);
 }

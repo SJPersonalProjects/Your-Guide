@@ -16,8 +16,7 @@
     <include layout="@layout/custom_toolbar" />
 
     <!-- Parent Bottom RelativeLayout with top sides rounded. -->
-    <RelativeLayout
-        style="@style/CategoryParentBottomRelativeLayoutTheme">
+    <RelativeLayout style="@style/CategoryParentBottomRelativeLayoutTheme">
 
         <LinearLayout
             android:id="@+id/restaurant_name_container"
@@ -209,8 +208,8 @@
         <Button
             android:id="@+id/restaurant_see_the_location_button"
             style="@style/CategorySeeLocationButtonTheme"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             android:text="@string/activity_see_the_location_button_text" />
     </RelativeLayout>
 </RelativeLayout>

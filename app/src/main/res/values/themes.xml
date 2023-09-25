@@ -412,5 +412,13 @@
         <item name="android:backgroundTint">#0098FB</item>
     </style>
 
-
+    <!-- Style of the fragment container view to display maps on activity_map.xml-->
+    <style name="CategoryMapFragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
 </resources>

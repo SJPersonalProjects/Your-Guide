@@ -16,12 +16,12 @@
         <!-- Heading for the provinces. -->
         <TextView
             style="@style/MainActivityHeadingText"
-            android:text="@string/app_heading"/>
+            android:text="@string/app_heading" />
 
         <!-- Advertising phrases for the province list. -->
         <TextView
             style="@style/MainActivitySubHeadingText"
-            android:text="@string/app_sub_heading"/>
+            android:text="@string/app_sub_heading" />
     </LinearLayout>
 
     <!-- ListView to contain the list of provinces (Sindh, Punjab, KPK, Balochistan). -->

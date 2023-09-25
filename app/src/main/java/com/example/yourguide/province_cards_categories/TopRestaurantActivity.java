@@ -14,8 +14,11 @@ import android.widget.Toast;
 
 import com.example.yourguide.Formatter;
 import com.example.yourguide.Map;
+import com.example.yourguide.MapActivity;
 import com.example.yourguide.R;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class TopRestaurantActivity extends AppCompatActivity implements Formatter {
@@ -170,13 +173,59 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
             }
         });
 
+        List<Map> topRestaurantCoordinatesList = new ArrayList<>();
+        //Adding punjab province city coordinates.
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.punjab_restaurant_one_latitude),
+                getResources().getString(R.string.punjab_restaurant_one_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.punjab_restaurant_two_latitude),
+                getResources().getString(R.string.punjab_restaurant_two_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.punjab_restaurant_three_latitude),
+                getResources().getString(R.string.punjab_restaurant_three_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.punjab_restaurant_four_latitude),
+                getResources().getString(R.string.punjab_restaurant_four_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.punjab_restaurant_five_latitude),
+                getResources().getString(R.string.punjab_restaurant_five_longitude)));
+        //Adding sindh province city coordinates.
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.sindh_restaurant_one_latitude),
+                getResources().getString(R.string.sindh_restaurant_one_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.sindh_restaurant_two_latitude),
+                getResources().getString(R.string.sindh_restaurant_two_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.sindh_restaurant_three_latitude),
+                getResources().getString(R.string.sindh_restaurant_three_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.sindh_restaurant_four_latitude),
+                getResources().getString(R.string.sindh_restaurant_four_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.sindh_restaurant_five_latitude),
+                getResources().getString(R.string.sindh_restaurant_five_longitude)));
+        //Adding balochistan province city coordinates.
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_restaurant_one_latitude),
+                getResources().getString(R.string.balochistan_restaurant_one_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_restaurant_two_latitude),
+                getResources().getString(R.string.balochistan_restaurant_two_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_restaurant_three_latitude),
+                getResources().getString(R.string.balochistan_restaurant_three_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_restaurant_four_latitude),
+                getResources().getString(R.string.balochistan_restaurant_four_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_restaurant_five_latitude),
+                getResources().getString(R.string.balochistan_restaurant_five_longitude)));
+        //Adding kpk province city coordinates.
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.kpk_restaurant_one_latitude),
+                getResources().getString(R.string.kpk_restaurant_one_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.kpk_restaurant_two_latitude),
+                getResources().getString(R.string.kpk_restaurant_two_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.kpk_restaurant_three_latitude),
+                getResources().getString(R.string.kpk_restaurant_three_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.kpk_restaurant_four_latitude),
+                getResources().getString(R.string.kpk_restaurant_four_longitude)));
+        topRestaurantCoordinatesList.add(new Map(getResources().getString(R.string.kpk_restaurant_five_latitude),
+                getResources().getString(R.string.kpk_restaurant_five_longitude)));
+        
         //Restaurant location button and a clicked listener to see a toast message when clicked.
         Button restaurantSeeTheLocationButton = findViewById(R.id.restaurant_see_the_location_button);
         String nameOfRestaurant = getResources().getString(restaurantNameString);
         restaurantSeeTheLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String coordinates = getLatitudeLongitude(nameOfRestaurant);
+                String coordinates = getLatitudeLongitude(nameOfRestaurant, topRestaurantCoordinatesList);
                 if(coordinates == null) {
                     Toast.makeText(TopRestaurantActivity.this, "coordinates not found",
                             Toast.LENGTH_SHORT).show();
@@ -185,7 +234,7 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
                     String latitude = coordinatesArray[0].trim();
                     String longitude = coordinatesArray[1].trim();
 
-                    Intent mapsIntent = new Intent(TopRestaurantActivity.this, Map.class);
+                    Intent mapsIntent = new Intent(TopRestaurantActivity.this, MapActivity.class);
                     mapsIntent.putExtra("latitude", latitude);
                     mapsIntent.putExtra("longitude", longitude);
                     startActivity(mapsIntent);
@@ -276,35 +325,55 @@ public class TopRestaurantActivity extends AppCompatActivity implements Formatte
     }
 
     @Override
-    public String getLatitudeLongitude(String name) {
+    public String getLatitudeLongitude(String name, List<Map> topRestaurantList) {
         return switch(name) {
             //Punjab province city latitude and longitude.
-            case "Monal" -> getResources().getString(R.string.punjab_restaurant_one_latitude_longitude);
-            case "Haveli" -> getResources().getString(R.string.punjab_restaurant_two_latitude_longitude);
-            case "Andaaz" -> getResources().getString(R.string.punjab_restaurant_three_latitude_longitude);
-            case "Spice Bazar" -> getResources().getString(R.string.punjab_restaurant_four_latitude_longitude);
-            case "Dera" -> getResources().getString(R.string.punjab_restaurant_five_latitude_longitude);
+            case "Monal" -> topRestaurantList.get(0).getLatitude() + ", " +
+                    topRestaurantList.get(0).getLongitude();
+            case "Haveli" -> topRestaurantList.get(1).getLatitude() + ", " +
+                    topRestaurantList.get(1).getLongitude();
+            case "Andaaz" -> topRestaurantList.get(2).getLatitude() + ", " +
+                    topRestaurantList.get(2).getLongitude();
+            case "Spice Bazar" -> topRestaurantList.get(3).getLatitude() + ", " +
+                    topRestaurantList.get(3).getLongitude();
+            case "Dera" -> topRestaurantList.get(4).getLatitude() + ", " +
+                    topRestaurantList.get(4).getLongitude();
 
             //Sindh province city latitude and longitude.
-            case "Royal Taj" -> getResources().getString(R.string.sindh_restaurant_one_latitude_longitude);
-            case "Ridan" -> getResources().getString(R.string.sindh_restaurant_two_latitude_longitude);
-            case "LalQila" -> getResources().getString(R.string.sindh_restaurant_three_latitude_longitude);
-            case "Chef's Table" -> getResources().getString(R.string.sindh_restaurant_four_latitude_longitude);
-            case "Kababjees" -> getResources().getString(R.string.sindh_restaurant_five_latitude_longitude);
+            case "Royal Taj" -> topRestaurantList.get(5).getLatitude() + ", " +
+                    topRestaurantList.get(5).getLongitude();
+            case "Ridan" -> topRestaurantList.get(6).getLatitude() + ", " +
+                    topRestaurantList.get(6).getLongitude();
+            case "LalQila" -> topRestaurantList.get(7).getLatitude() + ", " +
+                    topRestaurantList.get(7).getLongitude();
+            case "Chef's Table" -> topRestaurantList.get(8).getLatitude() + ", " +
+                    topRestaurantList.get(8).getLongitude();
+            case "Kababjees" -> topRestaurantList.get(9).getLatitude() + ", " +
+                    topRestaurantList.get(9).getLongitude();
 
             //Balochistan province city latitude and longitude.
-            case "Lehri Sajji House" -> getResources().getString(R.string.balochistan_restaurant_one_latitude_longitude);
-            case "Usmania Tandoori" -> getResources().getString(R.string.balochistan_restaurant_two_latitude_longitude);
-            case "Saigon" -> getResources().getString(R.string.balochistan_restaurant_three_latitude_longitude);
-            case "Gulshan Karahi" -> getResources().getString(R.string.balochistan_restaurant_four_latitude_longitude);
-            case "Mehfil" -> getResources().getString(R.string.balochistan_restaurant_five_latitude_longitude);
+            case "Lehri Sajji House" -> topRestaurantList.get(10).getLatitude() + ", " +
+                    topRestaurantList.get(10).getLongitude();
+            case "Usmania Tandoori" -> topRestaurantList.get(11).getLatitude() + ", " +
+                    topRestaurantList.get(11).getLongitude();
+            case "Saigon" -> topRestaurantList.get(12).getLatitude() + ", " +
+                    topRestaurantList.get(12).getLongitude();
+            case "Gulshan Karahi" -> topRestaurantList.get(13).getLatitude() + ", " +
+                    topRestaurantList.get(13).getLongitude();
+            case "Mehfil" -> topRestaurantList.get(14).getLatitude() + ", " +
+                    topRestaurantList.get(14).getLongitude();
 
             //KPK province city latitude and longitude.
-            case "Chief Burger" -> getResources().getString(R.string.kpk_restaurant_one_latitude_longitude);
-            case "Cafe Crunch" -> getResources().getString(R.string.kpk_restaurant_two_latitude_longitude);
-            case "Pinetree" -> getResources().getString(R.string.kpk_restaurant_three_latitude_longitude);
-            case "Bukhara Rooftop BBQ" -> getResources().getString(R.string.kpk_restaurant_four_latitude_longitude);
-            case "Swat Marina" -> getResources().getString(R.string.kpk_restaurant_five_latitude_longitude);
+            case "Chief Burger" -> topRestaurantList.get(15).getLatitude() + ", " +
+                    topRestaurantList.get(15).getLongitude();
+            case "Cafe Crunch" -> topRestaurantList.get(16).getLatitude() + ", " +
+                    topRestaurantList.get(16).getLongitude();
+            case "Pinetree" -> topRestaurantList.get(17).getLatitude() + ", " +
+                    topRestaurantList.get(17).getLongitude();
+            case "Bukhara Rooftop BBQ" -> topRestaurantList.get(18).getLatitude() + ", " +
+                    topRestaurantList.get(18).getLongitude();
+            case "Swat Marina" -> topRestaurantList.get(19).getLatitude() + ", " +
+                    topRestaurantList.get(19).getLongitude();
 
             default -> null;
         };

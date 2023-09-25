@@ -14,8 +14,11 @@ import android.widget.Toast;
 
 import com.example.yourguide.Formatter;
 import com.example.yourguide.Map;
+import com.example.yourguide.MapActivity;
 import com.example.yourguide.R;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class HistoricalPlaceActivity extends AppCompatActivity implements Formatter {
@@ -141,6 +144,52 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
             }
         });
 
+        List<Map> historicalPlaceCoordinatesList = new ArrayList<>();
+        //Adding punjab province city coordinates.
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.punjab_historical_place_one_latitude),
+                getResources().getString(R.string.punjab_historical_place_one_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.punjab_historical_place_two_latitude),
+                getResources().getString(R.string.punjab_historical_place_two_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.punjab_historical_place_three_latitude),
+                getResources().getString(R.string.punjab_historical_place_three_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.punjab_historical_place_four_latitude),
+                getResources().getString(R.string.punjab_historical_place_four_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.punjab_historical_place_five_latitude),
+                getResources().getString(R.string.punjab_historical_place_five_longitude)));
+        //Adding sindh province city coordinates.
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.sindh_historical_place_one_latitude),
+                getResources().getString(R.string.sindh_historical_place_one_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.sindh_historical_place_two_latitude),
+                getResources().getString(R.string.sindh_historical_place_two_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.sindh_historical_place_three_latitude),
+                getResources().getString(R.string.sindh_historical_place_three_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.sindh_historical_place_four_latitude),
+                getResources().getString(R.string.sindh_historical_place_four_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.sindh_historical_place_five_latitude),
+                getResources().getString(R.string.sindh_historical_place_five_longitude)));
+        //Adding balochistan province city coordinates.
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_historical_place_one_latitude),
+                getResources().getString(R.string.balochistan_historical_place_one_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_historical_place_two_latitude),
+                getResources().getString(R.string.balochistan_historical_place_two_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_historical_place_three_latitude),
+                getResources().getString(R.string.balochistan_historical_place_three_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_historical_place_four_latitude),
+                getResources().getString(R.string.balochistan_historical_place_four_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.balochistan_historical_place_five_latitude),
+                getResources().getString(R.string.balochistan_historical_place_five_longitude)));
+        //Adding kpk province city coordinates.
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.kpk_historical_place_one_latitude),
+                getResources().getString(R.string.kpk_historical_place_one_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.kpk_historical_place_two_latitude),
+                getResources().getString(R.string.kpk_historical_place_two_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.kpk_historical_place_three_latitude),
+                getResources().getString(R.string.kpk_historical_place_three_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.kpk_historical_place_four_latitude),
+                getResources().getString(R.string.kpk_historical_place_four_longitude)));
+        historicalPlaceCoordinatesList.add(new Map(getResources().getString(R.string.kpk_historical_place_five_latitude),
+                getResources().getString(R.string.kpk_historical_place_five_longitude)));
+
         //Finding button with id.
         Button seeTheLocationButton = (Button)
                 findViewById(R.id.historical_place_see_the_location_button);
@@ -149,7 +198,7 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
         seeTheLocationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String coordinates = getLatitudeLongitude(historicalPlaceName);
+                String coordinates = getLatitudeLongitude(historicalPlaceName, historicalPlaceCoordinatesList);
                 //Checking if coordinates is null.
                 if(coordinates == null) {
                     //If coordinates isnull display toast of coordinates not found.
@@ -163,7 +212,7 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
 
                     //Intent to launch Map activity.
                     Intent mapsIntent = new Intent(HistoricalPlaceActivity.this,
-                            Map.class);
+                            MapActivity.class);
                     //Passing in coordinates.
                     mapsIntent.putExtra("latitude", latitude);
                     mapsIntent.putExtra("longitude", longitude);
@@ -255,35 +304,55 @@ public class HistoricalPlaceActivity extends AppCompatActivity implements Format
     }
 
     @Override
-    public String getLatitudeLongitude(String name) {
+    public String getLatitudeLongitude(String name, List<Map> historicalPlaceCoordinatesList) {
         return switch(name) {
             //Punjab province city latitude and longitude.
-            case "Badshahi Mosque" -> getResources().getString(R.string.punjab_historical_place_one_latitude_longitude);
-            case "Wagah Border" -> getResources().getString(R.string.punjab_historical_place_two_latitude_longitude);
-            case "Lahore Fort" -> getResources().getString(R.string.punjab_historical_place_three_latitude_longitude);
-            case "Wazir.K Mosque" -> getResources().getString(R.string.punjab_historical_place_four_latitude_longitude);
-            case "Walled City" -> getResources().getString(R.string.punjab_historical_place_five_latitude_longitude);
+            case "Badshahi Mosque" -> historicalPlaceCoordinatesList.get(0).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(0).getLongitude();
+            case "Wagah Border" -> historicalPlaceCoordinatesList.get(1).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(1).getLongitude();
+            case "Lahore Fort" -> historicalPlaceCoordinatesList.get(2).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(2).getLongitude();
+            case "Wazir.K Mosque" -> historicalPlaceCoordinatesList.get(3).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(3).getLongitude();
+            case "Walled City" -> historicalPlaceCoordinatesList.get(4).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(4).getLongitude();
 
             //Sindh province city latitude and longitude.
-            case "Mohenjo-daro" -> getResources().getString(R.string.sindh_historical_place_one_latitude_longitude);
-            case "Makli Hill" -> getResources().getString(R.string.sindh_historical_place_two_latitude_longitude);
-            case "Shah Jahan Mosque" -> getResources().getString(R.string.sindh_historical_place_three_latitude_longitude);
-            case "Rani Kot Fort" -> getResources().getString(R.string.sindh_historical_place_four_latitude_longitude);
-            case "Tooba Mosque" -> getResources().getString(R.string.sindh_historical_place_five_latitude_longitude);
+            case "Mohenjo-daro" -> historicalPlaceCoordinatesList.get(5).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(5).getLongitude();
+            case "Makli Hill" -> historicalPlaceCoordinatesList.get(6).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(6).getLongitude();
+            case "Shah Jahan Mosque" -> historicalPlaceCoordinatesList.get(7).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(7).getLongitude();
+            case "Rani Kot Fort" -> historicalPlaceCoordinatesList.get(8).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(8).getLongitude();
+            case "Tooba Mosque" -> historicalPlaceCoordinatesList.get(9).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(9).getLongitude();
 
             //Balochistan province city latitude and longitude.
-            case "Quaid-e-Azam Residency" -> getResources().getString(R.string.balochistan_historical_place_one_latitude_longitude);
-            case "Princes of Hope" -> getResources().getString(R.string.balochistan_historical_place_two_latitude_longitude);
-            case "Kalat" -> getResources().getString(R.string.balochistan_historical_place_three_latitude_longitude);
-            case "Gadani Beach" -> getResources().getString(R.string.balochistan_historical_place_four_latitude_longitude);
-            case "Moola Chotok" -> getResources().getString(R.string.balochistan_historical_place_five_latitude_longitude);
+            case "Quaid-e-Azam Residency" -> historicalPlaceCoordinatesList.get(10).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(10).getLongitude();
+            case "Princes of Hope" -> historicalPlaceCoordinatesList.get(11).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(11).getLongitude();
+            case "Kalat" -> historicalPlaceCoordinatesList.get(12).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(12).getLongitude();
+            case "Gadani Beach" -> historicalPlaceCoordinatesList.get(13).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(13).getLongitude();
+            case "Moola Chotok" -> historicalPlaceCoordinatesList.get(14).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(14).getLongitude();
 
             //KPK province city latitude and longitude.
-            case "Chitral Fort" -> getResources().getString(R.string.kpk_historical_place_one_latitude_longitude);
-            case "Takht-i-Bahi" -> getResources().getString(R.string.kpk_historical_place_two_latitude_longitude);
-            case "Mahabat Khan Mosque" -> getResources().getString(R.string.kpk_historical_place_three_latitude_longitude);
-            case "Jamrud Fort" -> getResources().getString(R.string.kpk_historical_place_four_latitude_longitude);
-            case "St John's Church" -> getResources().getString(R.string.kpk_historical_place_five_latitude_longitude);
+            case "Chitral Fort" -> historicalPlaceCoordinatesList.get(15).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(15).getLongitude();
+            case "Takht-i-Bahi" -> historicalPlaceCoordinatesList.get(16).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(16).getLongitude();
+            case "Mahabat Khan Mosque" -> historicalPlaceCoordinatesList.get(17).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(17).getLongitude();
+            case "Jamrud Fort" -> historicalPlaceCoordinatesList.get(18).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(18).getLongitude();
+            case "St John's Church" -> historicalPlaceCoordinatesList.get(19).getLatitude() + ", " +
+                    historicalPlaceCoordinatesList.get(19).getLongitude();
 
             default -> null;
         };

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none"
     tools:context=".punjab_province.PunjabActivity">
 
@@ -41,7 +41,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/punjab_province_recycler_view"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/popular_city_heading"/>
+            android:layout_below="@id/popular_city_heading" />
 
         <!-- Horizontal LinearLayout for top restaurant heading and see all heading. -->
         <LinearLayout
@@ -64,7 +64,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/top_restaurant_recycler_view"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/top_restaurant_heading"/>
+            android:layout_below="@id/top_restaurant_heading" />
 
         <LinearLayout
             android:id="@+id/historical_place_heading"
@@ -86,7 +86,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/province_historical_places"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/historical_place_heading"/>
+            android:layout_below="@id/historical_place_heading" />
 
         <!-- Include the custom toolbar -->
         <include layout="@layout/custom_toolbar" />

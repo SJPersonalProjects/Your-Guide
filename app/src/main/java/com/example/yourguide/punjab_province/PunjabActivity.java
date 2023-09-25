@@ -185,12 +185,6 @@ public class PunjabActivity extends AppCompatActivity implements ImageGenerator 
             }
         });
 
-        /*
-            Sending the data of popular cities, top restaurants, and historical places
-            to the MainActivity to display the correct information in data circles
-            of PunjabActivity
-         */
-
 
     }
 

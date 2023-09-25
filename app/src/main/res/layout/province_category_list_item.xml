@@ -30,18 +30,17 @@
                 android:id="@+id/province_list_item_title"
                 style="@style/ProvinceCategoryListItemTitle"
                 android:layout_below="@id/province_list_preview_image"
-                android:text="@string/activity_title"/>
+                android:text="@string/activity_title" />
 
             <!-- Description for any place, or restaurant etc in the province list item. -->
             <TextView
                 android:id="@+id/province_list_item_description"
                 style="@style/ProvinceCategoryListItemDescription"
                 android:layout_below="@id/province_list_item_title"
-                android:text="@string/activity_description"/>
+                android:text="@string/activity_description" />
 
             <!-- Bottom container where rating and favourite heart is placed. -->
-            <RelativeLayout
-                style="@style/ProvinceCategoryListItemBottomDataContainer">
+            <RelativeLayout style="@style/ProvinceCategoryListItemBottomDataContainer">
 
                 <!-- Star-rating image for better layout looks. -->
                 <ImageView

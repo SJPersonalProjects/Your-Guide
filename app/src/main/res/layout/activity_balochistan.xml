@@ -39,7 +39,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_popular_city"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/balochistan_province_city_heading"/>
+            android:layout_below="@id/balochistan_province_city_heading" />
 
         <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" headings. -->
         <LinearLayout
@@ -61,7 +61,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_top_restaurants"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/balochistan_province_restaurant_heading"/>
+            android:layout_below="@id/balochistan_province_restaurant_heading" />
 
         <!-- Horizontal LinearLayout for "Historical Place" and "See All" headings. -->
         <LinearLayout
@@ -84,7 +84,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_historical_place"
             style="@style/ProvinceCategoryRecyclerView"
-            android:layout_below="@id/balochistan_province_historical_place_heading"/>
+            android:layout_below="@id/balochistan_province_historical_place_heading" />
 
         <!-- Include the custom toolbar -->
         <include layout="@layout/custom_toolbar" />
