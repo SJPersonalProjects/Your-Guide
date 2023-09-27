@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.YourGuide" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -14,7 +14,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">@dimen/main_activity_heading_text_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
     <!-- Sub-heading at the top of the activity. -->
@@ -22,42 +22,42 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/main_activity_sub_heading_text_text_size</item>
     </style>
     <!-- Main activity listview to contain the list of provinces. -->
     <style name="MainActivityListView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:dividerHeight">0dp</item>
+        <item name="android:dividerHeight">@dimen/main_activity_list_view_divider_height</item>
         <item name="android:scrollbars">none</item>
     </style>
 
 
-    
+
     <!-- province_list.xml Data. -->
     <!-- CardView that contains the information about Provinces (Sindh, Balochistan, KPK, Punjab). -->
     <style name="ProvinceCardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="android:elevation">32dp</item>
+        <item name="android:layout_margin">@dimen/province_list_card_view_margin</item>
+        <item name="android:elevation">@dimen/province_list_card_view_elevation</item>
         <item name="cardCornerRadius">16dp</item>
     </style>
     <!-- Thumbnail image view for the province list (Sindh, Balochistan, KPK, Punjab). -->
     <style name="ProvinceCardThumbnailImage">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">55</item>
+        <item name="android:layout_height">@dimen/province_list_card_view_thumbnail_image_height</item>
+        <item name="android:layout_weight">@dimen/province_list_card_view_thumbnail_image_weight</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
     <!-- Title for the province list (Sindh, Balochistan, KPK, Punjab). -->
     <style name="ProvinceCardTitle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">@dimen/province_list_card_view_title_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/province_list_card_view_title_margin_bottom</item>
+        <item name="android:textSize">@dimen/province_list_card_view_title_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
     <!-- Description for the province list (Sindh, Balochistan, KPK, Punjab). -->
@@ -69,16 +69,16 @@
         <item name="android:maxLines">3</item>
         <item name="android:textSize">14sp</item>
     </style>
-    <!-- Province bottom data container root view to show the numbers of the following options:
+    <!-- Province card bottom data container root view to show the numbers of the following options:
         1. Historical Sights
         2. Cities
         3. Restaurants -->
     <style name="ProvinceBottomDataContainer">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">10</item>
-        <item name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_height">@dimen/province_list_card_view_bottom_data_container_height</item>
+        <item name="android:layout_weight">@dimen/province_list_card_view_bottom_data_container_weight</item>
+        <item name="android:layout_marginStart">@dimen/province_list_card_view_bottom_data_container_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/province_list_card_view_bottom_data_container_margin_end</item>
         <item name="android:gravity">bottom</item>
         <item name="android:orientation">horizontal</item>
     </style>
@@ -86,10 +86,10 @@
     <style name="NumberOfPlaces">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginEnd">@dimen/province_list_card_view_number_of_places_margin_end</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/data_circle</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/province_list_card_view_number_of_places_text_size</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -97,7 +97,7 @@
     <style name="PlacesTextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/province_list_card_view_places_text_style_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -107,81 +107,87 @@
     <!-- Preview image for the card. -->
     <style name="ProvinceCategoryListItemImage">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">108dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_height">@dimen/province_category_list_item_image_height</item>
+        <item name="android:layout_marginBottom">@dimen/province_category_list_item_image_margin_bottom</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
     <!-- Title for the card. -->
     <style name="ProvinceCategoryListItemTitle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">@dimen/province_category_list_item_title_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/province_category_list_item_title_margin_end</item>
+        <item name="android:layout_marginBottom">@dimen/province_category_list_item_title_margin_bottom</item>
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">@dimen/province_category_list_item_title_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
     <!-- Description for the card. -->
     <style name="ProvinceCategoryListItemDescription">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">@dimen/province_category_list_item_description_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/province_category_list_item_description_margin_end</item>
+        <item name="android:layout_marginBottom">@dimen/province_category_list_item_description_margin_bottom</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">3</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/province_category_list_item_description_text_size</item>
     </style>
     <!-- Province list item bottom data container. -->
     <style name="ProvinceCategoryListItemBottomDataContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">@dimen/province_category_list_item_bottom_data_container_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/province_category_list_item_bottom_data_container_margin_end</item>
+        <item name="android:layout_marginBottom">@dimen/province_category_list_item_bottom_data_container_margin_bottom</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_alignParentBottom">true</item>
     </style>
     <!-- Province list item bottom rating star image. -->
     <style name="ProvinceCategoryListItemRatingStarImage">
-        <item name="android:layout_width">16dp</item>
-        <item name="android:layout_height">16dp</item>
-        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_width">@dimen/province_category_list_item_rating_star_image_width</item>
+        <item name="android:layout_height">@dimen/province_category_list_item_rating_star_image_height</item>
+        <item name="android:layout_marginEnd">@dimen/province_category_list_item_rating_star_image_margin_end</item>
         <item name="android:layout_centerVertical">true</item>
     </style>
     <!-- Province list item bottom rating. -->
     <style name="ProvinceCategoryListItemRating">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginEnd">@dimen/province_category_list_item_rating_margin_end</item>
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/province_category_list_item_rating_text_size</item>
     </style>
     <!-- Province list item bottom review. -->
     <style name="ProvinceCategoryListItemReview">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/province_category_list_item_review_text_size</item>
     </style>
     <!-- Province list item bottom heart image. -->
     <style name="ProvinceCategoryListItemHeartImage">
-        <item name="android:layout_width">16dp</item>
-        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_width">@dimen/province_category_list_item_heart_image_height</item>
+        <item name="android:layout_height">@dimen/province_category_list_item_heart_image_width</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_centerVertical">true</item>
     </style>
 
-    <style name="ProvinceBackButton">
-        <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:layout_margin">18dp</item>
-        <item name="android:padding">12dp</item>
-    </style>
 
+    <!-- Provinces list data:
+            1. activity_balochistan.xml
+            2. activity_kpk_.xml
+            3. activity_punjab.xml
+            4. activity_sindh.xml -->
+    <!-- Back button for each province activity. -->
+    <style name="ProvinceBackButton">
+        <item name="android:layout_width">@dimen/province_back_button_width</item>
+        <item name="android:layout_height">@dimen/province_back_button_height</item>
+        <item name="android:layout_margin">@dimen/province_back_button_margin</item>
+        <item name="android:padding">@dimen/province_back_button_padding</item>
+    </style>
     <!-- Header image style for each province activity. -->
     <style name="ProvinceHeaderImage">
         <item name="android:layout_width">match_parent</item>
@@ -189,229 +195,235 @@
         <item name="android:layout_alignParentTop">true</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="android:layout_alignParentEnd">true</item>
-        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_margin">@dimen/province_header_image_margin</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
-
+    <!-- Heading title style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
     <style name="ProvinceListCategoryHeading">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/punjab_province_list_heading_color</item>
+        <item name="android:textSize">@dimen/province_list_category_heading_text_size</item>
+        <item name="android:textColor">@color/province_list_category_heading_color</item>
         <item name="android:textStyle">bold</item>
     </style>
-
-    <style name="ProvinceListSeeAllHeading">
+    <!-- See all heading title style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <style name="ProvinceListCategorySeeAllHeading">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">end|bottom</item>
-        <item name="android:textColor">@color/province_heading_see_all</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/province_list_category_see_all_heading_color</item>
+        <item name="android:textSize">@dimen/province_list_category_see_all_heading_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
-    <style name="ListCategoryHeaderRootView">
+    <!-- Root view for headings style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <style name="ProvinceListCategoryHeadingsRootView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginStart">@dimen/province_list_category_headings_root_view_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/province_list_category_headings_root_view_margin_end</item>
+        <item name="android:layout_marginTop">@dimen/province_list_category_headings_root_view_margin_top</item>
         <item name="android:orientation">horizontal</item>
     </style>
-
-    <style name="ProvinceCategoryRecyclerView">
+    <!-- Recycler view style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <style name="ProvinceListCategoryRecyclerView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:scrollbars">none</item>
     </style>
-    
-    <!-- Category card Themes. -->
-    <style name="CategoryPreviewImageImage">
+
+    <!-- Province category layouts data:
+            1. activity_popular_city.xml
+            2. activity_top_restaurant.xml
+            3. activity_historical_place.xml -->
+    <!-- Category image at the top. -->
+    <style name="CategoryPreviewImage">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">288dp</item>
+        <item name="android:layout_height">@dimen/category_preview_image_height</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
-
+    <!-- Category relative layout to hold the children attributes. -->
     <style name="CategoryParentBottomRelativeLayoutTheme">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">588dp</item>
+        <item name="android:layout_height">@dimen/category_parent_bottom_relative_layout_theme_height</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:background">@drawable/rounded_from_top</item>
     </style>
-
     <!-- Title of the category theme. -->
     <style name="CategoryHeadingTheme">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/category_heading_theme_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">7</item>
+        <item name="android:layout_weight">@dimen/category_heading_theme_weight</item>
         <item name="android:maxLines">2</item>
-        <item name="android:layout_marginStart">28dp</item>
+        <item name="android:layout_marginStart">@dimen/category_heading_theme_margin_start</item>
         <item name="android:layout_alignParentTop">true</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:paddingEnd">@dimen/category_heading_theme_padding_end</item>
+        <item name="android:textSize">@dimen/category_heading_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+    <!-- Sub title of the category theme.-->
     <style name="CategorySubHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginStart">@dimen/category_sub_heading_theme_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_sub_heading_theme_margin_end</item>
+        <item name="android:textSize">@dimen/category_sub_heading_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+    <!-- Address of the category theme.-->
     <style name="CategoryAddressTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">@dimen/category_address_theme_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_address_theme_margin_end</item>
+        <item name="android:layout_marginTop">@dimen/category_address_theme_margin_top</item>
         <item name="android:maxLines">3</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#A4A4A4</item>
+        <item name="android:textSize">@dimen/category_address_theme_text_size</item>
+        <item name="android:textColor">@color/category_address_theme_color</item>
     </style>
-
+    <!-- Review of each category theme. -->
     <style name="CategoryReviewTheme">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/category_review_theme_width</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">2</item>
+        <item name="android:layout_weight">@dimen/category_review_theme_weight</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">@dimen/category_review_theme_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/category_review_theme_margin_end</item>
+        <item name="android:textSize">@dimen/category_review_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+    <!-- Rating of each category theme. -->
     <style name="CategoryRatingTheme">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">@dimen/category_rating_theme_width</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_weight">@dimen/category_rating_theme_weight</item>
         <item name="android:layout_gravity">top</item>
-        <item name="android:layout_marginTop">28dp</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">@dimen/category_rating_theme_margin_top</item>
+        <item name="android:textSize">@dimen/category_rating_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
-    <style name="CategoryRatingImageTheme">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">22dp</item>
+    <!-- Rating star image of each category theme. -->
+    <style name="CategoryRatingStarImageTheme">
+        <item name="android:layout_width">@dimen/category_rating_star_image_theme_width</item>
+        <item name="android:layout_height">@dimen/category_rating_star_image_theme_height</item>
         <item name="android:layout_gravity">top</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_weight">@dimen/category_rating_star_image_theme_weight</item>
+        <item name="android:layout_marginTop">@dimen/category_rating_star_image_theme_margin_top</item>
         <item name="android:src">@drawable/baseline_star_24</item>
     </style>
-
-
+    <!-- Question as title of each category theme. -->
     <style name="CategoryIconQuestionTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginStart">@dimen/category_icon_question_theme_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_icon_question_theme_margin_end</item>
+        <item name="android:textSize">@dimen/category_icon_question_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
     <!-- LinearLayout theme for all the horizontal icons in the layout. -->
     <style name="CategoryIconsLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">@dimen/category_icons_linear_layout_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_icons_linear_layout_margin_end</item>
+        <item name="android:layout_marginTop">@dimen/category_icons_linear_layout_margin_top</item>
         <item name="android:orientation">horizontal</item>
     </style>
-
-    <!-- LinearLayout theme for single icon in the parent LinearLayout. -->
+    <!-- LinearLayout theme for single icon and text in the parent LinearLayout. -->
     <style name="CategorySingleIconLinearLayout">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">@dimen/category_single_icon_linear_layout_width</item>
+        <item name="android:layout_weight">@dimen/category_single_icon_linear_layout_weight</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
     </style>
-
-    <!-- Icon in the city layouts. -->
+    <!-- Icon in the category layouts. -->
     <style name="CategoryIconTheme">
-        <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">@dimen/category_icon_theme_width</item>
+        <item name="android:layout_height">@dimen/category_icon_theme_height</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:background">@drawable/data_circle</item>
-        <item name="android:backgroundTint">#F4F4F4</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:backgroundTint">@color/category_icon_theme_background_tint</item>
+        <item name="android:padding">@dimen/category_icon_theme_padding</item>
     </style>
-
-    <!-- Text below the icons in the city layouts. -->
+    <!-- Text below the icons in the category layouts. -->
     <style name="CategoryIconTextTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">4dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">@dimen/category_icon_text_theme_margin_top</item>
+        <item name="android:textSize">@dimen/category_icon_text_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
     <!-- Description heading below icons horizontal list of LinearLayout. -->
     <style name="CategoryDescriptionHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginStart">@dimen/category_description_heading_theme_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_description_heading_theme_margin_end</item>
+        <item name="android:layout_marginTop">@dimen/category_description_heading_theme_margin_top</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/category_description_heading_theme_text_size</item>
     </style>
-
-    <!-- Long description theme used to explain city, restaurants, historical place. -->
+    <!-- Description theme used to explain city, restaurants, historical place. -->
     <style name="CategoryDescriptionTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">28dp</item>
-        <item name="android:layout_marginEnd">28dp</item>
-        <item name="android:layout_marginTop">8dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginStart">@dimen/category_description_theme_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/category_description_theme_margin_end</item>
+        <item name="android:layout_marginTop">@dimen/category_description_theme_margin_top</item>
+        <item name="android:textSize">@dimen/category_description_theme_text_size</item>
     </style>
-
     <!-- See the Location button theme to see the actual location of any place. -->
     <style name="CategorySeeLocationButtonTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">16dp</item>
-        <item name="android:backgroundTint">#0098FB</item>
+        <item name="android:layout_marginBottom">@dimen/category_see_location_button_theme_margin_bottom</item>
+        <item name="android:backgroundTint">@color/category_button_theme_color</item>
     </style>
 
 
 
-
-    <!-- Specifically restaurant layout styles. -->
+    <!-- Specifically activity_top_restaurant.xml layout file styles. -->
     <!-- Open In heading for the timing of the restaurant. -->
     <style name="CategoryOpenInHeadingTheme">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/category_open_in_heading_theme_height</item>
+        <item name="android:layout_weight">@dimen/category_open_in_heading_theme_weight</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/category_open_in_heading_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-    
     <!-- Timing of the restaurant opening and closing TextView. -->
     <style name="CategoryRestaurantTimingTheme">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/category_restaurant_timing_theme_height</item>
+        <item name="android:layout_weight">@dimen/category_restaurant_timing_theme_weight</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/category_restaurant_timing_theme_text_size</item>
         <item name="android:textStyle">bold</item>
     </style>
-
     <!-- Button for booking a table in restaurant. -->
     <style name="CategoryBookATableButtonTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:backgroundTint">#0098FB</item>
+        <item name="android:backgroundTint">@color/category_button_theme_color</item>
     </style>
 
+
+    <!-- activity_map.xml data. -->
     <!-- Style of the fragment container view to display maps on activity_map.xml-->
     <style name="CategoryMapFragment">
         <item name="android:layout_width">match_parent</item>

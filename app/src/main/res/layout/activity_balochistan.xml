@@ -22,7 +22,7 @@
         <!-- Horizontal LinearLayout for "Popular City" and "See All" headings. -->
         <LinearLayout
             android:id="@+id/balochistan_province_city_heading"
-            style="@style/ListCategoryHeaderRootView"
+            style="@style/ProvinceListCategoryHeadingsRootView"
             android:layout_below="@id/balochistan_province_preview_image">
 
             <!-- Heading for popular city cards. -->
@@ -31,20 +31,20 @@
                 android:text="@string/province_popular_city" />
             <!-- See All button to see all the cards separately in other activity. -->
             <TextView
-                style="@style/ProvinceListSeeAllHeading"
+                style="@style/ProvinceListCategorySeeAllHeading"
                 android:text="@string/province_see_all" />
         </LinearLayout>
 
         <!-- Balochistan province cities RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_popular_city"
-            style="@style/ProvinceCategoryRecyclerView"
+            style="@style/ProvinceListCategoryRecyclerView"
             android:layout_below="@id/balochistan_province_city_heading" />
 
         <!-- Horizontal LinearLayout for "Top Restaurant" and "See All" headings. -->
         <LinearLayout
             android:id="@+id/balochistan_province_restaurant_heading"
-            style="@style/ListCategoryHeaderRootView"
+            style="@style/ProvinceListCategoryHeadingsRootView"
             android:layout_below="@id/balochistan_province_popular_city">
 
             <!-- Heading for top restaurant cards. -->
@@ -53,20 +53,20 @@
                 android:text="@string/province_top_restaurant" />
             <!-- See all button to see all the cards separately in other activity. -->
             <TextView
-                style="@style/ProvinceListSeeAllHeading"
+                style="@style/ProvinceListCategorySeeAllHeading"
                 android:text="@string/province_see_all" />
         </LinearLayout>
 
         <!-- Balochistan province top restaurants RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_top_restaurants"
-            style="@style/ProvinceCategoryRecyclerView"
+            style="@style/ProvinceListCategoryRecyclerView"
             android:layout_below="@id/balochistan_province_restaurant_heading" />
 
         <!-- Horizontal LinearLayout for "Historical Place" and "See All" headings. -->
         <LinearLayout
             android:id="@+id/balochistan_province_historical_place_heading"
-            style="@style/ListCategoryHeaderRootView"
+            style="@style/ProvinceListCategoryHeadingsRootView"
             android:layout_below="@id/balochistan_province_top_restaurants">
 
             <!-- Heading for historical place cards. -->
@@ -76,14 +76,14 @@
 
             <!-- See all button to see all the cards separately in other activity. -->
             <TextView
-                style="@style/ProvinceListSeeAllHeading"
+                style="@style/ProvinceListCategorySeeAllHeading"
                 android:text="@string/province_see_all" />
         </LinearLayout>
 
         <!-- Balochistan province historical place RecyclerView. -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/balochistan_province_historical_place"
-            style="@style/ProvinceCategoryRecyclerView"
+            style="@style/ProvinceListCategoryRecyclerView"
             android:layout_below="@id/balochistan_province_historical_place_heading" />
 
         <!-- Include the custom toolbar -->

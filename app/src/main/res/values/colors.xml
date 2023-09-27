@@ -15,6 +15,26 @@
     <color name="balochistan_province_data_color">#1C5A8B</color>
     <color name="kpk_province_data_color">#1F501E</color>
 
-    <color name="punjab_province_list_heading_color">#472033</color>
-    <color name="province_heading_see_all">#5D5D5D</color>
+    <!-- Heading title and sub-title color for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <color name="province_list_category_heading_color">#472033</color>
+    <color name="province_list_category_see_all_heading_color">#5D5D5D</color>
+    <!-- Address color for each province category list:
+            1. activity_popular_city.xml
+            2. activity_top_restaurant.xml
+            3. activity_historical_place.xml -->
+    <color name="category_address_theme_color">#A4A4A4</color>
+    <!-- Address color for each province category list:
+            1. activity_popular_city.xml
+            2. activity_top_restaurant.xml
+            3. activity_historical_place.xml -->
+    <color name="category_icon_theme_background_tint">#F4F4F4</color>
+    <!-- See the location button and book a table button especial for restaurants activity color
+         for each province category list:
+            1. activity_popular_city.xml
+            2. activity_top_restaurant.xml
+            3. activity_historical_place.xml -->
+    <color name="category_button_theme_color">#8264B8</color>
 </resources>

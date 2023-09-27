@@ -1,5 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="province_list_height">388dp</dimen>
+
+    <!-- activity_main.xml file data. -->
+    <dimen name="main_activity_heading_text_text_size">28sp</dimen>
+    <dimen name="main_activity_sub_heading_text_text_size">14sp</dimen>
+    <dimen name="main_activity_list_view_divider_height">0dp</dimen>
+
+
+    <!-- province_list.xml file data. -->
+    <!-- Card view as the provinces list. -->
+    <dimen name="province_list_card_view_margin">8dp</dimen>
+    <dimen name="province_list_card_view_elevation">32dp</dimen>
+    <dimen name="province_list_card_view_corner_radius">16dp</dimen>
+    <!-- Card thumbnail image. -->
+    <dimen name="province_list_card_view_thumbnail_image_height">0dp</dimen>
+    <dimen name="province_list_card_view_thumbnail_image_weight">55</dimen>
+    <!-- Card title. -->
+    <dimen name="province_list_card_view_title_margin_top">8dp</dimen>
+    <dimen name="province_list_card_view_title_margin_bottom">8dp</dimen>
+    <dimen name="province_list_card_view_title_text_size">24sp</dimen>
+    <!-- Card description. -->
+    <dimen name="province_list_card_view_description_margin_bottom">8dp</dimen>
+    <dimen name="province_list_card_view_description_text_size">14sp</dimen>
+    <!-- Card bottom container root view
+            1. Historical sights
+            2. Cities
+            3. Restaurants. -->
+    <dimen name="province_list_card_view_bottom_data_container_height">0dp</dimen>
+    <dimen name="province_list_card_view_bottom_data_container_weight">10</dimen>
+    <dimen name="province_list_card_view_bottom_data_container_margin_start">16dp</dimen>
+    <dimen name="province_list_card_view_bottom_data_container_margin_end">16dp</dimen>
+    <!-- Data to show the actual number of places collected from the province category
+            card items. -->
+    <dimen name="province_list_card_view_number_of_places_margin_end">8dp</dimen>
+    <dimen name="province_list_card_view_number_of_places_text_size">12sp</dimen>
+    <!-- Text as a right side heading to represent data. -->
+    <dimen name="province_list_card_view_places_text_style_text_size">12sp</dimen>
+
+
+    <!-- province_category_list_item.xml data. -->
+    <!-- Preview image for the card. -->
+    <dimen name="province_category_list_item_image_height">108dp</dimen>
+    <dimen name="province_category_list_item_image_margin_bottom">4dp</dimen>
+    <!-- Title for the card. -->
+    <dimen name="province_category_list_item_title_margin_start">8dp</dimen>
+    <dimen name="province_category_list_item_title_margin_end">8dp</dimen>
+    <dimen name="province_category_list_item_title_margin_bottom">4dp</dimen>
+    <dimen name="province_category_list_item_title_text_size">16sp</dimen>
+    <!-- Description for the card. -->
+    <dimen name="province_category_list_item_description_margin_start">8dp</dimen>
+    <dimen name="province_category_list_item_description_margin_end">8dp</dimen>
+    <dimen name="province_category_list_item_description_margin_bottom">4dp</dimen>
+    <dimen name="province_category_list_item_description_text_size">12sp</dimen>
+    <!-- Bottom data container for the card. -->
+    <dimen name="province_category_list_item_bottom_data_container_margin_start">8dp</dimen>
+    <dimen name="province_category_list_item_bottom_data_container_margin_end">8dp</dimen>
+    <dimen name="province_category_list_item_bottom_data_container_margin_bottom">4dp</dimen>
+    <!-- Bottom container rating star image. -->
+    <dimen name="province_category_list_item_rating_star_image_width">16dp</dimen>
+    <dimen name="province_category_list_item_rating_star_image_height">16dp</dimen>
+    <dimen name="province_category_list_item_rating_star_image_margin_end">4dp</dimen>
+    <!-- Bottom container rating as number. -->
+    <dimen name="province_category_list_item_rating_margin_end">4dp</dimen>
+    <dimen name="province_category_list_item_rating_text_size">12sp</dimen>
+    <!-- Bottom container review as number. -->
+    <dimen name="province_category_list_item_review_text_size">12sp</dimen>
+    <!-- Bottom container heart image. -->
+    <dimen name="province_category_list_item_heart_image_width">16dp</dimen>
+    <dimen name="province_category_list_item_heart_image_height">16dp</dimen>
+
+
+    <!-- Provinces list data:
+            1. activity_balochistan.xml
+            2. activity_kpk_.xml
+            3. activity_punjab.xml
+            4. activity_sindh.xml -->
+    <!-- Back button for each province activity. -->
+    <dimen name="province_back_button_width">48dp</dimen>
+    <dimen name="province_back_button_height">48dp</dimen>
+    <dimen name="province_back_button_margin">18dp</dimen>
+    <dimen name="province_back_button_padding">12dp</dimen>
+    <!-- Header image at the top for each province activity mentioned above. -->
     <dimen name="province_header_image_height">148dp</dimen>
+    <dimen name="province_header_image_margin">4dp</dimen>
+    <!-- Heading title style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <dimen name="province_list_category_heading_text_size">20sp</dimen>
+    <!-- See all heading title style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <dimen name="province_list_category_see_all_heading_text_size">14sp</dimen>
+    <!-- Root view for headings style for each province category list:
+            1. Popular City
+            2. Top Restaurant
+            3. Historical Place -->
+    <dimen name="province_list_category_headings_root_view_margin_start">8dp</dimen>
+    <dimen name="province_list_category_headings_root_view_margin_end">8dp</dimen>
+    <dimen name="province_list_category_headings_root_view_margin_top">24dp</dimen>
+
+
+    <!-- Province category layouts data:
+            1. activity_popular_city.xml
+            2. activity_top_restaurant.xml
+            3. activity_historical_place.xml -->
+    <!-- Category image at the top. -->
+    <dimen name="category_preview_image_height">288dp</dimen>
+    <!-- Category relative layout to hold the children attributes. -->
+    <dimen name="category_parent_bottom_relative_layout_theme_height">588dp</dimen>
+    <!-- Title of the category theme. -->
+    <dimen name="category_heading_theme_width">8dp</dimen>
+    <dimen name="category_heading_theme_weight">7</dimen>
+    <dimen name="category_heading_theme_margin_start">28dp</dimen>
+    <dimen name="category_heading_theme_padding_end">8dp</dimen>
+    <dimen name="category_heading_theme_text_size">24sp</dimen>
+    <!-- Sub heading of the category theme. -->
+    <dimen name="category_sub_heading_theme_margin_start">28dp</dimen>
+    <dimen name="category_sub_heading_theme_margin_end">28dp</dimen>
+    <dimen name="category_sub_heading_theme_text_size">18sp</dimen>
+    <!-- Address of the category theme. -->
+    <dimen name="category_address_theme_margin_start">28dp</dimen>
+    <dimen name="category_address_theme_margin_end">28dp</dimen>
+    <dimen name="category_address_theme_margin_top">8dp</dimen>
+    <dimen name="category_address_theme_text_size">14sp</dimen>
+    <!-- Review of the category theme. -->
+    <dimen name="category_review_theme_width">0dp</dimen>
+    <dimen name="category_review_theme_weight">1</dimen>
+    <dimen name="category_review_theme_margin_top">28dp</dimen>
+    <dimen name="category_review_theme_margin_end">28dp</dimen>
+    <dimen name="category_review_theme_text_size">16sp</dimen>
+    <!-- Rating of the category theme. -->
+    <dimen name="category_rating_theme_width">0dp</dimen>
+    <dimen name="category_rating_theme_weight">1</dimen>
+    <dimen name="category_rating_theme_margin_top">28dp</dimen>
+    <dimen name="category_rating_theme_text_size">16sp</dimen>
+    <!-- Rating star image of the category theme. -->
+    <dimen name="category_rating_star_image_theme_width">0dp</dimen>
+    <dimen name="category_rating_star_image_theme_height">22dp</dimen>
+    <dimen name="category_rating_star_image_theme_weight">1</dimen>
+    <dimen name="category_rating_star_image_theme_margin_top">28dp</dimen>
+    <!-- Question as title of the category theme. -->
+    <dimen name="category_icon_question_theme_margin_start">28dp</dimen>
+    <dimen name="category_icon_question_theme_margin_end">28dp</dimen>
+    <dimen name="category_icon_question_theme_text_size">14sp</dimen>
+    <!-- LinearLayout for all the horizontal icons with titles of the category theme. -->
+    <dimen name="category_icons_linear_layout_margin_start">28dp</dimen>
+    <dimen name="category_icons_linear_layout_margin_end">28dp</dimen>
+    <dimen name="category_icons_linear_layout_margin_top">8dp</dimen>
+    <!-- LinearLayout for single icon with title in the parent LinearLayout of the category theme. -->
+    <dimen name="category_single_icon_linear_layout_width">0dp</dimen>
+    <dimen name="category_single_icon_linear_layout_weight">1</dimen>
+    <!-- Icon in the sub LinearLayout of the category theme. -->
+    <dimen name="category_icon_theme_width">48dp</dimen>
+    <dimen name="category_icon_theme_height">48dp</dimen>
+    <dimen name="category_icon_theme_padding">8dp</dimen>
+    <!-- Text in the sub LinearLayout of the category theme. -->
+    <dimen name="category_icon_text_theme_margin_top">4dp</dimen>
+    <dimen name="category_icon_text_theme_text_size">14sp</dimen>
+    <!-- Description heading below icons horizontal list of LinearLayouts. -->
+    <dimen name="category_description_heading_theme_margin_start">28dp</dimen>
+    <dimen name="category_description_heading_theme_margin_end">28dp</dimen>
+    <dimen name="category_description_heading_theme_margin_top">28dp</dimen>
+    <dimen name="category_description_heading_theme_text_size">18sp</dimen>
+    <!-- Description theme used to explain city, restaurants, historical place. -->
+    <dimen name="category_description_theme_margin_start">28dp</dimen>
+    <dimen name="category_description_theme_margin_end">28dp</dimen>
+    <dimen name="category_description_theme_margin_top">8dp</dimen>
+    <dimen name="category_description_theme_text_size">14sp</dimen>
+    <!-- See the Location button theme to see the actual location of any place. -->
+    <dimen name="category_see_location_button_theme_margin_bottom">16dp</dimen>
+
+
+    <!-- Specifically activity_top_restaurant.xml layout file styles. -->
+    <!-- Open In heading for the timing of the restaurant. -->
+    <dimen name="category_open_in_heading_theme_height">0dp</dimen>
+    <dimen name="category_open_in_heading_theme_weight">1</dimen>
+    <dimen name="category_open_in_heading_theme_text_size">14sp</dimen>
+    <!-- Timing of the restaurant opening and closing TextView. -->
+    <dimen name="category_restaurant_timing_theme_height">0dp</dimen>
+    <dimen name="category_restaurant_timing_theme_weight">1</dimen>
+    <dimen name="category_restaurant_timing_theme_text_size">14sp</dimen>
 </resources>

@@ -8,7 +8,7 @@
     <!-- Thumbnail image at the top. -->
     <ImageView
         android:id="@+id/restaurant_preview_image"
-        style="@style/CategoryPreviewImageImage"
+        style="@style/CategoryPreviewImage"
         android:contentDescription="@string/todo"
         android:src="@drawable/ic_launcher_background" />
 
@@ -33,7 +33,7 @@
 
             <!-- Star image to enhance the rating TextView. -->
             <ImageView
-                style="@style/CategoryRatingImageTheme"
+                style="@style/CategoryRatingStarImageTheme"
                 android:contentDescription="@string/todo" />
 
             <!-- Rating to the restaurant by the customers. -->
